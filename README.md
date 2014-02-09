@@ -18,7 +18,7 @@ To compile MapServer Mapmanager install the following prerequisites on the devel
 
 1. Microsoft Visual Studio 2010 or above
 2. Wix Toolset v3.8
-3. GDAL and Mapserver build SDK (release-1600 version) from http://www.gisinternals.com/sdk
+3. GDAL and Mapserver build SDK (release-1600-dev.zip) from http://www.gisinternals.com/sdk
 
 The compilation can be done with the following steps:
 
