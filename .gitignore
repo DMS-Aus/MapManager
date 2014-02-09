@@ -1,0 +1,9 @@
+/Installer/obj
+/Installer/bin
+/MapLibrary/bin
+/MapLibrary/obj
+/MapManager/obj
+/MapManager/bin
+/TileManager/obj
+/TileManager/bin
+*.suo

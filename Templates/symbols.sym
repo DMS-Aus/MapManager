@@ -1,0 +1,7362 @@
+SYMBOLSET
+
+###############################
+###############################
+# MapManager Symbols
+###############################
+
+SYMBOL
+  NAME "default-marker"
+  TYPE ELLIPSE
+  POINTS
+    1 1
+  END
+  FILLED TRUE
+END
+
+SYMBOL
+  NAME "Circle"
+  TYPE ELLIPSE
+  POINTS
+    1 1
+  END
+END
+
+SYMBOL
+  NAME "Rectangle"
+  TYPE VECTOR
+  POINTS
+    0 0
+    1 0
+    1 0.8
+    0 0.8
+    0 0
+  END
+  FILLED TRUE
+END
+
+
+SYMBOL
+  NAME "Open Rectangle"
+  TYPE VECTOR
+  POINTS
+    0 0
+    1 0
+    1 0.8
+    0 0.8
+    0 0
+  END
+END
+
+
+SYMBOL
+  NAME "Ellipse"
+  TYPE ELLIPSE
+  POINTS
+    2 1.25
+  END
+  FILLED TRUE
+END
+
+SYMBOL
+  NAME "Triangle"
+  TYPE VECTOR
+  POINTS
+    0 1
+    0.5 0
+    1 1
+    0 1
+  END
+  FILLED TRUE
+END
+
+SYMBOL
+  NAME "Open Triangle"
+  TYPE VECTOR
+  POINTS
+    0 1
+    0.5 0
+    1 1
+    0 1
+  END
+END
+
+SYMBOL 
+  NAME "Tent"
+  TYPE VECTOR
+  POINTS
+    0 4
+    2 0
+    4 4
+    3 4
+    2 2
+    1 4
+    0 4
+  END
+  FILLED TRUE
+END
+
+SYMBOL
+  NAME "Square"
+  TYPE VECTOR
+  POINTS
+    0 0
+    0 1
+    1 1
+    1 0
+    0 0
+  END
+  FILLED TRUE
+END
+
+SYMBOL
+  NAME "Open Square"
+  TYPE VECTOR
+  POINTS
+    0 0
+    0 1
+    1 1
+    1 0
+    0 0
+  END
+END
+
+SYMBOL
+  NAME "Cross"
+  TYPE VECTOR
+  POINTS
+    0.5 0
+    0.5 1
+    -99 -99
+    0 0.5
+    1 0.5
+  END
+ 
+END
+
+SYMBOL 
+  NAME "Cross-2"
+  TYPE VECTOR
+  POINTS
+    0 0
+    1 1
+    -99 -99
+    0 1
+    1 0
+  END
+END
+
+SYMBOL 
+  NAME "Cross-3"
+  TYPE VECTOR
+  POINTS
+    0 0.4
+    0.4 0.4
+    0.4 0
+    0.6 0
+    0.6 0.4
+    1 0.4
+    1 0.6
+    0.6 0.6
+    0.6 1
+    0.4 1
+    0.4 0.6
+    0 0.6
+    0 0.4
+  END
+  FILLED TRUE
+END
+
+SYMBOL
+  NAME "House"
+  TYPE VECTOR
+  POINTS
+    0 1
+    0 0.5
+    0.5 0
+    1 0.5
+    1 1
+    0 1
+  END
+  FILLED TRUE
+END
+
+SYMBOL
+  NAME "Hexagon"
+  TYPE VECTOR
+  POINTS
+    0 0.25
+    0.5 0
+    1 0.25
+    1 0.75
+    0.5 1
+    0 0.75
+    0 0.25
+  END
+  FILLED TRUE
+END
+
+ SYMBOL
+    NAME "Star"
+    TYPE VECTOR
+    FILLED TRUE
+    POINTS
+      0 0.375
+      0.35 0.375
+      0.5 0
+      0.65 0.375
+      1 0.375
+      0.75 0.625
+      0.875 1
+      0.5 0.75
+      0.125 1
+      0.25 0.625
+      0 0.375
+    END
+	FILLED TRUE
+  END
+
+ SYMBOL
+    NAME "Arrow"
+    TYPE VECTOR
+    POINTS
+      0 4
+      8 4
+      -99 -99
+      5 1
+      8 4
+      5 7
+      -99 -99
+      4 0
+      -99 -99
+      4 8
+    END
+  END
+  
+   SYMBOL
+    NAME "LongArrow"
+    TYPE VECTOR
+    POINTS
+      0 4
+      20 4
+      -99 -99
+      17 1
+      20 4
+      17 7
+      -99 -99
+      16 0
+      -99 -99
+      16 8
+    END
+  END
+  
+
+  SYMBOL
+  NAME "Heritage"
+  TYPE vector
+  POINTS
+    0 0
+    0 4
+	-99 -99
+	0 2
+	7 2
+	-99 -99
+	7 0
+	7 4
+
+  END
+END
+
+  SYMBOL
+  NAME "DoubleBar"
+  TYPE vector
+  POINTS
+    3 0
+    3 5
+	-99 -99
+	10 0
+	10 5
+
+  END
+END
+
+SYMBOL
+  NAME "CircleLine"
+  TYPE ELLIPSE
+  POINTS
+    1 1
+  END
+END
+
+SYMBOL
+  NAME "HalfCircle"
+  TYPE VECTOR
+  FILLED TRUE
+  POINTS
+   0 7
+   0 6
+   1 4
+   2 3
+   3 2
+   4 1
+   7 .5
+   9 1
+   11 2
+   12 3
+   13 4
+   14 6
+   14 7
+   0 7
+  END
+END
+
+SYMBOL
+  NAME "HalfCircleLine"
+  TYPE VECTOR
+  FILLED TRUE
+  POINTS
+   0 7
+   0 6
+   1 4
+   2 3
+   3 2
+   4 1
+   7 .5
+   9 1
+   11 2
+   12 3
+   13 4
+   14 6
+   14 7
+   0 7
+  END
+END
+  SYMBOL
+    NAME "Grass"
+    TYPE VECTOR
+    POINTS
+      0 2
+      1 3
+      -99 -99
+      1 0
+      3 2
+      3 3
+      -99 -99
+      7 0
+      5 2
+      5 3
+      -99 -99
+      8 2
+      7 3
+      -99 -99
+      8 10
+      9 11
+      -99 -99
+      9 8
+      11 10
+      11 11
+      -99 -99
+      15 8
+      13 10
+      13 11
+      -99 -99
+      16 10
+      15 11
+      -99 -99
+      17 13
+    END
+  END
+
+  SYMBOL
+    NAME "Grass-2"
+    TYPE VECTOR
+    POINTS
+      1 2
+      1 3
+      -99 -99
+      3 0
+      3 3
+      -99 -99
+      5 0
+      5 3
+      -99 -99
+      7 2
+      7 3
+      -99 -99
+      9 10
+      9 11
+      -99 -99
+      11 8
+      11 11
+      -99 -99
+      13 8
+      13 11
+      -99 -99
+      15 10
+      15 11
+      -99 -99
+      17 13
+    END
+  END
+
+  SYMBOL
+    NAME "Grass-3"
+    TYPE VECTOR
+    POINTS
+      0 3
+      1 4
+      -99 -99
+      1 1
+      3 3
+      3 4
+      -99 -99
+      5 0
+      5 4
+      -99 -99
+      9 1
+      7 3
+      7 4
+      -99 -99
+      10 3
+      9 4
+      -99 -99
+      9 10
+      10 11
+      -99 -99
+      10 8
+      12 10
+      12 11
+      -99 -99
+      14 7
+      14 11
+      -99 -99
+      18 8
+      16 10
+      16 11
+      -99 -99
+      19 10
+      18 11
+      -99 -99
+      20 15
+    END
+  END
+
+  SYMBOL
+    NAME "Tree-1"
+    TYPE VECTOR
+    POINTS
+      5 0
+      4 0
+      3 1
+      3 2
+      0 5
+      0 7
+      1 8
+      8 8
+      9 7
+      9 5
+      6 2
+      6 1
+      5 0
+      -99 -99
+      4 7
+      4 12
+      5 12
+      5 7
+      -99 -99
+      14 9
+      13 9
+      12 10
+      12 11
+      9 14
+      9 16
+      10 17
+      17 17
+      18 16
+      18 14
+      15 11
+      15 10
+      14 9
+      -99 -99
+      13 16
+      13 21
+      14 21
+      14 16
+      -99 -99
+      20 21
+    END
+  END
+
+  SYMBOL
+    NAME "Tree-2"
+    TYPE VECTOR
+    FILLED TRUE
+    POINTS
+      5 0
+      4 0
+      3 1
+      3 2
+      0 5
+      0 7
+      1 8
+      8 8
+      9 7
+      9 5
+      6 2
+      6 1
+      5 0
+      -99 -99
+      4 7
+      4 12
+      5 12
+      5 7
+      -99 -99
+      14 9
+      13 9
+      12 10
+      12 11
+      9 14
+      9 16
+      10 17
+      17 17
+      18 16
+      18 14
+      15 11
+      15 10
+      14 9
+      -99 -99
+      13 16
+      13 21
+      14 21
+      14 16
+      -99 -99
+      20 21
+    END
+  END
+
+  SYMBOL
+    NAME "Tree"
+    TYPE VECTOR
+    POINTS
+      5 0
+      4 0
+      3 1
+      3 2
+      0 5
+      0 7
+      1 8
+      8 8
+      9 7
+      9 5
+      6 2
+      6 1
+      5 0
+      -99 -99
+      4 7
+      4 12
+      5 12
+      5 7
+    END
+  END
+  
+    SYMBOL
+    NAME "Tree-3"
+    TYPE VECTOR
+    POINTS
+      5 0
+      4 0
+      3 1
+      3 2
+      0 5
+      0 7
+      1 8
+      8 8
+      9 7
+      9 5
+      6 2
+      6 1
+      5 0
+      -99 -99
+      4 7
+      4 12
+      5 12
+      5 7
+    END
+  END
+
+#############################
+#############################
+# MapManager Fill Patterns 
+#############################
+
+SYMBOL
+  NAME "Horizontal-1"
+  TYPE vector
+  POINTS
+    0 7
+    7 7
+  END
+END
+
+# Same as horizonal-1 but used in a different CLASS in the Style Library
+SYMBOL
+  NAME "Horizontal-2"
+  TYPE vector
+  POINTS
+    0 7
+    7 7
+  END
+END
+
+# Same as horizonal-1 but used in a different CLASS in the Style Library
+SYMBOL
+  NAME "Horizontal-3"
+  TYPE vector
+  POINTS
+    0 7
+    7 7
+  END
+END
+
+
+SYMBOL
+  NAME "Vertical-1"
+  TYPE vector
+  POINTS
+    7 0
+    7 7
+  END
+END
+
+# Same as Vertical-1 but used in a different CLASS in the Style Library
+SYMBOL
+  NAME "Vertical-2"
+  TYPE vector
+  POINTS
+    7 0
+    7 7
+  END
+END
+
+# Same as Vertical-1 but used in a different CLASS in the Style Library
+SYMBOL
+  NAME "Vertical-3"
+  TYPE vector
+  POINTS
+    7 0
+    7 7
+  END
+END
+
+  SYMBOL
+    NAME "RightDiag-1"
+    TYPE VECTOR
+    POINTS
+      10 0
+      0 10
+      -99 -99
+      0 0
+      0.3 0
+      -99 -99
+      10 10
+      9.7 10
+    END
+  END
+  
+  # Same as RightDiag-1 but used in a different CLASS in the Style Library
+    SYMBOL
+    NAME "RightDiag-2"
+    TYPE VECTOR
+    POINTS
+      10 0
+      0 10
+      -99 -99
+      0 0
+      0.3 0
+      -99 -99
+      10 10
+      9.7 10
+    END
+  END
+  
+# Same as RightDiag-1 but used in a different CLASS in the Style Library
+    SYMBOL
+    NAME "RightDiag-3"
+    TYPE VECTOR
+    POINTS
+      10 0
+      0 10
+      -99 -99
+      0 0
+      0.3 0
+      -99 -99
+      10 10
+      9.7 10
+    END
+  END
+  
+  SYMBOL
+    NAME "LeftDiag-1"
+    TYPE VECTOR
+    POINTS
+      0 0
+      10 10
+      -99 -99
+      10 0
+      10 0.3
+      -99 -99
+      0 10
+      0.3 10
+    END
+  END
+  
+# Same as RightDiag-2 but used in a different CLASS in the Style Library  
+  SYMBOL
+    NAME "LeftDiag-2"
+    TYPE VECTOR
+    POINTS
+      0 0
+      10 10
+      -99 -99
+      10 0
+      10 0.3
+      -99 -99
+      0 10
+      0.3 10
+    END
+  END
+
+# Same as RightDiag-2 but used in a different CLASS in the Style Library  
+  SYMBOL
+    NAME "LeftDiag-3"
+    TYPE VECTOR
+    POINTS
+      0 0
+      10 10
+      -99 -99
+      10 0
+      10 0.3
+      -99 -99
+      0 10
+      0.3 10
+    END
+  END
+  
+ SYMBOL
+  NAME "Grid-1"
+  TYPE vector
+  POINTS
+    7 0
+    7 7
+    0 7
+  END
+END
+
+ SYMBOL
+  NAME "Grid-2"
+  TYPE vector
+  POINTS
+    7 0
+    7 7
+    0 7
+  END
+END
+
+ SYMBOL
+  NAME "Grid-3"
+  TYPE vector
+  POINTS
+    7 0
+    7 7
+    0 7
+  END
+END
+
+SYMBOL
+  NAME "GridDiag-1"
+  TYPE VECTOR
+  POINTS
+    0 0
+    3 3
+    4 3
+    7 0
+    -99 -99
+    0 7
+    3 4
+    4 4
+    7 7
+  END
+END
+
+SYMBOL
+  NAME "GridDiag-2"
+  TYPE VECTOR
+  POINTS
+    0 0
+    3 3
+    4 3
+    7 0
+    -99 -99
+    0 7
+    3 4
+    4 4
+    7 7
+  END
+END
+
+SYMBOL
+  NAME "GridDiag-3"
+  TYPE VECTOR
+  POINTS
+    0 0
+    3 3
+    4 3
+    7 0
+    -99 -99
+    0 7
+    3 4
+    4 4
+    7 7
+  END
+END
+
+
+SYMBOL
+  NAME "Dots-1"
+  TYPE VECTOR
+  POINTS
+    1 1
+	  1 2
+    2 2
+  	2 1
+	  1 1
+  END
+END
+
+SYMBOL
+  NAME "Dots-2"
+  TYPE VECTOR
+  POINTS
+    1 1
+	  1 2
+    2 2
+  	2 1
+	  1 1
+  END
+END
+
+SYMBOL
+  NAME 'Ticks-1'
+  TYPE VECTOR
+  POINTS
+    1 1
+    3 3
+    -99 -99
+    7 5
+    5 7
+  END
+END
+
+#############################
+#############################
+# MapManager Line Styles
+#############################
+
+SYMBOL
+  NAME 'Dot-1'
+  TYPE SIMPLE
+END
+
+SYMBOL
+  NAME 'Dot-2'
+  TYPE SIMPLE
+END
+
+SYMBOL
+  NAME 'DotDash-1'
+  TYPE SIMPLE
+END
+
+SYMBOL
+  NAME 'DotDash-2'
+  TYPE SIMPLE
+END
+
+SYMBOL
+  NAME 'DashDash-1'
+  TYPE SIMPLE
+END
+
+SYMBOL
+  NAME 'DashDash-2'
+  TYPE SIMPLE
+END
+
+SYMBOL
+  NAME 'DashDash-3'
+  TYPE SIMPLE
+END
+
+SYMBOL
+  NAME 'DoubleDashDash-1'
+  TYPE SIMPLE
+END
+
+SYMBOL
+  NAME 'DoubleDashDash-2'
+  TYPE SIMPLE
+END
+
+SYMBOL
+  NAME 'DoubleDashDash-3'
+  TYPE SIMPLE
+END
+
+SYMBOL
+  NAME 'DoubleDotDash-1'
+  TYPE SIMPLE
+END
+
+SYMBOL
+  NAME 'DoubleDotDash-2'
+  TYPE SIMPLE
+END
+
+SYMBOL
+  NAME 'Dash-1'
+  TYPE SIMPLE
+END
+
+SYMBOL
+  NAME 'Dash-2'
+  TYPE SIMPLE
+END
+
+SYMBOL
+  NAME 'Dash-3'
+  TYPE SIMPLE
+END
+
+SYMBOL
+  NAME 'Dash-4'
+  TYPE SIMPLE
+END
+
+SYMBOL
+  NAME 'Dash-5'
+  TYPE SIMPLE
+END
+
+SYMBOL
+  NAME 'Dash-6'
+  TYPE SIMPLE
+END
+
+SYMBOL
+  NAME 'Dash-7'
+  TYPE SIMPLE
+END
+
+SYMBOL
+  NAME 'Dash-8'
+  TYPE SIMPLE
+END
+SYMBOL
+  NAME 'Dash-9'
+  TYPE SIMPLE
+END
+
+SYMBOL
+  NAME 'Dash-10'
+  TYPE SIMPLE
+END
+
+SYMBOL
+  NAME 'Dot-Line-Test'
+  TYPE ELLIPSE
+  POINTS 1 1
+  END
+END
+
+  SYMBOL
+    NAME "RCodeBorder"
+    TYPE VECTOR
+    POINTS
+      3 0
+      3 10
+      -99 -99
+      7 0
+      7 10
+      -99 -99
+      0 5
+      15 5
+    END
+  END
+  
+SYMBOL
+  NAME "SpacedTriangle"
+  TYPE VECTOR
+  POINTS
+    0 1
+    0.5 0
+    1 1
+    0 1
+  END
+  FILLED TRUE
+END
+  
+SYMBOL
+  NAME "SpacedOpenTriangle"
+  TYPE VECTOR
+  POINTS
+    0 1
+    0.5 0
+    1 1
+    0 1
+  END
+END
+
+#############################
+#############################
+#True Type Fonts
+#############################
+SYMBOL
+    NAME "MapServerAnimals-33"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#33;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "Wingdings-33"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#33;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-33"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#33;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-33"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#33;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-33"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#33;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-33"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#33;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-33"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#33;"
+    FONT "MapServerSigns"
+  END
+
+  
+
+  SYMBOL
+    NAME "MapServerSports-34"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#34;"
+    FONT "MapServerSports"
+  END
+
+  
+  SYMBOL
+    NAME "MapServerSports-45"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#45;"
+    FONT "MapServerSports"
+  END
+
+
+
+  SYMBOL
+    NAME "MapServerSports-47"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#47;"
+    FONT "MapServerSports"
+  END
+
+  SYMBOL
+    NAME "MapServerSports-48"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#48;"
+    FONT "MapServerSports"
+  END
+
+  
+
+  SYMBOL
+    NAME "MapServerSports-56"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#56;"
+    FONT "MapServerSports"
+  END
+
+  
+
+  SYMBOL
+    NAME "MapServerSports-72"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#72;"
+    FONT "MapServerSports"
+  END
+
+  SYMBOL
+    NAME "MapServerSports-73"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#73;"
+    FONT "MapServerSports"
+  END
+
+  
+
+  SYMBOL
+    NAME "MapServerSigns-34"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#34;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-35"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#35;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-36"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#36;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-37"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#37;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-38"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#38;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-39"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#39;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-40"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#40;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-41"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#41;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-42"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#42;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-43"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#43;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-44"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#44;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-45"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#45;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-46"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#46;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-47"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#47;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-48"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#48;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-49"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#49;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-50"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#50;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-51"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#51;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-52"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#52;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-53"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#53;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-54"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#54;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-55"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#55;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-56"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#56;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-57"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#57;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-58"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#58;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-59"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#59;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-60"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#60;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-61"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#61;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-62"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#62;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-63"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#63;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-64"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#64;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-65"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#65;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-66"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#66;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-67"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#67;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-68"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#68;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-69"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#69;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-70"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#70;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-71"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#71;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-72"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#72;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-73"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#73;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-74"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#74;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-75"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#75;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-76"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#76;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-77"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#77;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-78"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#78;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-79"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#79;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-80"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#80;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-81"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#81;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-82"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#82;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-83"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#83;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-84"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#84;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-85"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#85;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-86"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#86;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-87"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#87;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-88"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#88;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-89"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#89;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-90"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#90;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-91"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#91;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-92"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#92;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-93"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#93;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-94"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#94;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-95"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#95;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-96"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#96;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-97"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#97;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-98"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#98;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-99"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#99;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-100"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#100;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-101"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#101;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-102"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#102;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-103"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#103;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-104"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#104;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-105"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#105;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-106"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#106;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-107"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#107;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-108"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#108;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-109"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#109;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-110"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#110;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-111"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#111;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-112"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#112;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-113"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#113;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-114"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#114;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-115"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#115;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-116"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#116;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-117"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#117;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-118"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#118;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-119"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#119;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-120"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#120;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-121"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#121;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-122"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#122;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-123"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#123;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-143"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#143;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-144"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#144;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-145"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#145;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-146"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#146;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-147"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#147;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-148"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#148;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-149"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#149;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-150"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#150;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-151"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#151;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-152"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#152;"
+    FONT "MapServerSigns"
+  END
+
+  
+
+  SYMBOL
+    NAME "MapServerSigns-160"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#160;"
+    FONT "MapServerSigns"
+  END
+
+
+  SYMBOL
+    NAME "MapServerSigns-167"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#167;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-168"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#168;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-169"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#169;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-170"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#170;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-171"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#171;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-172"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#172;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-173"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#173;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-174"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#174;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-175"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#175;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-176"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#176;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-177"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#177;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-178"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#178;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-179"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#179;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-180"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#180;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-181"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#181;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-182"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#182;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-183"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#183;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-184"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#184;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-185"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#185;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-186"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#186;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-187"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#187;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-188"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#188;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "MapServerSigns-189"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#189;"
+    FONT "MapServerSigns"
+  END
+
+  SYMBOL
+    NAME "Wingdings-34"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#34;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-35"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#35;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-36"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#36;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-37"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#37;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-38"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#38;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-39"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#39;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-40"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#40;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-41"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#41;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-42"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#42;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-43"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#43;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-44"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#44;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-45"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#45;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-46"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#46;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-47"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#47;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-48"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#48;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-49"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#49;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-50"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#50;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-51"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#51;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-52"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#52;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-53"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#53;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-54"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#54;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-55"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#55;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-56"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#56;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-57"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#57;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-58"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#58;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-59"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#59;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-60"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#60;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-61"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#61;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-62"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#62;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-63"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#63;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-64"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#64;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-65"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#65;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-66"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#66;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-67"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#67;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-68"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#68;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-69"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#69;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-70"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#70;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-71"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#71;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-72"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#72;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-73"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#73;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-74"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#74;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-75"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#75;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-76"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#76;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-77"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#77;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-78"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#78;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-79"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#79;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-80"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#80;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-81"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#81;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-82"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#82;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-83"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#83;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-84"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#84;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-85"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#85;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-86"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#86;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-87"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#87;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-88"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#88;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-89"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#89;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-90"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#90;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-91"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#91;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-93"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#93;"
+    FONT "Wingdings"
+  END
+
+
+  SYMBOL
+    NAME "Wingdings-108"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#108;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-109"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#109;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-110"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#110;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-111"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#111;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-112"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#112;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-113"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#113;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-114"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#114;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-115"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#115;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-116"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#116;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-117"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#117;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-118"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#118;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-119"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#119;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-120"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#120;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-121"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#121;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-122"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#122;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-123"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#123;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-124"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#124;"
+    FONT "Wingdings"
+  END
+
+ 
+
+  SYMBOL
+    NAME "Wingdings-127"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#127;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-128"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#128;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-129"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#129;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-130"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#130;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-131"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#131;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-132"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#132;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-133"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#133;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-134"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#134;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-135"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#135;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-136"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#136;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-137"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#137;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-138"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#138;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-139"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#139;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-140"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#140;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-141"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#141;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-142"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#142;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-143"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#143;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-144"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#144;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-145"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#145;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-146"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#146;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-147"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#147;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-148"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#148;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-149"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#149;"
+    FONT "Wingdings"
+  END
+
+  
+
+  SYMBOL
+    NAME "Wingdings-161"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#161;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-162"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#162;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-163"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#163;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-164"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#164;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-165"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#165;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-166"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#166;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-167"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#167;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-168"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#168;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-169"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#169;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-170"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#170;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-171"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#171;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-172"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#172;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-173"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#173;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-174"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#174;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-175"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#175;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-176"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#176;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-177"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#177;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-178"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#178;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-179"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#179;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-180"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#180;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-181"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#181;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-182"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#182;"
+    FONT "Wingdings"
+  END
+
+  SYMBOL
+    NAME "Wingdings-183"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#183;"
+    FONT "Wingdings"
+  END
+
+  
+
+  SYMBOL
+    NAME "MapServerRecreation-40"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#40;"
+    FONT "MapServerRecreation"
+  END
+
+  
+
+  SYMBOL
+    NAME "MapServerRecreation-44"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#44;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-45"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#45;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-46"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#46;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-47"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#47;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-48"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#48;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-49"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#49;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-50"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#50;"
+    FONT "MapServerRecreation"
+  END
+
+ 
+  SYMBOL
+    NAME "MapServerRecreation-52"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#52;"
+    FONT "MapServerRecreation"
+  END
+
+ 
+
+  SYMBOL
+    NAME "MapServerRecreation-55"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#55;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-56"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#56;"
+    FONT "MapServerRecreation"
+  END
+
+ 
+
+  SYMBOL
+    NAME "MapServerRecreation-60"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#60;"
+    FONT "MapServerRecreation"
+  END
+
+ 
+
+  SYMBOL
+    NAME "MapServerRecreation-62"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#62;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-63"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#63;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-64"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#64;"
+    FONT "MapServerRecreation"
+  END
+
+ 
+
+  SYMBOL
+    NAME "MapServerRecreation-66"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#66;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-67"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#67;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-68"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#68;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-69"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#69;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-70"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#70;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-71"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#71;"
+    FONT "MapServerRecreation"
+  END
+
+ 
+
+  SYMBOL
+    NAME "MapServerRecreation-73"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#73;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-74"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#74;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-75"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#75;"
+    FONT "MapServerRecreation"
+  END
+
+ 
+
+  SYMBOL
+    NAME "MapServerRecreation-80"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#80;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-81"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#81;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-82"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#82;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-83"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#83;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-84"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#84;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-85"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#85;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-86"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#86;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-87"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#87;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-88"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#88;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-89"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#89;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-90"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#90;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-91"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#91;"
+    FONT "MapServerRecreation"
+  END
+
+  
+
+  SYMBOL
+    NAME "MapServerRecreation-93"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#93;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-94"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#94;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-95"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#95;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-96"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#96;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-97"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#97;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-98"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#98;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-99"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#99;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-100"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#100;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-101"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#101;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-102"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#102;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-103"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#103;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-104"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#104;"
+    FONT "MapServerRecreation"
+  END
+
+ 
+
+ 
+
+  SYMBOL
+    NAME "MapServerRecreation-109"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#109;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-110"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#110;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-111"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#111;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-112"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#112;"
+    FONT "MapServerRecreation"
+  END
+
+
+
+  SYMBOL
+    NAME "MapServerRecreation-114"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#114;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-115"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#115;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-116"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#116;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-117"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#117;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-118"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#118;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-119"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#119;"
+    FONT "MapServerRecreation"
+  END
+
+
+
+  SYMBOL
+    NAME "MapServerRecreation-121"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#121;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-122"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#122;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-123"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#123;"
+    FONT "MapServerRecreation"
+  END
+
+  
+
+  SYMBOL
+    NAME "MapServerRecreation-130"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#130;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-131"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#131;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-132"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#132;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-133"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#133;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-134"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#134;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-135"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#135;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-136"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#136;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-137"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#137;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-138"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#138;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-139"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#139;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-140"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#140;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-141"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#141;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-142"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#142;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-143"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#143;"
+    FONT "MapServerRecreation"
+  END
+
+  
+
+  SYMBOL
+    NAME "MapServerRecreation-150"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#150;"
+    FONT "MapServerRecreation"
+  END
+
+  
+
+  SYMBOL
+    NAME "MapServerRecreation-155"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#155;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-156"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#156;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerRecreation-157"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#157;"
+    FONT "MapServerRecreation"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-34"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#34;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-35"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#35;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-36"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#36;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-37"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#37;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-38"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#38;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-39"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#39;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-40"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#40;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-41"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#41;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-42"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#42;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-43"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#43;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-44"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#44;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-45"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#45;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-46"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#46;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-47"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#47;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-48"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#48;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-49"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#49;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-50"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#50;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-51"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#51;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-52"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#52;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-53"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#53;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-54"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#54;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-55"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#55;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-56"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#56;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-57"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#57;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-58"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#58;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-59"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#59;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-60"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#60;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-61"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#61;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-62"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#62;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-63"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#63;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-64"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#64;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-65"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#65;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-66"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#66;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-67"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#67;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-68"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#68;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-69"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#69;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-70"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#70;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-71"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#71;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-72"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#72;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-73"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#73;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-74"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#74;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-75"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#75;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-76"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#76;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-77"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#77;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-78"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#78;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-79"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#79;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-80"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#80;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-81"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#81;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-82"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#82;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-83"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#83;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-84"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#84;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-85"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#85;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-86"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#86;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-87"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#87;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-88"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#88;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-89"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#89;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-90"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#90;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-91"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#91;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-92"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#92;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-93"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#93;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-94"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#94;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-95"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#95;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-96"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#96;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-97"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#97;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-98"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#98;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-99"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#99;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-100"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#100;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-101"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#101;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-102"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#102;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-103"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#103;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-104"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#104;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-105"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#105;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-106"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#106;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-107"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#107;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-108"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#108;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-109"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#109;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-110"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#110;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-111"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#111;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-112"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#112;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-113"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#113;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-114"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#114;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-115"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#115;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-116"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#116;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-117"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#117;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-118"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#118;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerParks-119"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#119;"
+    FONT "MapServerParks"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-34"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#34;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-35"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#35;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-36"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#36;"
+    FONT "MapServerNaturalResources"
+  END
+
+  
+  SYMBOL
+    NAME "MapServerNaturalResources-41"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#41;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-42"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#42;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-43"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#43;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-44"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#44;"
+    FONT "MapServerNaturalResources"
+  END
+
+ 
+
+  SYMBOL
+    NAME "MapServerNaturalResources-47"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#47;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-48"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#48;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-49"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#49;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-50"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#50;"
+    FONT "MapServerNaturalResources"
+  END
+
+  
+
+  SYMBOL
+    NAME "MapServerNaturalResources-59"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#59;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-60"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#60;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-61"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#61;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-62"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#62;"
+    FONT "MapServerNaturalResources"
+  END
+
+
+
+  SYMBOL
+    NAME "MapServerNaturalResources-64"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#64;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-65"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#65;"
+    FONT "MapServerNaturalResources"
+  END
+
+ 
+
+  SYMBOL
+    NAME "MapServerNaturalResources-68"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#68;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-69"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#69;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-70"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#70;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-71"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#71;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-72"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#72;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-73"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#73;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-74"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#74;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-75"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#75;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-76"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#76;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-77"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#77;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-78"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#78;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-79"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#79;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-80"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#80;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-81"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#81;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-82"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#82;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-83"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#83;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-84"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#84;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-85"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#85;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-86"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#86;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-87"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#87;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-88"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#88;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-89"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#89;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-90"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#90;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-91"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#91;"
+    FONT "MapServerNaturalResources"
+  END
+
+  
+  SYMBOL
+    NAME "MapServerNaturalResources-95"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#95;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-96"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#96;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-97"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#97;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-98"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#98;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-99"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#99;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-100"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#100;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-101"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#101;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-102"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#102;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-103"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#103;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-104"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#104;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-105"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#105;"
+    FONT "MapServerNaturalResources"
+  END
+
+ 
+
+  SYMBOL
+    NAME "MapServerNaturalResources-108"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#108;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-109"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#109;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-110"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#110;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-111"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#111;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-112"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#112;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-113"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#113;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-114"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#114;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-115"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#115;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-116"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#116;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-117"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#117;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-118"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#118;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-119"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#119;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-120"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#120;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-121"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#121;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-122"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#122;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-123"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#123;"
+    FONT "MapServerNaturalResources"
+  END
+
+  
+
+  SYMBOL
+    NAME "MapServerNaturalResources-132"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#132;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-133"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#133;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-134"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#134;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-135"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#135;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-136"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#136;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-137"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#137;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-138"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#138;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-139"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#139;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-140"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#140;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-141"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#141;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-142"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#142;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-143"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#143;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-144"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#144;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-145"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#145;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-146"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#146;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-147"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#147;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-148"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#148;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-149"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#149;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-150"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#150;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-151"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#151;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-152"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#152;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-153"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#153;"
+    FONT "MapServerNaturalResources"
+  END
+
+  
+
+  SYMBOL
+    NAME "MapServerNaturalResources-155"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#155;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-156"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#156;"
+    FONT "MapServerNaturalResources"
+  END
+
+  
+
+  SYMBOL
+    NAME "MapServerNaturalResources-162"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#162;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-163"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#163;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-164"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#164;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-165"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#165;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-166"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#166;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-167"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#167;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-168"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#168;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-169"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#169;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-170"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#170;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-171"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#171;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-172"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#172;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-173"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#173;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-174"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#174;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-175"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#175;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-176"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#176;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-177"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#177;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-178"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#178;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-179"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#179;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-180"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#180;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-181"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#181;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-182"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#182;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-183"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#183;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-184"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#184;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-185"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#185;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-186"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#186;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-187"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#187;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-188"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#188;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-189"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#189;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-190"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#190;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-191"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#191;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-192"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#192;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-193"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#193;"
+    FONT "MapServerNaturalResources"
+  END
+
+  
+
+  SYMBOL
+    NAME "MapServerNaturalResources-195"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#195;"
+    FONT "MapServerNaturalResources"
+  END
+
+ 
+
+  SYMBOL
+    NAME "MapServerNaturalResources-197"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#197;"
+    FONT "MapServerNaturalResources"
+  END
+
+  
+
+  SYMBOL
+    NAME "MapServerNaturalResources-199"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#199;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-200"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#200;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-201"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#201;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-202"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#202;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-203"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#203;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-204"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#204;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-205"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#205;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-206"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#206;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-207"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#207;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-208"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#208;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-209"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#209;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-210"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#210;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-211"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#211;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-212"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#212;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-213"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#213;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-214"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#214;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-215"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#215;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-216"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#216;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-217"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#217;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-218"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#218;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-219"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#219;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-220"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#220;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-221"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#221;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-222"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#222;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-223"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#223;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-224"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#224;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-225"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#225;"
+    FONT "MapServerNaturalResources"
+  END
+
+ 
+
+  SYMBOL
+    NAME "MapServerNaturalResources-238"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#238;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-239"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#239;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-240"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#240;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-241"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#241;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-242"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#242;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerNaturalResources-243"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#243;"
+    FONT "MapServerNaturalResources"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-34"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#34;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-35"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#35;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-36"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#36;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-37"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#37;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-38"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#38;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-39"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#39;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-40"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#40;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-41"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#41;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-42"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#42;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-43"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#43;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-44"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#44;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-45"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#45;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-46"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#46;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-47"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#47;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-48"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#48;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-49"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#49;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-50"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#50;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-51"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#51;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-52"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#52;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-53"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#53;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-54"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#54;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-55"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#55;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-56"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#56;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-57"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#57;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-58"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#58;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-59"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#59;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-60"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#60;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-61"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#61;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-62"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#62;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-63"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#63;"
+    FONT "MapServerCarto"
+  END
+
+  
+
+  SYMBOL
+    NAME "MapServerCarto-70"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#70;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-71"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#71;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-72"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#72;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-73"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#73;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-74"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#74;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-75"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#75;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-76"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#76;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-77"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#77;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-78"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#78;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-79"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#79;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-80"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#80;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-81"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#81;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-82"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#82;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-83"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#83;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-84"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#84;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-85"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#85;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-86"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#86;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-87"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#87;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-88"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#88;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-89"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#89;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-90"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#90;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-91"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#91;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-92"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#92;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-93"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#93;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-94"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#94;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-95"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#95;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-96"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#96;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-97"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#97;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-98"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#98;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-99"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#99;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-100"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#100;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-101"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#101;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-102"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#102;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-103"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#103;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-104"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#104;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-105"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#105;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-106"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#106;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-107"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#107;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-108"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#108;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-109"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#109;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-110"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#110;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-111"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#111;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-112"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#112;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-113"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#113;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-114"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#114;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-115"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#115;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-116"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#116;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-117"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#117;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-118"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#118;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-119"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#119;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-120"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#120;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-121"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#121;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-122"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#122;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-123"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#123;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-124"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#124;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-125"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#125;"
+    FONT "MapServerCarto"
+  END
+
+
+
+  SYMBOL
+    NAME "MapServerCarto-129"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#129;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-130"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#130;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-131"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#131;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-132"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#132;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-133"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#133;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-134"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#134;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-135"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#135;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-136"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#136;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-137"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#137;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-138"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#138;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-139"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#139;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-140"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#140;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-141"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#141;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-142"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#142;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-143"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#143;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-144"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#144;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-145"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#145;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-146"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#146;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-147"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#147;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-148"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#148;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-149"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#149;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-150"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#150;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-151"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#151;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerCarto-152"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#152;"
+    FONT "MapServerCarto"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-34"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#34;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-35"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#35;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-36"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#36;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-37"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#37;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-38"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#38;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-39"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#39;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-40"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#40;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-41"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#41;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-42"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#42;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-43"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#43;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-44"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#44;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-45"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#45;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-46"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#46;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-47"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#47;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-48"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#48;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-49"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#49;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-50"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#50;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-51"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#51;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-52"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#52;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-53"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#53;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-54"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#54;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-55"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#55;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-56"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#56;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-57"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#57;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-58"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#58;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-59"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#59;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-60"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#60;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-61"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#61;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-62"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#62;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-63"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#63;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-64"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#64;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-65"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#65;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-66"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#66;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-67"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#67;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-68"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#68;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-69"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#69;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-70"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#70;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-71"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#71;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-72"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#72;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-73"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#73;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-74"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#74;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-75"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#75;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-76"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#76;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-77"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#77;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-78"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#78;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-79"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#79;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-80"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#80;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-81"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#81;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-82"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#82;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-83"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#83;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-84"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#84;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-85"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#85;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-86"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#86;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-87"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#87;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-88"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#88;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-89"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#89;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-90"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#90;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-91"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#91;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-92"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#92;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-93"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#93;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-94"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#94;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-95"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#95;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-96"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#96;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-97"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#97;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-98"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#98;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-99"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#99;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-100"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#100;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-101"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#101;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-102"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#102;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-103"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#103;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-104"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#104;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-105"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#105;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-106"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#106;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-107"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#107;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-108"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#108;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-109"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#109;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-110"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#110;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-111"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#111;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-112"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#112;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-113"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#113;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-114"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#114;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-115"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#115;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-116"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#116;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-117"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#117;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-118"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#118;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-119"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#119;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-120"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#120;"
+    FONT "MapServerAnimals"
+  END
+
+  SYMBOL
+    NAME "MapServerAnimals-239"
+    TYPE TRUETYPE
+    ANTIALIAS TRUE
+    CHARACTER "&#239;"
+    FONT "MapServerAnimals"
+  END
+
+
+END

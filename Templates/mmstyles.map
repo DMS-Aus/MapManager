@@ -1,0 +1,6961 @@
+MAP
+  DEFRESOLUTION 96
+  EXTENT 3.69318029693814 -1.31234299313059 20.5120277428854 10.3576109845158
+  FONTSET "font.list"
+  IMAGETYPE "png"
+  NAME "MapManager Style Library"
+  RESOLUTION 96
+  SHAPEPATH ""
+  SIZE 1288 894
+  STATUS ON
+  SYMBOLSET "symbols.sym"
+  UNITS METERS
+
+  OUTPUTFORMAT
+    NAME "png"
+    MIMETYPE "image/png"
+    DRIVER "AGG/PNG"
+    EXTENSION "png"
+    IMAGEMODE RGB
+    TRANSPARENT FALSE
+  END # OUTPUTFORMAT
+
+  LEGEND
+    KEYSIZE 20 10
+    KEYSPACING 5 5
+    LABEL
+      SIZE MEDIUM
+      OFFSET 0 0
+      SHADOWSIZE 1 1
+      TYPE BITMAP
+    END # LABEL
+    STATUS OFF
+  END # LEGEND
+
+  QUERYMAP
+    SIZE -1 -1
+    STATUS OFF
+    STYLE HILITE
+  END # QUERYMAP
+
+  SCALEBAR
+    INTERVALS 4
+    LABEL
+      SIZE MEDIUM
+      OFFSET 0 0
+      SHADOWSIZE 1 1
+      TYPE BITMAP
+    END # LABEL
+    SIZE 200 3
+    STATUS OFF
+    UNITS MILES
+  END # SCALEBAR
+
+  WEB
+    METADATA
+      "distance_units"	"MS_METERS"
+      "mapmanager_version"	"2.0.2.0"
+    END # METADATA
+  END # WEB
+
+  LAYER
+    NAME "Wingdings"
+    STATUS OFF
+    TILEITEM "location"
+    TYPE POINT
+    UNITS METERS
+    CLASS
+      NAME "Wingdings-33"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-33"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-34"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-34"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-35"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-35"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-36"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-36"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-37"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-37"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-38"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-38"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-39"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-39"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-40"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-40"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-41"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-41"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-42"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-42"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-43"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-43"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-44"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-44"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-45"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-45"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-46"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-46"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-47"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-47"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-48"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-48"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-49"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-49"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-50"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-50"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-51"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-51"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-52"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-52"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-53"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-53"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-54"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-54"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-55"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-55"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-56"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-56"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-57"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-57"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-58"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-58"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-59"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-59"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-60"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-60"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-61"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-61"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-62"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-62"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-63"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-63"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-64"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-64"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-65"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-65"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-66"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-66"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-67"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-67"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-68"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-68"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-69"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-69"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-70"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-70"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-71"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-71"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-72"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-72"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-73"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-73"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-74"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-74"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-75"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-75"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-76"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-76"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-77"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-77"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-78"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-78"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-79"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-79"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-80"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-80"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-81"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-81"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-82"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-82"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-83"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-83"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-84"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-84"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-85"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-85"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-86"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-86"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-87"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-87"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-88"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-88"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-89"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-89"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-90"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-90"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-91"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-91"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-93"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-93"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-108"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-108"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-109"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-109"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-110"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-110"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-111"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-111"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-112"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-112"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-113"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-113"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-114"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-114"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-115"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-115"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-116"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-116"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-117"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-117"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-118"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-118"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-119"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-119"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-120"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-120"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-121"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-121"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-122"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-122"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-123"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-123"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-124"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-124"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-127"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-127"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-128"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-128"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-129"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-129"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-130"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-130"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-131"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-131"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-132"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-132"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-133"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-133"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-134"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-134"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-135"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-135"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-136"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-136"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-137"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-137"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-138"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-138"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-139"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-139"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-140"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-140"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-141"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-141"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-142"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-142"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-143"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-143"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-144"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-144"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-145"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-145"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-146"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-146"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-147"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-147"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-148"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-148"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-149"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-149"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-161"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-161"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-162"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-162"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-163"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-163"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-164"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-164"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-165"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-165"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-166"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-166"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-167"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-167"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-168"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-168"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-169"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-169"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-170"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-170"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-171"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-171"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-172"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-172"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-173"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-173"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-174"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-174"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-175"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-175"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-176"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-176"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-177"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-177"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-178"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-178"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-179"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-179"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-180"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-180"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-181"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-181"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-182"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-182"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Wingdings-183"
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "Wingdings-183"
+      END # STYLE
+    END # CLASS
+  END # LAYER
+
+  LAYER
+    NAME "MapManager Sports"
+    STATUS OFF
+    TILEITEM "location"
+    TYPE POINT
+    UNITS METERS
+    
+    CLASS
+      NAME "MapServerSports-34"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSports-34"
+      END # STYLE
+    END # CLASS
+   
+    CLASS
+      NAME "MapServerSports-45"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSports-45"
+      END # STYLE
+    END # CLASS
+    
+    CLASS
+      NAME "MapServerSports-47"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSports-47"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSports-48"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSports-48"
+      END # STYLE
+    END # CLASS
+   
+    CLASS
+      NAME "MapServerSports-56"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSports-56"
+      END # STYLE
+    END # CLASS
+   
+    CLASS
+      NAME "MapServerSports-72"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSports-72"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSports-73"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSports-73"
+      END # STYLE
+    END # CLASS
+   
+    FEATURE
+    END # FEATURE
+  END # LAYER
+
+  LAYER
+    NAME "MapManager Signs"
+    STATUS OFF
+    TILEITEM "location"
+    TYPE POINT
+    UNITS METERS
+    CLASS
+      NAME "MapServerSigns-33"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-33"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-34"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-34"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-35"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-35"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-36"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-36"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-37"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-37"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-38"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-38"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-39"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-39"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-40"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-40"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-41"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-41"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-42"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-42"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-43"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-43"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-44"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-44"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-45"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-45"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-46"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-46"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-47"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-47"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-48"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-48"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-49"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-49"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-50"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-50"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-51"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-51"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-52"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-52"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-53"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-53"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-54"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-54"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-55"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-55"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-56"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-56"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-57"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-57"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-58"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-58"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-59"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-59"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-60"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-60"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-61"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-61"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-62"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-62"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-63"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-63"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-64"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-64"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-65"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-65"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-66"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-66"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-67"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-67"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-68"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-68"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-69"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-69"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-70"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-70"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-71"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-71"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-72"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-72"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-73"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-73"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-74"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-74"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-75"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-75"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-76"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-76"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-77"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-77"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-78"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-78"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-79"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-79"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-80"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-80"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-81"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-81"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-82"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-82"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-83"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-83"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-84"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-84"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-85"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-85"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-86"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-86"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-87"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-87"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-88"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-88"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-89"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-89"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-90"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-90"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-91"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-91"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-92"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-92"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-93"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-93"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-94"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-94"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-95"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-95"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-96"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-96"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-97"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-97"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-98"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-98"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-99"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-99"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-100"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-100"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-101"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-101"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-102"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-102"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-103"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-103"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-104"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-104"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-105"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-105"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-106"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-106"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-107"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-107"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-108"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-108"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-109"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-109"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-110"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-110"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-111"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-111"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-112"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-112"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-113"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-113"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-114"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-114"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-115"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-115"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-116"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-116"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-117"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-117"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-118"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-118"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-119"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-119"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-120"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-120"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-121"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-121"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-122"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-122"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-123"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-123"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-143"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-143"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-144"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-144"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-145"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-145"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-146"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-146"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-147"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-147"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-148"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-148"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-149"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-149"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-150"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-150"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-151"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-151"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-152"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-152"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-160"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-160"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-167"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-167"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-168"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-168"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-169"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-169"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-170"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-170"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-171"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-171"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-172"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-172"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-173"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-173"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-174"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-174"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-175"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-175"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-176"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-176"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-177"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-177"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-178"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-178"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-179"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-179"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-180"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-180"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-181"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-181"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-182"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-182"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-183"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-183"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-184"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-184"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-185"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-185"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-186"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-186"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-187"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-187"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-188"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-188"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerSigns-189"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerSigns-189"
+      END # STYLE
+    END # CLASS
+    FEATURE
+    END # FEATURE
+  END # LAYER
+
+  LAYER
+    NAME "MapManager Recreation"
+    STATUS OFF
+    TILEITEM "location"
+    TYPE POINT
+    UNITS METERS
+    CLASS
+      NAME "MapServerRecreation-33"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-33"
+      END # STYLE
+    END # CLASS
+    
+    CLASS
+      NAME "MapServerRecreation-40"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-40"
+      END # STYLE
+    END # CLASS
+    
+    CLASS
+      NAME "MapServerRecreation-44"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-44"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-45"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-45"
+      END # STYLE
+    END # CLASS
+    
+    CLASS
+      NAME "MapServerRecreation-48"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-48"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-49"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-49"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-50"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-50"
+      END # STYLE
+    END # CLASS
+    
+    CLASS
+      NAME "MapServerRecreation-52"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-52"
+      END # STYLE
+    END # CLASS
+   
+    CLASS
+      NAME "MapServerRecreation-55"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-55"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-56"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-56"
+      END # STYLE
+    END # CLASS
+   
+    CLASS
+      NAME "MapServerRecreation-60"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-60"
+      END # STYLE
+    END # CLASS
+    
+    CLASS
+      NAME "MapServerRecreation-62"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-62"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-63"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-63"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-64"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-64"
+      END # STYLE
+    END # CLASS
+   
+    CLASS
+      NAME "MapServerRecreation-66"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-66"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-67"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-67"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-68"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-68"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-69"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-69"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-70"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-70"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-71"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-71"
+      END # STYLE
+    END # CLASS
+   
+    CLASS
+      NAME "MapServerRecreation-73"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-73"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-74"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-74"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-75"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-75"
+      END # STYLE
+    END # CLASS
+    
+    CLASS
+      NAME "MapServerRecreation-80"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-80"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-81"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-81"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-82"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-82"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-83"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-83"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-84"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-84"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-85"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-85"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-86"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-86"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-87"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-87"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-88"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-88"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-89"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-89"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-90"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-90"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-91"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-91"
+      END # STYLE
+    END # CLASS
+    
+    CLASS
+      NAME "MapServerRecreation-93"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-93"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-94"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-94"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-95"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-95"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-96"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-96"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-97"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-97"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-98"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-98"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-99"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-99"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-100"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-100"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-101"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-101"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-102"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-102"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-103"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-103"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-104"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-104"
+      END # STYLE
+    END # CLASS
+    
+   
+    CLASS
+      NAME "MapServerRecreation-109"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-109"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-110"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-110"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-111"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-111"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-112"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-112"
+      END # STYLE
+    END # CLASS
+    
+    CLASS
+      NAME "MapServerRecreation-114"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-114"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-115"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-115"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-116"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-116"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-117"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-117"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-118"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-118"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-119"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-119"
+      END # STYLE
+    END # CLASS
+    
+    CLASS
+      NAME "MapServerRecreation-121"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-121"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-122"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-122"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-123"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-123"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-130"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-130"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-131"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-131"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-132"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-132"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-133"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-133"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-134"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-134"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-135"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-135"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-136"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-136"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-137"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-137"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-138"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-138"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-139"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-139"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-140"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-140"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-141"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-141"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-142"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-142"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-143"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-143"
+      END # STYLE
+    END # CLASS
+   
+    
+    CLASS
+      NAME "MapServerRecreation-150"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-150"
+      END # STYLE
+    END # CLASS
+    
+    
+    CLASS
+      NAME "MapServerRecreation-155"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-155"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-156"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-156"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerRecreation-157"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerRecreation-157"
+      END # STYLE
+    END # CLASS
+    FEATURE
+    END # FEATURE
+  END # LAYER
+
+  LAYER
+    NAME "MapManager Parks"
+    STATUS OFF
+    TILEITEM "location"
+    TYPE POINT
+    UNITS METERS
+    CLASS
+      NAME "MapServerParks-33"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-33"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-34"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-34"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-35"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-35"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-36"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-36"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-37"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-37"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-38"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-38"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-39"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-39"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-40"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-40"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-41"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-41"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-42"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-42"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-43"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-43"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-44"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-44"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-45"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-45"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-46"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-46"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-47"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-47"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-48"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-48"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-49"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-49"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-50"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-50"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-51"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-51"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-52"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-52"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-53"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-53"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-54"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-54"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-55"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-55"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-56"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-56"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-57"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-57"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-58"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-58"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-59"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-59"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-60"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-60"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-61"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-61"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-62"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-62"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-63"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-63"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-64"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-64"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-65"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-65"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-66"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-66"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-67"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-67"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-68"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-68"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-69"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-69"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-70"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-70"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-71"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-71"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-72"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-72"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-73"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-73"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-74"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-74"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-75"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-75"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-76"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-76"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-77"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-77"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-78"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-78"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-79"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-79"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-80"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-80"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-81"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-81"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-82"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-82"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-83"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-83"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-84"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-84"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-85"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-85"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-86"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-86"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-89"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-89"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-90"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-90"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-91"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-91"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-92"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-92"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-93"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-93"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-94"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-94"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-95"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-95"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-96"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-96"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-97"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-97"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-98"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-98"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-99"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-99"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-100"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-100"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-101"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-101"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-102"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-102"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-103"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-103"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-104"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-104"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-105"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-105"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-106"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-106"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-107"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-107"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-108"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-108"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-109"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-109"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-110"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-110"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-111"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-111"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-112"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-112"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-113"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-113"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-114"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-114"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-115"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-115"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-116"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-116"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-117"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-117"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-118"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-118"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerParks-119"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerParks-119"
+      END # STYLE
+    END # CLASS
+    FEATURE
+    END # FEATURE
+  END # LAYER
+
+  LAYER
+    NAME "MapManager Natural Resources"
+    STATUS OFF
+    TILEITEM "location"
+    TYPE POINT
+    UNITS METERS
+     CLASS
+      NAME "MapServerNaturalResources-33"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-33"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-34"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-34"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-35"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-35"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-36"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-36"
+      END # STYLE
+    END # CLASS
+
+   
+    CLASS
+      NAME "MapServerNaturalResources-41"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-41"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-42"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-42"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-43"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-43"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-44"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-44"
+      END # STYLE
+    END # CLASS
+    
+    CLASS
+      NAME "MapServerNaturalResources-47"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-47"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-48"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-48"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-49"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-49"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-50"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-50"
+      END # STYLE
+    END # CLASS
+   
+    CLASS
+      NAME "MapServerNaturalResources-59"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-59"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-60"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-60"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-61"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-61"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-62"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-62"
+      END # STYLE
+    END # CLASS
+    
+    CLASS
+      NAME "MapServerNaturalResources-64"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-64"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-65"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-65"
+      END # STYLE
+    END # CLASS
+    
+    CLASS
+      NAME "MapServerNaturalResources-68"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-68"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-69"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-69"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-70"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-70"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-71"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-71"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-72"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-72"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-73"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-73"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-74"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-74"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-75"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-75"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-76"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-76"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-77"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-77"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-78"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-78"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-79"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-79"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-80"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-80"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-81"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-81"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-82"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-82"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-83"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-83"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-84"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-84"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-85"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-85"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-86"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-86"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-87"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-87"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-88"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-88"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-89"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-89"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-90"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-90"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-91"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-91"
+      END # STYLE
+    END # CLASS
+   
+   
+    CLASS
+      NAME "MapServerNaturalResources-95"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-95"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-96"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-96"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-97"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-97"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-98"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-98"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-99"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-99"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-100"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-100"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-101"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-101"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-102"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-102"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-103"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-103"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-104"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-104"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-105"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-105"
+      END # STYLE
+    END # CLASS
+   
+    CLASS
+      NAME "MapServerNaturalResources-108"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-108"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-109"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-109"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-110"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-110"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-111"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-111"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-112"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-112"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-113"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-113"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-114"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-114"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-115"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-115"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-116"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-116"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-117"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-117"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-118"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-118"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-119"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-119"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-120"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-120"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-121"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-121"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-122"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-122"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-123"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-123"
+      END # STYLE
+    END # CLASS
+    
+    CLASS
+      NAME "MapServerNaturalResources-132"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-132"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-133"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-133"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-134"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-134"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-135"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-135"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-136"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-136"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-137"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-137"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-138"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-138"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-139"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-139"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-140"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-140"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-141"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-141"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-142"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-142"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-143"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-143"
+      END # STYLE
+    END # CLASS
+   
+    CLASS
+      NAME "MapServerNaturalResources-145"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-145"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-146"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-146"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-147"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-147"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-148"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-148"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-149"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-149"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-150"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-150"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-151"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-151"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-152"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-152"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-153"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-153"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-155"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-155"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-156"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-156"
+      END # STYLE
+    END # CLASS
+   
+    CLASS
+      NAME "MapServerNaturalResources-162"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-162"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-163"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-163"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-164"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-164"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-165"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-165"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-190"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-190"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-191"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-191"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-193"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-193"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-195"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-195"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-197"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-197"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-199"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-199"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-200"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-200"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-201"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-201"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-202"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-202"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-203"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-203"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-204"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-204"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-205"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-205"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-207"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-207"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-208"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-208"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-209"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-209"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-210"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-210"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-211"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-211"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-212"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-212"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-213"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-213"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-216"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-216"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-217"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-217"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-218"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-218"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-220"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-220"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-221"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-221"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-222"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-222"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-223"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-223"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-224"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-224"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-225"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-225"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-238"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-238"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-239"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-239"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-240"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-240"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-241"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-241"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-242"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-242"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerNaturalResources-243"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerNaturalResources-243"
+      END # STYLE
+    END # CLASS
+    FEATURE
+    END # FEATURE
+  END # LAYER
+
+  LAYER
+    NAME "MapManager Carto"
+    STATUS OFF
+    TILEITEM "location"
+    TYPE POINT
+    UNITS METERS
+    CLASS
+      NAME "MapServerCarto-33"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-33"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-34"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-34"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-35"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-35"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-36"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-36"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-37"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-37"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-38"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-38"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-39"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-39"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-40"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-40"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-41"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-41"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-42"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-42"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-43"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-43"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-44"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-44"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-45"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-45"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-46"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-46"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-47"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-47"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-48"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-48"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-49"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-49"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-50"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-50"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-51"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-51"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-52"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-52"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-53"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-53"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-54"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-54"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-55"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-55"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-56"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-56"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-57"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-57"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-58"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-58"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-59"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-59"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-60"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-60"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-61"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-61"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-62"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-62"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-63"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-63"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-70"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-70"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-71"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-71"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-72"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-72"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-73"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-73"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-74"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-74"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-75"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-75"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-76"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-76"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-77"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-77"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-78"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-78"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-79"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-79"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-80"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-80"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-81"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-81"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-82"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-82"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-83"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-83"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-84"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-84"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-85"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-85"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-86"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-86"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-87"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-87"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-88"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-88"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-89"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-89"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-90"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-90"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-91"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-91"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-92"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-92"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-93"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-93"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-94"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-94"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-95"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-95"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-96"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-96"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-97"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-97"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-98"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-98"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-99"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-99"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-100"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-100"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-101"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-101"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-102"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-102"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-103"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-103"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-104"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-104"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-105"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-105"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-106"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-106"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-107"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-107"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-108"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-108"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-109"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-109"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-110"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-110"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-111"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-111"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-112"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-112"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-113"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-113"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-114"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-114"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-115"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-115"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-116"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-116"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-117"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-117"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-118"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-118"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-119"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-119"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-120"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-120"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-121"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-121"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-122"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-122"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-123"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-123"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-124"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-124"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-125"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-125"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-129"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-129"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-130"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-130"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-131"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-131"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-132"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-132"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-133"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-133"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-134"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-134"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-135"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-135"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-136"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-136"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-137"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-137"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-138"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-138"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-139"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-139"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-140"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-140"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-141"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-141"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-142"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-142"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-143"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-143"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-144"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-144"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-145"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-145"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-146"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-146"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-147"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-147"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-148"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-148"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-149"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-149"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-150"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-150"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-151"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-151"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerCarto-152"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerCarto-152"
+      END # STYLE
+    END # CLASS
+    FEATURE
+    END # FEATURE
+  END # LAYER
+
+  LAYER
+    NAME "MapManager Animals"
+    STATUS OFF
+    TILEITEM "location"
+    TYPE POINT
+    UNITS METERS
+    CLASS
+      NAME "MapServerAnimals-35"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerAnimals-35"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerAnimals-41"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerAnimals-41"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerAnimals-42"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerAnimals-42"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerAnimals-43"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerAnimals-43"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerAnimals-44"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerAnimals-44"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerAnimals-45"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerAnimals-45"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerAnimals-47"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerAnimals-47"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerAnimals-49"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerAnimals-49"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerAnimals-50"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerAnimals-50"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerAnimals-51"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerAnimals-51"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerAnimals-52"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerAnimals-52"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerAnimals-53"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerAnimals-53"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerAnimals-56"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerAnimals-56"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerAnimals-59"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerAnimals-59"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerAnimals-62"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerAnimals-62"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerAnimals-63"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerAnimals-63"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerAnimals-65"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerAnimals-65"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerAnimals-71"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerAnimals-71"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerAnimals-73"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerAnimals-73"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerAnimals-76"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerAnimals-76"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerAnimals-77"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerAnimals-77"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerAnimals-78"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerAnimals-78"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerAnimals-79"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerAnimals-79"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerAnimals-83"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerAnimals-83"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerAnimals-86"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerAnimals-86"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerAnimals-93"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerAnimals-93"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerAnimals-94"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerAnimals-94"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerAnimals-98"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerAnimals-98"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerAnimals-120"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerAnimals-120"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "MapServerAnimals-239"
+      STYLE
+        COLOR 0 0 0
+        GAP 10
+        SIZE 24
+        SYMBOL "MapServerAnimals-239"
+      END # STYLE
+    END # CLASS
+    FEATURE
+    END # FEATURE
+  END # LAYER
+
+  LAYER
+    NAME "Vector Symbols"
+    STATUS OFF
+    TILEITEM "location"
+    TYPE POINT
+    UNITS METERS
+    CLASS
+      NAME "Rectangle"
+      STYLE
+        COLOR 0 0 0
+        SIZE 12
+        SYMBOL "Rectangle"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Ellipse"
+      STYLE
+        COLOR 0 0 0
+        SIZE 12
+        SYMBOL "Ellipse"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Triangle"
+      STYLE
+        COLOR 0 0 0
+        SIZE 12
+        SYMBOL "Triangle"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Open Triangle"
+      STYLE
+        COLOR 0 0 0
+        SIZE 12
+        SYMBOL "Open Triangle"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Tent"
+      STYLE
+        COLOR 0 0 0
+        SIZE 12
+        SYMBOL "Tent"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Square"
+      STYLE
+        COLOR 0 0 0
+        SIZE 12
+        SYMBOL "Square"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Arrow"
+      STYLE
+        COLOR 0 0 0
+        SIZE 12
+        SYMBOL "Arrow"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "LongArrow"
+      STYLE
+        COLOR 0 0 0
+        SIZE 8
+        SYMBOL "LongArrow"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Cross-3"
+      STYLE
+        COLOR 0 0 0
+        SIZE 12
+        SYMBOL "Cross-3"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "default-marker"
+      STYLE
+        COLOR 0 0 0
+        SIZE 12
+        SYMBOL "default-marker"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Cross-2"
+      STYLE
+        COLOR 0 0 0
+        SIZE 12
+        SYMBOL "Cross-2"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "House"
+      STYLE
+        COLOR 0 0 0
+        SIZE 12
+        SYMBOL "House"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Hexagon"
+      STYLE
+        COLOR 0 0 0
+        SIZE 12
+        SYMBOL "Hexagon"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Star"
+      STYLE
+        COLOR 0 0 0
+        SIZE 12
+        SYMBOL "Star"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Cross"
+      STYLE
+        COLOR 0 0 0
+        SIZE 12
+        SYMBOL "Cross"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "HalfCircle"
+      STYLE
+        COLOR 0 0 0
+        SIZE 8
+        SYMBOL "HalfCircle"
+        WIDTH 2
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Circle"
+      STYLE
+        COLOR 0 0 0
+        SIZE 8
+        SYMBOL "Circle"
+        WIDTH 2
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Tree"
+      STYLE
+        COLOR 0 128 0
+        SIZE 18
+        SYMBOL "Tree"
+      END # STYLE
+    END # CLASS
+    FEATURE
+    END # FEATURE
+  END # LAYER
+
+  LAYER
+    NAME "Fill Patterns"
+    STATUS OFF
+    TEMPLATE "query.html"
+    TILEITEM "location"
+    TYPE POLYGON
+    UNITS METERS
+    CLASS
+      NAME "Horizontal-1"
+      STYLE
+        COLOR 0 0 0
+        SIZE 8
+        SYMBOL "Horizontal-1"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Horizontal-2"
+      STYLE
+        COLOR 0 0 0
+        SIZE 8
+        SYMBOL "Horizontal-2"
+        WIDTH 4
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Horizontal-3"
+      STYLE
+        COLOR 0 0 0
+        SIZE 4
+        SYMBOL "Horizontal-3"
+        WIDTH 2
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Vertical-1"
+      STYLE
+        COLOR 0 0 0
+        SIZE 8
+        SYMBOL "Vertical-1"
+        WIDTH 2
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Vertical-2"
+      STYLE
+        COLOR 0 0 0
+        SIZE 8
+        SYMBOL "Vertical-2"
+        WIDTH 4
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Vertical-3"
+      STYLE
+        COLOR 0 0 0
+        SIZE 4
+        SYMBOL "Vertical-3"
+        WIDTH 2
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "RightDiag-1"
+      STYLE
+        COLOR 0 0 0
+        SIZE 8
+        SYMBOL "RightDiag-1"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "RightDiag-2"
+      STYLE
+        COLOR 0 0 0
+        SIZE 8
+        SYMBOL "RightDiag-2"
+        WIDTH 2
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "RightDiag-3"
+      STYLE
+        COLOR 0 0 0
+        SIZE 4
+        SYMBOL "RightDiag-3"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "LeftDiag-1"
+      STYLE
+        COLOR 0 0 0
+        SIZE 8
+        SYMBOL "LeftDiag-1"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "LeftDiag-2"
+      STYLE
+        COLOR 0 0 0
+        SIZE 8
+        SYMBOL "LeftDiag-2"
+        WIDTH 2
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "LeftDiag-3"
+      STYLE
+        COLOR 0 0 0
+        SIZE 4
+        SYMBOL "LeftDiag-3"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Grid-1"
+      STYLE
+        COLOR 0 0 0
+        SIZE 8
+        SYMBOL "Grid-1"
+        WIDTH 2
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Grid-2"
+      STYLE
+        COLOR 0 0 0
+        SIZE 8
+        SYMBOL "Grid-2"
+        WIDTH 4
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Grid-3"
+      STYLE
+        COLOR 0 0 0
+        SIZE 4
+        SYMBOL "Grid-3"
+        WIDTH 2
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "GridDiag-1"
+      STYLE
+        COLOR 0 0 0
+        SIZE 8
+        SYMBOL "GridDiag-1"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "GridDiag-2"
+      STYLE
+        COLOR 0 0 0
+        SIZE 8
+        SYMBOL "GridDiag-2"
+        WIDTH 2
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "GridDiag-3"
+      STYLE
+        COLOR 0 0 0
+        SIZE 5
+        SYMBOL "GridDiag-3"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Dots-1"
+      STYLE
+        COLOR 0 0 0
+        GAP 4
+        SIZE 1
+        SYMBOL "Dots-1"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Dots-2"
+      STYLE
+        COLOR 0 0 0
+        GAP 6
+        SIZE 1
+        SYMBOL "Dots-2"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Ticks-1"
+      STYLE
+        COLOR 0 0 0
+        SIZE 8
+        SYMBOL "Ticks-1"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Grass"
+      STYLE
+        COLOR 0 128 0
+        SIZE 24
+        SYMBOL "Grass"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Grass-2"
+      STYLE
+        COLOR 0 128 0
+        SIZE 24
+        SYMBOL "Grass-2"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Grass-3"
+      STYLE
+        COLOR 0 128 0
+        SIZE 24
+        SYMBOL "Grass-3"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Tree-1"
+      STYLE
+        COLOR 0 128 0
+        SIZE 28
+        SYMBOL "Tree-1"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Tree-2"
+      STYLE
+        COLOR 0 128 0
+        SIZE 28
+        SYMBOL "Tree-2"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Tree-3"
+      STYLE
+        COLOR 0 128 0
+        GAP 26
+        SIZE 18
+        SYMBOL "Tree-3"
+      END # STYLE
+    END # CLASS
+  END # LAYER
+
+  LAYER
+    NAME "Line Styles"
+    STATUS OFF
+    TEMPLATE "query.html"
+    TILEITEM "location"
+    TYPE LINE
+    UNITS METERS
+    CLASS
+      NAME "Dot-1"
+      STYLE
+        COLOR 0 0 0
+        PATTERN
+         1.00 2.00
+        END # PATTERN
+        SIZE 8
+        SYMBOL "Dot-1"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Dot-2"
+      STYLE
+        COLOR 0 0 0
+        PATTERN
+         1.00 4.00
+        END # PATTERN
+        SIZE 4
+        SYMBOL "Dot-2"
+        WIDTH 2
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Dash-1"
+      STYLE
+        COLOR 0 0 0
+        PATTERN
+         2.00 2.00
+        END # PATTERN
+        SIZE 8
+        SYMBOL "Dash-1"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Dash-2"
+      STYLE
+        COLOR 0 0 0
+        PATTERN
+         4.00 2.00
+        END # PATTERN
+        SIZE 8
+        SYMBOL "Dash-2"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Dash-3"
+      STYLE
+        COLOR 0 0 0
+        PATTERN
+         6.00 2.00
+        END # PATTERN
+        SIZE 8
+        SYMBOL "Dash-3"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Dash-4"
+      STYLE
+        COLOR 0 0 0
+        PATTERN
+         10.00 2.00
+        END # PATTERN
+        SIZE 8
+        SYMBOL "Dash-4"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Dash-5"
+      STYLE
+        COLOR 0 0 0
+        PATTERN
+         14.00 2.00
+        END # PATTERN
+        SIZE 8
+        SYMBOL "Dash-5"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Dash-6"
+      STYLE
+        COLOR 0 0 0
+        PATTERN
+         2.00 8.00
+        END # PATTERN
+        SIZE 8
+        SYMBOL "Dash-6"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Dash-7"
+      STYLE
+        COLOR 0 0 0
+        PATTERN
+         4.00 8.00
+        END # PATTERN
+        SIZE 8
+        SYMBOL "Dash-7"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Dash-8"
+      STYLE
+        COLOR 0 0 0
+        PATTERN
+         8.00 8.00
+        END # PATTERN
+        SIZE 8
+        SYMBOL "Dash-8"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Dash-9"
+      STYLE
+        COLOR 0 0 0
+        PATTERN
+         10.00 10.00
+        END # PATTERN
+        SIZE 8
+        SYMBOL "Dash-9"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Dash-10"
+      STYLE
+        COLOR 0 0 0
+        PATTERN
+         20.00 10.00
+        END # PATTERN
+        SIZE 8
+        SYMBOL "Dash-10"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "DotDash-1"
+      STYLE
+        COLOR 0 0 0
+        PATTERN
+         1.00 4.00 4.00 4.00
+        END # PATTERN
+        SIZE 8
+        SYMBOL "DotDash-1"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "DotDash-2"
+      STYLE
+        COLOR 0 0 0
+        PATTERN
+         1.00 4.00 8.00 4.00
+        END # PATTERN
+        SIZE 8
+        SYMBOL "DotDash-2"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "DoubleDotDash-1"
+      STYLE
+        COLOR 0 0 0
+        PATTERN
+         1.00 4.00 1.00 4.00 4.00 4.00
+        END # PATTERN
+        SIZE 8
+        SYMBOL "DoubleDotDash-1"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "DoubleDotDash-2"
+      STYLE
+        COLOR 0 0 0
+        PATTERN
+         1.00 4.00 1.00 4.00 8.00 4.00
+        END # PATTERN
+        SIZE 8
+        SYMBOL "DoubleDotDash-2"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "DashDash-1"
+      STYLE
+        COLOR 0 0 0
+        PATTERN
+         4.00 6.00 10.00 6.00
+        END # PATTERN
+        SIZE 8
+        SYMBOL "DashDash-1"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "DashDash-2"
+      STYLE
+        COLOR 0 0 0
+        PATTERN
+         6.00 6.00 14.00 6.00
+        END # PATTERN
+        SIZE 8
+        SYMBOL "DashDash-2"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "DashDash-3"
+      STYLE
+        COLOR 0 0 0
+        PATTERN
+         6.00 6.00 20.00 6.00
+        END # PATTERN
+        SIZE 8
+        SYMBOL "DashDash-3"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "DoubleDashDash-1"
+      STYLE
+        COLOR 0 0 0
+        PATTERN
+         4.00 6.00 4.00 6.00 10.00 6.00
+        END # PATTERN
+        SIZE 8
+        SYMBOL "DoubleDashDash-1"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "DoubleDashDash-2"
+      STYLE
+        COLOR 0 0 0
+        PATTERN
+         6.00 6.00 6.00 6.00 14.00 6.00
+        END # PATTERN
+        SIZE 8
+        SYMBOL "DoubleDashDash-2"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "DoubleDashDash-3"
+      STYLE
+        COLOR 0 0 0
+        PATTERN
+         6.00 6.00 6.00 6.00 20.00 6.00
+        END # PATTERN
+        SIZE 8
+        SYMBOL "DoubleDashDash-3"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "RCodeBorder"
+      STYLE
+        COLOR 0 0 0
+        SIZE 8
+        SYMBOL "RCodeBorder"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "SpacedTriangle"
+      STYLE
+        COLOR 0 0 0
+        GAP -12
+        SIZE 8
+        SYMBOL "SpacedTriangle"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Heritage"
+      STYLE
+        COLOR 0 0 0
+        SIZE 8
+        SYMBOL "Heritage"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "HalfCircle"
+      STYLE
+        COLOR 0 0 0
+        SIZE 8
+        SYMBOL "HalfCircle"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Circle"
+      STYLE
+        COLOR 0 0 0
+        GAP 14
+        SIZE 8
+        SYMBOL "Circle"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "DoubleBar"
+      STYLE
+        COLOR 0 0 0
+        SIZE 8
+        SYMBOL "DoubleBar"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Triangle"
+      STYLE
+        COLOR 125 89 133
+        GAP -16
+        SIZE 8
+        SYMBOL "Triangle"
+        WIDTH 2
+      END # STYLE
+    END # CLASS
+  END # LAYER
+
+END # MAP

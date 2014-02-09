@@ -1,0 +1,437 @@
+MAP
+  DEFRESOLUTION 96
+  EXTENT 322549.223922333 6406018.73273397 457443.181778987 6483529.22915319
+  FONTSET "font.list"
+  IMAGETYPE "png"
+  NAME "IntraMaps Annotations"
+  RESOLUTION 96
+  SHAPEPATH ""
+  SIZE 1576 906
+  STATUS ON
+  SYMBOLSET "symbols.sym"
+  UNITS METERS
+
+  OUTPUTFORMAT
+    NAME "png"
+    MIMETYPE "image/png"
+    DRIVER "AGG/PNG"
+    EXTENSION "png"
+    IMAGEMODE RGBA
+    TRANSPARENT TRUE
+  END # OUTPUTFORMAT
+
+  LEGEND
+    KEYSIZE 20 10
+    KEYSPACING 5 5
+    LABEL
+      SIZE MEDIUM
+      OFFSET 0 0
+      SHADOWSIZE 1 1
+      TYPE BITMAP
+    END # LABEL
+    STATUS OFF
+  END # LEGEND
+
+  QUERYMAP
+    SIZE -1 -1
+    STATUS OFF
+    STYLE HILITE
+  END # QUERYMAP
+
+  SCALEBAR
+    INTERVALS 4
+    LABEL
+      SIZE MEDIUM
+      OFFSET 0 0
+      SHADOWSIZE 1 1
+      TYPE BITMAP
+    END # LABEL
+    SIZE 200 3
+    STATUS OFF
+    UNITS MILES
+  END # SCALEBAR
+
+  WEB
+    METADATA
+      "distance_units"	"MS_METERS"
+      "mapmanager_version"	"2.0.6.0"
+    END # METADATA
+  END # WEB
+
+  LAYER
+    NAME "Annotation Points"
+    STATUS OFF
+    TEMPLATE "query"
+    TILEITEM "location"
+    TYPE POINT
+    UNITS METERS
+    CLASS
+      NAME "Circle"
+      LABEL
+        FONT "arial"
+        SIZE 16
+        OFFSET 0 0
+        POSITION CC
+        SHADOWSIZE 1 1
+        TYPE TRUETYPE
+      END # LABEL
+      STYLE
+        COLOR 0 0 0
+        SIZE 16
+        SYMBOL "default-marker"
+      END # STYLE
+      TEMPLATE "query.html"
+    END # CLASS
+    CLASS
+      NAME "Square"
+      STYLE
+        COLOR 130 147 37
+        SIZE 12
+        SYMBOL "Square"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Star"
+      STYLE
+        COLOR 144 191 173
+        SIZE 16
+        SYMBOL "Star"
+        WIDTH 2
+      END # STYLE
+      TITLE ""
+    END # CLASS
+    CLASS
+      NAME "Pin"
+      STYLE
+        COLOR 73 217 191
+        GAP 10
+        SIZE 16
+        SYMBOL "MapServerCarto-97"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Triangle"
+      STYLE
+        COLOR 59 150 165
+        GAP 10
+        SIZE 16
+        SYMBOL "Triangle"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Cross"
+      STYLE
+        ANGLE 45
+        COLOR 192 119 120
+        SIZE 16
+        SYMBOL "Cross"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Flag"
+      STYLE
+        COLOR 120 74 213
+        GAP 10
+        SIZE 16
+        SYMBOL "MapServerCarto-77"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Tree"
+      STYLE
+        COLOR 216 141 238
+        GAP 10
+        SIZE 16
+        SYMBOL "MapServerCarto-102"
+      END # STYLE
+      TITLE ""
+    END # CLASS
+    CLASS
+      NAME "Palm"
+      STYLE
+        COLOR 204 82 252
+        GAP 10
+        SIZE 16
+        SYMBOL "MapServerCarto-98"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Arrow"
+      STYLE
+        COLOR 174 102 85
+        SIZE 12
+        SYMBOL "Arrow"
+        WIDTH 2
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Arrow"
+      STYLE
+        ANGLE 90
+        COLOR 174 102 85
+        SIZE 12
+        SYMBOL "Arrow"
+        WIDTH 2
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Arrow"
+      STYLE
+        ANGLE 180
+        COLOR 174 102 85
+        SIZE 12
+        SYMBOL "Arrow"
+        WIDTH 2
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Arrow"
+      STYLE
+        ANGLE 270
+        COLOR 174 102 85
+        SIZE 12
+        SYMBOL "Arrow"
+        WIDTH 2
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Arrow2"
+      STYLE
+        COLOR 215 191 40
+        GAP 10
+        SIZE 16
+        SYMBOL "MapServerCarto-93"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Arrow2"
+      STYLE
+        ANGLE 90
+        COLOR 215 191 40
+        GAP 10
+        SIZE 16
+        SYMBOL "MapServerCarto-93"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Arrow2"
+      STYLE
+        ANGLE 180
+        COLOR 215 191 40
+        GAP 10
+        SIZE 16
+        SYMBOL "MapServerCarto-93"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Arrow2"
+      STYLE
+        ANGLE 270
+        COLOR 215 191 40
+        GAP 10
+        SIZE 16
+        SYMBOL "MapServerCarto-93"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Danger"
+      STYLE
+        COLOR 82 120 108
+        GAP 10
+        SIZE 16
+        SYMBOL "MapServerSigns-33"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Hospital"
+      STYLE
+        COLOR 25 24 245
+        GAP 10
+        SIZE 16
+        SYMBOL "MapServerCarto-47"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Parking"
+      STYLE
+        COLOR 187 44 250
+        GAP 10
+        SIZE 16
+        SYMBOL "MapServerRecreation-109"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Table"
+      STYLE
+        COLOR 70 81 161
+        GAP 10
+        SIZE 16
+        SYMBOL "MapServerParks-79"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "House"
+      STYLE
+        COLOR 218 66 7
+        GAP 10
+        SIZE 16
+        SYMBOL "MapServerCarto-89"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Leash"
+      STYLE
+        COLOR 93 82 62
+        GAP 10
+        SIZE 16
+        SYMBOL "MapServerRecreation-138"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Plane"
+      STYLE
+        COLOR 255 128 64
+        GAP 10
+        SIZE 16
+        SYMBOL "MapServerNaturalResources-192"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Cat"
+      STYLE
+        COLOR 175 17 185
+        GAP 10
+        SIZE 16
+        SYMBOL "MapServerAnimals-78"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Dog"
+      STYLE
+        COLOR 239 165 62
+        GAP 10
+        SIZE 16
+        SYMBOL "MapServerAnimals-52"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Disabled"
+      STYLE
+        COLOR 184 60 183
+        GAP 10
+        SIZE 16
+        SYMBOL "MapServerCarto-135"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Toilet"
+      STYLE
+        COLOR 130 231 58
+        GAP 10
+        SIZE 16
+        SYMBOL "MapServerParks-115"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Cycle"
+      STYLE
+        COLOR 10 236 96
+        GAP 10
+        SIZE 16
+        SYMBOL "MapServerCarto-148"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "Swim"
+      STYLE
+        COLOR 49 169 1
+        GAP 10
+        SIZE 16
+        SYMBOL "MapServerParks-42"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "0"
+      STYLE
+        COLOR 179 179 45
+        SIZE 16
+        SYMBOL "Wingdings-139"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "1"
+      STYLE
+        COLOR 179 179 45
+        SIZE 16
+        SYMBOL "Wingdings-140"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "2"
+      STYLE
+        COLOR 146 132 66
+        SIZE 16
+        SYMBOL "Wingdings-141"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "3"
+      STYLE
+        COLOR 146 132 66
+        SIZE 16
+        SYMBOL "Wingdings-142"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "4"
+      STYLE
+        COLOR 146 132 66
+        SIZE 16
+        SYMBOL "Wingdings-143"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "5"
+      STYLE
+        COLOR 146 132 66
+        SIZE 16
+        SYMBOL "Wingdings-144"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "6"
+      STYLE
+        COLOR 146 132 66
+        SIZE 16
+        SYMBOL "Wingdings-145"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "7"
+      STYLE
+        COLOR 146 132 66
+        SIZE 16
+        SYMBOL "Wingdings-146"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "8"
+      STYLE
+        COLOR 146 132 66
+        SIZE 16
+        SYMBOL "Wingdings-147"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "9"
+      STYLE
+        COLOR 146 132 66
+        SIZE 16
+        SYMBOL "Wingdings-148"
+      END # STYLE
+    END # CLASS
+    FEATURE
+    END # FEATURE
+  END # LAYER
+
+END # MAP

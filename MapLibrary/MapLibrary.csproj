@@ -1,0 +1,447 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{89C3F13D-4406-40E2-ACAC-41A755BE926C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MapLibrary</RootNamespace>
+    <AssemblyName>MapLibrary</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="gdal_csharp, Version=1.0.5098.28547, Culture=neutral, PublicKeyToken=db5a52b08dc5b321, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release-1600\bin\gdal\csharp\gdal_csharp.dll</HintPath>
+    </Reference>
+    <Reference Include="mapscript_csharp, Version=1.0.5098.28628, Culture=neutral, PublicKeyToken=80087771edd02926, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release-1600\bin\ms\csharp\mapscript_csharp.dll</HintPath>
+    </Reference>
+    <Reference Include="ogr_csharp, Version=1.0.4035.39384, Culture=neutral, PublicKeyToken=db5a52b08dc5b321, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release-1600\bin\gdal\csharp\ogr_csharp.dll</HintPath>
+    </Reference>
+    <Reference Include="osr_csharp, Version=1.0.4035.39384, Culture=neutral, PublicKeyToken=db5a52b08dc5b321, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release-1600\bin\gdal\csharp\osr_csharp.dll</HintPath>
+    </Reference>
+    <Reference Include="ScintillaNet, Version=2.2.4148.33544, Culture=neutral, PublicKeyToken=948d6c9751444115, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExternalFiles\ScintillaNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BindingController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ChangeViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeViewForm.Designer.cs">
+      <DependentUpon>ChangeViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddWMSLayerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddWMSLayerForm.Designer.cs">
+      <DependentUpon>AddWMSLayerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddWMSLayerDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddWMSLayerDetailsForm.Designer.cs">
+      <DependentUpon>AddWMSLayerDetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ColorRampPicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ColorStopForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ColorStopForm.Designer.cs">
+      <DependentUpon>ColorStopForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ColorRampForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ColorRampForm.Designer.cs">
+      <DependentUpon>ColorRampForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddFontForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddFontForm.Designer.cs">
+      <DependentUpon>AddFontForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddStyleCategoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddStyleCategoryForm.Designer.cs">
+      <DependentUpon>AddStyleCategoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FieldSelectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FieldSelectionForm.Designer.cs">
+      <DependentUpon>FieldSelectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StyleLibrary.cs" />
+    <Compile Include="StyleLibraryPropertyEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StyleLibraryPropertyEditor.Designer.cs">
+      <DependentUpon>StyleLibraryPropertyEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StyleLibraryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StyleLibraryForm.Designer.cs">
+      <DependentUpon>StyleLibraryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RangeTheme.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RangeTheme.Designer.cs">
+      <DependentUpon>RangeTheme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CredentialsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CredentialsForm.Designer.cs">
+      <DependentUpon>CredentialsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlConnectionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SqlConnectionDialog.Designer.cs">
+      <DependentUpon>SqlConnectionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventProvider.cs" />
+    <Compile Include="ClassPropertyEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClassPropertyEditor.Designer.cs">
+      <DependentUpon>ClassPropertyEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ColorPicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="QueryMapPropertyEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QueryMapPropertyEditor.Designer.cs">
+      <DependentUpon>QueryMapPropertyEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScalebarPropertyEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScalebarPropertyEditor.Designer.cs">
+      <DependentUpon>ScalebarPropertyEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FontsetPicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="IMapControl.cs" />
+    <Compile Include="IndividualValuesTheme.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IndividualValuesTheme.Designer.cs">
+      <DependentUpon>IndividualValuesTheme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IPropertyEditor.cs" />
+    <Compile Include="IWizard.cs" />
+    <Compile Include="LabelPropertyEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LabelPropertyEditor.Designer.cs">
+      <DependentUpon>LabelPropertyEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LayerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LayerControl.Designer.cs">
+      <DependentUpon>LayerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LayerPropertyEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LayerPropertyEditor.Designer.cs">
+      <DependentUpon>LayerPropertyEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListViewColumnSorter.cs" />
+    <Compile Include="MapObjectHolder.cs" />
+    <Compile Include="MapPropertyEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MapPropertyEditorForm.Designer.cs">
+      <DependentUpon>MapPropertyEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MapUtils.cs" />
+    <Compile Include="MapControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MapControl.Designer.cs">
+      <DependentUpon>MapControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PickerBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProjectionBrowserDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectionBrowserDialog.Designer.cs">
+      <DependentUpon>ProjectionBrowserDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MapPropertyEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MapPropertyEditor.Designer.cs">
+      <DependentUpon>MapPropertyEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectList.Designer.cs">
+      <DependentUpon>SelectList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StylePropertyEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StylePropertyEditor.Designer.cs">
+      <DependentUpon>StylePropertyEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SymbolSelectorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SymbolSelectorControl.Designer.cs">
+      <DependentUpon>SymbolSelectorControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemeWizardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemeWizardForm.Designer.cs">
+      <DependentUpon>ThemeWizardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TreeViewNoImage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XmlProxyUrlResolver.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ClassPropertyEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ClassPropertyEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddFontForm.resx">
+      <DependentUpon>AddFontForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddStyleCategoryForm.resx">
+      <DependentUpon>AddStyleCategoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FieldSelectionForm.resx">
+      <DependentUpon>FieldSelectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabelPropertyEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LabelPropertyEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayerControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LayerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayerPropertyEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LayerPropertyEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MapControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapPropertyEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MapPropertyEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StylePropertyEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>StylePropertyEditor.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ChangeViewForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ChangeViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddWMSLayerForm.resx">
+      <DependentUpon>AddWMSLayerForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddWMSLayerDetailsForm.resx">
+      <DependentUpon>AddWMSLayerDetailsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ColorStopForm.resx">
+      <DependentUpon>ColorStopForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ColorRampForm.resx">
+      <DependentUpon>ColorRampForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StyleLibraryPropertyEditor.resx">
+      <DependentUpon>StyleLibraryPropertyEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StyleLibraryForm.resx">
+      <DependentUpon>StyleLibraryForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RangeTheme.resx">
+      <DependentUpon>RangeTheme.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CredentialsForm.resx">
+      <DependentUpon>CredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SqlConnectionDialog.resx">
+      <DependentUpon>SqlConnectionDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QueryMapPropertyEditor.resx">
+      <DependentUpon>QueryMapPropertyEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScalebarPropertyEditor.resx">
+      <DependentUpon>ScalebarPropertyEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IndividualValuesTheme.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>IndividualValuesTheme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapPropertyEditorForm.resx">
+      <DependentUpon>MapPropertyEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectionBrowserDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ProjectionBrowserDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SelectList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SymbolSelectorControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SymbolSelectorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemeWizardForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ThemeWizardForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\raster.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Cursors\GrabberTool.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Cursors\SelectTool.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Cursors\SelectRectTool.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Cursors\SelectPolygonTool.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\group.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Cursors\ZoomInTool.cur" />
+    <None Include="Cursors\ZoomOutTool.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MapManager.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Map_Legend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\DataConnection.png" />
+    <None Include="Images\Map_Legend_Big.png" />
+    <Content Include="Images\Refresh16.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>

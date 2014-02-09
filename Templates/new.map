@@ -1,0 +1,28 @@
+MAP
+  FONTSET "font.list"
+  IMAGECOLOR 255 255 255
+  IMAGETYPE png24
+  SYMBOLSET "symbols.sym"
+  SHAPEPATH ""
+  SIZE 1122 923
+  STATUS ON
+  UNITS METERS
+  NAME "MS"
+  DEFRESOLUTION 96
+  RESOLUTION 96
+
+  OUTPUTFORMAT
+    NAME "print"
+    MIMETYPE "image/png"
+    DRIVER "AGG/PNG"
+    EXTENSION "png"
+    IMAGEMODE "RGB"
+    TRANSPARENT FALSE
+  END
+  WEB
+    METADATA
+      "distance_units"	"MS_METERS"
+      "mapmanager_version"	"2.0.2.0"
+    END # METADATA
+  END # WEB
+END
