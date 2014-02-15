@@ -71,8 +71,7 @@ namespace DMS.MapManager
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(396, 37);
             this.label1.TabIndex = 4;
-            this.label1.Text = "This mapfile requires the following changes to make it compatible with MapManager" +
-    " 2.0";
+            this.label1.Text = "This mapfile requires the following changes to make it compatible with this version of MapManager";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2

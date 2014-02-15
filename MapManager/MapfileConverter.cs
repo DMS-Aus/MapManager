@@ -242,7 +242,7 @@ namespace DMS.MapManager
                     {
                         AppendLog("Remove label BACKGROUNDSHADOWSIZE " + values[1], lineNumber);
                     }
-                    else if (!ignoreVersion && key == "\"MAPMANAGER_VERSION\"" && path == "\\MAP\\WEB\\METADATA" && values[1].Trim(new char[] { '\'', '\"' }).StartsWith("2.0"))
+                    else if (!ignoreVersion && key == "\"MAPMANAGER_VERSION\"" && path == "\\MAP\\WEB\\METADATA" && values[1].Trim(new char[] { '\'', '\"' }).StartsWith("1.0"))
                     {
                         changelog.Length = 0; // no upgrading required
                         return;

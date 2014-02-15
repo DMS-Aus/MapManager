@@ -22,7 +22,7 @@ MAP
   WEB
     METADATA
       "distance_units"	"MS_METERS"
-      "mapmanager_version"	"2.0.2.0"
+      "mapmanager_version"	"1.0.0.0"
     END # METADATA
   END # WEB
 END
