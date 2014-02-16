@@ -140,13 +140,16 @@ namespace DMS.MapManager
                     {
                         int pos = line.IndexOf(key) + key.Length + 1;
                         string val = line.Substring(pos).Trim();
+
+                        AppendLog("Review Class Text/Expression: " + val, lineNumber);
+
                         // trying to identify the expression
-                        if (Regex.IsMatch(val, @"\(.*\)"))
-                        {
-                            // MS_EXPRESSION
-                            AppendLog("Modify expression to string (please review!): " + val, lineNumber);
-                            line = line.Substring(0, pos) + "\"" + val.Substring(1, val.Length - 2) + "\"";
-                        }
+                        //if (Regex.IsMatch(val, @"\(.*\)"))
+                        //{
+                        //    // MS_EXPRESSION
+                        //    AppendLog("Modify expression to string (please review!): " + val, lineNumber);
+                        //    line = line.Substring(0, pos) + "\"" + val.Substring(1, val.Length - 2) + "\"";
+                        //}
                         //else if (Regex.IsMatch(val, @"\/[^\/]*\/"))
                         //{
                         //    // MS_REGEX
