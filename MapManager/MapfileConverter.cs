@@ -19,6 +19,8 @@ namespace DMS.MapManager
 
         string[] expressionkeywords = new string[] { "\\MAP\\LAYER\\CLASS\\EXPRESSION", "\\MAP\\LAYER\\CLASS\\TEXT", "\\MAP\\LAYER\\CLASS\\LABEL\\EXPRESSION", "\\MAP\\LEGEND\\LABEL\\EXPRESSION", "\\MAP\\SCALEBAR\\LABEL\\EXPRESSION", "\\MAP\\LAYER\\CLASS\\LABEL\\TEXT", "\\MAP\\LEGEND\\LABEL\\TEXT", "\\MAP\\SCALEBAR\\LABEL\\TEXT", "\\MAP\\LAYER\\CLUSTER\\GROUP", "\\MAP\\LAYER\\CLUSTER\\FILTER", "\\MAP\\LAYER\\FILTER" };
 
+        string[] textexpressionkeywords = new string[] { "\\MAP\\LAYER\\CLASS\\TEXT", "\\MAP\\LAYER\\CLASS\\LABEL\\TEXT", "\\MAP\\LEGEND\\LABEL\\TEXT", "\\MAP\\SCALEBAR\\LABEL\\TEXT"};
+
         public MapfileConverter()
         {
         }
@@ -55,6 +57,18 @@ namespace DMS.MapManager
         private bool IsExpressionKeyword(string keyword)
         {
             foreach (string s in expressionkeywords)
+            {
+                if (keyword == s)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        private bool IsTextExpressionKeyword(string keyword)
+        {
+            foreach (string s in textexpressionkeywords)
             {
                 if (keyword == s)
                 {
@@ -122,7 +136,7 @@ namespace DMS.MapManager
                             AppendLog("Escape \\ characters ", lineNumber);
                         }
                     }
-                    else
+                    else if (IsTextExpressionKeyword(path + "\\" + key)) 
                     {
                         int pos = line.IndexOf(key) + key.Length + 1;
                         string val = line.Substring(pos).Trim();
@@ -198,11 +212,6 @@ namespace DMS.MapManager
                     else if (key == "MAP")
                     {
                         output.AppendLine(line); // add MAP
-                        if (!mapfileContents.Contains("PIXELADJUSTMENT "))
-                        {
-                            AppendLog("Add PIXELADJUSTMENT 0");
-                            output.AppendLine("  PIXELADJUSTMENT 0");
-                        }
                     }
                     else if (key == "IMAGETYPE")
                     {
