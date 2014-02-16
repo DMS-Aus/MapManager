@@ -31,6 +31,11 @@ Installers based on the current MapServer stable branch (6.4)
 [GDAL MrSID driver](http://www.gisinternals.com/sdk/downloads/release-1600-gdal-1-10-mapserver-6-4/gdal-110-1600-mrsid.msi)  
 [GDAL Oracle driver](http://www.gisinternals.com/sdk/downloads/release-1600-gdal-1-10-mapserver-6-4/gdal-110-1600-oracle.msi)
 
+Documentation
+-------------
+
+The online help of MapManager can be reviewed at [http://www.gisinternals.com/MapManager](http://www.gisinternals.com/MapManager)  
+
 Building
 --------
 
