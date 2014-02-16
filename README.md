@@ -17,18 +17,18 @@ Downloads
 The following download locations can be used to download the MapManager installer and the corresponding GDAL plugin installers which are not included in the installer of MapManager due to their custom license terms.
 When installing the plugins you should select the MapManager install location as the target directory.
 
-Installers based on the current MapServer release (6.4.1)
-[MapServer MapManager](http://www.gisinternals.com/sdk/downloads/release-1600-gdal-1-10-1-mapserver-6-4-1/MapManager.msi) 
+Installers based on the current MapServer release (6.4.1)  
+[MapServer MapManager](http://www.gisinternals.com/sdk/downloads/release-1600-gdal-1-10-1-mapserver-6-4-1/MapManager.msi)  
 [GDAL ECW driver](http://www.gisinternals.com/sdk/downloads/release-1600-gdal-1-10-1-mapserver-6-4-1/gdal-110-1600-ecw.msi)
-[GDAL FileGDB driver](http://www.gisinternals.com/sdk/downloads/release-1600-gdal-1-10-1-mapserver-6-4-1/gdal-110-1600-filegdb.msi)
-[GDAL MrSID driver](http://www.gisinternals.com/sdk/downloads/release-1600-gdal-1-10-1-mapserver-6-4-1/gdal-110-1600-mrsid.msi)
+[GDAL FileGDB driver](http://www.gisinternals.com/sdk/downloads/release-1600-gdal-1-10-1-mapserver-6-4-1/gdal-110-1600-filegdb.msi)  
+[GDAL MrSID driver](http://www.gisinternals.com/sdk/downloads/release-1600-gdal-1-10-1-mapserver-6-4-1/gdal-110-1600-mrsid.msi)  
 [GDAL Oracle driver](http://www.gisinternals.com/sdk/downloads/release-1600-gdal-1-10-1-mapserver-6-4-1/gdal-110-1600-oracle.msi)
 
-Installers based on the current MapServer stable branch (6.4)
-MapServer MapManager](http://www.gisinternals.com/sdk/downloads/release-1600-gdal-1-10-mapserver-6-4/MapManager.msi) 
-[GDAL ECW driver](http://www.gisinternals.com/sdk/downloads/release-1600-gdal-1-10-mapserver-6-4/gdal-110-1600-ecw.msi)
-[GDAL FileGDB driver](http://www.gisinternals.com/sdk/downloads/release-1600-gdal-1-10-mapserver-6-4/gdal-110-1600-filegdb.msi)
-[GDAL MrSID driver](http://www.gisinternals.com/sdk/downloads/release-1600-gdal-1-10-mapserver-6-4/gdal-110-1600-mrsid.msi)
+Installers based on the current MapServer stable branch (6.4)  
+[MapServer MapManager](http://www.gisinternals.com/sdk/downloads/release-1600-gdal-1-10-mapserver-6-4/MapManager.msi)  
+[GDAL ECW driver](http://www.gisinternals.com/sdk/downloads/release-1600-gdal-1-10-mapserver-6-4/gdal-110-1600-ecw.msi)  
+[GDAL FileGDB driver](http://www.gisinternals.com/sdk/downloads/release-1600-gdal-1-10-mapserver-6-4/gdal-110-1600-filegdb.msi)  
+[GDAL MrSID driver](http://www.gisinternals.com/sdk/downloads/release-1600-gdal-1-10-mapserver-6-4/gdal-110-1600-mrsid.msi)  
 [GDAL Oracle driver](http://www.gisinternals.com/sdk/downloads/release-1600-gdal-1-10-mapserver-6-4/gdal-110-1600-oracle.msi)
 
 Building
@@ -48,5 +48,4 @@ The compilation can be done with the following steps:
 4. To build the installer right click on the project 'Installer' and select 'Build'
 
 
-To submit bug reports or patches please refer to the github issue tracker at https://github.com/DMS-Aus/MapManager
-
+To submit bug reports or patches please refer to the [github issue tracker](https://github.com/DMS-Aus/MapManager/issues)
