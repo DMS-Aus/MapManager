@@ -19,7 +19,7 @@ When installing the plugins you should select the MapManager install location as
 
 Installers based on the current MapServer release (6.4.1)  
 [MapServer MapManager](http://www.gisinternals.com/sdk/downloads/release-1600-gdal-1-10-1-mapserver-6-4-1/MapManager.msi)  
-[GDAL ECW driver](http://www.gisinternals.com/sdk/downloads/release-1600-gdal-1-10-1-mapserver-6-4-1/gdal-110-1600-ecw.msi)
+[GDAL ECW driver](http://www.gisinternals.com/sdk/downloads/release-1600-gdal-1-10-1-mapserver-6-4-1/gdal-110-1600-ecw.msi)  
 [GDAL FileGDB driver](http://www.gisinternals.com/sdk/downloads/release-1600-gdal-1-10-1-mapserver-6-4-1/gdal-110-1600-filegdb.msi)  
 [GDAL MrSID driver](http://www.gisinternals.com/sdk/downloads/release-1600-gdal-1-10-1-mapserver-6-4-1/gdal-110-1600-mrsid.msi)  
 [GDAL Oracle driver](http://www.gisinternals.com/sdk/downloads/release-1600-gdal-1-10-1-mapserver-6-4-1/gdal-110-1600-oracle.msi)
