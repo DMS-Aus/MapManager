@@ -6,6 +6,8 @@ Introduction
 
 MapServer MapManager is an easy to use WYSWYG desktop GUI application that allows you to create and configure good looking MapServer map files. The application provides a set of dialogues for setting the various properties in the map configuration and renders the map directly on the screen allowing panning and zooming the displayed area by using the mouse. The MapManager user interface provides common operations for selecting the features and inspecting the attributes for setting up labeling and changing the style and symbology and to save the map images in various output formats supported by MapServer. The created map configuration can be saved into a map file which can be used by various MapServer CGI/MapScript applications.
 
+![a](http://www.gisinternals.com/MapManager/lib/imagesMapManagerApp.png)
+
 Licensing
 ---------
 
