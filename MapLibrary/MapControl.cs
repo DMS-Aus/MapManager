@@ -517,7 +517,8 @@ namespace DMS.MapLibrary
                                 if (layer.type != MS_LAYER_TYPE.MS_LAYER_POINT &&
                                     layer.type != MS_LAYER_TYPE.MS_LAYER_POLYGON &&
                                     layer.type != MS_LAYER_TYPE.MS_LAYER_LINE &&
-                                    layer.type != MS_LAYER_TYPE.MS_LAYER_ANNOTATION)
+                                    layer.type != MS_LAYER_TYPE.MS_LAYER_ANNOTATION &&
+                                    layer.type != MS_LAYER_TYPE.MS_LAYER_RASTER)
                                     drawQuery = false;
                             }
                         }
@@ -533,8 +534,8 @@ namespace DMS.MapLibrary
                     queryMode = false;
                     drawQuery = false;
                     ClearResults();
-                    this.RefreshView();
                     this.target.RaiseSelectionChanged(this);
+                    this.RefreshView();
                 }
             }
         }
@@ -1160,8 +1161,8 @@ namespace DMS.MapLibrary
                     ClearResults(); // clear the previous results
                     map.queryByPoint(imgpoint, mapscript.MS_MULTIPLE, 4);
                     SetSelectionMode(true);
-                    this.RefreshView();
                     this.target.RaiseSelectionChanged(this);
+                    this.RefreshView();
                 }
                 return;
             }
@@ -1245,8 +1246,8 @@ namespace DMS.MapLibrary
                     {
                         map.queryByRect(rect);
                         SetSelectionMode(true);
-                        this.RefreshView();
                         this.target.RaiseSelectionChanged(this);
+                        this.RefreshView();
                         return;
                     }
                 }
@@ -1275,8 +1276,8 @@ namespace DMS.MapLibrary
                         map.queryByShape(shape);
                         SetSelectionMode(true);
                         this.trackPoints = null;
-                        this.RefreshView();
                         this.target.RaiseSelectionChanged(this);
+                        this.RefreshView();
                     }
                 }
                 catch (Exception ex)
