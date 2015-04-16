@@ -1753,6 +1753,24 @@ namespace DMS.MapLibrary
                             feat.Dispose();
                         }
                         layer.type = MapUtils.GetLayerType(gType);
+
+                                                // identify projection
+                        if (layer.getProjection() == "+AUTO")
+                        {
+                            SpatialReference sr = ogrLayer.GetSpatialRef();
+
+                            if (sr != null)
+                            {
+                                string proj4;
+                                if (sr.ExportToProj4(out proj4) == Ogr.OGRERR_NONE)
+                                    layer.setProjection(proj4);
+                                else
+                                    layer.setProjection(null);
+                            }
+                            else
+                                layer.setProjection(null);
+                        }
+
                         //ds.ReleaseResultSet(ogrLayer);
                     }
                     ds.Dispose();
