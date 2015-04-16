@@ -99,7 +99,7 @@ namespace DMS.MapLibrary
             node.Tag = proj4;
         }
 
-        /// <summary>
+ /// <summary>
         /// Polulate the projection tree based on the EPSG file.
         /// </summary>
         private void PopulateList()
@@ -120,23 +120,7 @@ namespace DMS.MapLibrary
                         {
                             if (proj4 != "")
                             {
-                                // adding the previous section
-                                string[] names = name.Split(new string[] { " / " }, StringSplitOptions.None);
-                                string[] proj_defs = proj4.Split(new char[] { '<', '>' });
-                                if (proj_defs.Length > 3)
-                                {
-                                    if (names.Length > 1)
-                                    {
-                                        AddListItem(names[0].Trim(), names[1].Trim(), proj_defs[1].Trim(), proj_defs[2].Trim());
-                                    }
-                                    else
-                                    {
-                                        if (proj_defs[2].Contains("longlat"))
-                                            AddListItem("Longitude-Latitude", names[0].Trim(), proj_defs[1].Trim(), proj_defs[2].Trim());
-                                        else
-                                            AddListItem("Other Non Geographic", names[0].Trim(), proj_defs[1].Trim(), proj_defs[2].Trim());
-                                    }
-                                }
+                                ProcessLine(name, proj4); 
                             }
                             proj4 = "";
                             name = line.Substring(1).Trim();
@@ -144,11 +128,42 @@ namespace DMS.MapLibrary
                         else
                             proj4 += line;
                     }
+
+                    //process last line
+                    if (proj4 != "" && name!="")
+                    {
+                        ProcessLine(name, proj4);
+                    }
                 }
             }
             treeView.Sort();
         }
-
+        /// <summary>
+        /// use to create the entry in the treview after after reading name for line1 and proj4 from line2
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="proj4"></param>
+        private void ProcessLine(string name, string proj4)
+        {
+            // adding the previous section
+            string[] names = name.Split(new string[] { " / " }, StringSplitOptions.None);
+            string[] proj_defs = proj4.Split(new char[] { '<', '>' });
+            if (proj_defs.Length > 3)
+            {
+                if (names.Length > 1)
+                {
+                    AddListItem(names[0].Trim(), names[1].Trim(), proj_defs[1].Trim(), proj_defs[2].Trim());
+                }
+                else
+                {
+                    if (proj_defs[2].Contains("longlat"))
+                        AddListItem("Longitude-Latitude", names[0].Trim(), proj_defs[1].Trim(), proj_defs[2].Trim());
+                    else
+                        AddListItem("Other Non Geographic", names[0].Trim(), proj_defs[1].Trim(), proj_defs[2].Trim());
+                }
+            }
+        }
+        
         /// <summary>
         /// AfterSelect event handler of the treeView control.
         /// </summary>
