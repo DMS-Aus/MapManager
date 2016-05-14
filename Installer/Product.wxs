@@ -373,11 +373,8 @@
                     <Component Id="TileGenerator.exe" Guid="*">
                         <File Id="TileGenerator.exe" Name="TileGenerator.exe" Source="$(var.MapManager.TargetDir)TileGenerator.exe" Vital="yes"/>
                     </Component>
-                    <Component Id="libexpat.dll" Guid="*">
-                        <File Id="libexpat.dll" Name="libexpat.dll" Source="$(var.SolutionDir)..\release-1600\bin\libexpat.dll" Vital="yes"/>
-                    </Component>
-                    <Component Id="pdflib.dll" Guid="*">
-                        <File Id="pdflib.dll" Name="pdflib.dll" Source="$(var.SolutionDir)..\release-1600\bin\pdflib.dll" Vital="yes"/>
+                    <Component Id="expat.dll" Guid="*">
+                        <File Id="expat.dll" Name="expat.dll" Source="$(var.SolutionDir)..\release-1600\bin\expat.dll" Vital="yes"/>
                     </Component>
                     <Component Id="fribidi.dll" Guid="*">
                         <File Id="fribidi.dll" Name="fribidi.dll" Source="$(var.SolutionDir)..\release-1600\bin\fribidi.dll" Vital="yes"/>
@@ -432,6 +429,9 @@
                     </Component>
                     <Component Id="sqlite3.dll" Guid="*">
                         <File Id="sqlite3.dll" Name="sqlite3.dll" Source="$(var.SolutionDir)..\release-1600\bin\sqlite3.dll" Vital="yes"/>
+                    </Component>
+					<Component Id="freexl.dll" Guid="*">
+                        <File Id="freexl.dll" Name="freexl.dll" Source="$(var.SolutionDir)..\release-1600\bin\freexl.dll" Vital="yes"/>
                     </Component>
                     <Component Id="spatialite.dll" Guid="*">
                         <File Id="spatialite.dll" Name="spatialite.dll" Source="$(var.SolutionDir)..\release-1600\bin\spatialite.dll" Vital="yes"/>
@@ -719,7 +719,7 @@
                 <ComponentRef Id="MapfileConfig.xml" />
                 <ComponentRef Id="ssleay32.dll" />
                 <ComponentRef Id="libeay32.dll" />
-                <ComponentRef Id="libexpat.dll" />
+                <ComponentRef Id="expat.dll" />
                 <ComponentRef Id="libfcgi.dll" />
                 <ComponentRef Id="mapserver.dll" />
                 <ComponentRef Id="libpq.dll" />
@@ -735,9 +735,9 @@
                 <ComponentRef Id="gdal_wrap.dll" />
                 <ComponentRef Id="openjp2.dll" />
                 <ComponentRef Id="proj.dll" />
-                <ComponentRef Id="pdflib.dll" />
                 <ComponentRef Id="fribidi.dll" />
                 <ComponentRef Id="sqlite3.dll" />
+			    <ComponentRef Id="freexl.dll" />
                 <ComponentRef Id="spatialite.dll" />
                 <ComponentRef Id="xerces_c_2_8.dll" />
                 <ComponentRef Id="zlib1.dll" />
