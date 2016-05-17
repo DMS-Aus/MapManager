@@ -155,11 +155,6 @@ namespace DMS.MapLibrary
             style.mincolor.alpha = alpha;
             style.maxcolor.alpha = alpha;
 
-            if (checkBoxAntialias.Checked)
-                style.antialias = mapscript.MS_TRUE;
-            else
-                style.antialias = mapscript.MS_FALSE;
-
             if (checkBoxAutoAngle.Checked)
                 style.autoangle = mapscript.MS_TRUE;
             else
@@ -570,7 +565,6 @@ namespace DMS.MapLibrary
                 return;
             //STEPH: set first load flag to make sure values are not updated by listView_SelectedIndexChanged event
             firstLoad = true;
-            checkBoxAntialias.Checked = (style.antialias == mapscript.MS_TRUE);
 
             if (style.size < 0) // set default size (#4339)
                 textBoxSize.Text = "8";

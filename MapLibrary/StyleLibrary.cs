@@ -62,7 +62,6 @@ namespace DMS.MapLibrary
                             {
                                 symbolObj sym = new symbolObj(symbolname, null);
                                 sym.character = "&#" + c.ToString() + ";";
-                                sym.antialias = mapscript.MS_TRUE;
                                 sym.type = (int)MS_SYMBOL_TYPE.MS_SYMBOL_TRUETYPE;
                                 sym.font = classobj.name;
                                 sym.inmapfile = 0;

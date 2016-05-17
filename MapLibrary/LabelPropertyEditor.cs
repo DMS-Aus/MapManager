@@ -241,7 +241,7 @@ namespace DMS.MapLibrary
         /// <param name="label">The object to be updated.</param>
         private void Update(labelObj label)
         {
-            label.anglemode = (int)comboBoxAngleMode.SelectedItem;
+            label.anglemode = (MS_POSITIONS_ENUM)comboBoxAngleMode.SelectedItem;
             label.autominfeaturesize = checkBoxAutoMinFeatureSize.Checked ? mapscript.MS_TRUE : mapscript.MS_FALSE;
             label.partials = checkBoxPartials.Checked ? mapscript.MS_TRUE : mapscript.MS_FALSE;
             label.force = checkBoxForce.Checked ? mapscript.MS_TRUE : mapscript.MS_FALSE;
@@ -253,10 +253,9 @@ namespace DMS.MapLibrary
             colorPickerOutlineColor.ApplyTo(label.outlinecolor);
             colorPickerShadowColor.ApplyTo(label.shadowcolor);
 
-            label.type = MS_FONT_TYPE.MS_TRUETYPE;
-            label.size = double.Parse(textBoxSize.Text);
-            label.minsize = double.Parse(textBoxMinSize.Text);
-            label.maxsize = double.Parse(textBoxMaxSize.Text);
+            label.size = int.Parse(textBoxSize.Text);
+            label.minsize = int.Parse(textBoxMinSize.Text);
+            label.maxsize = int.Parse(textBoxMaxSize.Text);
             label.mindistance = int.Parse(textBoxMinDistance.Text);
             label.offsetx = int.Parse(textBoxOffsetX.Text);
             label.offsety = int.Parse(textBoxOffsetY.Text);

@@ -51,8 +51,7 @@ namespace DMS.MapLibrary
                 using (outputFormatObj format = map.outputformat)
                 {
                     string imageType = null;
-                    if ((format.renderer != mapscript.MS_RENDER_WITH_GD &&
-                         format.renderer != mapscript.MS_RENDER_WITH_AGG)
+                    if ((format.renderer != mapscript.MS_RENDER_WITH_AGG)
                         || string.Compare(format.mimetype.Trim(), "image/vnd.wap.wbmp", true) == 0
                         || string.Compare(format.mimetype.Trim(), "image/tiff", true) == 0
                         || string.Compare(format.mimetype.Trim(), "image/jpeg", true) == 0)

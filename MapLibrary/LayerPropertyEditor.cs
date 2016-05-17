@@ -132,7 +132,7 @@ namespace DMS.MapLibrary
                     this.buttonMinScale.Enabled = true;
                 }
 
-                trackBarOpacity.Enabled = labelOpacityPercent.Enabled = (layer.opacity != mapscript.MS_GD_ALPHA);
+                trackBarOpacity.Enabled = labelOpacityPercent.Enabled = true;
             }
         }
 
@@ -356,8 +356,7 @@ namespace DMS.MapLibrary
                     }
                 }
 
-                if (layer.opacity != mapscript.MS_GD_ALPHA)
-                    layer.opacity = trackBarOpacity.Value;
+                layer.setOpacity(trackBarOpacity.Value);
 
                 // labelling  & style tab
                 if (comboBoxLabelItem.SelectedItem.ToString() == "(no label)")
@@ -509,7 +508,7 @@ namespace DMS.MapLibrary
             MS_CONNECTION_TYPE.MS_RASTER, MS_CONNECTION_TYPE.MS_TILED_SHAPEFILE, MS_CONNECTION_TYPE.MS_SHAPEFILE, MS_CONNECTION_TYPE.MS_WFS,
             MS_CONNECTION_TYPE.MS_WMS});
 
-            if (layer.connectiontype != MS_CONNECTION_TYPE.MS_ORACLESPATIAL || layer.connectiontype != MS_CONNECTION_TYPE.MS_SDE)
+            if (layer.connectiontype != MS_CONNECTION_TYPE.MS_ORACLESPATIAL)
                 comboBoxConnectionType.SelectedItem = (MS_CONNECTION_TYPE)layer.connectiontype;
 
             // setting the raster connection type if it's not initialized yet
@@ -588,10 +587,7 @@ namespace DMS.MapLibrary
                     textBoxMaxZoom.Text = layer.maxgeowidth.ToString();
             }
 
-            if (layer.opacity == mapscript.MS_GD_ALPHA)
-                trackBarOpacity.Value = 100;
-            else
-                trackBarOpacity.Value = layer.opacity;
+            trackBarOpacity.Value = layer.getOpacity();
 
             labelOpacityPercent.Text = trackBarOpacity.Value + "%";
 

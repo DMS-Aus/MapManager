@@ -106,8 +106,7 @@ namespace DMS.MapLibrary
 
         public static void SetDefaultLabel(labelObj label, mapObj map)
         {
-            label.type = MS_FONT_TYPE.MS_BITMAP;
-            label.size = (int)MS_BITMAP_FONT_SIZES.MS_MEDIUM;
+            label.size = 8;
             label.force = mapscript.MS_FALSE;
             label.partials = mapscript.MS_TRUE;
             label.position = (int)MS_POSITIONS_ENUM.MS_CC;
@@ -131,7 +130,6 @@ namespace DMS.MapLibrary
                 if (lastkey != null)
                 {
                     label.font = lastkey;
-                    label.type = MS_FONT_TYPE.MS_TRUETYPE;
                     label.size = 8;
                 }
             }
@@ -870,7 +868,6 @@ namespace DMS.MapLibrary
             sym.font = origsym.font;
             sym.filled = origsym.filled;
             sym.character = origsym.character;
-            sym.antialias = origsym.antialias;
             sym.transparent = origsym.transparent;
             sym.transparentcolor = origsym.transparentcolor;
             sym.setPoints(origsym.getPoints());
