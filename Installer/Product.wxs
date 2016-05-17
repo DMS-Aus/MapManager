@@ -319,8 +319,8 @@
                     <Component Id="SciLexer.dll" Guid="*">
                         <File Id="SciLexer.dll" Name="SciLexer.dll" Source="$(var.MapManager.TargetDir)SciLexer.dll" Vital="yes"/>
                     </Component>
-                    <Component Id="gdal111.dll" Guid="*">
-                        <File Id="gdal111.dll" Name="gdal111.dll" Source="$(var.SolutionDir)..\release-1600\bin\gdal111.dll" Vital="yes"/>
+                    <Component Id="gdal.dll" Guid="*">
+                        <File Id="gdal.dll" Name="gdal.dll" Source="$(var.SolutionDir)..\release-1600\bin\gdal201.dll" Vital="yes"/>
                     </Component>
                     <Component Id="Microsoft.VisualBasic.PowerPacks.Vs.dll" Guid="*">
                         <File Id="Microsoft.VisualBasic.PowerPacks.Vs.dll" Name="Microsoft.VisualBasic.PowerPacks.Vs.dll" Source="$(var.MapManager.TargetDir)Microsoft.VisualBasic.PowerPacks.Vs.dll" Vital="yes"/>
@@ -710,7 +710,7 @@
                 <ComponentRef Id="ScintillaNet.dll" />
                 <ComponentRef Id="SciLexer.dll" />
                 <ComponentRef Id="cairo.dll" />
-                <ComponentRef Id="gdal111.dll" />
+                <ComponentRef Id="gdal.dll" />
                 <ComponentRef Id="geos_c.dll" />
                 <ComponentRef Id="geos.dll" />
                 <ComponentRef Id="iconv.dll" />
