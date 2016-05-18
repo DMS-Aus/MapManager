@@ -40,10 +40,38 @@ namespace DMS.MapManager
             StringBuilder s = new StringBuilder();
             s.AppendLine("MapServer version " + mapscript.MS_VERSION);
             s.AppendLine(Gdal.VersionInfo("GDAL_RELEASE_NAME"));
-            s.AppendLine("proj " + Marshal.PtrToStringAnsi(pj_get_release()));
-            s.AppendLine("geos " + Marshal.PtrToStringAnsi(GEOSversion()));
-            s.AppendLine("zlib " + Marshal.PtrToStringAnsi(zlibVersion()));
-            s.AppendLine(Marshal.PtrToStringAnsi(curl_version()));
+            try 
+            {
+                s.AppendLine("proj " + Marshal.PtrToStringAnsi(pj_get_release()));
+            }
+            catch (Exception)
+            {
+                // library not available
+            }
+            try 
+            {
+                s.AppendLine("geos " + Marshal.PtrToStringAnsi(GEOSversion()));
+            }
+            catch (Exception)
+            {
+                // library not available
+            }
+            try 
+            {
+                s.AppendLine("zlib " + Marshal.PtrToStringAnsi(zlibVersion()));
+            }
+            catch (Exception)
+            {
+                // library not available
+            }
+            try
+            {
+                s.AppendLine(Marshal.PtrToStringAnsi(curl_version()));
+            }
+            catch (Exception)
+            {
+                // library not available
+            }
            
             return s.ToString();
         }
