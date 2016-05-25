@@ -36,6 +36,7 @@ namespace DMS.MapManager
         bool fileHasChanged;
         IPropertyEditor selectedEditor;
         SelectListForm selectListForm;
+        SelectShapeForm selectShapeForm;
         CheckBox checkBoxRender;
         public TileManagerForm tileManagerForm;
 
@@ -103,6 +104,11 @@ namespace DMS.MapManager
             selectListForm = new SelectListForm();
             selectListForm.VisibleChanged += new EventHandler(selectListForm_VisibleChanged);
             selectListForm.HelpRequested += new HelpEventHandler(editor_HelpRequested);
+
+            selectShapeForm = new SelectShapeForm();
+            selectShapeForm.VisibleChanged += new EventHandler(selectShapeForm_VisibleChanged);
+            selectShapeForm.HelpRequested += new HelpEventHandler(editor_HelpRequested);
+            selectShapeForm.Target = mapControl;
 
             EventProvider.EventMessage += new EventProvider.EventMessageEventHandler(EventProvider_EventMessage);
 
@@ -1026,6 +1032,24 @@ namespace DMS.MapManager
         }
 
         /// <summary>
+        /// Click event handler of the selectByShapeToolStripMenuItem control.
+        /// </summary>
+        /// <param name="sender">The source object of this event.</param>
+        /// <param name="e">The event parameters.</param>
+        private void selectByShapeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            selectByShapeToolStripMenuItem.Checked = !selectByShapeToolStripMenuItem.Checked;
+
+            if (selectByShapeToolStripMenuItem.Checked)
+            {
+                selectShapeForm.Location = new Point(this.Left + this.Width - selectShapeForm.Width, this.Bottom - selectShapeForm.Height - 40);
+                selectShapeForm.Show(this);
+            }
+            else
+                selectShapeForm.Hide();
+        }
+
+        /// <summary>
         /// Click event handler of the toolStripButtonZoomIn control.
         /// </summary>
         /// <param name="sender">The source object of this event.</param>
@@ -1521,6 +1545,16 @@ namespace DMS.MapManager
         }
 
         /// <summary>
+        /// VisibleChanged Event handler for the selectShapeForm object.
+        /// </summary>
+        /// <param name="sender">The source object of this event.</param>
+        /// <param name="e">Event parameters.</param>
+        void selectShapeForm_VisibleChanged(object sender, EventArgs e)
+        {
+            selectByShapeToolStripMenuItem.Checked = selectShapeForm.Visible;
+        }
+
+        /// <summary>
         /// Click Event handler for the clearSelectionToolStripMenuItem object.
         /// </summary>
         /// <param name="sender">The source object of this event.</param>
@@ -1914,5 +1948,7 @@ namespace DMS.MapManager
                     "MapManager", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        
     }
 }

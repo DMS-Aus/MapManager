@@ -1140,6 +1140,32 @@ namespace DMS.MapLibrary
         }
 
         /// <summary>
+        /// Execute a query by the specified shape
+        /// </summary>
+        /// <param name="shape">The selection shape</param>
+        /// <param name="setCenter">Recenter the map to the selection shape</param>
+        public void QueryByShape(shapeObj shape, bool setCenter)
+        {
+            ClearResults(); // clear the previous results
+            map.queryByShape(shape);
+            if (setCenter)
+                map.setCenter(shape.getCentroid());
+            SetSelectionMode(true);
+            this.target.RaiseSelectionChanged(this);
+            this.RefreshView();
+        }
+
+        /// <summary>
+        /// Execute a query by the specified shape wkt
+        /// </summary>
+        /// <param name="wkt">The selection shape wkt</param>
+        /// <param name="setCenter">Recenter the map to the selection shape</param>
+        public void QueryByShape(string wkt, bool setCenter)
+        {
+            QueryByShape(shapeObj.fromWKT(wkt), setCenter);
+        }
+
+        /// <summary>
         /// MouseUp event handler of the Map control. Occurs when a mouse button have been released.
         /// </summary>
         /// <param name="sender">The source object of this event.</param>
