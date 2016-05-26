@@ -417,6 +417,9 @@ namespace DMS.MapManager
             if (!isTemplate)
                 setInitialExtentToolStripMenuItem.Enabled = true;
 
+            previousToolStripMenuItem.Enabled = mapControl.History.HasPrevious();
+            nextToolStripMenuItem.Enabled = mapControl.History.HasNext();
+
             layerControl.Enabled = true;
             layerPropertyEditor.Enabled = true;
             mapPropertyEditor.Enabled = true;
@@ -527,6 +530,7 @@ namespace DMS.MapManager
                 mapH.PropertyChanging += new EventHandler(MainForm_PropertyChanging);
                 mapH.SelectionChanged += new EventHandler(MainForm_SelectionChanged);
                 mapH.ZoomChanged += new MapObjectHolder.ZoomChangedEventHandler(MainForm_ZoomChanged);
+                mapH.PositionChanged += new MapObjectHolder.PositionChangedEventHandler(MainForm_PositionChanged);
 
                 mapControl.Target = mapH;
                 layerControl_ItemSelect(this, null);
@@ -648,6 +652,7 @@ namespace DMS.MapManager
                     mapH.PropertyChanging += new EventHandler(MainForm_PropertyChanging);
                     mapH.SelectionChanged += new EventHandler(MainForm_SelectionChanged);
                     mapH.ZoomChanged += new MapObjectHolder.ZoomChangedEventHandler(MainForm_ZoomChanged);
+                    mapH.PositionChanged += new MapObjectHolder.PositionChangedEventHandler(MainForm_PositionChanged);
 
                     layerControl_ItemSelect(this, null);
                     layerControl.Target = mapControl.Target;
@@ -1088,6 +1093,29 @@ namespace DMS.MapManager
         private void setInitialExtentToolStripMenuItem_Click(object sender, EventArgs e)
         {
             mapControl.SetInitialExtent();
+            UpdateMenuState();
+        }
+
+        /// <summary>
+        /// Click event handler of the previousToolStripMenuItem control.
+        /// </summary>
+        /// <param name="sender">The source object of this event.</param>
+        /// <param name="e">The event parameters.</param>
+        private void previousToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mapControl.SetPreviousExtent();
+            UpdateMenuState();
+        }
+
+        /// <summary>
+        /// Click event handler of the nextToolStripMenuItem control.
+        /// </summary>
+        /// <param name="sender">The source object of this event.</param>
+        /// <param name="e">The event parameters.</param>
+        private void nextToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mapControl.SetNextExtent();
+            UpdateMenuState();
         }
 
         /// <summary>
@@ -1104,6 +1132,18 @@ namespace DMS.MapManager
             s.Append(mapControl.GetUnitName());
             toolStripStatusLabelZoom.Text = s.ToString();
             toolStripStatusLabelScale.Text = "Scale: 1:" + Convert.ToInt64(scale);
+            UpdateMenuState();
+        }
+
+        /// <summary>
+        /// Event handler to sign that the position (map center) has been changed.
+        /// </summary>
+        /// <param name="sender">The source object of the event.</param>
+        /// <param name="x">Current x position in map coordinates</param>
+        /// <param name="y">Current y position in map coordinates</param>
+        void MainForm_PositionChanged(object sender, double x, double y)
+        {
+            UpdateMenuState();
         }
 
         /// <summary>
@@ -1738,6 +1778,7 @@ namespace DMS.MapManager
             mapH.PropertyChanging += new EventHandler(MainForm_PropertyChanging);
             mapH.SelectionChanged += new EventHandler(MainForm_SelectionChanged);
             mapH.ZoomChanged += new MapObjectHolder.ZoomChangedEventHandler(MainForm_ZoomChanged);
+            mapH.PositionChanged += new MapObjectHolder.PositionChangedEventHandler(MainForm_PositionChanged);
 
             mapControl.Target = mapH;
             layerControl_ItemSelect(this, null);
@@ -1948,7 +1989,5 @@ namespace DMS.MapManager
                     "MapManager", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        
     }
 }

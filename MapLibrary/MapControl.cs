@@ -34,8 +34,7 @@ namespace DMS.MapLibrary
         private InputModes inputMode;
         private Rectangle dragRect;
         private bool dragging;
-        private rectObj initial_extent;
-
+        
         private SolidBrush selectionBrush;
         private Pen selectionPen;
 
@@ -61,6 +60,8 @@ namespace DMS.MapLibrary
         private bool drawQuery = false;
 
         private bool enableRendering = true;
+
+        private NavigationHistory history = new NavigationHistory();
 
         // public events
         /// <summary>
@@ -346,6 +347,7 @@ namespace DMS.MapLibrary
                 using (pointObj center = new pointObj(map.width / 2, map.height / 2, 0, 0))
                 {
                     map.zoomScale(zoomfactor * map.scaledenom, center, map.width, map.height, map.extent, null);
+                    history.Add(new NavigationHistoryItem(map.extent));
                     RaiseZoomChanged();
                 }
                 this.RefreshView();
@@ -370,6 +372,7 @@ namespace DMS.MapLibrary
                     imgrect.maxy = miny;
 
                     map.zoomRectangle(imgrect, map.width, map.height, map.extent, null);
+                    history.Add(new NavigationHistoryItem(map.extent));
                     RaiseZoomChanged();
                     this.RefreshView();
                     return;
@@ -389,6 +392,7 @@ namespace DMS.MapLibrary
                 using (pointObj imgpoint = new pointObj(imgX, imgY, 0, 0))
                 {
                     map.zoomPoint(1, imgpoint, map.width, map.height, map.extent, null);
+                    history.Add(new NavigationHistoryItem(map.extent));
                     RaisePositionChanged();
                 }
                 this.RefreshView();
@@ -402,8 +406,30 @@ namespace DMS.MapLibrary
         {
             if (map != null)
             {
-                map.setExtent(initial_extent.minx, initial_extent.miny,
-                    initial_extent.maxx, initial_extent.maxy);
+                history.First();
+                history.Current.Apply(map);
+                RaiseZoomChanged();
+                this.RefreshView();
+            }
+        }
+
+        public void SetNextExtent()
+        {
+            if (map != null && history.HasNext())
+            {
+                history.Next();
+                history.Current.Apply(map);
+                RaiseZoomChanged();
+                this.RefreshView();
+            }
+        }
+
+        public void SetPreviousExtent()
+        {
+            if (map != null && history.HasPrevious())
+            {
+                history.Previous();
+                history.Current.Apply(map);
                 RaiseZoomChanged();
                 this.RefreshView();
             }
@@ -414,7 +440,7 @@ namespace DMS.MapLibrary
         /// </summary>
         public rectObj GetInitialExtent()
         {
-            return initial_extent;
+            return history[0].GetExtent();
         }
 
         /// <summary>
@@ -1020,19 +1046,14 @@ namespace DMS.MapLibrary
         #endregion
 
         /// <summary>
-        /// Stores the current exten as the initial extent
+        /// Stores the current extent as the initial extent
         /// </summary>
         public void StoreInitialExtent()
         {
             if (map != null)
             {
-                if (initial_extent == null)
-                    initial_extent = new rectObj(0, 0, 0, 0, 0);
-
-                initial_extent.maxx = map.extent.maxx;
-                initial_extent.maxy = map.extent.maxy;
-                initial_extent.minx = map.extent.minx;
-                initial_extent.miny = map.extent.miny;
+                history.Clear();
+                history.Add(new NavigationHistoryItem(map.extent));
             }
         }
 
@@ -1252,6 +1273,7 @@ namespace DMS.MapLibrary
                             {
                                 double zoomfactor = Math.Min((double)map.width / dragRect.Width, (double)map.height / dragRect.Height);
                                 map.zoomScale(zoomfactor * map.scaledenom, center, map.width, map.height, map.extent, null);
+                                history.Add(new NavigationHistoryItem(map.extent));
                                 RaiseZoomChanged();
                                 this.RefreshView();
                             }
@@ -1379,6 +1401,14 @@ namespace DMS.MapLibrary
         public void ClearSelection()
         {
             SetSelectionMode(false);
+        }
+
+        public NavigationHistory History
+        {
+            get
+            {
+                return history;
+            }
         }
     }
 }

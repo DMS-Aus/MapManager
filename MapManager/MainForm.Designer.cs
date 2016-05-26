@@ -50,11 +50,14 @@ namespace DMS.MapManager
             this.zoomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.zoomOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.setInitialExtentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.previousToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nextToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.selectItemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.selectByRectangleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.selectByPolygonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.selectByLineToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.selectByShapeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clearSelectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripSeparator();
             this.redrawMapToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -111,7 +114,6 @@ namespace DMS.MapManager
             this.mapControl = new DMS.MapLibrary.MapControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.scintillaControl = new ScintillaNet.Scintilla();
-            this.selectByShapeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStripMain.SuspendLayout();
             this.statusStripMain.SuspendLayout();
             this.toolStripMain.SuspendLayout();
@@ -260,6 +262,8 @@ namespace DMS.MapManager
             this.zoomToolStripMenuItem,
             this.zoomOutToolStripMenuItem,
             this.setInitialExtentToolStripMenuItem,
+            this.previousToolStripMenuItem,
+            this.nextToolStripMenuItem,
             this.toolStripMenuItem1,
             this.selectItemToolStripMenuItem,
             this.selectByRectangleToolStripMenuItem,
@@ -306,6 +310,22 @@ namespace DMS.MapManager
             this.setInitialExtentToolStripMenuItem.Text = "Zoom to Initial &Extent";
             this.setInitialExtentToolStripMenuItem.Click += new System.EventHandler(this.setInitialExtentToolStripMenuItem_Click);
             // 
+            // previousToolStripMenuItem
+            // 
+            this.previousToolStripMenuItem.Name = "previousToolStripMenuItem";
+            this.previousToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.Left)));
+            this.previousToolStripMenuItem.Size = new System.Drawing.Size(228, 26);
+            this.previousToolStripMenuItem.Text = "Pre&vious";
+            this.previousToolStripMenuItem.Click += new System.EventHandler(this.previousToolStripMenuItem_Click);
+            // 
+            // nextToolStripMenuItem
+            // 
+            this.nextToolStripMenuItem.Name = "nextToolStripMenuItem";
+            this.nextToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.Right)));
+            this.nextToolStripMenuItem.Size = new System.Drawing.Size(228, 26);
+            this.nextToolStripMenuItem.Text = "&Next";
+            this.nextToolStripMenuItem.Click += new System.EventHandler(this.nextToolStripMenuItem_Click);
+            // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
@@ -339,6 +359,13 @@ namespace DMS.MapManager
             this.selectByLineToolStripMenuItem.Text = "Select By &Line";
             this.selectByLineToolStripMenuItem.Visible = false;
             this.selectByLineToolStripMenuItem.Click += new System.EventHandler(this.selectByLineToolStripMenuItem_Click);
+            // 
+            // selectByShapeToolStripMenuItem
+            // 
+            this.selectByShapeToolStripMenuItem.Name = "selectByShapeToolStripMenuItem";
+            this.selectByShapeToolStripMenuItem.Size = new System.Drawing.Size(228, 26);
+            this.selectByShapeToolStripMenuItem.Text = "Select By Sha&pe";
+            this.selectByShapeToolStripMenuItem.Click += new System.EventHandler(this.selectByShapeToolStripMenuItem_Click);
             // 
             // clearSelectionToolStripMenuItem
             // 
@@ -727,7 +754,7 @@ namespace DMS.MapManager
             this.splitContainer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.splitContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer.Location = new System.Drawing.Point(0, 59);
-            this.splitContainer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.splitContainer.Margin = new System.Windows.Forms.Padding(4);
             this.splitContainer.Name = "splitContainer";
             // 
             // splitContainer.Panel1
@@ -749,7 +776,7 @@ namespace DMS.MapManager
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -763,7 +790,7 @@ namespace DMS.MapManager
             this.splitContainer1.Panel2.Controls.Add(this.layerPropertyEditor);
             this.splitContainer1.Panel2.Controls.Add(this.mapPropertyEditor);
             this.splitContainer1.Size = new System.Drawing.Size(426, 801);
-            this.splitContainer1.SplitterDistance = 520;
+            this.splitContainer1.SplitterDistance = 518;
             this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 0;
             // 
@@ -774,7 +801,7 @@ namespace DMS.MapManager
             this.layerControl.LegendIconPadding = new System.Windows.Forms.Padding(5);
             this.layerControl.LegendIconSize = new System.Drawing.Size(30, 20);
             this.layerControl.Location = new System.Drawing.Point(0, 0);
-            this.layerControl.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.layerControl.Margin = new System.Windows.Forms.Padding(5);
             this.layerControl.Name = "layerControl";
             this.layerControl.ShowCheckBoxes = true;
             this.layerControl.ShowClasses = true;
@@ -782,7 +809,7 @@ namespace DMS.MapManager
             this.layerControl.ShowRootObject = true;
             this.layerControl.ShowStyles = false;
             this.layerControl.ShowToolbar = true;
-            this.layerControl.Size = new System.Drawing.Size(424, 518);
+            this.layerControl.Size = new System.Drawing.Size(424, 516);
             this.layerControl.TabIndex = 0;
             this.layerControl.Target = null;
             this.layerControl.ItemSelect += new DMS.MapLibrary.LayerControl.ItemSelectEventHandler(this.layerControl_ItemSelect);
@@ -795,7 +822,7 @@ namespace DMS.MapManager
             this.buttonApply.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonApply.Enabled = false;
             this.buttonApply.Location = new System.Drawing.Point(295, 289);
-            this.buttonApply.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonApply.Margin = new System.Windows.Forms.Padding(4);
             this.buttonApply.Name = "buttonApply";
             this.buttonApply.Size = new System.Drawing.Size(93, 28);
             this.buttonApply.TabIndex = 2;
@@ -808,7 +835,7 @@ namespace DMS.MapManager
             this.layerPropertyEditor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.layerPropertyEditor.Location = new System.Drawing.Point(0, 0);
-            this.layerPropertyEditor.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.layerPropertyEditor.Margin = new System.Windows.Forms.Padding(5);
             this.layerPropertyEditor.Name = "layerPropertyEditor";
             this.layerPropertyEditor.Size = new System.Drawing.Size(424, 287);
             this.layerPropertyEditor.TabIndex = 0;
@@ -822,7 +849,7 @@ namespace DMS.MapManager
             this.mapPropertyEditor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.mapPropertyEditor.Location = new System.Drawing.Point(0, 0);
-            this.mapPropertyEditor.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.mapPropertyEditor.Margin = new System.Windows.Forms.Padding(5);
             this.mapPropertyEditor.Name = "mapPropertyEditor";
             this.mapPropertyEditor.Size = new System.Drawing.Size(424, 287);
             this.mapPropertyEditor.TabIndex = 1;
@@ -838,7 +865,7 @@ namespace DMS.MapManager
             this.tabControlContents.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControlContents.ImageList = this.imageListTabs;
             this.tabControlContents.Location = new System.Drawing.Point(0, 0);
-            this.tabControlContents.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabControlContents.Margin = new System.Windows.Forms.Padding(4);
             this.tabControlContents.Name = "tabControlContents";
             this.tabControlContents.SelectedIndex = 0;
             this.tabControlContents.Size = new System.Drawing.Size(1144, 799);
@@ -850,9 +877,9 @@ namespace DMS.MapManager
             this.tabPage1.Controls.Add(this.mapControl);
             this.tabPage1.ImageIndex = 0;
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage1.Size = new System.Drawing.Size(1136, 770);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Map";
@@ -866,7 +893,7 @@ namespace DMS.MapManager
             this.mapControl.Gap = 10;
             this.mapControl.InputMode = DMS.MapLibrary.MapControl.InputModes.Pan;
             this.mapControl.Location = new System.Drawing.Point(4, 4);
-            this.mapControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mapControl.Margin = new System.Windows.Forms.Padding(4);
             this.mapControl.Name = "mapControl";
             this.mapControl.Size = new System.Drawing.Size(1128, 762);
             this.mapControl.TabIndex = 1;
@@ -881,9 +908,9 @@ namespace DMS.MapManager
             this.tabPage2.Controls.Add(this.scintillaControl);
             this.tabPage2.ImageIndex = 1;
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage2.Size = new System.Drawing.Size(1136, 770);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Text";
@@ -914,13 +941,6 @@ namespace DMS.MapManager
             this.scintillaControl.TextDeleted += new System.EventHandler<ScintillaNet.TextModifiedEventArgs>(this.scintillaControl_TextDeleted);
             this.scintillaControl.ZoomChanged += new System.EventHandler(this.scintillaControl_ZoomChanged);
             // 
-            // selectByShapeToolStripMenuItem
-            // 
-            this.selectByShapeToolStripMenuItem.Name = "selectByShapeToolStripMenuItem";
-            this.selectByShapeToolStripMenuItem.Size = new System.Drawing.Size(228, 26);
-            this.selectByShapeToolStripMenuItem.Text = "Select By Sha&pe";
-            this.selectByShapeToolStripMenuItem.Click += new System.EventHandler(this.selectByShapeToolStripMenuItem_Click);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -933,7 +953,7 @@ namespace DMS.MapManager
             this.Icon = global::MapManager.Properties.Resources.MapManager;
             this.KeyPreview = true;
             this.MainMenuStrip = this.menuStripMain;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MapManager";
@@ -1052,6 +1072,8 @@ namespace DMS.MapManager
         private System.Windows.Forms.ToolStripMenuItem tileManagerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem checkMapFileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem selectByShapeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem previousToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem nextToolStripMenuItem;
     }
 }
 

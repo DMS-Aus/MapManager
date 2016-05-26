@@ -120,6 +120,8 @@
     <Compile Include="FieldSelectionForm.Designer.cs">
       <DependentUpon>FieldSelectionForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="NavigationHistory.cs" />
+    <Compile Include="NavigationHistoryItem.cs" />
     <Compile Include="StyleLibrary.cs" />
     <Compile Include="StyleLibraryPropertyEditor.cs">
       <SubType>UserControl</SubType>
