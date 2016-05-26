@@ -18,7 +18,30 @@ namespace DMS.MapLibrary
     {
         private MapObjectHolder target;
         private mapObj map;
-        
+
+        /// <summary>
+        /// The signature of the GoToLayerText event handler. Raised when the Go To Layer menu is selected.
+        /// </summary>
+        public delegate void GoToLayerTextEventHandler(object sender, layerObj layer, int classindex);
+
+        /// <summary>
+        /// The GoToLayerText event handler. Raised when the Go To Layer menu is selected.
+        /// </summary>
+        public event GoToLayerTextEventHandler GoToLayerText;
+
+        /// <summary>
+        /// Event handler to sign that the position (map center) has been changed.
+        /// </summary>
+        /// <param name="sender">The source object of the event.</param>
+        /// <param name="x">Current x position in map coordinates</param>
+        /// <param name="y">Current y position in map coordinates</param>
+        public delegate void PositionChangedEventHandler(object sender, double x, double y);
+
+        /// <summary>
+        /// The PositionChanged event object.
+        /// </summary>
+        public event PositionChangedEventHandler PositionChanged;
+
         /// <summary>
         /// Constructs a new SelectList object.
         /// </summary>
@@ -47,6 +70,8 @@ namespace DMS.MapLibrary
                 map.legend.imagecolor.green = this.BackColor.G;
                 map.legend.imagecolor.blue = this.BackColor.B;
                 listView.BackColor = this.BackColor;
+                int layerIndex = -1;
+                int classIndex = -1;
 
                 using (outputFormatObj format = map.outputformat)
                 {
@@ -76,22 +101,7 @@ namespace DMS.MapLibrary
                                 using (resultCacheObj results = layer.getResults())
                                 {
                                     if (results != null && results.numresults > 0)
-                                    {
-                                        // creating the icon for this layer
-                                        using (classObj def_class = new classObj(null)) // for drawing legend images
-                                        {
-                                            using (imageObj image = def_class.createLegendIcon(map, layer, 30, 20))
-                                            {
-                                                // drawing the class icons
-                                                layer.getClass(0).drawLegendIcon(map, layer, 20, 10, image, 5, 5);
-                                                byte[] img = image.getBytes();
-                                                using (MemoryStream ms = new MemoryStream(img))
-                                                {
-                                                    imageList.Images.Add(Image.FromStream(ms));
-                                                }
-                                            }
-                                        }
-                                        
+                                    {                                        
                                         // extracting the features found
                                         for (int j = 0; j < results.numresults; j++)
                                         {
@@ -99,6 +109,26 @@ namespace DMS.MapLibrary
                                             feature = layer.getShape(res);
                                             if (feature != null)
                                             {
+                                                if (layerIndex != layer.index || classIndex != res.classindex)
+                                                {
+                                                    layerIndex = layer.index;
+                                                    classIndex = res.classindex;
+                                                    // creating the icon for this class
+                                                    using (classObj def_class = new classObj(null)) // for drawing legend images
+                                                    {
+                                                        using (imageObj image = def_class.createLegendIcon(map, layer, 30, 20))
+                                                        {
+                                                            // drawing the class icons
+                                                            layer.getClass(classIndex).drawLegendIcon(map, layer, 20, 10, image, 5, 5);
+                                                            byte[] img = image.getBytes();
+                                                            using (MemoryStream ms = new MemoryStream(img))
+                                                            {
+                                                                imageList.Images.Add(Image.FromStream(ms));
+                                                            }
+                                                        }
+                                                    }
+                                                }
+
                                                 ListViewItem item = new ListViewItem(layer.name, imageList.Images.Count - 1);
                                                 item.SubItems.Add(feature.index.ToString());
                                                 item.SubItems.Add(MapUtils.GetShapeTypeName((MS_SHAPE_TYPE)feature.type));
@@ -113,6 +143,9 @@ namespace DMS.MapLibrary
                                                     s.AppendLine(feature.getValue(k));
                                                 }
                                                 item.Tag = s.ToString();
+                                                item.SubItems[0].Tag = layer;
+                                                feature.classindex = res.classindex;
+                                                item.SubItems[1].Tag = feature;
                                             }
                                         }
                                     }
@@ -197,6 +230,35 @@ namespace DMS.MapLibrary
         private void richTextBox_LinkClicked(object sender, LinkClickedEventArgs e)
         {
             Process.Start(e.LinkText);
+        }
+
+        private void centerToShapeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (listView.SelectedItems.Count > 0 && PositionChanged != null)
+            {
+                shapeObj shape = (shapeObj)listView.SelectedItems[0].SubItems[1].Tag;
+                pointObj pos = shape.getCentroid();
+                PositionChanged(this, pos.x, pos.y);
+            }
+        }
+
+        private void goToClassTextToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (listView.SelectedItems.Count > 0 && GoToLayerText != null)
+            {
+                layerObj layer = (layerObj)listView.SelectedItems[0].SubItems[0].Tag;
+                shapeObj shape = (shapeObj)listView.SelectedItems[0].SubItems[1].Tag;
+                GoToLayerText(this, layer, shape.classindex);
+            }               
+        }
+
+        private void goToLayerTextToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (listView.SelectedItems.Count > 0 && GoToLayerText != null)
+            {
+                layerObj layer = (layerObj)listView.SelectedItems[0].SubItems[0].Tag;
+                GoToLayerText(this, layer, -1);
+            }
         }
     }
 }

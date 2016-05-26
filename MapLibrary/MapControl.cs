@@ -48,6 +48,9 @@ namespace DMS.MapLibrary
         private bool border;
         private Pen borderPen;
 
+        private bool centerMarker;
+        private Pen centerMarkerPen;
+
         private string drawMessage;
 
         private bool forcePan = false;
@@ -90,6 +93,8 @@ namespace DMS.MapLibrary
             selectionPen = new Pen(Color.Black,1);
             borderPen = new Pen(Color.Black, 1);
             border = false;
+            centerMarkerPen = new Pen(Color.Blue, 1);
+            centerMarker = false;
 
             drawMessage = "The map hasn't been initialised yet.";
 
@@ -222,6 +227,19 @@ namespace DMS.MapLibrary
             set
             {
                 border = value;
+                this.RefreshView();
+            }
+        }
+
+        /// <summary>
+        /// Flag to enable the drawing of a center marker.
+        /// </summary>
+        public bool CenterMarker
+        {
+            get { return centerMarker; }
+            set
+            {
+                centerMarker = value;
                 this.RefreshView();
             }
         }
@@ -632,6 +650,14 @@ namespace DMS.MapLibrary
             {
                 // implement additional drawing if needed
                 pe.Graphics.DrawRectangle(borderPen, new Rectangle(0,0, this.Width-1, this.Height-1));
+            }
+
+            if (centerMarker)
+            {
+                float centerX = ((float)this.Width - 1) / 2;
+                float centerY = ((float)this.Height - 1) / 2;
+                pe.Graphics.DrawLine(centerMarkerPen, centerX - 10, centerY, centerX + 10, centerY);
+                pe.Graphics.DrawLine(centerMarkerPen, centerX, centerY - 10, centerX, centerY + 10);
             }
         }
 
@@ -1174,6 +1200,17 @@ namespace DMS.MapLibrary
                 map.setCenter(shape.getCentroid());
             SetSelectionMode(true);
             this.target.RaiseSelectionChanged(this);
+            this.RefreshView();
+        }
+
+        /// <summary>
+        /// Centers the map to the specified position
+        /// </summary>
+        /// <param name="x">x position</param>
+        /// <param name="y">y position</param>
+        public void SetCenter(double x, double y)
+        {
+            map.setCenter(new pointObj(x, y, 0, 0));
             this.RefreshView();
         }
 

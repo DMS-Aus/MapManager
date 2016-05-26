@@ -83,6 +83,7 @@ namespace DMS.MapManager
             this.statusStripMain = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabelZoom = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabelCenter = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabelScale = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabelPos = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripMain = new System.Windows.Forms.ToolStrip();
@@ -105,16 +106,15 @@ namespace DMS.MapManager
             this.fileSystemWatcher = new System.IO.FileSystemWatcher();
             this.splitContainer = new System.Windows.Forms.SplitContainer();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.layerControl = new DMS.MapLibrary.LayerControl();
             this.buttonApply = new System.Windows.Forms.Button();
-            this.layerPropertyEditor = new DMS.MapLibrary.LayerPropertyEditor();
-            this.mapPropertyEditor = new DMS.MapLibrary.MapPropertyEditor();
             this.tabControlContents = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.mapControl = new DMS.MapLibrary.MapControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.scintillaControl = new ScintillaNet.Scintilla();
-            this.toolStripStatusLabelCenter = new System.Windows.Forms.ToolStripStatusLabel();
+            this.layerControl = new DMS.MapLibrary.LayerControl();
+            this.layerPropertyEditor = new DMS.MapLibrary.LayerPropertyEditor();
+            this.mapPropertyEditor = new DMS.MapLibrary.MapPropertyEditor();
+            this.mapControl = new DMS.MapLibrary.MapControl();
             this.menuStripMain.SuspendLayout();
             this.statusStripMain.SuspendLayout();
             this.toolStripMain.SuspendLayout();
@@ -576,6 +576,12 @@ namespace DMS.MapManager
             this.toolStripStatusLabelZoom.Size = new System.Drawing.Size(52, 20);
             this.toolStripStatusLabelZoom.Text = "Zoom:";
             // 
+            // toolStripStatusLabelCenter
+            // 
+            this.toolStripStatusLabelCenter.Name = "toolStripStatusLabelCenter";
+            this.toolStripStatusLabelCenter.Size = new System.Drawing.Size(55, 20);
+            this.toolStripStatusLabelCenter.Text = "Center:";
+            // 
             // toolStripStatusLabelScale
             // 
             this.toolStripStatusLabelScale.BorderStyle = System.Windows.Forms.Border3DStyle.RaisedOuter;
@@ -792,32 +798,9 @@ namespace DMS.MapManager
             this.splitContainer1.Panel2.Controls.Add(this.layerPropertyEditor);
             this.splitContainer1.Panel2.Controls.Add(this.mapPropertyEditor);
             this.splitContainer1.Size = new System.Drawing.Size(426, 801);
-            this.splitContainer1.SplitterDistance = 517;
+            this.splitContainer1.SplitterDistance = 516;
             this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 0;
-            // 
-            // layerControl
-            // 
-            this.layerControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.layerControl.IsStyleLibraryControl = false;
-            this.layerControl.LegendIconPadding = new System.Windows.Forms.Padding(5);
-            this.layerControl.LegendIconSize = new System.Drawing.Size(30, 20);
-            this.layerControl.Location = new System.Drawing.Point(0, 0);
-            this.layerControl.Margin = new System.Windows.Forms.Padding(5);
-            this.layerControl.Name = "layerControl";
-            this.layerControl.ShowCheckBoxes = true;
-            this.layerControl.ShowClasses = true;
-            this.layerControl.ShowLabels = false;
-            this.layerControl.ShowRootObject = true;
-            this.layerControl.ShowStyles = false;
-            this.layerControl.ShowToolbar = true;
-            this.layerControl.Size = new System.Drawing.Size(424, 515);
-            this.layerControl.TabIndex = 0;
-            this.layerControl.Target = null;
-            this.layerControl.ItemSelect += new DMS.MapLibrary.LayerControl.ItemSelectEventHandler(this.layerControl_ItemSelect);
-            this.layerControl.GoToLayerText += new DMS.MapLibrary.LayerControl.GoToLayerTextEventHandler(this.layerControl_GoToLayerText);
-            this.layerControl.EditProperties += new DMS.MapLibrary.EditPropertiesEventHandler(this.layerControl_EditProperties);
-            this.layerControl.HelpRequested += new System.Windows.Forms.HelpEventHandler(this.editor_HelpRequested);
             // 
             // buttonApply
             // 
@@ -831,34 +814,6 @@ namespace DMS.MapManager
             this.buttonApply.Text = "Apply";
             this.buttonApply.UseVisualStyleBackColor = true;
             this.buttonApply.Click += new System.EventHandler(this.buttonApply_Click);
-            // 
-            // layerPropertyEditor
-            // 
-            this.layerPropertyEditor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.layerPropertyEditor.Location = new System.Drawing.Point(0, 0);
-            this.layerPropertyEditor.Margin = new System.Windows.Forms.Padding(5);
-            this.layerPropertyEditor.Name = "layerPropertyEditor";
-            this.layerPropertyEditor.Size = new System.Drawing.Size(424, 287);
-            this.layerPropertyEditor.TabIndex = 0;
-            this.layerPropertyEditor.Target = null;
-            this.layerPropertyEditor.Visible = false;
-            this.layerPropertyEditor.HelpRequested += new System.Windows.Forms.HelpEventHandler(this.editor_HelpRequested);
-            this.layerPropertyEditor.EditProperties += new DMS.MapLibrary.EditPropertiesEventHandler(this.layerPropertyEditor_EditProperties);
-            // 
-            // mapPropertyEditor
-            // 
-            this.mapPropertyEditor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.mapPropertyEditor.Location = new System.Drawing.Point(0, 0);
-            this.mapPropertyEditor.Margin = new System.Windows.Forms.Padding(5);
-            this.mapPropertyEditor.Name = "mapPropertyEditor";
-            this.mapPropertyEditor.Size = new System.Drawing.Size(424, 287);
-            this.mapPropertyEditor.TabIndex = 1;
-            this.mapPropertyEditor.Target = null;
-            this.mapPropertyEditor.Visible = false;
-            this.mapPropertyEditor.HelpRequested += new System.Windows.Forms.HelpEventHandler(this.editor_HelpRequested);
-            this.mapPropertyEditor.EditProperties += new DMS.MapLibrary.EditPropertiesEventHandler(this.layerPropertyEditor_EditProperties);
             // 
             // tabControlContents
             // 
@@ -886,24 +841,6 @@ namespace DMS.MapManager
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Map";
             this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // mapControl
-            // 
-            this.mapControl.Border = false;
-            this.mapControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mapControl.EnableRendering = true;
-            this.mapControl.Gap = 10;
-            this.mapControl.InputMode = DMS.MapLibrary.MapControl.InputModes.Pan;
-            this.mapControl.Location = new System.Drawing.Point(4, 4);
-            this.mapControl.Margin = new System.Windows.Forms.Padding(4);
-            this.mapControl.Name = "mapControl";
-            this.mapControl.Size = new System.Drawing.Size(1128, 762);
-            this.mapControl.TabIndex = 1;
-            this.mapControl.Target = null;
-            this.mapControl.CursorMove += new DMS.MapLibrary.CursorMoveEventHandler(this.mapControl_CursorMove);
-            this.mapControl.BeforeRefresh += new System.EventHandler(this.mapControl_BeforeRefresh);
-            this.mapControl.AfterRefresh += new System.EventHandler(this.mapControl_AfterRefresh);
-            this.mapControl.HelpRequested += new System.Windows.Forms.HelpEventHandler(this.editor_HelpRequested);
             // 
             // tabPage2
             // 
@@ -943,11 +880,75 @@ namespace DMS.MapManager
             this.scintillaControl.TextDeleted += new System.EventHandler<ScintillaNet.TextModifiedEventArgs>(this.scintillaControl_TextDeleted);
             this.scintillaControl.ZoomChanged += new System.EventHandler(this.scintillaControl_ZoomChanged);
             // 
-            // toolStripStatusLabelCenter
+            // layerControl
             // 
-            this.toolStripStatusLabelCenter.Name = "toolStripStatusLabelCenter";
-            this.toolStripStatusLabelCenter.Size = new System.Drawing.Size(55, 20);
-            this.toolStripStatusLabelCenter.Text = "Center:";
+            this.layerControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.layerControl.IsStyleLibraryControl = false;
+            this.layerControl.LegendIconPadding = new System.Windows.Forms.Padding(5);
+            this.layerControl.LegendIconSize = new System.Drawing.Size(30, 20);
+            this.layerControl.Location = new System.Drawing.Point(0, 0);
+            this.layerControl.Margin = new System.Windows.Forms.Padding(5);
+            this.layerControl.Name = "layerControl";
+            this.layerControl.ShowCheckBoxes = true;
+            this.layerControl.ShowClasses = true;
+            this.layerControl.ShowLabels = false;
+            this.layerControl.ShowRootObject = true;
+            this.layerControl.ShowStyles = false;
+            this.layerControl.ShowToolbar = true;
+            this.layerControl.Size = new System.Drawing.Size(424, 514);
+            this.layerControl.TabIndex = 0;
+            this.layerControl.Target = null;
+            this.layerControl.ItemSelect += new DMS.MapLibrary.LayerControl.ItemSelectEventHandler(this.layerControl_ItemSelect);
+            this.layerControl.GoToLayerText += new DMS.MapLibrary.LayerControl.GoToLayerTextEventHandler(this.layerControl_GoToLayerText);
+            this.layerControl.EditProperties += new DMS.MapLibrary.EditPropertiesEventHandler(this.layerControl_EditProperties);
+            this.layerControl.HelpRequested += new System.Windows.Forms.HelpEventHandler(this.editor_HelpRequested);
+            // 
+            // layerPropertyEditor
+            // 
+            this.layerPropertyEditor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.layerPropertyEditor.Location = new System.Drawing.Point(0, 0);
+            this.layerPropertyEditor.Margin = new System.Windows.Forms.Padding(5);
+            this.layerPropertyEditor.Name = "layerPropertyEditor";
+            this.layerPropertyEditor.Size = new System.Drawing.Size(424, 287);
+            this.layerPropertyEditor.TabIndex = 0;
+            this.layerPropertyEditor.Target = null;
+            this.layerPropertyEditor.Visible = false;
+            this.layerPropertyEditor.HelpRequested += new System.Windows.Forms.HelpEventHandler(this.editor_HelpRequested);
+            this.layerPropertyEditor.EditProperties += new DMS.MapLibrary.EditPropertiesEventHandler(this.layerPropertyEditor_EditProperties);
+            // 
+            // mapPropertyEditor
+            // 
+            this.mapPropertyEditor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.mapPropertyEditor.Location = new System.Drawing.Point(0, 0);
+            this.mapPropertyEditor.Margin = new System.Windows.Forms.Padding(5);
+            this.mapPropertyEditor.Name = "mapPropertyEditor";
+            this.mapPropertyEditor.Size = new System.Drawing.Size(424, 287);
+            this.mapPropertyEditor.TabIndex = 1;
+            this.mapPropertyEditor.Target = null;
+            this.mapPropertyEditor.Visible = false;
+            this.mapPropertyEditor.HelpRequested += new System.Windows.Forms.HelpEventHandler(this.editor_HelpRequested);
+            this.mapPropertyEditor.EditProperties += new DMS.MapLibrary.EditPropertiesEventHandler(this.layerPropertyEditor_EditProperties);
+            // 
+            // mapControl
+            // 
+            this.mapControl.Border = false;
+            this.mapControl.CenterMarker = true;
+            this.mapControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mapControl.EnableRendering = true;
+            this.mapControl.Gap = 10;
+            this.mapControl.InputMode = DMS.MapLibrary.MapControl.InputModes.Pan;
+            this.mapControl.Location = new System.Drawing.Point(4, 4);
+            this.mapControl.Margin = new System.Windows.Forms.Padding(4);
+            this.mapControl.Name = "mapControl";
+            this.mapControl.Size = new System.Drawing.Size(1128, 762);
+            this.mapControl.TabIndex = 1;
+            this.mapControl.Target = null;
+            this.mapControl.CursorMove += new DMS.MapLibrary.CursorMoveEventHandler(this.mapControl_CursorMove);
+            this.mapControl.BeforeRefresh += new System.EventHandler(this.mapControl_BeforeRefresh);
+            this.mapControl.AfterRefresh += new System.EventHandler(this.mapControl_AfterRefresh);
+            this.mapControl.HelpRequested += new System.Windows.Forms.HelpEventHandler(this.editor_HelpRequested);
             // 
             // MainForm
             // 

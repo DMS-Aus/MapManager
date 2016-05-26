@@ -104,6 +104,8 @@ namespace DMS.MapManager
             selectListForm = new SelectListForm();
             selectListForm.VisibleChanged += new EventHandler(selectListForm_VisibleChanged);
             selectListForm.HelpRequested += new HelpEventHandler(editor_HelpRequested);
+            selectListForm.selectList.GoToLayerText += new SelectList.GoToLayerTextEventHandler(layerControl_GoToLayerText);
+            selectListForm.selectList.PositionChanged += new SelectList.PositionChangedEventHandler(selectListForm_PositionChanged);
 
             selectShapeForm = new SelectShapeForm();
             selectShapeForm.VisibleChanged += new EventHandler(selectShapeForm_VisibleChanged);
@@ -1148,6 +1150,19 @@ namespace DMS.MapManager
         }
 
         /// <summary>
+        /// Event handler to sign that the position (map center) has been changed.
+        /// </summary>
+        /// <param name="sender">The source object of the event.</param>
+        /// <param name="x">Current x position in map coordinates</param>
+        /// <param name="y">Current y position in map coordinates</param>
+        void selectListForm_PositionChanged(object sender, double x, double y)
+        {
+            if (tabControlContents.SelectedIndex != 0)
+                tabControlContents.SelectedIndex = 0;
+            mapControl.SetCenter(x, y);
+        }
+
+        /// <summary>
         /// CursorMove event handler of the map control.
         /// </summary>
         /// <param name="sender">The source object of this event.</param>
@@ -1877,12 +1892,15 @@ namespace DMS.MapManager
             if (layer == null)
                 return;
 
-            scintillaControl.Text = "";
-            scrollPos = 0;
-            caretPos = 0;
-            tabControlContents.SelectedIndex = 1;
             int pos = 0;
             int layerindex = layer.index;
+            if (tabControlContents.SelectedIndex != 1)
+            {
+                scrollPos = 0;
+                caretPos = 0;
+                scintillaControl.Text = "";
+                tabControlContents.SelectedIndex = 1;
+            }
 
             using (StringReader reader = new StringReader(scintillaControl.Text))
             {
@@ -1905,8 +1923,8 @@ namespace DMS.MapManager
                     ++pos;
                 }
             }
+            scintillaControl.Scrolling.ScrollBy(0, pos - scrollPos);
             scrollPos = pos;
-            scintillaControl.Scrolling.ScrollBy(0, scrollPos);
         }
 
         /// <summary>
