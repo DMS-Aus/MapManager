@@ -1034,6 +1034,7 @@ namespace DMS.MapLibrary
                 {
                     StoreInitialExtent();
                     RaiseZoomChanged();
+                    RaisePositionChanged();
                 }
             }
         }

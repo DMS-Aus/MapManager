@@ -114,6 +114,7 @@ namespace DMS.MapManager
             this.mapControl = new DMS.MapLibrary.MapControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.scintillaControl = new ScintillaNet.Scintilla();
+            this.toolStripStatusLabelCenter = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStripMain.SuspendLayout();
             this.statusStripMain.SuspendLayout();
             this.toolStripMain.SuspendLayout();
@@ -550,6 +551,7 @@ namespace DMS.MapManager
             this.statusStripMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
             this.toolStripStatusLabelZoom,
+            this.toolStripStatusLabelCenter,
             this.toolStripStatusLabelScale,
             this.toolStripStatusLabelPos});
             this.statusStripMain.Location = new System.Drawing.Point(0, 860);
@@ -790,7 +792,7 @@ namespace DMS.MapManager
             this.splitContainer1.Panel2.Controls.Add(this.layerPropertyEditor);
             this.splitContainer1.Panel2.Controls.Add(this.mapPropertyEditor);
             this.splitContainer1.Size = new System.Drawing.Size(426, 801);
-            this.splitContainer1.SplitterDistance = 518;
+            this.splitContainer1.SplitterDistance = 517;
             this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 0;
             // 
@@ -809,7 +811,7 @@ namespace DMS.MapManager
             this.layerControl.ShowRootObject = true;
             this.layerControl.ShowStyles = false;
             this.layerControl.ShowToolbar = true;
-            this.layerControl.Size = new System.Drawing.Size(424, 516);
+            this.layerControl.Size = new System.Drawing.Size(424, 515);
             this.layerControl.TabIndex = 0;
             this.layerControl.Target = null;
             this.layerControl.ItemSelect += new DMS.MapLibrary.LayerControl.ItemSelectEventHandler(this.layerControl_ItemSelect);
@@ -940,6 +942,12 @@ namespace DMS.MapManager
             this.scintillaControl.TextInserted += new System.EventHandler<ScintillaNet.TextModifiedEventArgs>(this.scintillaControl_TextInserted);
             this.scintillaControl.TextDeleted += new System.EventHandler<ScintillaNet.TextModifiedEventArgs>(this.scintillaControl_TextDeleted);
             this.scintillaControl.ZoomChanged += new System.EventHandler(this.scintillaControl_ZoomChanged);
+            // 
+            // toolStripStatusLabelCenter
+            // 
+            this.toolStripStatusLabelCenter.Name = "toolStripStatusLabelCenter";
+            this.toolStripStatusLabelCenter.Size = new System.Drawing.Size(55, 20);
+            this.toolStripStatusLabelCenter.Text = "Center:";
             // 
             // MainForm
             // 
@@ -1074,6 +1082,7 @@ namespace DMS.MapManager
         private System.Windows.Forms.ToolStripMenuItem selectByShapeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem previousToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nextToolStripMenuItem;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelCenter;
     }
 }
 

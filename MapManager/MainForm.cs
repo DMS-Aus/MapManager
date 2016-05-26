@@ -1143,6 +1143,7 @@ namespace DMS.MapManager
         /// <param name="y">Current y position in map coordinates</param>
         void MainForm_PositionChanged(object sender, double x, double y)
         {
+            toolStripStatusLabelCenter.Text = "Center: (" + x + " " + y + ")";
             UpdateMenuState();
         }
 
