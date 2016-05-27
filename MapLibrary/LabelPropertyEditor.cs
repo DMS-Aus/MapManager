@@ -643,7 +643,7 @@ namespace DMS.MapLibrary
         {
             styleObj style = new styleObj(null);
             style.setGeomTransform("labelpnt");
-            style.color = new colorObj(0, 0, 0, 0);
+            style.color = new colorObj(0, 0, 0, 255);
             style.size = 8;
             AddStyleToList(style);
             isStyleChanged = true;

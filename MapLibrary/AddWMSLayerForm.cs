@@ -505,7 +505,7 @@ namespace DMS.MapLibrary
             if (!colorPickerLayerColor.Value.IsEmpty)
             {
                 colorObj color = new colorObj(colorPickerLayerColor.Value.R, 
-                    colorPickerLayerColor.Value.G, colorPickerLayerColor.Value.B, 0);
+                    colorPickerLayerColor.Value.G, colorPickerLayerColor.Value.B, 255);
                 layer.metadata.set("wms_bgcolor", "0x" + color.toHex().Substring(1));
             }
 

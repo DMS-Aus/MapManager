@@ -130,6 +130,9 @@ namespace DMS.MapLibrary
 
             layer.whichShapes(layer.getExtent());
 
+            if (checkBoxClassItem.Checked)
+                layer.classitem = comboBoxColumns.SelectedItem.ToString();
+
             while ((shape = layer.nextShape()) != null)
             {
                 string value = shape.getValue(comboBoxColumns.SelectedIndex);
@@ -174,7 +177,11 @@ namespace DMS.MapLibrary
                 }
 
                 classobj.name = value;
-                classobj.setExpression("('[" + comboBoxColumns.SelectedItem + "]' = '" + value + "')");
+                if (checkBoxClassItem.Checked)
+                    classobj.setExpression(value);
+                else
+                    classobj.setExpression("('[" + comboBoxColumns.SelectedItem + "]' = '" + value + "')");
+
                 for (int j = 0; j < classobj.numstyles; j++)
                 {
                     styleObj style = classobj.getStyle(j);

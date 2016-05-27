@@ -42,7 +42,7 @@ namespace DMS.MapLibrary
         /// <returns>The new random color</returns>
         public static colorObj GetRandomColor()
         {
-            return new colorObj(rand.Next(256), rand.Next(256), rand.Next(256), 0);
+            return new colorObj(rand.Next(256), rand.Next(256), rand.Next(256), 255);
         }
 
         /// <summary>
@@ -64,14 +64,14 @@ namespace DMS.MapLibrary
             // set default color (#4337) to black for line color and white for brush color
             if (type == MS_LAYER_TYPE.MS_LAYER_POLYGON)
             {
-                style.color = new colorObj(255, 255, 255, 0);
-                style.outlinecolor = new colorObj(0, 0, 0, 0);
+                style.color = new colorObj(255, 255, 255, 255);
+                style.outlinecolor = new colorObj(0, 0, 0, 255);
                 style.symbol = 0;
                 style.symbolname = null;
             }
             else
             {
-                style.color = new colorObj(0, 0, 0, 0);
+                style.color = new colorObj(0, 0, 0, 255);
             }
         }
 

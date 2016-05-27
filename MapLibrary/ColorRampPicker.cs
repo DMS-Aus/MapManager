@@ -294,11 +294,11 @@ namespace DMS.MapLibrary
             Color source = GetColorAtValue(percent);
             if (source == Color.Empty)
             {
-                return new colorObj(-1, -1, -1, 0);
+                return new colorObj(-1, -1, -1, 255);
             }
             else
             {
-                return new colorObj(source.R, source.G, source.B, 0);
+                return new colorObj(source.R, source.G, source.B, 255);
             }
         }
     }
