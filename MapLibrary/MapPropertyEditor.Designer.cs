@@ -73,9 +73,12 @@ namespace DMS.MapLibrary
             this.comboBoxImageType = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.colorPickerBackColor = new DMS.MapLibrary.ColorPicker();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.folderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
+            this.label13 = new System.Windows.Forms.Label();
+            this.textBoxRotation = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.colorPickerBackColor = new DMS.MapLibrary.ColorPicker();
             this.tabControl1.SuspendLayout();
             this.tabPageGeneral.SuspendLayout();
             this.tabPageExtent.SuspendLayout();
@@ -249,6 +252,9 @@ namespace DMS.MapLibrary
             // 
             // tabPageExtent
             // 
+            this.tabPageExtent.Controls.Add(this.label19);
+            this.tabPageExtent.Controls.Add(this.textBoxRotation);
+            this.tabPageExtent.Controls.Add(this.label13);
             this.tabPageExtent.Controls.Add(this.labelUnit2);
             this.tabPageExtent.Controls.Add(this.label6);
             this.tabPageExtent.Controls.Add(this.textBoxY);
@@ -271,7 +277,7 @@ namespace DMS.MapLibrary
             // 
             // labelUnit2
             // 
-            this.labelUnit2.Location = new System.Drawing.Point(272, 116);
+            this.labelUnit2.Location = new System.Drawing.Point(272, 102);
             this.labelUnit2.Name = "labelUnit2";
             this.labelUnit2.Size = new System.Drawing.Size(36, 13);
             this.labelUnit2.TabIndex = 11;
@@ -280,7 +286,7 @@ namespace DMS.MapLibrary
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(102, 128);
+            this.label6.Location = new System.Drawing.Point(102, 114);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(17, 13);
             this.label6.TabIndex = 9;
@@ -288,7 +294,7 @@ namespace DMS.MapLibrary
             // 
             // textBoxY
             // 
-            this.textBoxY.Location = new System.Drawing.Point(124, 125);
+            this.textBoxY.Location = new System.Drawing.Point(124, 111);
             this.textBoxY.Name = "textBoxY";
             this.textBoxY.Size = new System.Drawing.Size(139, 20);
             this.textBoxY.TabIndex = 10;
@@ -298,7 +304,7 @@ namespace DMS.MapLibrary
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(102, 104);
+            this.label5.Location = new System.Drawing.Point(102, 90);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(17, 13);
             this.label5.TabIndex = 7;
@@ -306,7 +312,7 @@ namespace DMS.MapLibrary
             // 
             // textBoxX
             // 
-            this.textBoxX.Location = new System.Drawing.Point(124, 101);
+            this.textBoxX.Location = new System.Drawing.Point(124, 87);
             this.textBoxX.Name = "textBoxX";
             this.textBoxX.Size = new System.Drawing.Size(139, 20);
             this.textBoxX.TabIndex = 8;
@@ -316,7 +322,7 @@ namespace DMS.MapLibrary
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(4, 104);
+            this.label7.Location = new System.Drawing.Point(4, 90);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(92, 13);
             this.label7.TabIndex = 6;
@@ -325,7 +331,7 @@ namespace DMS.MapLibrary
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(102, 70);
+            this.label8.Location = new System.Drawing.Point(102, 56);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(16, 13);
             this.label8.TabIndex = 4;
@@ -333,7 +339,7 @@ namespace DMS.MapLibrary
             // 
             // textBoxScale
             // 
-            this.textBoxScale.Location = new System.Drawing.Point(124, 67);
+            this.textBoxScale.Location = new System.Drawing.Point(124, 53);
             this.textBoxScale.Name = "textBoxScale";
             this.textBoxScale.Size = new System.Drawing.Size(139, 20);
             this.textBoxScale.TabIndex = 5;
@@ -343,7 +349,7 @@ namespace DMS.MapLibrary
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(4, 70);
+            this.label16.Location = new System.Drawing.Point(4, 56);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(59, 13);
             this.label16.TabIndex = 3;
@@ -351,7 +357,7 @@ namespace DMS.MapLibrary
             // 
             // labelUnit1
             // 
-            this.labelUnit1.Location = new System.Drawing.Point(272, 35);
+            this.labelUnit1.Location = new System.Drawing.Point(272, 21);
             this.labelUnit1.Name = "labelUnit1";
             this.labelUnit1.Size = new System.Drawing.Size(36, 13);
             this.labelUnit1.TabIndex = 2;
@@ -359,7 +365,7 @@ namespace DMS.MapLibrary
             // 
             // textBoxZoomWidth
             // 
-            this.textBoxZoomWidth.Location = new System.Drawing.Point(124, 32);
+            this.textBoxZoomWidth.Location = new System.Drawing.Point(124, 18);
             this.textBoxZoomWidth.Name = "textBoxZoomWidth";
             this.textBoxZoomWidth.Size = new System.Drawing.Size(139, 20);
             this.textBoxZoomWidth.TabIndex = 1;
@@ -369,7 +375,7 @@ namespace DMS.MapLibrary
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(4, 35);
+            this.label17.Location = new System.Drawing.Point(4, 21);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(113, 13);
             this.label17.TabIndex = 0;
@@ -542,6 +548,36 @@ namespace DMS.MapLibrary
             this.label9.TabIndex = 0;
             this.label9.Text = "Map Background Colour:";
             // 
+            // openFileDialog
+            // 
+            this.openFileDialog.FileName = "openFileDialog1";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(50, 148);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(69, 13);
+            this.label13.TabIndex = 12;
+            this.label13.Text = "Map rotation:";
+            // 
+            // textBoxRotation
+            // 
+            this.textBoxRotation.Location = new System.Drawing.Point(125, 145);
+            this.textBoxRotation.Name = "textBoxRotation";
+            this.textBoxRotation.Size = new System.Drawing.Size(139, 20);
+            this.textBoxRotation.TabIndex = 13;
+            this.textBoxRotation.TextChanged += new System.EventHandler(this.ExtentChanging);
+            this.textBoxRotation.Validating += new System.ComponentModel.CancelEventHandler(this.ValidateDouble);
+            // 
+            // label19
+            // 
+            this.label19.Location = new System.Drawing.Point(270, 149);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(36, 13);
+            this.label19.TabIndex = 14;
+            this.label19.Text = "°";
+            // 
             // colorPickerBackColor
             // 
             this.colorPickerBackColor.BackColor = System.Drawing.SystemColors.Window;
@@ -555,10 +591,6 @@ namespace DMS.MapLibrary
             this.colorPickerBackColor.Text = "White";
             this.colorPickerBackColor.Value = System.Drawing.Color.White;
             this.colorPickerBackColor.ValueChanged += new System.EventHandler(this.colorPickerBackColor_ValueChanged);
-            // 
-            // openFileDialog
-            // 
-            this.openFileDialog.FileName = "openFileDialog1";
             // 
             // MapPropertyEditor
             // 
@@ -630,6 +662,8 @@ namespace DMS.MapLibrary
         private System.Windows.Forms.TextBox textBoxImagepath;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.CheckBox checkBoxTransparent;
-
+        private System.Windows.Forms.TextBox textBoxRotation;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label19;
     }
 }

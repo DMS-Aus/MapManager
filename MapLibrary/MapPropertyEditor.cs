@@ -414,6 +414,8 @@ namespace DMS.MapLibrary
             double centerY = double.Parse(textBoxY.Text);
 
             map.setExtent(centerX - deltaX, centerY - deltaY, centerX + deltaX, centerY + deltaY);
+            if (textBoxRotation.Text != "")
+                map.setRotation(double.Parse(textBoxRotation.Text));
 
             if (target != null)
                 target.RaisePropertyChanged(this);
