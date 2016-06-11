@@ -11,6 +11,8 @@ using System.Diagnostics;
 using MapLibrary.Properties;
 using System.Reflection;
 using System.Drawing.Drawing2D;
+using System.Drawing.Imaging;
+using System.Runtime.InteropServices;
 
 namespace DMS.MapLibrary
 {
@@ -63,6 +65,7 @@ namespace DMS.MapLibrary
         private bool drawQuery = false;
 
         private bool enableRendering = true;
+        private long lastRenderTime = 0;
 
         private NavigationHistory history = new NavigationHistory();
 
@@ -216,6 +219,14 @@ namespace DMS.MapLibrary
         public Image MapImage
         {
             get { return mapImage; }
+        }
+
+        /// <summary>
+        /// Gets the last rendering time of the map.
+        /// </summary>
+        public long LastRenderTime
+        {
+            get { return lastRenderTime; }
         }
 
         /// <summary>
@@ -921,7 +932,7 @@ namespace DMS.MapLibrary
 
             if (BeforeRefresh != null)
                 BeforeRefresh(this, null);
-            
+
             // setting up the size of the map image
             mapImage = null;
             if (map != null)
@@ -963,25 +974,67 @@ namespace DMS.MapLibrary
                             this.Cursor = Cursors.WaitCursor;
                             if (drawQuery)
                             {
+                                Stopwatch stopwatch = new Stopwatch();
+                                stopwatch.Start();
                                 using (imageObj image = map.drawQuery())
                                 {
-                                    byte[] img = image.getBytes();
-                                    using (MemoryStream ms = new MemoryStream(img))
+                                    if (mapImage == null || mapImage.Width != image.width || mapImage.Height != image.height)
                                     {
-                                        mapImage = Image.FromStream(ms);
+                                        mapImage = new Bitmap(image.width, image.height, PixelFormat.Format32bppRgb);
                                     }
+                                    Bitmap bitmap = (Bitmap)mapImage;
+                                    BitmapData bitmapData = bitmap.LockBits(new Rectangle(0, 0, image.width, image.height), ImageLockMode.ReadWrite, PixelFormat.Format32bppRgb);
+
+                                    try
+                                    {
+                                        image.getRawPixels(bitmapData.Scan0);
+                                    }
+                                    finally
+                                    {
+                                        bitmap.UnlockBits(bitmapData);
+                                    }
+
+                                    //byte[] img = image.getBytes();
+                                    //using (MemoryStream ms = new MemoryStream(img))
+                                    //{
+                                    //    mapImage = Image.FromStream(ms);
+                                    //}
+
+                                    lastRenderTime = stopwatch.ElapsedMilliseconds;
                                 }
+                                stopwatch.Stop();
                             }
                             else
                             {
+                                Stopwatch stopwatch = new Stopwatch();
+                                stopwatch.Start();
                                 using (imageObj image = map.draw())
                                 {
-                                    byte[] img = image.getBytes();
-                                    using (MemoryStream ms = new MemoryStream(img))
+                                    if (mapImage == null || mapImage.Width != image.width || mapImage.Height != image.height)
                                     {
-                                        mapImage = Image.FromStream(ms);
+                                        mapImage = new Bitmap(image.width, image.height, PixelFormat.Format32bppRgb);
                                     }
+                                    Bitmap bitmap = (Bitmap)mapImage;
+                                    BitmapData bitmapData = bitmap.LockBits(new Rectangle(0, 0, image.width, image.height), ImageLockMode.ReadWrite, PixelFormat.Format32bppRgb);
+
+                                    try
+                                    {
+                                        image.getRawPixels(bitmapData.Scan0);
+                                    }
+                                    finally
+                                    {
+                                        bitmap.UnlockBits(bitmapData);
+                                    }
+
+                                    //byte[] img = image.getBytes();
+                                    //using (MemoryStream ms = new MemoryStream(img))
+                                    //{
+                                    //    mapImage = Image.FromStream(ms);
+                                    //}
+
+                                    lastRenderTime = stopwatch.ElapsedMilliseconds;
                                 }
+                                stopwatch.Stop();
                             }
                         }
                         catch (Exception ex)

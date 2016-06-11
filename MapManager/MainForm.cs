@@ -1456,6 +1456,7 @@ namespace DMS.MapManager
         private void mapControl_AfterRefresh(object sender, EventArgs e)
         {
             this.Cursor = Cursors.Default;
+            toolStripStatusLabel1.Text = "Render (" + mapControl.LastRenderTime + "ms)";
         }
 
         /// <summary>
