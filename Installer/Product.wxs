@@ -436,8 +436,8 @@
                     <Component Id="spatialite.dll" Guid="*">
                         <File Id="spatialite.dll" Name="spatialite.dll" Source="$(var.SolutionDir)..\release-1600\bin\spatialite.dll" Vital="yes"/>
                     </Component>
-                    <Component Id="xerces_c_2_8.dll" Guid="*">
-                        <File Id="xerces_c_2_8.dll" Name="xerces-c_2_8.dll" Source="$(var.SolutionDir)..\release-1600\bin\xerces-c_2_8.dll" Vital="yes"/>
+                    <Component Id="xerces_c_3_1.dll" Guid="*">
+                        <File Id="xerces_c_3_1.dll" Name="xerces-c_3_1.dll" Source="$(var.SolutionDir)..\release-1600\bin\xerces-c_3_1.dll" Vital="yes"/>
                     </Component>
                     <Component Id="zlib1.dll" Guid="*">
                         <File Id="zlib1.dll" Name="zlib1.dll" Source="$(var.SolutionDir)..\release-1600\bin\zlib1.dll" Vital="yes"/>
@@ -739,7 +739,7 @@
                 <ComponentRef Id="sqlite3.dll" />
 			    <ComponentRef Id="freexl.dll" />
                 <ComponentRef Id="spatialite.dll" />
-                <ComponentRef Id="xerces_c_2_8.dll" />
+                <ComponentRef Id="xerces_c_3_1.dll" />
                 <ComponentRef Id="zlib1.dll" />
                 <ComponentRef Id="ApplicationShortcut" />
                 <ComponentRef Id="epsg" />
