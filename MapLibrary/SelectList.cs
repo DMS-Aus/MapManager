@@ -113,13 +113,16 @@ namespace DMS.MapLibrary
                                                 {
                                                     layerIndex = layer.index;
                                                     classIndex = res.classindex;
+                                                    if (classIndex < 0)
+                                                        classIndex = 0;
                                                     // creating the icon for this class
                                                     using (classObj def_class = new classObj(null)) // for drawing legend images
                                                     {
                                                         using (imageObj image = def_class.createLegendIcon(map, layer, 30, 20))
                                                         {
                                                             // drawing the class icons
-                                                            layer.getClass(classIndex).drawLegendIcon(map, layer, 20, 10, image, 5, 5);
+                                                            if (layer.numclasses > classIndex)
+                                                                layer.getClass(classIndex).drawLegendIcon(map, layer, 20, 10, image, 5, 5);
                                                             byte[] img = image.getBytes();
                                                             using (MemoryStream ms = new MemoryStream(img))
                                                             {
