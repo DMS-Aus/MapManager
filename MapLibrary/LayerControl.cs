@@ -1715,12 +1715,21 @@ namespace DMS.MapLibrary
                 // trying to open the layer
                 layer = CreateNewLayer();
 
-                layer.connection = fileName;
+                if (Path.GetExtension(fileName) == ".shp" || Path.GetExtension(fileName) == ".shx")
+                {
+                    // open as shapefile
+                    layer.data = fileName;
+                }
+                else
+                {
+                    // open as OGR layer
+                    layer.connection = fileName;
+                    layer.connectiontype = MS_CONNECTION_TYPE.MS_OGR;
+                    layer.data = null;
+                }
 
-                layer.connectiontype = MS_CONNECTION_TYPE.MS_OGR;
                 layer.name = MapUtils.GetUniqueLayerName(map, Path.GetFileNameWithoutExtension(fileName), 0);
                 layer.setProjection("+AUTO");
-                layer.data = null;
                 layer.status = mapscript.MS_ON;
                 layer.template = "query.html";
 
@@ -1731,16 +1740,12 @@ namespace DMS.MapLibrary
                 layer.close();
                 // try to find out the shape type using OGR
                 Ogr.RegisterAll();
-                DataSource ds = Ogr.Open(layer.connection, 0);
+                DataSource ds = Ogr.Open(fileName, 0);
                 if (ds != null)
                 {
                     if (ds.GetLayerCount() > 0)
                     {
-                        Layer ogrLayer;
-                        if (layer.data != null)
-                            ogrLayer = ds.GetLayerByName(layer.data);
-                        else
-                            ogrLayer = ds.GetLayerByIndex(0);
+                        Layer ogrLayer = ds.GetLayerByIndex(0);
                         wkbGeometryType gType = ogrLayer.GetLayerDefn().GetGeomType();
                         // reading the first feature to detect the type, if necessary
                         Feature feat;
