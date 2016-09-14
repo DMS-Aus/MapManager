@@ -773,6 +773,8 @@ namespace DMS.MapLibrary
             addVectorLayerFromFileToolStripMenuItem.Visible =
             addTileIndexLayerToolStripMenuItem.Visible =
             addTileIndexLayerToolStripMenuItem1.Visible =
+            addGraticuleLayerToolStripMenuItem.Visible =
+            addGraticuleLayerToolStripMenuItem1.Visible =
             addRasterLayerToolStripMenuItem.Visible =
             addRasterLayerFromFileToolStripMenuItem.Visible =
             addWMSLayerToolStripMenuItem.Visible =
@@ -801,6 +803,8 @@ namespace DMS.MapLibrary
                     addVectorLayerToolStripMenuItem.Visible = true;
                     addTileIndexLayerToolStripMenuItem.Visible = true;
                     addTileIndexLayerToolStripMenuItem1.Visible = true;
+                    addGraticuleLayerToolStripMenuItem.Visible = true;
+                    addGraticuleLayerToolStripMenuItem1.Visible = true;
                     addRasterLayerToolStripMenuItem.Visible = true;
                     addNewLayerToolStripMenuItem.Visible = true;
                     addLayerToolStripMenuItem.Visible = true;
@@ -850,6 +854,8 @@ namespace DMS.MapLibrary
                     addVectorLayerFromFileToolStripMenuItem.Visible = true;
                     addTileIndexLayerToolStripMenuItem.Visible = true;
                     addTileIndexLayerToolStripMenuItem1.Visible = true;
+                    addGraticuleLayerToolStripMenuItem.Visible = true;
+                    addGraticuleLayerToolStripMenuItem1.Visible = true;
                     addRasterLayerFromFileToolStripMenuItem.Visible = true;
                     addLayerToolStripMenuItem.Visible = true;
                     renameToolStripMenuItem.Visible = true;     
@@ -991,6 +997,8 @@ namespace DMS.MapLibrary
                 addVectorLayerToolStripMenuItem.Visible = false;
                 addTileIndexLayerToolStripMenuItem.Visible = false;
                 addTileIndexLayerToolStripMenuItem1.Visible = false;
+                addGraticuleLayerToolStripMenuItem.Visible = false;
+                addGraticuleLayerToolStripMenuItem1.Visible = false;
                 addRasterLayerFromFileToolStripMenuItem.Visible = false;
                 addRasterLayerToolStripMenuItem.Visible = false;
                 addWMSLayerToolStripMenuItem1.Visible = false;
@@ -3148,6 +3156,22 @@ namespace DMS.MapLibrary
                     RaiseItemSelect((MapObjectHolder)source.Tag);
                 UpdateToolbar();
             }
-        }   
+        }
+
+        /// <summary>
+        /// Click event handler of the addGraticuleLayerToolStripMenuItem control.
+        /// </summary>
+        /// <param name="sender">The source object of this event.</param>
+        /// <param name="e">The event parameters.</param>
+        private void addGraticuleLayerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddGraticuleLayerForm form = new AddGraticuleLayerForm(map);
+            if (form.ShowDialog(this) == DialogResult.OK)
+            {
+                if (target != null)
+                    target.RaisePropertyChanged(this);
+                RefreshView();
+            }
+        }
     }
 }
