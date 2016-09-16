@@ -504,7 +504,7 @@ namespace DMS.MapManager
             MapfileConverter c = new MapfileConverter();
             try
             {
-                c.Parse(File.ReadAllText(file, Encoding.Default), false);
+                c.Parse(File.ReadAllText(file, Encoding.UTF8), false);
                 MapObjectHolder mapH;
                 mapObj map;
                 if (c.HasToConvert())
@@ -578,7 +578,7 @@ namespace DMS.MapManager
                 if (c.HasToConvert())
                     scintillaControl.Text = c.GetMapFile();
                 else
-                    scintillaControl.Text = File.ReadAllText(fileName, Encoding.Default);
+                    scintillaControl.Text = File.ReadAllText(fileName, Encoding.UTF8);
                 SetMargins();
                 tabControlContents.SelectedIndex = 1;
             }
