@@ -320,7 +320,7 @@
                         <File Id="SciLexer.dll" Name="SciLexer.dll" Source="$(var.MapManager.TargetDir)SciLexer.dll" Vital="yes"/>
                     </Component>
                     <Component Id="gdal.dll" Guid="*">
-                        <File Id="gdal.dll" Name="gdal201.dll" Source="$(var.SolutionDir)..\release-1600\bin\gdal201.dll" Vital="yes"/>
+                        <File Id="gdal.dll" Name="gdal202.dll" Source="$(var.SolutionDir)..\release-1600\bin\gdal202.dll" Vital="yes"/>
                     </Component>
                     <Component Id="Microsoft.VisualBasic.PowerPacks.Vs.dll" Guid="*">
                         <File Id="Microsoft.VisualBasic.PowerPacks.Vs.dll" Name="Microsoft.VisualBasic.PowerPacks.Vs.dll" Source="$(var.MapManager.TargetDir)Microsoft.VisualBasic.PowerPacks.Vs.dll" Vital="yes"/>
@@ -496,23 +496,11 @@
                     <Component Id="s57attributes.csv" Guid="*">
                         <File Id="s57attributes.csv" Name="s57attributes.csv" Source="$(var.SolutionDir)..\release-1600\bin\gdal-data\s57attributes.csv" Vital="yes"/>
                     </Component>
-                    <Component Id="s57attributes_aml.csv" Guid="*">
-                        <File Id="s57attributes_aml.csv" Name="s57attributes_aml.csv" Source="$(var.SolutionDir)..\release-1600\bin\gdal-data\s57attributes_aml.csv" Vital="yes"/>
-                    </Component>
-                    <Component Id="s57attributes_iw.csv" Guid="*">
-                        <File Id="s57attributes_iw.csv" Name="s57attributes_iw.csv" Source="$(var.SolutionDir)..\release-1600\bin\gdal-data\s57attributes_iw.csv" Vital="yes"/>
-                    </Component>
                     <Component Id="s57expectedinput.csv" Guid="*">
                         <File Id="s57expectedinput.csv" Name="s57expectedinput.csv" Source="$(var.SolutionDir)..\release-1600\bin\gdal-data\s57expectedinput.csv" Vital="yes"/>
                     </Component>
                     <Component Id="s57objectclasses.csv" Guid="*">
                         <File Id="s57objectclasses.csv" Name="s57objectclasses.csv" Source="$(var.SolutionDir)..\release-1600\bin\gdal-data\s57objectclasses.csv" Vital="yes"/>
-                    </Component>
-                    <Component Id="s57objectclasses_aml.csv" Guid="*">
-                        <File Id="s57objectclasses_aml.csv" Name="s57objectclasses_aml.csv" Source="$(var.SolutionDir)..\release-1600\bin\gdal-data\s57objectclasses_aml.csv" Vital="yes"/>
-                    </Component>
-                    <Component Id="s57objectclasses_iw.csv" Guid="*">
-                        <File Id="s57objectclasses_iw.csv" Name="s57objectclasses_iw.csv" Source="$(var.SolutionDir)..\release-1600\bin\gdal-data\s57objectclasses_iw.csv" Vital="yes"/>
                     </Component>
                     <Component Id="stateplane.csv" Guid="*">
                         <File Id="stateplane.csv" Name="stateplane.csv" Source="$(var.SolutionDir)..\release-1600\bin\gdal-data\stateplane.csv" Vital="yes"/>
@@ -798,12 +786,8 @@
                 <ComponentRef Id="projop_wparm.csv" />
                 <ComponentRef Id="s57agencies.csv" />
                 <ComponentRef Id="s57attributes.csv" />
-                <ComponentRef Id="s57attributes_aml.csv" />
-                <ComponentRef Id="s57attributes_iw.csv" />
                 <ComponentRef Id="s57expectedinput.csv" />
                 <ComponentRef Id="s57objectclasses.csv" />
-                <ComponentRef Id="s57objectclasses_aml.csv" />
-                <ComponentRef Id="s57objectclasses_iw.csv" />
                 <ComponentRef Id="stateplane.csv" />
                 <ComponentRef Id="unit_of_measure.csv" />
                 <ComponentRef Id="MapServerAnimals.ttf" />
