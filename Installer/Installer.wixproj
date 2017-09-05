@@ -22,6 +22,7 @@
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
     <SuppressIces>ICE82;ICE03;ICE83</SuppressIces>
+    <SuppressValidation>True</SuppressValidation>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Product.wxs" />
