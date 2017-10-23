@@ -506,14 +506,15 @@ namespace DMS.MapLibrary
             comboBoxConnectionType.Items.Clear();
             comboBoxConnectionType.Items.AddRange(new object[] { MS_CONNECTION_TYPE.MS_GRATICULE, MS_CONNECTION_TYPE.MS_INLINE, MS_CONNECTION_TYPE.MS_OGR, MS_CONNECTION_TYPE.MS_PLUGIN, MS_CONNECTION_TYPE.MS_POSTGIS,
             MS_CONNECTION_TYPE.MS_RASTER, MS_CONNECTION_TYPE.MS_TILED_SHAPEFILE, MS_CONNECTION_TYPE.MS_SHAPEFILE, MS_CONNECTION_TYPE.MS_WFS,
-            MS_CONNECTION_TYPE.MS_WMS});
+            MS_CONNECTION_TYPE.MS_WMS, MS_CONNECTION_TYPE.MS_KERNELDENSITY});
 
             if (layer.connectiontype != MS_CONNECTION_TYPE.MS_ORACLESPATIAL)
                 comboBoxConnectionType.SelectedItem = (MS_CONNECTION_TYPE)layer.connectiontype;
 
             // setting the raster connection type if it's not initialized yet
             if (layer.type == MS_LAYER_TYPE.MS_LAYER_RASTER && layer.connectiontype != MS_CONNECTION_TYPE.MS_WMS &&
-                layer.connectiontype != MS_CONNECTION_TYPE.MS_RASTER)
+                layer.connectiontype != MS_CONNECTION_TYPE.MS_RASTER &&
+                layer.connectiontype != MS_CONNECTION_TYPE.MS_KERNELDENSITY)
                 comboBoxConnectionType.SelectedItem = MS_CONNECTION_TYPE.MS_RASTER;
 
             comboBoxType.DataSource = Enum.GetValues(typeof(MS_LAYER_TYPE));
