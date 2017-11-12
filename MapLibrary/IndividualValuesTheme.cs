@@ -394,5 +394,10 @@ namespace DMS.MapLibrary
         {
             UpdateThemeView();
         }
+
+        private void checkBoxClassItem_CheckedChanged(object sender, EventArgs e)
+        {
+            UpdateThemeView();
+        }
     }
 }
