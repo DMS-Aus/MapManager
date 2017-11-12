@@ -248,6 +248,7 @@ namespace DMS.MapLibrary
             this.checkBoxClassItem.TabIndex = 10;
             this.checkBoxClassItem.Text = "Use CLASSITEM for class selection instead of expressions";
             this.checkBoxClassItem.UseVisualStyleBackColor = true;
+            this.checkBoxClassItem.CheckedChanged += new System.EventHandler(this.checkBoxClassItem_CheckedChanged);
             // 
             // IndividualValuesTheme
             // 
