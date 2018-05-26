@@ -396,7 +396,9 @@
                     </Component>
                     <Component Id="mapscript.dll" Guid="*">
                         <File Id="mapscript.dll" Name="mapscript.dll" Source="$(var.SolutionDir)..\release-1900\bin\ms\csharp\mapscript.dll" Vital="yes"/>
-                        <File Id="csharpmapscript.dll" Name="csharpmapscript.dll" Source="$(var.SolutionDir)..\release-1900\bin\ms\csharp\mapscript.dll" Vital="yes"/>
+                    </Component>
+                    <Component Id="csharpmapscript.dll" Guid="*">
+                      <File Id="csharpmapscript.dll" Name="csharpmapscript.dll" Source="$(var.SolutionDir)..\release-1900\bin\ms\csharp\mapscript.dll" Vital="yes"/>
                     </Component>
                     <Component Id="mapscript_csharp.dll" Guid="*">
                         <File Id="mapscript_csharp.dll" Name="mapscript_csharp.dll" Source="$(var.SolutionDir)..\release-1900\bin\ms\csharp\mapscript_csharp.dll" Vital="yes"/>
@@ -715,6 +717,7 @@
                 <ComponentRef Id="libmysql.dll" />
                 <ComponentRef Id="libxml2.dll" />
                 <ComponentRef Id="mapscript.dll" />
+                <ComponentRef Id="csharpmapscript.dll" />
                 <ComponentRef Id="mapscript_csharp.dll" />
                 <ComponentRef Id="ogr_csharp.dll" />
                 <ComponentRef Id="ogr_wrap.dll" />
