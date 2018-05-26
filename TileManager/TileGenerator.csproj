@@ -39,11 +39,11 @@
   <ItemGroup>
     <Reference Include="gdal_csharp, Version=1.0.5098.28547, Culture=neutral, PublicKeyToken=db5a52b08dc5b321, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\release-1600\bin\gdal\csharp\gdal_csharp.dll</HintPath>
+      <HintPath>..\..\release-1900\bin\gdal\csharp\gdal_csharp.dll</HintPath>
     </Reference>
     <Reference Include="mapscript_csharp, Version=1.0.5098.28628, Culture=neutral, PublicKeyToken=80087771edd02926, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\release-1600\bin\ms\csharp\mapscript_csharp.dll</HintPath>
+      <HintPath>..\..\release-1900\bin\ms\csharp\mapscript_csharp.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
