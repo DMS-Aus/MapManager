@@ -451,8 +451,8 @@
                     <Component Id="proj.dll" Guid="*">
                         <File Id="proj.dll" Name="proj.dll" Source="$(var.SolutionDir)..\release-1900\bin\proj.dll" Vital="yes"/>
                     </Component>
-                    <Component Id="proj_6_0.dll" Guid="*">
-                        <File Id="proj_6_0.dll" Name="proj_6_0.dll" Source="$(var.SolutionDir)..\release-1900\bin\proj_6_0.dll" Vital="yes"/>
+                    <Component Id="proj_6_1.dll" Guid="*">
+                        <File Id="proj_6_1.dll" Name="proj_6_1.dll" Source="$(var.SolutionDir)..\release-1900\bin\proj_6_1.dll" Vital="yes"/>
                     </Component>
                     <Component Id="sqlite3.dll" Guid="*">
                         <File Id="sqlite3.dll" Name="sqlite3.dll" Source="$(var.SolutionDir)..\release-1900\bin\sqlite3.dll" Vital="yes"/>
@@ -697,7 +697,7 @@
                 <ComponentRef Id="gdal_wrap.dll" />
                 <ComponentRef Id="openjp2.dll" />
                 <ComponentRef Id="proj.dll" />
-                <ComponentRef Id="proj_6_0.dll" />
+                <ComponentRef Id="proj_6_1.dll" />
                 <ComponentRef Id="fribidi.dll" />
                 <ComponentRef Id="sqlite3.dll" />
 			          <ComponentRef Id="freexl.dll" />

@@ -72,6 +72,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\release-1900\bin\gdal\csharp\ogr_csharp.dll</HintPath>
     </Reference>
+    <Reference Include="osr_csharp, Version=1.0.7100.37427, Culture=neutral, PublicKeyToken=db5a52b08dc5b321, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release-1900\bin\gdal\csharp\osr_csharp.dll</HintPath>
+    </Reference>
     <Reference Include="ScintillaNet, Version=2.2.5989.25080, Culture=neutral, PublicKeyToken=948d6c9751444115, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\ExternalFiles\ScintillaNet.dll</HintPath>
