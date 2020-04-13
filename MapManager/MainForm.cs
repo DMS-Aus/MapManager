@@ -10,6 +10,7 @@ using System.Runtime.Serialization;
 using OSGeo.MapServer;
 using OSGeo.GDAL;
 using OSGeo.OGR;
+using OSGeo.OSR;
 using DMS.MapLibrary;
 using System.Diagnostics;
 using System.Reflection;
@@ -87,6 +88,7 @@ namespace DMS.MapManager
             InitializeComponent();
 
             MapUtils.SetPROJ_LIB(Environment.CurrentDirectory + "\\ProjLib");
+            Osr.SetPROJSearchPath(Environment.CurrentDirectory + "\\ProjLib");
 
             Gdal.SetConfigOption("GDAL_DATA", Environment.CurrentDirectory);
             LocateDependencies();

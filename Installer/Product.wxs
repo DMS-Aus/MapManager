@@ -14,85 +14,106 @@
             <Directory Id="DesktopFolder" Name="Desktop"/>
 			<Directory Id="ProgramFilesFolder" Name="PFiles">
 				<Directory Id="INSTALLDIR" Name="MapManager">
-                    <Directory Id="ProjLibDir" Name="ProjLib">
+                    <Directory Id="projlibDir" Name="projlib">
                         <Component Id="epsg" Guid="*">
-                            <File Id="epsg" Name="epsg" Source="$(var.MapManager.TargetDir)\ProjLib\epsg" />
+                            <File Id="epsg" Name="epsg" Source="$(var.SolutionDir)..\release-1900\bin\proj\SHARE\epsg" />
                         </Component>
                         <Component Id="world" Guid="*">
-                            <File Id="world" Name="world" Source="$(var.MapManager.TargetDir)\ProjLib\world" Vital="yes"/>
+                            <File Id="world" Name="world" Source="$(var.SolutionDir)..\release-1900\bin\proj6\SHARE\world" Vital="yes"/>
                         </Component>
                         <Component Id="WO" Guid="*">
-                            <File Id="WO" Name="WO" Source="$(var.MapManager.TargetDir)\ProjLib\WO" Vital="yes"/>
+                            <File Id="WO" Name="WO" Source="$(var.SolutionDir)..\release-1900\bin\proj6\SHARE\WO" Vital="yes"/>
                         </Component>
                         <Component Id="WI" Guid="*">
-                            <File Id="WI" Name="WI" Source="$(var.MapManager.TargetDir)\ProjLib\WI" Vital="yes"/>
+                            <File Id="WI" Name="WI" Source="$(var.SolutionDir)..\release-1900\bin\proj6\SHARE\WI" Vital="yes"/>
                         </Component>
                         <Component Id="TN" Guid="*">
-                            <File Id="TN" Name="TN" Source="$(var.MapManager.TargetDir)\ProjLib\TN" Vital="yes"/>
+                            <File Id="TN" Name="TN" Source="$(var.SolutionDir)..\release-1900\bin\proj6\SHARE\TN" Vital="yes"/>
                         </Component>
                         <Component Id="stpaul" Guid="*">
-                            <File Id="stpaul" Name="stpaul" Source="$(var.MapManager.TargetDir)\ProjLib\stpaul" Vital="yes"/>
+                            <File Id="stpaul" Name="stpaul" Source="$(var.SolutionDir)..\release-1900\bin\proj6\SHARE\stpaul" Vital="yes"/>
                         </Component>
                         <Component Id="stlrnc" Guid="*">
-                            <File Id="stlrnc" Name="stlrnc" Source="$(var.MapManager.TargetDir)\ProjLib\stlrnc" Vital="yes"/>
+                            <File Id="stlrnc" Name="stlrnc" Source="$(var.SolutionDir)..\release-1900\bin\proj6\SHARE\stlrnc" Vital="yes"/>
                         </Component>
                         <Component Id="stgeorge" Guid="*">
-                            <File Id="stgeorge" Name="stgeorge" Source="$(var.MapManager.TargetDir)\ProjLib\stgeorge" Vital="yes"/>
+                            <File Id="stgeorge" Name="stgeorge" Source="$(var.SolutionDir)..\release-1900\bin\proj6\SHARE\stgeorge" Vital="yes"/>
                         </Component>
                         <Component Id="prvi" Guid="*">
-                            <File Id="prvi" Name="prvi" Source="$(var.MapManager.TargetDir)\ProjLib\prvi" Vital="yes"/>
+                            <File Id="prvi" Name="prvi" Source="$(var.SolutionDir)..\release-1900\bin\proj6\SHARE\prvi" Vital="yes"/>
+                        </Component>
+                        <Component Id="proj.db" Guid="*">
+                            <File Id="proj.db" Name="proj.db" Source="$(var.SolutionDir)..\release-1900\bin\proj6\SHARE\proj.db" Vital="yes"/>
                         </Component>
                         <Component Id="proj_def.dat" Guid="*">
-                            <File Id="proj_def.dat" Name="proj_def.dat" Source="$(var.MapManager.TargetDir)\ProjLib\proj_def.dat" Vital="yes"/>
+                            <File Id="proj_def.dat" Name="proj_def.dat" Source="$(var.SolutionDir)..\release-1900\bin\proj\SHARE\proj_def.dat" Vital="yes"/>
                         </Component>
                         <Component Id="other.extra" Guid="*">
-                            <File Id="other.extra" Name="other.extra" Source="$(var.MapManager.TargetDir)\ProjLib\other.extra" Vital="yes"/>
+                            <File Id="other.extra" Name="other.extra" Source="$(var.SolutionDir)..\release-1900\bin\proj6\SHARE\other.extra" Vital="yes"/>
                         </Component>
-                        <Component Id="nzgd2kgrid0005.gsb" Guid="257C89C9-11E0-442B-8902-72F3988FCFB6">
-                            <File Id="nzgd2kgrid0005.gsb" Name="nzgd2kgrid0005.gsb" Source="$(var.MapManager.TargetDir)\ProjLib\nzgd2kgrid0005.gsb" Vital="yes"/>
+                        <Component Id="nzgd2kgrid0005.gsb" Guid="*">
+                            <File Id="nzgd2kgrid0005.gsb" Name="nzgd2kgrid0005.gsb" Source="$(var.SolutionDir)..\release-1900\bin\proj6\SHARE\nzgd2kgrid0005.gsb" Vital="yes"/>
                         </Component>
                         <Component Id="null" Guid="*">
-                            <File Id="null" Name="null" Source="$(var.MapManager.TargetDir)\ProjLib\null" Vital="yes"/>
+                            <File Id="null" Name="null" Source="$(var.SolutionDir)..\release-1900\bin\proj6\SHARE\null" Vital="yes"/>
                         </Component>
                         <Component Id="ntv1_can.dat" Guid="*">
-                            <File Id="ntv1_can.dat" Name="ntv1_can.dat" Source="$(var.MapManager.TargetDir)\ProjLib\ntv1_can.dat" Vital="yes"/>
+                            <File Id="ntv1_can.dat" Name="ntv1_can.dat" Source="$(var.SolutionDir)..\release-1900\bin\proj6\SHARE\ntv1_can.dat" Vital="yes"/>
                         </Component>
                         <Component Id="ntf_r93.gsb" Guid="*">
-                            <File Id="ntf_r93.gsb" Name="ntf_r93.gsb" Source="$(var.MapManager.TargetDir)\ProjLib\ntf_r93.gsb" Vital="yes"/>
+                            <File Id="ntf_r93.gsb" Name="ntf_r93.gsb" Source="$(var.SolutionDir)..\release-1900\bin\proj6\SHARE\ntf_r93.gsb" Vital="yes"/>
                         </Component>
                         <Component Id="nad83" Guid="*">
-                            <File Id="nad83" Name="nad83" Source="$(var.MapManager.TargetDir)\ProjLib\nad83" Vital="yes"/>
+                            <File Id="nad83" Name="nad83" Source="$(var.SolutionDir)..\release-1900\bin\proj6\SHARE\nad83" Vital="yes"/>
                         </Component>
                         <Component Id="nad27" Guid="*">
-                            <File Id="nad27" Name="nad27" Source="$(var.MapManager.TargetDir)\ProjLib\nad27" Vital="yes"/>
+                            <File Id="nad27" Name="nad27" Source="$(var.SolutionDir)..\release-1900\bin\proj6\SHARE\nad27" Vital="yes"/>
                         </Component>
                         <Component Id="nad.lst" Guid="*">
-                            <File Id="nad.lst" Name="nad.lst" Source="$(var.MapManager.TargetDir)\ProjLib\nad.lst" Vital="yes"/>
+                            <File Id="nad.lst" Name="nad.lst" Source="$(var.SolutionDir)..\release-1900\bin\proj6\SHARE\nad.lst" Vital="yes"/>
                         </Component>
                         <Component Id="MD" Guid="*">
-                            <File Id="MD" Name="MD" Source="$(var.MapManager.TargetDir)\ProjLib\MD" Vital="yes"/>
+                            <File Id="MD" Name="MD" Source="$(var.SolutionDir)..\release-1900\bin\proj6\SHARE\MD" Vital="yes"/>
                         </Component>
                         <Component Id="IGNF" Guid="*">
-                            <File Id="IGNF" Name="IGNF" Source="$(var.MapManager.TargetDir)\ProjLib\IGNF" Vital="yes"/>
+                            <File Id="IGNF" Name="IGNF" Source="$(var.SolutionDir)..\release-1900\bin\proj\SHARE\IGNF" Vital="yes"/>
+                        </Component>
+                        <Component Id="ITRF2014" Guid="*">
+                            <File Id="ITRF2014" Name="ITRF2014" Source="$(var.SolutionDir)..\release-1900\bin\proj6\SHARE\ITRF2014" Vital="yes"/>
+                        </Component>
+                        <Component Id="ITRF2008" Guid="*">
+                            <File Id="ITRF2008" Name="ITRF2008" Source="$(var.SolutionDir)..\release-1900\bin\proj6\SHARE\ITRF2008" Vital="yes"/>
+                        </Component>
+                        <Component Id="ITRF2000" Guid="*">
+                            <File Id="ITRF2000" Name="ITRF2000" Source="$(var.SolutionDir)..\release-1900\bin\proj6\SHARE\ITRF2000" Vital="yes"/>
                         </Component>
                         <Component Id="hawaii" Guid="*">
-                            <File Id="hawaii" Name="hawaii" Source="$(var.MapManager.TargetDir)\ProjLib\hawaii" Vital="yes"/>
+                            <File Id="hawaii" Name="hawaii" Source="$(var.SolutionDir)..\release-1900\bin\proj6\SHARE\hawaii" Vital="yes"/>
                         </Component>
                         <Component Id="GL27" Guid="*">
-                            <File Id="GL27" Name="GL27" Source="$(var.MapManager.TargetDir)\ProjLib\GL27" Vital="yes"/>
+                            <File Id="GL27" Name="GL27" Source="$(var.SolutionDir)..\release-1900\bin\proj6\SHARE\GL27" Vital="yes"/>
                         </Component>
                         <Component Id="esri.extra" Guid="*">
-                            <File Id="esri.extra" Name="esri.extra" Source="$(var.MapManager.TargetDir)\ProjLib\esri.extra" Vital="yes"/>
+                            <File Id="esri.extra" Name="esri.extra" Source="$(var.SolutionDir)..\release-1900\bin\proj\SHARE\esri.extra" Vital="yes"/>
                         </Component>
                         <Component Id="esri" Guid="*">
-                            <File Id="esri" Name="esri" Source="$(var.MapManager.TargetDir)\ProjLib\esri" Vital="yes"/>
+                            <File Id="esri" Name="esri" Source="$(var.SolutionDir)..\release-1900\bin\proj\SHARE\esri" Vital="yes"/>
+                        </Component>
+                        <Component Id="egm96_15.gtx" Guid="*">
+                            <File Id="egm96_15.gtx" Name="egm96_15.gtx" Source="$(var.SolutionDir)..\release-1900\bin\proj6\SHARE\egm96_15.gtx" Vital="yes"/>
                         </Component>
                         <Component Id="conus" Guid="*">
-                            <File Id="conus" Name="conus" Source="$(var.MapManager.TargetDir)\ProjLib\conus" Vital="yes"/>
+                            <File Id="conus" Name="conus" Source="$(var.SolutionDir)..\release-1900\bin\proj6\SHARE\conus" Vital="yes"/>
+                        </Component>
+                        <Component Id="CH" Guid="*">
+                            <File Id="CH" Name="CH" Source="$(var.SolutionDir)..\release-1900\bin\proj6\SHARE\CH" Vital="yes"/>
+                        </Component>
+                        <Component Id="BETA2007.gsb" Guid="*">
+                            <File Id="BETA2007.gsb" Name="BETA2007.gsb" Source="$(var.SolutionDir)..\release-1900\bin\proj6\SHARE\BETA2007.gsb" Vital="yes"/>
                         </Component>
                         <Component Id="alaska" Guid="*">
-                            <File Id="alaska" Name="alaska" Source="$(var.MapManager.TargetDir)\ProjLib\alaska" Vital="yes"/>
-                        </Component>          
+                            <File Id="alaska" Name="alaska" Source="$(var.SolutionDir)..\release-1900\bin\proj6\SHARE\alaska" Vital="yes"/>
+                        </Component>
                     </Directory>
                     <Directory Id="templatesDir" Name="templates">
                         <Component Id="new.map" Guid="*">
@@ -320,7 +341,7 @@
                         <File Id="SciLexer.dll" Name="SciLexer.dll" Source="$(var.MapManager.TargetDir)SciLexer.dll" Vital="yes"/>
                     </Component>
                     <Component Id="gdal.dll" Guid="*">
-                        <File Id="gdal.dll" Name="gdal203.dll" Source="$(var.SolutionDir)..\release-1900\bin\gdal203.dll" Vital="yes"/>
+                        <File Id="gdal.dll" Name="gdal300.dll" Source="$(var.SolutionDir)..\release-1900\bin\gdal300.dll" Vital="yes"/>
                     </Component>
                     <Component Id="Microsoft.VisualBasic.PowerPacks.Vs.dll" Guid="*">
                         <File Id="Microsoft.VisualBasic.PowerPacks.Vs.dll" Name="Microsoft.VisualBasic.PowerPacks.Vs.dll" Source="$(var.MapManager.TargetDir)Microsoft.VisualBasic.PowerPacks.Vs.dll" Vital="yes"/>
@@ -430,6 +451,9 @@
                     <Component Id="proj.dll" Guid="*">
                         <File Id="proj.dll" Name="proj.dll" Source="$(var.SolutionDir)..\release-1900\bin\proj.dll" Vital="yes"/>
                     </Component>
+                    <Component Id="proj_6_1.dll" Guid="*">
+                        <File Id="proj_6_1.dll" Name="proj_6_1.dll" Source="$(var.SolutionDir)..\release-1900\bin\proj_6_1.dll" Vital="yes"/>
+                    </Component>
                     <Component Id="sqlite3.dll" Guid="*">
                         <File Id="sqlite3.dll" Name="sqlite3.dll" Source="$(var.SolutionDir)..\release-1900\bin\sqlite3.dll" Vital="yes"/>
                     </Component>
@@ -447,69 +471,6 @@
                     </Component>
                     <Component Id="cfitsio.dll" Guid="*">
                         <File Id="cfitsio.dll" Name="cfitsio.dll" Source="$(var.SolutionDir)..\release-1900\bin\cfitsio.dll" Vital="yes"/>
-                    </Component>
-                    <Component Id="ecw_cs.wkt" Guid="*">
-                        <File Id="ecw_cs.wkt" Name="ecw_cs.wkt" Source="$(var.SolutionDir)..\release-1900\bin\gdal-data\ecw_cs.wkt" Vital="yes"/>
-                    </Component>
-                    <Component Id="cubewerx_extra.wkt" Guid="*">
-                        <File Id="cubewerx_extra.wkt" Name="cubewerx_extra.wkt" Source="$(var.SolutionDir)..\release-1900\bin\gdal-data\cubewerx_extra.wkt" Vital="yes"/>
-                    </Component>
-                    <Component Id="epsg.wkt" Guid="*">
-                        <File Id="epsg.wkt" Name="epsg.wkt" Source="$(var.SolutionDir)..\release-1900\bin\gdal-data\epsg.wkt" Vital="yes"/>
-                    </Component>
-                    <Component Id="esri_extra.wkt" Guid="*">
-                        <File Id="esri_extra.wkt" Name="esri_extra.wkt" Source="$(var.SolutionDir)..\release-1900\bin\gdal-data\esri_extra.wkt" Vital="yes"/>
-                    </Component>
-                    <Component Id="coordinate_axis.csv" Guid="*">
-                        <File Id="coordinate_axis.csv" Name="coordinate_axis.csv" Source="$(var.SolutionDir)..\release-1900\bin\gdal-data\coordinate_axis.csv" Vital="yes"/>
-                    </Component>
-                    <Component Id="ellipsoid.csv" Guid="*">
-                        <File Id="ellipsoid.csv" Name="ellipsoid.csv" Source="$(var.SolutionDir)..\release-1900\bin\gdal-data\ellipsoid.csv" Vital="yes"/>
-                    </Component>
-                    <Component Id="gcs.csv" Guid="*">
-                        <File Id="gcs.csv" Name="gcs.csv" Source="$(var.SolutionDir)..\release-1900\bin\gdal-data\gcs.csv" Vital="yes"/>
-                    </Component>
-                    <Component Id="gcs.override.csv" Guid="*">
-                        <File Id="gcs.override.csv" Name="gcs.override.csv" Source="$(var.SolutionDir)..\release-1900\bin\gdal-data\gcs.override.csv" Vital="yes"/>
-                    </Component>
-                    <Component Id="gdal_datum.csv" Guid="*">
-                        <File Id="gdal_datum.csv" Name="gdal_datum.csv" Source="$(var.SolutionDir)..\release-1900\bin\gdal-data\gdal_datum.csv" Vital="yes"/>
-                    </Component>
-                    <Component Id="gt_datum.csv" Guid="*">
-                        <File Id="gt_datum.csv" Name="gt_datum.csv" Source="$(var.SolutionDir)..\release-1900\bin\gdal-data\gt_datum.csv" Vital="yes"/>
-                    </Component>
-                    <Component Id="gt_ellips.csv" Guid="*">
-                        <File Id="gt_ellips.csv" Name="gt_ellips.csv" Source="$(var.SolutionDir)..\release-1900\bin\gdal-data\gt_ellips.csv" Vital="yes"/>
-                    </Component>
-                    <Component Id="pcs.csv" Guid="*">
-                        <File Id="pcs.csv" Name="pcs.csv" Source="$(var.SolutionDir)..\release-1900\bin\gdal-data\pcs.csv" Vital="yes"/>
-                    </Component>
-                    <Component Id="pcs.override.csv" Guid="*">
-                        <File Id="pcs.override.csv" Name="pcs.override.csv" Source="$(var.SolutionDir)..\release-1900\bin\gdal-data\pcs.override.csv" Vital="yes"/>
-                    </Component>
-                    <Component Id="prime_meridian.csv" Guid="*">
-                        <File Id="prime_meridian.csv" Name="prime_meridian.csv" Source="$(var.SolutionDir)..\release-1900\bin\gdal-data\prime_meridian.csv" Vital="yes"/>
-                    </Component>
-                    <Component Id="projop_wparm.csv" Guid="*">
-                        <File Id="projop_wparm.csv" Name="projop_wparm.csv" Source="$(var.SolutionDir)..\release-1900\bin\gdal-data\projop_wparm.csv" Vital="yes"/>
-                    </Component>
-                    <Component Id="s57agencies.csv" Guid="*">
-                        <File Id="s57agencies.csv" Name="s57agencies.csv" Source="$(var.SolutionDir)..\release-1900\bin\gdal-data\s57agencies.csv" Vital="yes"/>
-                    </Component>
-                    <Component Id="s57attributes.csv" Guid="*">
-                        <File Id="s57attributes.csv" Name="s57attributes.csv" Source="$(var.SolutionDir)..\release-1900\bin\gdal-data\s57attributes.csv" Vital="yes"/>
-                    </Component>
-                    <Component Id="s57expectedinput.csv" Guid="*">
-                        <File Id="s57expectedinput.csv" Name="s57expectedinput.csv" Source="$(var.SolutionDir)..\release-1900\bin\gdal-data\s57expectedinput.csv" Vital="yes"/>
-                    </Component>
-                    <Component Id="s57objectclasses.csv" Guid="*">
-                        <File Id="s57objectclasses.csv" Name="s57objectclasses.csv" Source="$(var.SolutionDir)..\release-1900\bin\gdal-data\s57objectclasses.csv" Vital="yes"/>
-                    </Component>
-                    <Component Id="stateplane.csv" Guid="*">
-                        <File Id="stateplane.csv" Name="stateplane.csv" Source="$(var.SolutionDir)..\release-1900\bin\gdal-data\stateplane.csv" Vital="yes"/>
-                    </Component>
-                    <Component Id="unit_of_measure.csv" Guid="*">
-                        <File Id="unit_of_measure.csv" Name="unit_of_measure.csv" Source="$(var.SolutionDir)..\release-1900\bin\gdal-data\unit_of_measure.csv" Vital="yes"/>
                     </Component>
                     <Component Id="msplugin_mssql2008.dll" Guid="*">
                         <File Id="msplugin_mssql2008.dll" Name="msplugin_mssql2008.dll" Source="$(var.SolutionDir)..\release-1900\bin\ms\plugins\mssql2008\msplugin_mssql2008.dll" />
@@ -589,6 +550,12 @@
                     <Component Id="gdalwarp.exe" Guid="*">
                         <File Id="gdalwarp.exe" Name="gdalwarp.exe" Source="$(var.SolutionDir)..\release-1900\bin\gdal\apps\gdalwarp.exe" />
                     </Component>
+                    <Component Id="gnmanalyse.exe" Guid="*">
+                        <File Id="gnmanalyse.exe" Name="gnmanalyse.exe" Source="$(var.SolutionDir)..\release-1900\bin\gdal\apps\gnmanalyse.exe" />
+                    </Component>
+                    <Component Id="gnmmanage.exe" Guid="*">
+                        <File Id="gnmmanage.exe" Name="gnmmanage.exe" Source="$(var.SolutionDir)..\release-1900\bin\gdal\apps\gnmmanage.exe" />
+                    </Component>
                     <Component Id="nearblack.exe" Guid="*">
                         <File Id="nearblack.exe" Name="nearblack.exe" Source="$(var.SolutionDir)..\release-1900\bin\gdal\apps\nearblack.exe" />
                     </Component>
@@ -597,6 +564,9 @@
                     </Component>
                     <Component Id="ogrinfo.exe" Guid="*">
                         <File Id="ogrinfo.exe" Name="ogrinfo.exe" Source="$(var.SolutionDir)..\release-1900\bin\gdal\apps\ogrinfo.exe" />
+                    </Component>
+                    <Component Id="ogrlineref.exe" Guid="*">
+                        <File Id="ogrlineref.exe" Name="ogrlineref.exe" Source="$(var.SolutionDir)..\release-1900\bin\gdal\apps\ogrlineref.exe" />
                     </Component>
                     <Component Id="ogrtindex.exe" Guid="*">
                         <File Id="ogrtindex.exe" Name="ogrtindex.exe" Source="$(var.SolutionDir)..\release-1900\bin\gdal\apps\ogrtindex.exe" />
@@ -727,9 +697,10 @@
                 <ComponentRef Id="gdal_wrap.dll" />
                 <ComponentRef Id="openjp2.dll" />
                 <ComponentRef Id="proj.dll" />
+                <ComponentRef Id="proj_6_1.dll" />
                 <ComponentRef Id="fribidi.dll" />
                 <ComponentRef Id="sqlite3.dll" />
-			    <ComponentRef Id="freexl.dll" />
+			          <ComponentRef Id="freexl.dll" />
                 <ComponentRef Id="spatialite.dll" />
                 <ComponentRef Id="xerces_c_3_2.dll" />
                 <ComponentRef Id="zlib1.dll" />
@@ -743,6 +714,7 @@
                 <ComponentRef Id="stlrnc" />
                 <ComponentRef Id="stgeorge" />
                 <ComponentRef Id="prvi" />
+                <ComponentRef Id="proj.db" />
                 <ComponentRef Id="proj_def.dat" />                
                 <ComponentRef Id="other.extra" />
                 <ComponentRef Id="nzgd2kgrid0005.gsb" />
@@ -754,11 +726,17 @@
                 <ComponentRef Id="nad.lst" />
                 <ComponentRef Id="MD" />
                 <ComponentRef Id="IGNF" />
+                <ComponentRef Id="ITRF2014" />
+                <ComponentRef Id="ITRF2008" />
+                <ComponentRef Id="ITRF2000" />
                 <ComponentRef Id="hawaii" />
                 <ComponentRef Id="GL27" />
                 <ComponentRef Id="esri.extra" />
                 <ComponentRef Id="esri" />
+                <ComponentRef Id="egm96_15.gtx" />
                 <ComponentRef Id="conus" />
+                <ComponentRef Id="CH" />
+                <ComponentRef Id="BETA2007.gsb" />
                 <ComponentRef Id="alaska" />
                 <ComponentRef Id="new.map" />
                 <ComponentRef Id="mmstyles.map" />
@@ -773,27 +751,6 @@
                 <ComponentRef Id="schraffur.png" />
                 <ComponentRef Id="stern.png" />
                 <ComponentRef Id="welle.png" />
-                <ComponentRef Id="ecw_cs.wkt" />
-                <ComponentRef Id="cubewerx_extra.wkt" />
-                <ComponentRef Id="epsg.wkt" />
-                <ComponentRef Id="esri_extra.wkt" />
-                <ComponentRef Id="coordinate_axis.csv" />
-                <ComponentRef Id="ellipsoid.csv" />
-                <ComponentRef Id="gcs.csv" />
-                <ComponentRef Id="gcs.override.csv" />
-                <ComponentRef Id="gdal_datum.csv" />
-                <ComponentRef Id="gt_datum.csv" />
-                <ComponentRef Id="gt_ellips.csv" />
-                <ComponentRef Id="pcs.csv" />
-                <ComponentRef Id="pcs.override.csv" />
-                <ComponentRef Id="prime_meridian.csv" />
-                <ComponentRef Id="projop_wparm.csv" />
-                <ComponentRef Id="s57agencies.csv" />
-                <ComponentRef Id="s57attributes.csv" />
-                <ComponentRef Id="s57expectedinput.csv" />
-                <ComponentRef Id="s57objectclasses.csv" />
-                <ComponentRef Id="stateplane.csv" />
-                <ComponentRef Id="unit_of_measure.csv" />
                 <ComponentRef Id="MapServerAnimals.ttf" />
                 <ComponentRef Id="MapServerCarto.ttf" />
                 <ComponentRef Id="MapServerNaturalResources.ttf" />
@@ -803,6 +760,7 @@
                 <ComponentRef Id="MapServerSports.ttf" />
                 <ComponentRef Id="Microsoft.VisualBasic.PowerPacks.Vs.dll" />
                 <ComponentRef Id="TileGenerator.exe" />
+                <ComponentGroupRef Id="GdalData" />
             </Feature>
             <Feature Id="MSPlugins" Level="1" Title="Mapserver Plugins" Display="expand" Description="Mapserver plugin library files">
                 <Feature Id="ms_sql2008" Level="1" Title="MSSQL 2008" Description="MSSQL 2008 plugin library">
@@ -881,9 +839,12 @@
                 <ComponentRef Id="gdaltindex.exe" />
                 <ComponentRef Id="gdaltransform.exe" />
                 <ComponentRef Id="gdalwarp.exe" />
+                <ComponentRef Id="gnmanalyse.exe" />
+                <ComponentRef Id="gnmmanage.exe" />
                 <ComponentRef Id="nearblack.exe" />
                 <ComponentRef Id="ogr2ogr.exe" />
                 <ComponentRef Id="ogrinfo.exe" />
+                <ComponentRef Id="ogrlineref.exe" />
                 <ComponentRef Id="ogrtindex.exe" />
                 <ComponentRef Id="testepsg.exe" />
                 <ComponentRef Id="vcruntime140.dll" />

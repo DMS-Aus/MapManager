@@ -25,6 +25,7 @@
     <SuppressValidation>True</SuppressValidation>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="gdal-data.wxs" />
     <Compile Include="Product.wxs" />
   </ItemGroup>
   <ItemGroup>
