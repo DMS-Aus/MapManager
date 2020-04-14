@@ -1334,7 +1334,7 @@ namespace DMS.MapLibrary
                 if (inputMode == InputModes.Pan || e.Button == MouseButtons.Middle)
                 {
                     if (map != null)
-                        PanTo(map.width / 2 - dragRect.Width, map.height / 2 - dragRect.Height);
+                        PanTo((int)Math.Round(((double)map.width) / 2 - dragRect.Width), (int)Math.Round(((double)map.height) / 2 - dragRect.Height));
                     return;
                 }
 
