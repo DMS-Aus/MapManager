@@ -123,7 +123,6 @@ namespace DMS.MapLibrary
                 if (symbolName == "(default)")
                 {
                     style.symbol = 0;
-                    style.symbolname = null;
                 }
                 else
                 {
@@ -203,7 +202,6 @@ namespace DMS.MapLibrary
                     if (i == 0)
                     {
                         style.symbol = 0;
-                        style.symbolname = null;
 
                         if (selected == i && listView.Items.Count == itemIndex)
                             selectedItem = SetSymbolItem("(default)", itemIndex);
@@ -213,7 +211,6 @@ namespace DMS.MapLibrary
                     else
                     {
                         style.symbol = i;
-                        style.symbolname = symbol.name;
                         
                         if ((selected == i || string.Compare(selectedSymbol, symbol.name) == 0)
                             && listView.Items.Count == itemIndex)

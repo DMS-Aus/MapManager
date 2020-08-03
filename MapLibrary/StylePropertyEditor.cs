@@ -289,7 +289,6 @@ namespace DMS.MapLibrary
                 else
                 {
                     pstyle.symbol = 0;
-                    pstyle.symbolname = null;
                 }
 
                 classObj styleclass = new classObj(null);
@@ -506,14 +505,12 @@ namespace DMS.MapLibrary
                         symbolIndex = map.symbolset.appendSymbol(MapUtils.CloneSymbol(
                             sourceMap.symbolset.getSymbolByName(symbolName)));
                     }
-                    style.symbolname = symbolName;
                     style.symbol = symbolIndex;
                 }
                 else
                 {
                     // remove symbol
                     style.symbol = 0;
-                    style.symbolname = null;
                 }
 
                 SetDirty(false);

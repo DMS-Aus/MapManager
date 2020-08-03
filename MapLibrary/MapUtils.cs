@@ -67,7 +67,6 @@ namespace DMS.MapLibrary
                 style.color = new colorObj(255, 255, 255, 255);
                 style.outlinecolor = new colorObj(0, 0, 0, 255);
                 style.symbol = 0;
-                style.symbolname = null;
             }
             else
             {
