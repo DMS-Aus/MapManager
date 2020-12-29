@@ -341,7 +341,7 @@
                         <File Id="SciLexer.dll" Name="SciLexer.dll" Source="$(var.MapManager.TargetDir)SciLexer.dll" Vital="yes"/>
                     </Component>
                     <Component Id="gdal.dll" Guid="*">
-                        <File Id="gdal.dll" Name="gdal300.dll" Source="$(var.SolutionDir)..\release-1900\bin\gdal300.dll" Vital="yes"/>
+                        <File Id="gdal.dll" Name="gdal301.dll" Source="$(var.SolutionDir)..\release-1900\bin\gdal301.dll" Vital="yes"/>
                     </Component>
                     <Component Id="Microsoft.VisualBasic.PowerPacks.Vs.dll" Guid="*">
                         <File Id="Microsoft.VisualBasic.PowerPacks.Vs.dll" Name="Microsoft.VisualBasic.PowerPacks.Vs.dll" Source="$(var.MapManager.TargetDir)Microsoft.VisualBasic.PowerPacks.Vs.dll" Vital="yes"/>
@@ -385,11 +385,19 @@
                     <Component Id="MapfileConfig.xml" Guid="*">
                         <File Id="MapfileConfig.xml" Name="MapfileConfig.xml" Source="$(var.MapManager.TargetDir)MapfileConfig.xml" Vital="yes"/>
                     </Component>
-                    <Component Id="libeay32.dll" Guid="*">
-                        <File Id="libeay32.dll" Name="libeay32.dll" Source="$(var.SolutionDir)..\release-1900\bin\libeay32.dll" Vital="yes"/>
+                    <Component Id="libcrypto.dll" Guid="*">
+                      <?if $(sys.BUILDARCH) = x64?>
+                      <File Id="libcrypto.dll" Name="libcrypto-1_1-x64.dll" Source="$(var.SolutionDir)..\release-1900\bin\libcrypto-1_1-x64.dll" Vital="yes"/>
+                      <?else?>
+                      <File Id="libcrypto.dll" Name="libcrypto-1_1.dll" Source="$(var.SolutionDir)..\release-1900\bin\libcrypto-1_1.dll" Vital="yes"/>
+                      <?endif?>
                     </Component>
-                    <Component Id="ssleay32.dll" Guid="*">
-                        <File Id="ssleay32.dll" Name="ssleay32.dll" Source="$(var.SolutionDir)..\release-1900\bin\ssleay32.dll" Vital="yes"/>
+                    <Component Id="libssl.dll" Guid="*">
+                      <?if $(sys.BUILDARCH) = x64?>
+                      <File Id="libssl.dll" Name="libssl-1_1-x64.dll" Source="$(var.SolutionDir)..\release-1900\bin\libssl-1_1-x64.dll" Vital="yes"/>
+                      <?else?>
+                      <File Id="libssl.dll" Name="libssl-1_1.dll" Source="$(var.SolutionDir)..\release-1900\bin\libssl-1_1.dll" Vital="yes"/>
+                      <?endif?>
                     </Component>
                     <Component Id="TileGenerator.exe" Guid="*">
                         <File Id="TileGenerator.exe" Name="TileGenerator.exe" Source="$(var.MapManager.TargetDir)TileGenerator.exe" Vital="yes"/>
@@ -678,8 +686,8 @@
                 <ComponentRef Id="libcurl.dll" />
                 <ComponentRef Id="curl_ca_bundle.crt" />
                 <ComponentRef Id="MapfileConfig.xml" />
-                <ComponentRef Id="ssleay32.dll" />
-                <ComponentRef Id="libeay32.dll" />
+                <ComponentRef Id="libssl.dll" />
+                <ComponentRef Id="libcrypto.dll" />
                 <ComponentRef Id="expat.dll" />
                 <ComponentRef Id="libfcgi.dll" />
                 <ComponentRef Id="mapserver.dll" />

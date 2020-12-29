@@ -1800,7 +1800,6 @@ namespace DMS.MapLibrary
                             if (symbol.name == "default-marker")
                             {
                                 layer.getClass(0).getStyle(0).symbol = i;
-                                layer.getClass(0).getStyle(0).symbolname = "default-marker";
                                 break;
                             }
                         }
@@ -2007,7 +2006,6 @@ namespace DMS.MapLibrary
                             if (symbol.name == "default-marker")
                             {
                                 layer.getClass(0).getStyle(0).symbol = i;
-                                layer.getClass(0).getStyle(0).symbolname = "default-marker";
                                 break;
                             }
                         }
@@ -2331,7 +2329,6 @@ namespace DMS.MapLibrary
                 if (symbol.name == "default-marker")
                 {
                     layer.getClass(0).getStyle(0).symbol = i;
-                    layer.getClass(0).getStyle(0).symbolname = "default-marker";
                     break;
                 }
             }
@@ -2365,7 +2362,8 @@ namespace DMS.MapLibrary
             MapUtils.SetDefaultColor(layer.type, style);
             if (layer.type == MS_LAYER_TYPE.MS_LAYER_POINT)
             {
-                style.symbolname = "default-marker";
+                if (layer.map != null)
+                    style.setSymbolByName(layer.map, "default-marker");
                 style.size = 8;
             }
 

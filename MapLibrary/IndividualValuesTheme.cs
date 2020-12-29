@@ -113,7 +113,6 @@ namespace DMS.MapLibrary
                         if (symbol.name == "default-marker")
                         {
                             style.symbol = s;
-                            style.symbolname = "default-marker";
                             break;
                         }
                     }

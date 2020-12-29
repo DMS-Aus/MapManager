@@ -116,7 +116,6 @@ namespace DMS.MapLibrary
             {
                 // no symbol selected
                 style.symbol = 0;
-                style.symbolname = null;
             }
         }
 
