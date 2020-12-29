@@ -5,9 +5,9 @@
 
         <Media Id="1" Cabinet="MapManager.cab" EmbedCab="yes" />
 
-        <PropertyRef Id="NETFRAMEWORK40FULL"/>
-        <Condition Message="This application requires .NET Framework 4.0. Please install the .NET Framework then run this installer again.">
-            <![CDATA[Installed OR NETFRAMEWORK40FULL]]>
+        <PropertyRef Id="WIX_IS_NETFRAMEWORK_461_OR_LATER_INSTALLED" />
+        <Condition Message="MapServer MapManager requires .NET Framework 4.6.1 or higher.">
+            <![CDATA[Installed OR WIX_IS_NETFRAMEWORK_461_OR_LATER_INSTALLED]]>
         </Condition>
 
         <Directory Id="TARGETDIR" Name="SourceDir">
@@ -341,7 +341,7 @@
                         <File Id="SciLexer.dll" Name="SciLexer.dll" Source="$(var.MapManager.TargetDir)SciLexer.dll" Vital="yes"/>
                     </Component>
                     <Component Id="gdal.dll" Guid="*">
-                        <File Id="gdal.dll" Name="gdal301.dll" Source="$(var.SolutionDir)..\release-1900\bin\gdal301.dll" Vital="yes"/>
+                        <File Id="gdal.dll" Name="gdal302.dll" Source="$(var.SolutionDir)..\release-1900\bin\gdal302.dll" Vital="yes"/>
                     </Component>
                     <Component Id="Microsoft.VisualBasic.PowerPacks.Vs.dll" Guid="*">
                         <File Id="Microsoft.VisualBasic.PowerPacks.Vs.dll" Name="Microsoft.VisualBasic.PowerPacks.Vs.dll" Source="$(var.MapManager.TargetDir)Microsoft.VisualBasic.PowerPacks.Vs.dll" Vital="yes"/>
