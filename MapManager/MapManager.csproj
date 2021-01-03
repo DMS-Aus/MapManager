@@ -314,13 +314,23 @@ copy $(SdkDir)\bin\ms\plugins\oci\msplugin_oracle.dll $(TargetDir)
 
 if not exist $(TargetDir)ProjLib mkdir $(TargetDir)ProjLib
 copy $(SdkDir)\bin\proj\SHARE\*.* $(TargetDir)\ProjLib
+copy $(SdkDir)\bin\proj7\SHARE\*.* $(TargetDir)\ProjLib
 if not exist $(TargetDir)templates mkdir $(TargetDir)templates
 copy $(SolutionDir)Templates $(TargetDir)templates
 
 if not exist $(TargetDir)gdalplugins mkdir $(TargetDir)gdalplugins
 copy $(SdkDir)\bin\gdal\plugins\*.* $(TargetDir)\gdalplugins
+if not exist $(TargetDir)gdalplugins-optional mkdir $(TargetDir)gdalplugins-optional
+copy $(SdkDir)\bin\gdal\plugins-optional\*.* $(TargetDir)\gdalplugins-optional
+if not exist $(TargetDir)gdalplugins-external mkdir $(TargetDir)gdalplugins-external
+copy $(SdkDir)\bin\gdal\plugins-external\*.* $(TargetDir)\gdalplugins-external
 
-del $(TargetDir)\gdalplugins\gdal_GEOR.dll $(TargetDir)\gdalplugins\ogr_SDE.dll $(TargetDir)\gdalplugins\gdal_SDE.dll $(TargetDir)\gdalplugins\ogr_OCI.dll</PreBuildEvent>
+del $(TargetDir)\gdalplugins\gdal_GEOR.dll $(TargetDir)\gdalplugins\ogr_SDE.dll $(TargetDir)\gdalplugins\gdal_SDE.dll $(TargetDir)\gdalplugins\ogr_OCI.dll
+if not exist $(TargetDir)doc mkdir $(TargetDir)doc
+copy $(SdkDir)\..\*.rtf $(TargetDir)\doc
+copy $(SdkDir)\bin\gdal\apps\*.exe $(TargetDir)
+copy $(SdkDir)\bin\ms\apps\*.exe $(TargetDir)
+copy $(SdkDir)\bin\curl-ca-bundle.crt $(TargetDir)</PreBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
     <PostBuildEvent>

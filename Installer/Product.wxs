@@ -16,103 +16,64 @@
 				<Directory Id="INSTALLDIR" Name="MapManager">
                     <Directory Id="projlibDir" Name="projlib">
                         <Component Id="epsg" Guid="*">
-                            <File Id="epsg" Name="epsg" Source="$(var.SolutionDir)..\release-1911\bin\proj\SHARE\epsg" />
+                            <File Id="epsg" Name="epsg" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\ProjLib\epsg" />
                         </Component>
                         <Component Id="world" Guid="*">
-                            <File Id="world" Name="world" Source="$(var.SolutionDir)..\release-1911\bin\proj6\SHARE\world" Vital="yes"/>
-                        </Component>
-                        <Component Id="WO" Guid="*">
-                            <File Id="WO" Name="WO" Source="$(var.SolutionDir)..\release-1911\bin\proj6\SHARE\WO" Vital="yes"/>
-                        </Component>
-                        <Component Id="WI" Guid="*">
-                            <File Id="WI" Name="WI" Source="$(var.SolutionDir)..\release-1911\bin\proj6\SHARE\WI" Vital="yes"/>
-                        </Component>
-                        <Component Id="TN" Guid="*">
-                            <File Id="TN" Name="TN" Source="$(var.SolutionDir)..\release-1911\bin\proj6\SHARE\TN" Vital="yes"/>
-                        </Component>
-                        <Component Id="stpaul" Guid="*">
-                            <File Id="stpaul" Name="stpaul" Source="$(var.SolutionDir)..\release-1911\bin\proj6\SHARE\stpaul" Vital="yes"/>
-                        </Component>
-                        <Component Id="stlrnc" Guid="*">
-                            <File Id="stlrnc" Name="stlrnc" Source="$(var.SolutionDir)..\release-1911\bin\proj6\SHARE\stlrnc" Vital="yes"/>
-                        </Component>
-                        <Component Id="stgeorge" Guid="*">
-                            <File Id="stgeorge" Name="stgeorge" Source="$(var.SolutionDir)..\release-1911\bin\proj6\SHARE\stgeorge" Vital="yes"/>
-                        </Component>
-                        <Component Id="prvi" Guid="*">
-                            <File Id="prvi" Name="prvi" Source="$(var.SolutionDir)..\release-1911\bin\proj6\SHARE\prvi" Vital="yes"/>
+                            <File Id="world" Name="world" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\ProjLib\world" Vital="yes"/>
                         </Component>
                         <Component Id="proj.db" Guid="*">
-                            <File Id="proj.db" Name="proj.db" Source="$(var.SolutionDir)..\release-1911\bin\proj6\SHARE\proj.db" Vital="yes"/>
+                            <File Id="proj.db" Name="proj.db" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\ProjLib\proj.db" Vital="yes"/>
                         </Component>
                         <Component Id="proj_def.dat" Guid="*">
-                            <File Id="proj_def.dat" Name="proj_def.dat" Source="$(var.SolutionDir)..\release-1911\bin\proj\SHARE\proj_def.dat" Vital="yes"/>
+                            <File Id="proj_def.dat" Name="proj_def.dat" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\ProjLib\proj_def.dat" Vital="yes"/>
                         </Component>
                         <Component Id="other.extra" Guid="*">
-                            <File Id="other.extra" Name="other.extra" Source="$(var.SolutionDir)..\release-1911\bin\proj6\SHARE\other.extra" Vital="yes"/>
+                            <File Id="other.extra" Name="other.extra" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\ProjLib\other.extra" Vital="yes"/>
                         </Component>
                         <Component Id="nzgd2kgrid0005.gsb" Guid="*">
-                            <File Id="nzgd2kgrid0005.gsb" Name="nzgd2kgrid0005.gsb" Source="$(var.SolutionDir)..\release-1911\bin\proj6\SHARE\nzgd2kgrid0005.gsb" Vital="yes"/>
+                            <File Id="nzgd2kgrid0005.gsb" Name="nzgd2kgrid0005.gsb" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\ProjLib\nzgd2kgrid0005.gsb" Vital="yes"/>
                         </Component>
                         <Component Id="null" Guid="*">
-                            <File Id="null" Name="null" Source="$(var.SolutionDir)..\release-1911\bin\proj6\SHARE\null" Vital="yes"/>
+                            <File Id="null" Name="null" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\ProjLib\null" Vital="yes"/>
                         </Component>
                         <Component Id="ntv1_can.dat" Guid="*">
-                            <File Id="ntv1_can.dat" Name="ntv1_can.dat" Source="$(var.SolutionDir)..\release-1911\bin\proj6\SHARE\ntv1_can.dat" Vital="yes"/>
+                            <File Id="ntv1_can.dat" Name="ntv1_can.dat" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\ProjLib\ntv1_can.dat" Vital="yes"/>
                         </Component>
                         <Component Id="ntf_r93.gsb" Guid="*">
-                            <File Id="ntf_r93.gsb" Name="ntf_r93.gsb" Source="$(var.SolutionDir)..\release-1911\bin\proj6\SHARE\ntf_r93.gsb" Vital="yes"/>
+                            <File Id="ntf_r93.gsb" Name="ntf_r93.gsb" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\ProjLib\ntf_r93.gsb" Vital="yes"/>
                         </Component>
                         <Component Id="nad83" Guid="*">
-                            <File Id="nad83" Name="nad83" Source="$(var.SolutionDir)..\release-1911\bin\proj6\SHARE\nad83" Vital="yes"/>
+                            <File Id="nad83" Name="nad83" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\ProjLib\nad83" Vital="yes"/>
                         </Component>
                         <Component Id="nad27" Guid="*">
-                            <File Id="nad27" Name="nad27" Source="$(var.SolutionDir)..\release-1911\bin\proj6\SHARE\nad27" Vital="yes"/>
+                            <File Id="nad27" Name="nad27" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\ProjLib\nad27" Vital="yes"/>
                         </Component>
                         <Component Id="nad.lst" Guid="*">
-                            <File Id="nad.lst" Name="nad.lst" Source="$(var.SolutionDir)..\release-1911\bin\proj6\SHARE\nad.lst" Vital="yes"/>
-                        </Component>
-                        <Component Id="MD" Guid="*">
-                            <File Id="MD" Name="MD" Source="$(var.SolutionDir)..\release-1911\bin\proj6\SHARE\MD" Vital="yes"/>
+                            <File Id="nad.lst" Name="nad.lst" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\ProjLib\nad.lst" Vital="yes"/>
                         </Component>
                         <Component Id="IGNF" Guid="*">
-                            <File Id="IGNF" Name="IGNF" Source="$(var.SolutionDir)..\release-1911\bin\proj\SHARE\IGNF" Vital="yes"/>
+                            <File Id="IGNF" Name="IGNF" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\ProjLib\IGNF" Vital="yes"/>
                         </Component>
                         <Component Id="ITRF2014" Guid="*">
-                            <File Id="ITRF2014" Name="ITRF2014" Source="$(var.SolutionDir)..\release-1911\bin\proj6\SHARE\ITRF2014" Vital="yes"/>
+                            <File Id="ITRF2014" Name="ITRF2014" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\ProjLib\ITRF2014" Vital="yes"/>
                         </Component>
                         <Component Id="ITRF2008" Guid="*">
-                            <File Id="ITRF2008" Name="ITRF2008" Source="$(var.SolutionDir)..\release-1911\bin\proj6\SHARE\ITRF2008" Vital="yes"/>
+                            <File Id="ITRF2008" Name="ITRF2008" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\ProjLib\ITRF2008" Vital="yes"/>
                         </Component>
                         <Component Id="ITRF2000" Guid="*">
-                            <File Id="ITRF2000" Name="ITRF2000" Source="$(var.SolutionDir)..\release-1911\bin\proj6\SHARE\ITRF2000" Vital="yes"/>
-                        </Component>
-                        <Component Id="hawaii" Guid="*">
-                            <File Id="hawaii" Name="hawaii" Source="$(var.SolutionDir)..\release-1911\bin\proj6\SHARE\hawaii" Vital="yes"/>
+                            <File Id="ITRF2000" Name="ITRF2000" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\ProjLib\ITRF2000" Vital="yes"/>
                         </Component>
                         <Component Id="GL27" Guid="*">
-                            <File Id="GL27" Name="GL27" Source="$(var.SolutionDir)..\release-1911\bin\proj6\SHARE\GL27" Vital="yes"/>
+                            <File Id="GL27" Name="GL27" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\ProjLib\GL27" Vital="yes"/>
                         </Component>
                         <Component Id="esri.extra" Guid="*">
-                            <File Id="esri.extra" Name="esri.extra" Source="$(var.SolutionDir)..\release-1911\bin\proj\SHARE\esri.extra" Vital="yes"/>
+                            <File Id="esri.extra" Name="esri.extra" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\ProjLib\esri.extra" Vital="yes"/>
                         </Component>
                         <Component Id="esri" Guid="*">
-                            <File Id="esri" Name="esri" Source="$(var.SolutionDir)..\release-1911\bin\proj\SHARE\esri" Vital="yes"/>
-                        </Component>
-                        <Component Id="egm96_15.gtx" Guid="*">
-                            <File Id="egm96_15.gtx" Name="egm96_15.gtx" Source="$(var.SolutionDir)..\release-1911\bin\proj6\SHARE\egm96_15.gtx" Vital="yes"/>
-                        </Component>
-                        <Component Id="conus" Guid="*">
-                            <File Id="conus" Name="conus" Source="$(var.SolutionDir)..\release-1911\bin\proj6\SHARE\conus" Vital="yes"/>
+                            <File Id="esri" Name="esri" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\ProjLib\esri" Vital="yes"/>
                         </Component>
                         <Component Id="CH" Guid="*">
-                            <File Id="CH" Name="CH" Source="$(var.SolutionDir)..\release-1911\bin\proj6\SHARE\CH" Vital="yes"/>
-                        </Component>
-                        <Component Id="BETA2007.gsb" Guid="*">
-                            <File Id="BETA2007.gsb" Name="BETA2007.gsb" Source="$(var.SolutionDir)..\release-1911\bin\proj6\SHARE\BETA2007.gsb" Vital="yes"/>
-                        </Component>
-                        <Component Id="alaska" Guid="*">
-                            <File Id="alaska" Name="alaska" Source="$(var.SolutionDir)..\release-1911\bin\proj6\SHARE\alaska" Vital="yes"/>
+                            <File Id="CH" Name="CH" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\ProjLib\CH" Vital="yes"/>
                         </Component>
                     </Directory>
                     <Directory Id="templatesDir" Name="templates">
@@ -161,153 +122,51 @@
                             <File Id="MapManagerLicense.rtf" Name="MapManagerLicense.rtf" Source="$(var.SolutionDir)MapManagerLicense.rtf" />
                         </Component>
                         <Component Id="GDALLicense.rtf" Guid="*">
-                            <File Id="GDALLicense.rtf" Name="GDALLicense.rtf" Source="$(var.SolutionDir)..\GDALLicense.rtf" />
+                            <File Id="GDALLicense.rtf" Name="GDALLicense.rtf" Source="$(var.MapManager.TargetDir)\doc\GDALLicense.rtf" />
                         </Component>
                         <Component Id="SZIPLicense.rtf" Guid="*">
-                            <File Id="SZIPLicense.rtf" Name="SZIPLicense.rtf" Source="$(var.SolutionDir)..\SZIPLicense.rtf" />
+                            <File Id="SZIPLicense.rtf" Name="SZIPLicense.rtf" Source="$(var.MapManager.TargetDir)\doc\SZIPLicense.rtf" />
                         </Component>
                         <Component Id="HDF4License.rtf" Guid="*">
-                            <File Id="HDF4License.rtf" Name="HDF4License.rtf" Source="$(var.SolutionDir)..\HDF4License.rtf" />
+                            <File Id="HDF4License.rtf" Name="HDF4License.rtf" Source="$(var.MapManager.TargetDir)\doc\HDF4License.rtf" />
                         </Component>
                         <Component Id="HDF5License.rtf" Guid="*">
-                            <File Id="HDF5License.rtf" Name="HDF5License.rtf" Source="$(var.SolutionDir)..\HDF5License.rtf" />
+                            <File Id="HDF5License.rtf" Name="HDF5License.rtf" Source="$(var.MapManager.TargetDir)\doc\HDF5License.rtf" />
                         </Component>
                         <Component Id="NetCDFLicense.rtf" Guid="*">
-                            <File Id="NetCDFLicense.rtf" Name="NetCDFLicense.rtf" Source="$(var.SolutionDir)..\NetCDFLicense.rtf" />
+                            <File Id="NetCDFLicense.rtf" Name="NetCDFLicense.rtf" Source="$(var.MapManager.TargetDir)\doc\NetCDFLicense.rtf" />
                         </Component>
                         <Component Id="FITSLicense.rtf" Guid="*">
-                            <File Id="FITSLicense.rtf" Name="FITSLicense.rtf" Source="$(var.SolutionDir)..\FITSLicense.rtf" />
+                            <File Id="FITSLicense.rtf" Name="FITSLicense.rtf" Source="$(var.MapManager.TargetDir)\doc\FITSLicense.rtf" />
                         </Component>                  
                     </Directory>
                     <Directory Id="gdalpluginsDir" Name="gdalplugins">
                         <Component Id="gdal_FITS.dll" Guid="*">
-                            <File Id="gdal_FITS.dll" Name="gdal_FITS.dll" Source="$(var.SolutionDir)..\release-1911\bin\gdal\plugins\gdal_FITS.dll" />
+                            <File Id="gdal_FITS.dll" Name="gdal_FITS.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\gdalplugins\gdal_FITS.dll" />
                         </Component>
                         <Component Id="gdal_GMT.dll" Guid="*">
-                            <File Id="gdal_GMT.dll" Name="gdal_GMT.dll" Source="$(var.SolutionDir)..\release-1911\bin\gdal\plugins\gdal_GMT.dll" />
+                            <File Id="gdal_GMT.dll" Name="gdal_GMT.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\gdalplugins\gdal_GMT.dll" />
                         </Component>
                         <Component Id="gdal_HDF4.dll" Guid="*">
-                            <File Id="gdal_HDF4.dll" Name="gdal_HDF4.dll" Source="$(var.SolutionDir)..\release-1911\bin\gdal\plugins\gdal_HDF4.dll" />
+                            <File Id="gdal_HDF4.dll" Name="gdal_HDF4.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\gdalplugins\gdal_HDF4.dll" />
                         </Component>
                         <Component Id="gdal_HDF4Image.dll" Guid="*">
-                            <File Id="gdal_HDF4Image.dll" Name="gdal_HDF4Image.dll" Source="$(var.SolutionDir)..\release-1911\bin\gdal\plugins\gdal_HDF4Image.dll" />
+                            <File Id="gdal_HDF4Image.dll" Name="gdal_HDF4Image.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\gdalplugins\gdal_HDF4Image.dll" />
                         </Component>
                         <Component Id="gdal_HDF5.dll" Guid="*">
-                            <File Id="gdal_HDF5.dll" Name="gdal_HDF5.dll" Source="$(var.SolutionDir)..\release-1911\bin\gdal\plugins\gdal_HDF5.dll" />
+                            <File Id="gdal_HDF5.dll" Name="gdal_HDF5.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\gdalplugins\gdal_HDF5.dll" />
                         </Component>
                         <Component Id="gdal_HDF5Image.dll" Guid="*">
-                            <File Id="gdal_HDF5Image.dll" Name="gdal_HDF5Image.dll" Source="$(var.SolutionDir)..\release-1911\bin\gdal\plugins\gdal_HDF5Image.dll" />
+                            <File Id="gdal_HDF5Image.dll" Name="gdal_HDF5Image.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\gdalplugins\gdal_HDF5Image.dll" />
                         </Component>
                         <Component Id="gdal_BAG.dll" Guid="*">
-                            <File Id="gdal_BAG.dll" Name="gdal_BAG.dll" Source="$(var.SolutionDir)..\release-1911\bin\gdal\plugins\gdal_BAG.dll" />
+                            <File Id="gdal_BAG.dll" Name="gdal_BAG.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\gdalplugins\gdal_BAG.dll" />
                         </Component>
                         <Component Id="gdal_netCDF.dll" Guid="*">
-                            <File Id="gdal_netCDF.dll" Name="gdal_netCDF.dll" Source="$(var.SolutionDir)..\release-1911\bin\gdal\plugins\gdal_netCDF.dll" />
+                            <File Id="gdal_netCDF.dll" Name="gdal_netCDF.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\gdalplugins\gdal_netCDF.dll" />
                         </Component>
                     </Directory>
-                    <Directory Id="pythonDir" Name="python">
-                        <Component Id="mapscript.py" Guid="*">
-                            <File Id="mapscript.py" Name="mapscript.py" Source="$(var.SolutionDir)..\release-1911\bin\ms\python\mapscript.py" />
-                        </Component>
-                        <Component Id="_mapscript.pyd" Guid="*">
-                            <File Id="_mapscript.pyd" Name="_mapscript.pyd" Source="$(var.SolutionDir)..\release-1911\bin\ms\python\_mapscript.pyd" />
-                        </Component>
-                        <Directory Id="osgeoDir" Name="osgeo">
-                            <Component Id="__init__.py" Guid="*">
-                                <File Id="__init__.py" Name="__init__.py" Source="$(var.SolutionDir)..\release-1911\bin\gdal\python\osgeo\__init__.py" />
-                            </Component>
-                            <Component Id="gdal.py" Guid="*">
-                                <File Id="gdal.py" Name="gdal.py" Source="$(var.SolutionDir)..\release-1911\bin\gdal\python\osgeo\gdal.py" />
-                            </Component>
-                            <Component Id="gdal_array.py" Guid="*">
-                                <File Id="gdal_array.py" Name="gdal_array.py" Source="$(var.SolutionDir)..\release-1911\bin\gdal\python\osgeo\gdal_array.py" />
-                            </Component>
-                            <Component Id="gdalnumeric.py" Guid="*">
-                                <File Id="gdalnumeric.py" Name="gdalnumeric.py" Source="$(var.SolutionDir)..\release-1911\bin\gdal\python\osgeo\gdalnumeric.py" />
-                            </Component>
-                            <Component Id="gdalconst.py" Guid="*">
-                                <File Id="gdalconst.py" Name="gdalconst.py" Source="$(var.SolutionDir)..\release-1911\bin\gdal\python\osgeo\gdalconst.py" />
-                            </Component>
-                            <Component Id="ogr.py" Guid="*">
-                                <File Id="ogr.py" Name="ogr.py" Source="$(var.SolutionDir)..\release-1911\bin\gdal\python\osgeo\ogr.py" />
-                            </Component>
-                            <Component Id="osr.py" Guid="*">
-                                <File Id="osr.py" Name="osr.py" Source="$(var.SolutionDir)..\release-1911\bin\gdal\python\osgeo\osr.py" />
-                            </Component>
-                            <Component Id="_gdal.pyd" Guid="*">
-                                <File Id="_gdal.pyd" Name="_gdal.pyd" Source="$(var.SolutionDir)..\release-1911\bin\gdal\python\osgeo\_gdal.pyd" />
-                            </Component>
-                            <Component Id="_gdalconst.pyd" Guid="E8E2473F-ACFA-4F63-9E4E-78487F9084DC">
-                                <File Id="_gdalconst.pyd" Name="_gdalconst.pyd" Source="$(var.SolutionDir)..\release-1911\bin\gdal\python\osgeo\_gdalconst.pyd" />
-                            </Component>
-                            <Component Id="_ogr.pyd" Guid="*">
-                                <File Id="_ogr.pyd" Name="_ogr.pyd" Source="$(var.SolutionDir)..\release-1911\bin\gdal\python\osgeo\_ogr.pyd" />
-                            </Component>
-                            <Component Id="_osr.pyd" Guid="*">
-                                <File Id="_osr.pyd" Name="_osr.pyd" Source="$(var.SolutionDir)..\release-1911\bin\gdal\python\osgeo\_osr.pyd" />
-                            </Component>
-                        </Directory>
-                        <Directory Id="scriptsDir" Name="scripts">
-                            <Component Id="epsg_tr.py" Guid="*">
-                                <File Id="epsg_tr.py" Name="epsg_tr.py" Source="$(var.SolutionDir)..\release-1911\bin\gdal\python\scripts\epsg_tr.py" />
-                            </Component>
-                            <Component Id="esri2wkt.py" Guid="*">
-                                <File Id="esri2wkt.py" Name="esri2wkt.py" Source="$(var.SolutionDir)..\release-1911\bin\gdal\python\scripts\epsg_tr.py" />
-                            </Component>
-                            <Component Id="gcps2vec.py" Guid="*">
-                                <File Id="gcps2vec.py" Name="gcps2vec.py" Source="$(var.SolutionDir)..\release-1911\bin\gdal\python\scripts\gcps2vec.py" />
-                            </Component>
-                            <Component Id="gcps2wld.py" Guid="*">
-                                <File Id="gcps2wld.py" Name="gcps2wld.py" Source="$(var.SolutionDir)..\release-1911\bin\gdal\python\scripts\gcps2wld.py" />
-                            </Component>
-                            <Component Id="gdal_calc.py" Guid="*">
-                                <File Id="gdal_calc.py" Name="gdal_calc.py" Source="$(var.SolutionDir)..\release-1911\bin\gdal\python\scripts\gdal_calc.py" />
-                            </Component>
-                            <Component Id="gdal_fillnodata.py" Guid="*">
-                                <File Id="gdal_fillnodata.py" Name="gdal_fillnodata.py" Source="$(var.SolutionDir)..\release-1911\bin\gdal\python\scripts\gdal_fillnodata.py" />
-                            </Component>
-                            <Component Id="gdal_merge.py" Guid="*">
-                                <File Id="gdal_merge.py" Name="gdal_merge.py" Source="$(var.SolutionDir)..\release-1911\bin\gdal\python\scripts\gdal_merge.py" />
-                            </Component>
-                            <Component Id="gdal_polygonize.py" Guid="*">
-                                <File Id="gdal_polygonize.py" Name="gdal_polygonize.py" Source="$(var.SolutionDir)..\release-1911\bin\gdal\python\scripts\gdal_polygonize.py" />
-                            </Component>
-                            <Component Id="gdal_proximity.py" Guid="*">
-                                <File Id="gdal_proximity.py" Name="gdal_proximity.py" Source="$(var.SolutionDir)..\release-1911\bin\gdal\python\scripts\gdal_proximity.py" />
-                            </Component>
-                            <Component Id="gdal_retile.py" Guid="*">
-                                <File Id="gdal_retile.py" Name="gdal_retile.py" Source="$(var.SolutionDir)..\release-1911\bin\gdal\python\scripts\gdal_retile.py" />
-                            </Component>
-                            <Component Id="gdal_sieve.py" Guid="*">
-                                <File Id="gdal_sieve.py" Name="gdal_sieve.py" Source="$(var.SolutionDir)..\release-1911\bin\gdal\python\scripts\gdal_sieve.py" />
-                            </Component>
-                            <Component Id="gdal2tiles.py" Guid="*">
-                                <File Id="gdal2tiles.py" Name="gdal2tiles.py" Source="$(var.SolutionDir)..\release-1911\bin\gdal\python\scripts\gdal2tiles.py" />
-                            </Component>
-                            <Component Id="gdal2xyz.py" Guid="*">
-                                <File Id="gdal2xyz.py" Name="gdal2xyz.py" Source="$(var.SolutionDir)..\release-1911\bin\gdal\python\scripts\gdal2xyz.py" />
-                            </Component>
-                            <Component Id="gdalchksum.py" Guid="*">
-                                <File Id="gdalchksum.py" Name="gdalchksum.py" Source="$(var.SolutionDir)..\release-1911\bin\gdal\python\scripts\gdalchksum.py" />
-                            </Component>
-                            <Component Id="gdalident.py" Guid="*">
-                                <File Id="gdalident.py" Name="gdalident.py" Source="$(var.SolutionDir)..\release-1911\bin\gdal\python\scripts\gdalident.py" />
-                            </Component>
-                            <Component Id="gdalimport.py" Guid="*">
-                                <File Id="gdalimport.py" Name="gdalimport.py" Source="$(var.SolutionDir)..\release-1911\bin\gdal\python\scripts\gdalimport.py" />
-                            </Component>
-                            <Component Id="mkgraticule.py" Guid="*">
-                                <File Id="mkgraticule.py" Name="mkgraticule.py" Source="$(var.SolutionDir)..\release-1911\bin\gdal\python\scripts\mkgraticule.py" />
-                            </Component>
-                            <Component Id="pct2rgb.py" Guid="*">
-                                <File Id="pct2rgb.py" Name="pct2rgb.py" Source="$(var.SolutionDir)..\release-1911\bin\gdal\python\scripts\pct2rgb.py" />
-                            </Component>
-                            <Component Id="rgb2pct.py" Guid="*">
-                                <File Id="rgb2pct.py" Name="rgb2pct.py" Source="$(var.SolutionDir)..\release-1911\bin\gdal\python\scripts\rgb2pct.py" />
-                            </Component>
-                        </Directory>                        
-                    </Directory>
-					          <Component Id="MapManager.exe" Guid="*">
+					<Component Id="MapManager.exe" Guid="*">
                         <File Id="MapManager.exe" Name="$(var.MapManager.TargetFileName)" Source="$(var.MapManager.TargetPath)" />
                         <!-- Extend to the "open with" list + Win7 jump menu pinning  -->
                         <RegistryValue Root="HKCR" Key="Applications\MapManager.exe\SupportedTypes" Name=".map" Value="" Type="string" />
@@ -341,255 +200,262 @@
                         <File Id="SciLexer.dll" Name="SciLexer.dll" Source="$(var.MapManager.TargetDir)SciLexer.dll" Vital="yes"/>
                     </Component>
                     <Component Id="gdal.dll" Guid="*">
-                        <File Id="gdal.dll" Name="gdal302.dll" Source="$(var.SolutionDir)..\release-1911\bin\gdal302.dll" Vital="yes"/>
+                        <File Id="gdal.dll" Name="gdal302.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\gdal302.dll" Vital="yes"/>
                     </Component>
                     <Component Id="Microsoft.VisualBasic.PowerPacks.Vs.dll" Guid="*">
                         <File Id="Microsoft.VisualBasic.PowerPacks.Vs.dll" Name="Microsoft.VisualBasic.PowerPacks.Vs.dll" Source="$(var.MapManager.TargetDir)Microsoft.VisualBasic.PowerPacks.Vs.dll" Vital="yes"/>
                     </Component>
                     <Component Id="cairo.dll" Guid="*">
-                        <File Id="cairo.dll" Name="cairo.dll" Source="$(var.SolutionDir)..\release-1911\bin\cairo.dll" Vital="yes"/>
+                        <File Id="cairo.dll" Name="cairo.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\cairo.dll" Vital="yes"/>
                     </Component>
                     <Component Id="geos_c.dll" Guid="*">
-                        <File Id="geos_c.dll" Name="geos_c.dll" Source="$(var.SolutionDir)..\release-1911\bin\geos_c.dll" Vital="yes"/>
+                        <File Id="geos_c.dll" Name="geos_c.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\geos_c.dll" Vital="yes"/>
                     </Component>
                     <Component Id="geos.dll" Guid="*">
-                        <File Id="geos.dll" Name="geos.dll" Source="$(var.SolutionDir)..\release-1911\bin\geos.dll" Vital="yes"/>
+                        <File Id="geos.dll" Name="geos.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\geos.dll" Vital="yes"/>
                     </Component>
                     <Component Id="hdf5.dll" Guid="*">
-                        <File Id="hdf5.dll" Name="hdf5.dll" Source="$(var.SolutionDir)..\release-1911\bin\hdf5.dll" Vital="yes"/>
+                        <File Id="hdf5.dll" Name="hdf5.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\hdf5.dll" Vital="yes"/>
                     </Component>
           <Component Id="hdf5_hl.dll" Guid="*">
-                        <File Id="hdf5_hl.dll" Name="hdf5_hl.dll" Source="$(var.SolutionDir)..\release-1911\bin\hdf5_hl.dll" Vital="yes"/>
+                        <File Id="hdf5_hl.dll" Name="hdf5_hl.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\hdf5_hl.dll" Vital="yes"/>
                     </Component>
-                    <Component Id="hdfdll.dll" Guid="*">
-                        <File Id="hdfdll.dll" Name="hdfdll.dll" Source="$(var.SolutionDir)..\release-1911\bin\hdfdll.dll" Vital="yes"/>
+                    <Component Id="hdf.dll" Guid="*">
+                        <File Id="hdf.dll" Name="hdf.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\hdf5.dll" Vital="yes"/>
                     </Component>
-                    <Component Id="mfhdfdll.dll" Guid="*">
-                        <File Id="mfhdfdll.dll" Name="mfhdfdll.dll" Source="$(var.SolutionDir)..\release-1911\bin\mfhdfdll.dll" Vital="yes"/>
+                    <Component Id="mfhdf.dll" Guid="*">
+                        <File Id="mfhdf.dll" Name="mfhdf.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\mfhdf.dll" Vital="yes"/>
                     </Component>
-                    <Component Id="xdrdll.dll" Guid="*">
-                        <File Id="xdrdll.dll" Name="xdrdll.dll" Source="$(var.SolutionDir)..\release-1911\bin\xdrdll.dll" Vital="yes"/>
+                    <Component Id="xdr.dll" Guid="*">
+                        <File Id="xdr.dll" Name="xdr.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\xdr.dll" Vital="yes"/>
                     </Component>
                     <Component Id="szip.dll" Guid="*">
-                        <File Id="szip.dll" Name="szip.dll" Source="$(var.SolutionDir)..\release-1911\bin\szip.dll" Vital="yes"/>
+                        <File Id="szip.dll" Name="szip.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\szip.dll" Vital="yes"/>
                     </Component>
-                    <Component Id="iconv.dll" Guid="*">
-                        <File Id="iconv.dll" Name="iconv.dll" Source="$(var.SolutionDir)..\release-1911\bin\iconv.dll" Vital="yes"/>
+                    <Component Id="iconv_2.dll" Guid="*">
+                        <File Id="iconv_2.dll" Name="iconv-2.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\iconv-2.dll" Vital="yes"/>
                     </Component>
                     <Component Id="libcurl.dll" Guid="*">
-                        <File Id="libcurl.dll" Name="libcurl.dll" Source="$(var.SolutionDir)..\release-1911\bin\libcurl.dll" Vital="yes"/>
+                        <File Id="libcurl.dll" Name="libcurl.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\libcurl.dll" Vital="yes"/>
                     </Component>
                     <Component Id="curl_ca_bundle.crt" Guid="*">
-                        <File Id="curl_ca_bundle.crt" Name="curl-ca-bundle.crt" Source="$(var.SolutionDir)..\release-1911\bin\curl\curl-ca-bundle.crt" Vital="yes"/>
+                        <File Id="curl_ca_bundle.crt" Name="curl-ca-bundle.crt" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\curl-ca-bundle.crt" Vital="yes"/>
                     </Component>
                     <Component Id="MapfileConfig.xml" Guid="*">
                         <File Id="MapfileConfig.xml" Name="MapfileConfig.xml" Source="$(var.MapManager.TargetDir)MapfileConfig.xml" Vital="yes"/>
                     </Component>
                     <Component Id="libcrypto.dll" Guid="*">
                       <?if $(sys.BUILDARCH) = x64?>
-                      <File Id="libcrypto.dll" Name="libcrypto-1_1-x64.dll" Source="$(var.SolutionDir)..\release-1911\bin\libcrypto-1_1-x64.dll" Vital="yes"/>
+                      <File Id="libcrypto.dll" Name="libcrypto-1_1-x64.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\libcrypto-1_1-x64.dll" Vital="yes"/>
                       <?else?>
-                      <File Id="libcrypto.dll" Name="libcrypto-1_1.dll" Source="$(var.SolutionDir)..\release-1911\bin\libcrypto-1_1.dll" Vital="yes"/>
+                      <File Id="libcrypto.dll" Name="libcrypto-1_1.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\libcrypto-1_1.dll" Vital="yes"/>
                       <?endif?>
                     </Component>
                     <Component Id="libssl.dll" Guid="*">
                       <?if $(sys.BUILDARCH) = x64?>
-                      <File Id="libssl.dll" Name="libssl-1_1-x64.dll" Source="$(var.SolutionDir)..\release-1911\bin\libssl-1_1-x64.dll" Vital="yes"/>
+                      <File Id="libssl.dll" Name="libssl-1_1-x64.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\libssl-1_1-x64.dll" Vital="yes"/>
                       <?else?>
-                      <File Id="libssl.dll" Name="libssl-1_1.dll" Source="$(var.SolutionDir)..\release-1911\bin\libssl-1_1.dll" Vital="yes"/>
+                      <File Id="libssl.dll" Name="libssl-1_1.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\libssl-1_1.dll" Vital="yes"/>
                       <?endif?>
                     </Component>
                     <Component Id="TileGenerator.exe" Guid="*">
                         <File Id="TileGenerator.exe" Name="TileGenerator.exe" Source="$(var.MapManager.TargetDir)TileGenerator.exe" Vital="yes"/>
                     </Component>
-                    <Component Id="expat.dll" Guid="*">
-                        <File Id="expat.dll" Name="expat.dll" Source="$(var.SolutionDir)..\release-1911\bin\expat.dll" Vital="yes"/>
+                    <Component Id="libexpat.dll" Guid="*">
+                        <File Id="libexpat.dll" Name="libexpat.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\libexpat.dll" Vital="yes"/>
                     </Component>
                     <Component Id="fribidi.dll" Guid="*">
-                        <File Id="fribidi.dll" Name="fribidi.dll" Source="$(var.SolutionDir)..\release-1911\bin\fribidi.dll" Vital="yes"/>
+                        <File Id="fribidi.dll" Name="fribidi.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\fribidi-0.dll" Vital="yes"/>
                     </Component>
                     <Component Id="libfcgi.dll" Guid="*">
-                        <File Id="libfcgi.dll" Name="libfcgi.dll" Source="$(var.SolutionDir)..\release-1911\bin\libfcgi.dll" Vital="yes"/>
+                        <File Id="libfcgi.dll" Name="libfcgi.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\libfcgi.dll" Vital="yes"/>
                     </Component>
                     <Component Id="mapserver.dll" Guid="*">
-                        <File Id="mapserver.dll" Name="mapserver.dll" Source="$(var.SolutionDir)..\release-1911\bin\mapserver.dll" Vital="yes"/>
+                        <File Id="mapserver.dll" Name="mapserver.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\mapserver.dll" Vital="yes"/>
                     </Component>
                     <Component Id="libpq.dll" Guid="*">
-                        <File Id="libpq.dll" Name="libpq.dll" Source="$(var.SolutionDir)..\release-1911\bin\libpq.dll" Vital="yes"/>
+                        <File Id="libpq.dll" Name="libpq.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\libpq.dll" Vital="yes"/>
                     </Component>
                     <Component Id="libmysql.dll" Guid="*">
-                        <File Id="libmysql.dll" Name="libmysql.dll" Source="$(var.SolutionDir)..\release-1911\bin\libmysql.dll" Vital="yes"/>
+                        <File Id="libmysql.dll" Name="libmysql.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\libmysql.dll" Vital="yes"/>
                     </Component>
                     <Component Id="libxml2.dll" Guid="*">
-                        <File Id="libxml2.dll" Name="libxml2.dll" Source="$(var.SolutionDir)..\release-1911\bin\libxml2.dll" Vital="yes"/>
+                        <File Id="libxml2.dll" Name="libxml2.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\libxml2.dll" Vital="yes"/>
                     </Component>
                     <Component Id="mapscript.dll" Guid="*">
-                        <File Id="mapscript.dll" Name="mapscript.dll" Source="$(var.SolutionDir)..\release-1911\bin\ms\csharp\mapscript.dll" Vital="yes"/>
+                        <File Id="mapscript.dll" Name="mapscript.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\mapscript.dll" Vital="yes"/>
                     </Component>
                     <Component Id="csharpmapscript.dll" Guid="*">
-                      <File Id="csharpmapscript.dll" Name="csharpmapscript.dll" Source="$(var.SolutionDir)..\release-1911\bin\ms\csharp\mapscript.dll" Vital="yes"/>
+                      <File Id="csharpmapscript.dll" Name="csharpmapscript.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\mapscript.dll" Vital="yes"/>
                     </Component>
                     <Component Id="mapscript_csharp.dll" Guid="*">
-                        <File Id="mapscript_csharp.dll" Name="mapscript_csharp.dll" Source="$(var.SolutionDir)..\release-1911\bin\ms\csharp\mapscript_csharp.dll" Vital="yes"/>
+                        <File Id="mapscript_csharp.dll" Name="mapscript_csharp.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\mapscript_csharp.dll" Vital="yes"/>
                     </Component>
                     <Component Id="netcdf.dll" Guid="*">
-                        <File Id="netcdf.dll" Name="netcdf.dll" Source="$(var.SolutionDir)..\release-1911\bin\netcdf.dll" Vital="yes"/>
+                        <File Id="netcdf.dll" Name="netcdf.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\netcdf.dll" Vital="yes"/>
                     </Component>
                     <Component Id="openjp2.dll" Guid="*">
-                        <File Id="openjp2.dll" Name="openjp2.dll" Source="$(var.SolutionDir)..\release-1911\bin\openjp2.dll" Vital="yes"/>
+                        <File Id="openjp2.dll" Name="openjp2.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\openjp2.dll" Vital="yes"/>
                     </Component>
                     <Component Id="ogr_csharp.dll" Guid="*">
-                        <File Id="ogr_csharp.dll" Name="ogr_csharp.dll" Source="$(var.SolutionDir)..\release-1911\bin\gdal\csharp\ogr_csharp.dll" Vital="yes"/>
+                        <File Id="ogr_csharp.dll" Name="ogr_csharp.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\ogr_csharp.dll" Vital="yes"/>
                     </Component>
                     <Component Id="ogr_wrap.dll" Guid="*">
-                        <File Id="ogr_wrap.dll" Name="ogr_wrap.dll" Source="$(var.SolutionDir)..\release-1911\bin\gdal\csharp\ogr_wrap.dll" Vital="yes"/>
+                        <File Id="ogr_wrap.dll" Name="ogr_wrap.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\ogr_wrap.dll" Vital="yes"/>
                     </Component>
                     <Component Id="osr_csharp.dll" Guid="*">
-                        <File Id="osr_csharp.dll" Name="osr_csharp.dll" Source="$(var.SolutionDir)..\release-1911\bin\gdal\csharp\osr_csharp.dll" Vital="yes"/>
+                        <File Id="osr_csharp.dll" Name="osr_csharp.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\osr_csharp.dll" Vital="yes"/>
                     </Component>
                     <Component Id="osr_wrap.dll" Guid="*">
-                        <File Id="osr_wrap.dll" Name="osr_wrap.dll" Source="$(var.SolutionDir)..\release-1911\bin\gdal\csharp\osr_wrap.dll" Vital="yes"/>
+                        <File Id="osr_wrap.dll" Name="osr_wrap.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\osr_wrap.dll" Vital="yes"/>
                     </Component>
                     <Component Id="gdal_csharp.dll" Guid="*">
-                        <File Id="gdal_csharp.dll" Name="gdal_csharp.dll" Source="$(var.SolutionDir)..\release-1911\bin\gdal\csharp\gdal_csharp.dll" Vital="yes"/>
+                        <File Id="gdal_csharp.dll" Name="gdal_csharp.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\gdal_csharp.dll" Vital="yes"/>
                     </Component>
                     <Component Id="gdal_wrap.dll" Guid="*">
-                        <File Id="gdal_wrap.dll" Name="gdal_wrap.dll" Source="$(var.SolutionDir)..\release-1911\bin\gdal\csharp\gdal_wrap.dll" Vital="yes"/>
+                        <File Id="gdal_wrap.dll" Name="gdal_wrap.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\gdal_wrap.dll" Vital="yes"/>
                     </Component>
-                    <Component Id="proj.dll" Guid="*">
-                        <File Id="proj.dll" Name="proj.dll" Source="$(var.SolutionDir)..\release-1911\bin\proj.dll" Vital="yes"/>
+                    <Component Id="proj_4_9.dll" Guid="*">
+                        <File Id="proj_4_9.dll" Name="proj_4_9.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\proj_4_9.dll" Vital="yes"/>
                     </Component>
-                    <Component Id="proj_6_1.dll" Guid="*">
-                        <File Id="proj_6_1.dll" Name="proj_6_1.dll" Source="$(var.SolutionDir)..\release-1911\bin\proj_6_1.dll" Vital="yes"/>
+                    <Component Id="proj_7_2.dll" Guid="*">
+                        <File Id="proj_7_2.dll" Name="proj_7_2.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\proj_7_2.dll" Vital="yes"/>
                     </Component>
                     <Component Id="sqlite3.dll" Guid="*">
-                        <File Id="sqlite3.dll" Name="sqlite3.dll" Source="$(var.SolutionDir)..\release-1911\bin\sqlite3.dll" Vital="yes"/>
+                        <File Id="sqlite3.dll" Name="sqlite3.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\sqlite3.dll" Vital="yes"/>
                     </Component>
 					<Component Id="freexl.dll" Guid="*">
-                        <File Id="freexl.dll" Name="freexl.dll" Source="$(var.SolutionDir)..\release-1911\bin\freexl.dll" Vital="yes"/>
+                        <File Id="freexl.dll" Name="freexl.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\freexl.dll" Vital="yes"/>
                     </Component>
                     <Component Id="spatialite.dll" Guid="*">
-                        <File Id="spatialite.dll" Name="spatialite.dll" Source="$(var.SolutionDir)..\release-1911\bin\spatialite.dll" Vital="yes"/>
+                        <File Id="spatialite.dll" Name="spatialite.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\spatialite.dll" Vital="yes"/>
                     </Component>
                     <Component Id="xerces_c_3_2.dll" Guid="*">
-                        <File Id="xerces_c_3_2.dll" Name="xerces-c_3_2.dll" Source="$(var.SolutionDir)..\release-1911\bin\xerces-c_3_2.dll" Vital="yes"/>
+                        <File Id="xerces_c_3_2.dll" Name="xerces-c_3_2.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\xerces-c_3_2.dll" Vital="yes"/>
                     </Component>
-                    <Component Id="zlib1.dll" Guid="*">
-                        <File Id="zlib1.dll" Name="zlib1.dll" Source="$(var.SolutionDir)..\release-1911\bin\zlib1.dll" Vital="yes"/>
+                    <Component Id="zlib.dll" Guid="*">
+                        <File Id="zlib.dll" Name="zlib.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\zlib.dll" Vital="yes"/>
                     </Component>
+                    <Component Id="ogdi.dll" Guid="*">
+                        <File Id="ogdi.dll" Name="ogdi.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\ogdi.dll" Vital="yes"/>
+                    </Component>
+                    <Component Id="tiff.dll" Guid="*">
+                        <File Id="tiff.dll" Name="tiff.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\tiff.dll" Vital="yes"/>
+                    </Component>
+                    
                     <Component Id="cfitsio.dll" Guid="*">
-                        <File Id="cfitsio.dll" Name="cfitsio.dll" Source="$(var.SolutionDir)..\release-1911\bin\cfitsio.dll" Vital="yes"/>
+                        <File Id="cfitsio.dll" Name="cfitsio.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\cfitsio.dll" Vital="yes"/>
                     </Component>
                     <Component Id="msplugin_mssql2008.dll" Guid="*">
-                        <File Id="msplugin_mssql2008.dll" Name="msplugin_mssql2008.dll" Source="$(var.SolutionDir)..\release-1911\bin\ms\plugins\mssql2008\msplugin_mssql2008.dll" />
+                        <File Id="msplugin_mssql2008.dll" Name="msplugin_mssql2008.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\msplugin_mssql2008.dll" />
                     </Component>
                     <Component Id="msplugin_oracle.dll" Guid="*">
-                        <File Id="msplugin_oracle.dll" Name="msplugin_oracle.dll" Source="$(var.SolutionDir)..\release-1911\bin\ms\plugins\oci\msplugin_oracle.dll" />
+                        <File Id="msplugin_oracle.dll" Name="msplugin_oracle.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\msplugin_oracle.dll" />
                     </Component>
                     <Component Id="legend.exe" Guid="*">
-                        <File Id="legend.exe" Name="legend.exe" Source="$(var.SolutionDir)..\release-1911\bin\ms\apps\legend.exe" />
+                        <File Id="legend.exe" Name="legend.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\legend.exe" />
                     </Component>
                     <Component Id="mapserv.exe" Guid="*">
-                        <File Id="mapserv.exe" Name="mapserv.exe" Source="$(var.SolutionDir)..\release-1911\bin\ms\apps\mapserv.exe" />
+                        <File Id="mapserv.exe" Name="mapserv.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\mapserv.exe" />
                     </Component>
                     <Component Id="msencrypt.exe" Guid="*">
-                        <File Id="msencrypt.exe" Name="msencrypt.exe" Source="$(var.SolutionDir)..\release-1911\bin\ms\apps\msencrypt.exe" />
+                        <File Id="msencrypt.exe" Name="msencrypt.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\msencrypt.exe" />
                     </Component>
                     <Component Id="scalebar.exe" Guid="*">
-                        <File Id="scalebar.exe" Name="scalebar.exe" Source="$(var.SolutionDir)..\release-1911\bin\ms\apps\scalebar.exe" />
+                        <File Id="scalebar.exe" Name="scalebar.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\scalebar.exe" />
                     </Component>
                     <Component Id="shp2img.exe" Guid="*">
-                        <File Id="shp2img.exe" Name="shp2img.exe" Source="$(var.SolutionDir)..\release-1911\bin\ms\apps\shp2img.exe" />
+                        <File Id="shp2img.exe" Name="shp2img.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\shp2img.exe" />
                     </Component>
                     <Component Id="shptree.exe" Guid="*">
-                        <File Id="shptree.exe" Name="shptree.exe" Source="$(var.SolutionDir)..\release-1911\bin\ms\apps\shptree.exe" />
+                        <File Id="shptree.exe" Name="shptree.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\shptree.exe" />
                     </Component>
                     <Component Id="shptreevis.exe" Guid="*">
-                        <File Id="shptreevis.exe" Name="shptreevis.exe" Source="$(var.SolutionDir)..\release-1911\bin\ms\apps\shptreevis.exe" />
+                        <File Id="shptreevis.exe" Name="shptreevis.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\shptreevis.exe" />
                     </Component>
                     <Component Id="sortshp.exe" Guid="*">
-                        <File Id="sortshp.exe" Name="sortshp.exe" Source="$(var.SolutionDir)..\release-1911\bin\ms\apps\sortshp.exe" />
+                        <File Id="sortshp.exe" Name="sortshp.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\sortshp.exe" />
                     </Component>
                     <Component Id="tile4ms.exe" Guid="*">
-                        <File Id="tile4ms.exe" Name="tile4ms.exe" Source="$(var.SolutionDir)..\release-1911\bin\ms\apps\tile4ms.exe" />
+                        <File Id="tile4ms.exe" Name="tile4ms.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\tile4ms.exe" />
                     </Component>
                     <Component Id="gdal_contour.exe" Guid="*">
-                        <File Id="gdal_contour.exe" Name="gdal_contour.exe" Source="$(var.SolutionDir)..\release-1911\bin\gdal\apps\gdal_contour.exe" />
+                        <File Id="gdal_contour.exe" Name="gdal_contour.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\gdal_contour.exe" />
                     </Component>
                     <Component Id="gdal_grid.exe" Guid="*">
-                        <File Id="gdal_grid.exe" Name="gdal_grid.exe" Source="$(var.SolutionDir)..\release-1911\bin\gdal\apps\gdal_grid.exe" />
+                        <File Id="gdal_grid.exe" Name="gdal_grid.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\gdal_grid.exe" />
                     </Component>
                     <Component Id="gdal_rasterize.exe" Guid="*">
-                        <File Id="gdal_rasterize.exe" Name="gdal_rasterize.exe" Source="$(var.SolutionDir)..\release-1911\bin\gdal\apps\gdal_rasterize.exe" />
+                        <File Id="gdal_rasterize.exe" Name="gdal_rasterize.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\gdal_rasterize.exe" />
                     </Component>
                     <Component Id="gdal_translate.exe" Guid="*">
-                        <File Id="gdal_translate.exe" Name="gdal_translate.exe" Source="$(var.SolutionDir)..\release-1911\bin\gdal\apps\gdal_translate.exe" />
+                        <File Id="gdal_translate.exe" Name="gdal_translate.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\gdal_translate.exe" />
                     </Component>
                     <Component Id="gdaladdo.exe" Guid="*">
-                        <File Id="gdaladdo.exe" Name="gdaladdo.exe" Source="$(var.SolutionDir)..\release-1911\bin\gdal\apps\gdaladdo.exe" />
+                        <File Id="gdaladdo.exe" Name="gdaladdo.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\gdaladdo.exe" />
                     </Component>
                     <Component Id="gdalbuildvrt.exe" Guid="*">
-                        <File Id="gdalbuildvrt.exe" Name="gdalbuildvrt.exe" Source="$(var.SolutionDir)..\release-1911\bin\gdal\apps\gdalbuildvrt.exe" />
+                        <File Id="gdalbuildvrt.exe" Name="gdalbuildvrt.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\gdalbuildvrt.exe" />
                     </Component>
                     <Component Id="gdaldem.exe" Guid="*">
-                        <File Id="gdaldem.exe" Name="gdaldem.exe" Source="$(var.SolutionDir)..\release-1911\bin\gdal\apps\gdaldem.exe" />
+                        <File Id="gdaldem.exe" Name="gdaldem.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\gdaldem.exe" />
                     </Component>
                     <Component Id="gdalenhance.exe" Guid="*">
-                        <File Id="gdalenhance.exe" Name="gdalenhance.exe" Source="$(var.SolutionDir)..\release-1911\bin\gdal\apps\gdalenhance.exe" />
+                        <File Id="gdalenhance.exe" Name="gdalenhance.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\gdalenhance.exe" />
                     </Component>
                     <Component Id="gdalinfo.exe" Guid="*">
-                        <File Id="gdalinfo.exe" Name="gdalinfo.exe" Source="$(var.SolutionDir)..\release-1911\bin\gdal\apps\gdalinfo.exe" />
+                        <File Id="gdalinfo.exe" Name="gdalinfo.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\gdalinfo.exe" />
                     </Component>
                     <Component Id="gdallocationinfo.exe" Guid="*">
-                        <File Id="gdallocationinfo.exe" Name="gdallocationinfo.exe" Source="$(var.SolutionDir)..\release-1911\bin\gdal\apps\gdallocationinfo.exe" />
+                        <File Id="gdallocationinfo.exe" Name="gdallocationinfo.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\gdallocationinfo.exe" />
                     </Component>
                     <Component Id="gdalmanage.exe" Guid="*">
-                        <File Id="gdalmanage.exe" Name="gdalmanage.exe" Source="$(var.SolutionDir)..\release-1911\bin\gdal\apps\gdalmanage.exe" />
+                        <File Id="gdalmanage.exe" Name="gdalmanage.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\gdalmanage.exe" />
                     </Component>
                     <Component Id="gdalsrsinfo.exe" Guid="*">
-                        <File Id="gdalsrsinfo.exe" Name="gdalsrsinfo.exe" Source="$(var.SolutionDir)..\release-1911\bin\gdal\apps\gdalsrsinfo.exe" />
+                        <File Id="gdalsrsinfo.exe" Name="gdalsrsinfo.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\gdalsrsinfo.exe" />
                     </Component>
                     <Component Id="gdaltindex.exe" Guid="*">
-                        <File Id="gdaltindex.exe" Name="gdaltindex.exe" Source="$(var.SolutionDir)..\release-1911\bin\gdal\apps\gdaltindex.exe" />
+                        <File Id="gdaltindex.exe" Name="gdaltindex.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\gdaltindex.exe" />
                     </Component>
                     <Component Id="gdaltransform.exe" Guid="*">
-                        <File Id="gdaltransform.exe" Name="gdaltransform.exe" Source="$(var.SolutionDir)..\release-1911\bin\gdal\apps\gdaltransform.exe" />
+                        <File Id="gdaltransform.exe" Name="gdaltransform.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\gdaltransform.exe" />
                     </Component>
                     <Component Id="gdalwarp.exe" Guid="*">
-                        <File Id="gdalwarp.exe" Name="gdalwarp.exe" Source="$(var.SolutionDir)..\release-1911\bin\gdal\apps\gdalwarp.exe" />
+                        <File Id="gdalwarp.exe" Name="gdalwarp.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\gdalwarp.exe" />
                     </Component>
                     <Component Id="gnmanalyse.exe" Guid="*">
-                        <File Id="gnmanalyse.exe" Name="gnmanalyse.exe" Source="$(var.SolutionDir)..\release-1911\bin\gdal\apps\gnmanalyse.exe" />
+                        <File Id="gnmanalyse.exe" Name="gnmanalyse.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\gnmanalyse.exe" />
                     </Component>
                     <Component Id="gnmmanage.exe" Guid="*">
-                        <File Id="gnmmanage.exe" Name="gnmmanage.exe" Source="$(var.SolutionDir)..\release-1911\bin\gdal\apps\gnmmanage.exe" />
+                        <File Id="gnmmanage.exe" Name="gnmmanage.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\gnmmanage.exe" />
                     </Component>
                     <Component Id="nearblack.exe" Guid="*">
-                        <File Id="nearblack.exe" Name="nearblack.exe" Source="$(var.SolutionDir)..\release-1911\bin\gdal\apps\nearblack.exe" />
+                        <File Id="nearblack.exe" Name="nearblack.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\nearblack.exe" />
                     </Component>
                     <Component Id="ogr2ogr.exe" Guid="*">
-                        <File Id="ogr2ogr.exe" Name="ogr2ogr.exe" Source="$(var.SolutionDir)..\release-1911\bin\gdal\apps\ogr2ogr.exe" />
+                        <File Id="ogr2ogr.exe" Name="ogr2ogr.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\ogr2ogr.exe" />
                     </Component>
                     <Component Id="ogrinfo.exe" Guid="*">
-                        <File Id="ogrinfo.exe" Name="ogrinfo.exe" Source="$(var.SolutionDir)..\release-1911\bin\gdal\apps\ogrinfo.exe" />
+                        <File Id="ogrinfo.exe" Name="ogrinfo.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\ogrinfo.exe" />
                     </Component>
                     <Component Id="ogrlineref.exe" Guid="*">
-                        <File Id="ogrlineref.exe" Name="ogrlineref.exe" Source="$(var.SolutionDir)..\release-1911\bin\gdal\apps\ogrlineref.exe" />
+                        <File Id="ogrlineref.exe" Name="ogrlineref.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\ogrlineref.exe" />
                     </Component>
                     <Component Id="ogrtindex.exe" Guid="*">
-                        <File Id="ogrtindex.exe" Name="ogrtindex.exe" Source="$(var.SolutionDir)..\release-1911\bin\gdal\apps\ogrtindex.exe" />
+                        <File Id="ogrtindex.exe" Name="ogrtindex.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\ogrtindex.exe" />
                     </Component>
                     <Component Id="testepsg.exe" Guid="*">
-                        <File Id="testepsg.exe" Name="testepsg.exe" Source="$(var.SolutionDir)..\release-1911\bin\gdal\apps\testepsg.exe" />
+                        <File Id="testepsg.exe" Name="testepsg.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\testepsg.exe" />
                     </Component>
                     <Component Id="mmshell.bat" Guid="*">
                         <File Id="mmshell.bat" Name="mmshell.bat" Source="$(var.SolutionDir)\Installer\mmshell.bat" />
                     </Component>
                     <Component Id="vcruntime140.dll" Guid="*">
-                        <File Id="vcruntime140.dll" Name="vcruntime140.dll" Source="$(var.SolutionDir)..\release-1911\bin\vcruntime140.dll" />
+                        <File Id="vcruntime140.dll" Name="vcruntime140.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\vcruntime140.dll" />
                     </Component>
                     <Component Id="msvcp140.dll" Guid="*">
-                        <File Id="msvcp140.dll" Name="msvcp140.dll" Source="$(var.SolutionDir)..\release-1911\bin\msvcp140.dll" />
+                        <File Id="msvcp140.dll" Name="msvcp140.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\msvcp140.dll" />
                     </Component>
                 </Directory>
             </Directory>
@@ -682,13 +548,13 @@
                 <ComponentRef Id="gdal.dll" />
                 <ComponentRef Id="geos_c.dll" />
                 <ComponentRef Id="geos.dll" />
-                <ComponentRef Id="iconv.dll" />
+                <ComponentRef Id="iconv_2.dll" />
                 <ComponentRef Id="libcurl.dll" />
                 <ComponentRef Id="curl_ca_bundle.crt" />
                 <ComponentRef Id="MapfileConfig.xml" />
                 <ComponentRef Id="libssl.dll" />
                 <ComponentRef Id="libcrypto.dll" />
-                <ComponentRef Id="expat.dll" />
+                <ComponentRef Id="libexpat.dll" />
                 <ComponentRef Id="libfcgi.dll" />
                 <ComponentRef Id="mapserver.dll" />
                 <ComponentRef Id="libpq.dll" />
@@ -704,24 +570,19 @@
                 <ComponentRef Id="gdal_csharp.dll" />
                 <ComponentRef Id="gdal_wrap.dll" />
                 <ComponentRef Id="openjp2.dll" />
-                <ComponentRef Id="proj.dll" />
-                <ComponentRef Id="proj_6_1.dll" />
+                <ComponentRef Id="proj_4_9.dll" />
+                <ComponentRef Id="proj_7_2.dll" />
                 <ComponentRef Id="fribidi.dll" />
                 <ComponentRef Id="sqlite3.dll" />
-			          <ComponentRef Id="freexl.dll" />
+			    <ComponentRef Id="freexl.dll" />
                 <ComponentRef Id="spatialite.dll" />
                 <ComponentRef Id="xerces_c_3_2.dll" />
-                <ComponentRef Id="zlib1.dll" />
+                <ComponentRef Id="zlib.dll" />
+                <ComponentRef Id="ogdi.dll" />
+                <ComponentRef Id="tiff.dll" />
                 <ComponentRef Id="ApplicationShortcut" />
                 <ComponentRef Id="epsg" />
                 <ComponentRef Id="world" />
-                <ComponentRef Id="WO" />
-                <ComponentRef Id="WI" />
-                <ComponentRef Id="TN" />
-                <ComponentRef Id="stpaul" />
-                <ComponentRef Id="stlrnc" />
-                <ComponentRef Id="stgeorge" />
-                <ComponentRef Id="prvi" />
                 <ComponentRef Id="proj.db" />
                 <ComponentRef Id="proj_def.dat" />                
                 <ComponentRef Id="other.extra" />
@@ -732,20 +593,14 @@
                 <ComponentRef Id="nad83" />
                 <ComponentRef Id="nad27" />
                 <ComponentRef Id="nad.lst" />
-                <ComponentRef Id="MD" />
                 <ComponentRef Id="IGNF" />
                 <ComponentRef Id="ITRF2014" />
                 <ComponentRef Id="ITRF2008" />
                 <ComponentRef Id="ITRF2000" />
-                <ComponentRef Id="hawaii" />
                 <ComponentRef Id="GL27" />
                 <ComponentRef Id="esri.extra" />
                 <ComponentRef Id="esri" />
-                <ComponentRef Id="egm96_15.gtx" />
-                <ComponentRef Id="conus" />
                 <ComponentRef Id="CH" />
-                <ComponentRef Id="BETA2007.gsb" />
-                <ComponentRef Id="alaska" />
                 <ComponentRef Id="new.map" />
                 <ComponentRef Id="mmstyles.map" />
                 <ComponentRef Id="annotation.map" />
@@ -793,9 +648,9 @@
               <Feature Id="HDF4" Level="1" Title="HDF4" Description="Hierarchical Data Format Release 4 (HDF4) rasters (for the custom licensing terms please review HDF4License.rtf and SZIPLicense.rtf installed in the /license folder)">
                   <ComponentRef Id="gdal_HDF4.dll" />
                   <ComponentRef Id="gdal_HDF4Image.dll" />
-                  <ComponentRef Id="hdfdll.dll" />
-                  <ComponentRef Id="mfhdfdll.dll" />
-                  <ComponentRef Id="xdrdll.dll" />
+                  <ComponentRef Id="hdf5.dll" />
+                  <ComponentRef Id="mfhdf.dll" />
+                  <ComponentRef Id="xdr.dll" />
                   <ComponentRef Id="HDF4License.rtf" />
                   <ComponentRef Id="SZIPLicense.rtf" />
                   <ComponentRef Id="szip.dll" />
@@ -857,42 +712,6 @@
                 <ComponentRef Id="testepsg.exe" />
                 <ComponentRef Id="vcruntime140.dll" />
                 <ComponentRef Id="msvcp140.dll" />
-            </Feature>
-            <Feature Id="Python27" Level="1" Title="Python Bindings" Description="GDAL and MapServer Python Files (requires Python 2.7)">
-                <ComponentRef Id="mapscript.py" />
-                <ComponentRef Id="_mapscript.pyd" />
-                <ComponentRef Id="__init__.py" />
-                <ComponentRef Id="_gdal.pyd" />
-                <ComponentRef Id="_gdalconst.pyd" />
-                <ComponentRef Id="_ogr.pyd" />
-                <ComponentRef Id="_osr.pyd" />
-                <ComponentRef Id="gdal.py" />
-                <ComponentRef Id="gdal_array.py" />
-                <ComponentRef Id="gdalconst.py" />
-                <ComponentRef Id="gdalnumeric.py" />
-                <ComponentRef Id="ogr.py" />
-                <ComponentRef Id="osr.py" />
-            </Feature>
-            <Feature Id="PythonTools" Level="1" Title="Python Tools" Description="GDAL Python Tools">
-                <ComponentRef Id="epsg_tr.py" />
-                <ComponentRef Id="esri2wkt.py" />
-                <ComponentRef Id="gcps2vec.py" />
-                <ComponentRef Id="gcps2wld.py" />
-                <ComponentRef Id="gdal_calc.py" />
-                <ComponentRef Id="gdal_fillnodata.py" />
-                <ComponentRef Id="gdal_merge.py" />
-                <ComponentRef Id="gdal_polygonize.py" />
-                <ComponentRef Id="gdal_proximity.py" />
-                <ComponentRef Id="gdal_retile.py" />
-                <ComponentRef Id="gdal_sieve.py" />
-                <ComponentRef Id="gdal2tiles.py" />
-                <ComponentRef Id="gdal2xyz.py" />
-                <ComponentRef Id="gdalchksum.py" />
-                <ComponentRef Id="gdalident.py" />
-                <ComponentRef Id="gdalimport.py" />
-                <ComponentRef Id="mkgraticule.py" />
-                <ComponentRef Id="pct2rgb.py" />
-                <ComponentRef Id="rgb2pct.py" />
             </Feature>
         </Feature>
 	</Product>
