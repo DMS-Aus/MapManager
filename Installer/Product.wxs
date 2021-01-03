@@ -217,11 +217,14 @@
                     <Component Id="hdf5.dll" Guid="*">
                         <File Id="hdf5.dll" Name="hdf5.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\hdf5.dll" Vital="yes"/>
                     </Component>
-          <Component Id="hdf5_hl.dll" Guid="*">
+                    <Component Id="hdf5_cpp.dll" Guid="*">
+                        <File Id="hdf5_cpp.dll" Name="hdf5_cpp.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\hdf5_cpp.dll" Vital="yes"/>
+                    </Component>
+                    <Component Id="hdf5_hl.dll" Guid="*">
                         <File Id="hdf5_hl.dll" Name="hdf5_hl.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\hdf5_hl.dll" Vital="yes"/>
                     </Component>
                     <Component Id="hdf.dll" Guid="*">
-                        <File Id="hdf.dll" Name="hdf.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\hdf5.dll" Vital="yes"/>
+                        <File Id="hdf.dll" Name="hdf.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\hdf.dll" Vital="yes"/>
                     </Component>
                     <Component Id="mfhdf.dll" Guid="*">
                         <File Id="mfhdf.dll" Name="mfhdf.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\mfhdf.dll" Vital="yes"/>
@@ -264,8 +267,8 @@
                     <Component Id="libexpat.dll" Guid="*">
                         <File Id="libexpat.dll" Name="libexpat.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\libexpat.dll" Vital="yes"/>
                     </Component>
-                    <Component Id="fribidi.dll" Guid="*">
-                        <File Id="fribidi.dll" Name="fribidi.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\fribidi-0.dll" Vital="yes"/>
+                    <Component Id="fribidi_0.dll" Guid="*">
+                        <File Id="fribidi_0.dll" Name="fribidi-0.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\fribidi-0.dll" Vital="yes"/>
                     </Component>
                     <Component Id="libfcgi.dll" Guid="*">
                         <File Id="libfcgi.dll" Name="libfcgi.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Configuration)\libfcgi.dll" Vital="yes"/>
@@ -572,7 +575,7 @@
                 <ComponentRef Id="openjp2.dll" />
                 <ComponentRef Id="proj_4_9.dll" />
                 <ComponentRef Id="proj_7_2.dll" />
-                <ComponentRef Id="fribidi.dll" />
+                <ComponentRef Id="fribidi_0.dll" />
                 <ComponentRef Id="sqlite3.dll" />
 			    <ComponentRef Id="freexl.dll" />
                 <ComponentRef Id="spatialite.dll" />
@@ -629,7 +632,7 @@
                 <Feature Id="ms_sql2008" Level="1" Title="MSSQL 2008" Description="MSSQL 2008 plugin library">
                     <ComponentRef Id="msplugin_mssql2008.dll" />
                 </Feature>
-                <Feature Id="ms_oracle" Level="1000" Title="ORACLE" Description="ORACLE OCI plugin library">
+                <Feature Id="ms_oracle" Level="1" Title="ORACLE" Description="ORACLE OCI plugin library">
                     <ComponentRef Id="msplugin_oracle.dll" />
                 </Feature>
             </Feature>
@@ -640,6 +643,7 @@
                   <ComponentRef Id="netcdf.dll" />
                   <ComponentRef Id="NetCDFLicense.rtf" />
                   <ComponentRef Id="hdf5.dll" />
+                  <ComponentRef Id="hdf5_cpp.dll" />
                   <ComponentRef Id="hdf5_hl.dll" />
                   <ComponentRef Id="HDF5License.rtf" />
                   <ComponentRef Id="SZIPLicense.rtf" />
@@ -648,7 +652,7 @@
               <Feature Id="HDF4" Level="1" Title="HDF4" Description="Hierarchical Data Format Release 4 (HDF4) rasters (for the custom licensing terms please review HDF4License.rtf and SZIPLicense.rtf installed in the /license folder)">
                   <ComponentRef Id="gdal_HDF4.dll" />
                   <ComponentRef Id="gdal_HDF4Image.dll" />
-                  <ComponentRef Id="hdf5.dll" />
+                  <ComponentRef Id="hdf.dll" />
                   <ComponentRef Id="mfhdf.dll" />
                   <ComponentRef Id="xdr.dll" />
                   <ComponentRef Id="HDF4License.rtf" />
@@ -660,6 +664,7 @@
                   <ComponentRef Id="gdal_BAG.dll" />
                   <ComponentRef Id="gdal_HDF5Image.dll" />
                   <ComponentRef Id="hdf5.dll" />
+                  <ComponentRef Id="hdf5_cpp.dll" />
                   <ComponentRef Id="hdf5_hl.dll" />
                   <ComponentRef Id="HDF5License.rtf" />
                   <ComponentRef Id="SZIPLicense.rtf" />
