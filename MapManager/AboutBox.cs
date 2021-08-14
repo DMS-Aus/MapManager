@@ -28,7 +28,15 @@ namespace DMS.MapManager
 
         [DllImport("libcurl", EntryPoint = "curl_version")]
         private static extern IntPtr curl_version();
-        
+
+        /// <summary>
+        /// Function to determine which platform we're on
+        /// </summary>
+        private static string GetPlatform()
+        {
+            return Environment.Is64BitProcess ? "x64" : "x86";
+        }
+
         /// <summary>
         /// Collect the versions of the dependent libraries
         /// </summary>
@@ -88,7 +96,7 @@ namespace DMS.MapManager
             //  - Project->Properties->Application->Assembly Information
             //  - AssemblyInfo.cs
             this.Text = String.Format("About {0}", AssemblyTitle);
-            this.labelProductName.Text = AssemblyProduct;
+            this.labelProductName.Text = AssemblyProduct + " (" + GetPlatform() + ")";
 
             // Extract the date and time from the assembly version
             string[] aver = AssemblyVersion.Split(new char[] { '.' });
