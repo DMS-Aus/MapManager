@@ -57,14 +57,56 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="gdal_csharp, Version=1.0.5098.28547, Culture=neutral, PublicKeyToken=db5a52b08dc5b321, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\release-1900\bin\gdal\csharp\gdal_csharp.dll</HintPath>
+      <HintPath>$(SdkDir)\bin\gdal\csharp\gdal_csharp.dll</HintPath>
     </Reference>
     <Reference Include="mapscript_csharp, Version=1.0.5098.28628, Culture=neutral, PublicKeyToken=80087771edd02926, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\release-1900\bin\ms\csharp\mapscript_csharp.dll</HintPath>
+      <HintPath>$(SdkDir)\bin\ms\csharp\mapscript_csharp.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -72,15 +114,15 @@
     </Reference>
     <Reference Include="ogr_csharp, Version=1.0.4035.39384, Culture=neutral, PublicKeyToken=db5a52b08dc5b321, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\release-1900\bin\gdal\csharp\ogr_csharp.dll</HintPath>
+      <HintPath>$(SdkDir)\bin\gdal\csharp\ogr_csharp.dll</HintPath>
     </Reference>
     <Reference Include="osr_csharp, Version=1.0.7100.37427, Culture=neutral, PublicKeyToken=db5a52b08dc5b321, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\release-1900\bin\gdal\csharp\osr_csharp.dll</HintPath>
+      <HintPath>$(SdkDir)\bin\gdal\csharp\osr_csharp.dll</HintPath>
     </Reference>
     <Reference Include="ScintillaNet, Version=2.2.5989.25080, Culture=neutral, PublicKeyToken=948d6c9751444115, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\ExternalFiles\ScintillaNet.dll</HintPath>
+      <HintPath>..\ExternalFiles\$(Platform)\ScintillaNet.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -299,28 +341,38 @@
   </Target>
   -->
   <PropertyGroup>
-    <PreBuildEvent>copy $(SolutionDir)..\release-1900\bin\*.dll $(TargetDir)
-copy $(SolutionDir)..\release-1900\bin\gdal-data\*.* $(TargetDir)
-copy $(SolutionDir)..\release-1900\bin\curl\curl-ca-bundle.crt $(TargetDir)
+    <PreBuildEvent>copy $(SdkDir)\bin\*.dll $(TargetDir)
+copy $(SdkDir)\bin\gdal-data\*.* $(TargetDir)
+copy $(SdkDir)\bin\curl\curl-ca-bundle.crt $(TargetDir)
 copy $(SolutionDir)help\MapManager.chm $(TargetDir)
-copy $(SolutionDir)..\release-1900\bin\ms\csharp\mapscript_csharp.dll $(TargetDir)
-copy $(SolutionDir)..\release-1900\bin\ms\csharp\mapscript.dll $(TargetDir)
-copy $(SolutionDir)..\release-1900\bin\gdal\csharp\*_csharp.dll $(TargetDir)
-copy $(SolutionDir)..\release-1900\bin\gdal\csharp\*_wrap.dll $(TargetDir)
-copy $(SolutionDir)ExternalFiles\SciLexer.dll $(TargetDir)
+copy $(SdkDir)\bin\ms\csharp\mapscript_csharp.dll $(TargetDir)
+copy $(SdkDir)\bin\ms\csharp\mapscript.dll $(TargetDir)
+copy $(SdkDir)\bin\gdal\csharp\*_csharp.dll $(TargetDir)
+copy $(SdkDir)\bin\gdal\csharp\*_wrap.dll $(TargetDir)
+copy $(SolutionDir)ExternalFiles\$(Platform)\SciLexer.dll $(TargetDir)
 
-copy $(SolutionDir)..\release-1900\bin\ms\plugins\mssql2008\msplugin_mssql2008.dll $(TargetDir)
-copy $(SolutionDir)..\release-1900\bin\ms\plugins\oci\msplugin_oracle.dll $(TargetDir)
+copy $(SdkDir)\bin\ms\plugins\mssql2008\msplugin_mssql2008.dll $(TargetDir)
+copy $(SdkDir)\bin\ms\plugins\oci\msplugin_oracle.dll $(TargetDir)
 
 if not exist $(TargetDir)ProjLib mkdir $(TargetDir)ProjLib
-copy $(SolutionDir)..\release-1900\bin\proj\SHARE\*.* $(TargetDir)\ProjLib
+copy $(SdkDir)\bin\proj\SHARE\*.* $(TargetDir)\ProjLib
+copy $(SdkDir)\bin\proj7\SHARE\*.* $(TargetDir)\ProjLib
 if not exist $(TargetDir)templates mkdir $(TargetDir)templates
 copy $(SolutionDir)Templates $(TargetDir)templates
 
 if not exist $(TargetDir)gdalplugins mkdir $(TargetDir)gdalplugins
-copy $(SolutionDir)..\release-1900\bin\gdal\plugins\*.* $(TargetDir)\gdalplugins
+copy $(SdkDir)\bin\gdal\plugins\*.* $(TargetDir)\gdalplugins
+if not exist $(TargetDir)gdalplugins-optional mkdir $(TargetDir)gdalplugins-optional
+copy $(SdkDir)\bin\gdal\plugins-optional\*.* $(TargetDir)\gdalplugins-optional
+if not exist $(TargetDir)gdalplugins-external mkdir $(TargetDir)gdalplugins-external
+copy $(SdkDir)\bin\gdal\plugins-external\*.* $(TargetDir)\gdalplugins-external
 
-del $(TargetDir)\gdalplugins\gdal_GEOR.dll $(TargetDir)\gdalplugins\ogr_SDE.dll $(TargetDir)\gdalplugins\gdal_SDE.dll $(TargetDir)\gdalplugins\ogr_OCI.dll</PreBuildEvent>
+del $(TargetDir)\gdalplugins\gdal_GEOR.dll $(TargetDir)\gdalplugins\ogr_SDE.dll $(TargetDir)\gdalplugins\gdal_SDE.dll $(TargetDir)\gdalplugins\ogr_OCI.dll
+if not exist $(TargetDir)doc mkdir $(TargetDir)doc
+copy $(SdkDir)\..\*.rtf $(TargetDir)\doc
+copy $(SdkDir)\bin\gdal\apps\*.exe $(TargetDir)
+copy $(SdkDir)\bin\ms\apps\*.exe $(TargetDir)
+copy $(SdkDir)\bin\curl-ca-bundle.crt $(TargetDir)</PreBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
     <PostBuildEvent>
