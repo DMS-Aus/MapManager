@@ -24,6 +24,20 @@
     <SuppressIces>ICE82;ICE03;ICE83</SuppressIces>
     <SuppressValidation>True</SuppressValidation>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DefineConstants>Debug</DefineConstants>
+    <SuppressValidation>False</SuppressValidation>
+    <CompilerAdditionalOptions />
+    <SuppressIces>ICE03;ICE82;ICE83</SuppressIces>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <SuppressIces>ICE82;ICE03;ICE83</SuppressIces>
+    <SuppressValidation>True</SuppressValidation>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+  </PropertyGroup>
   <ItemGroup>
     <Compile Include="gdal-data.wxs" />
     <Compile Include="Product.wxs" />
