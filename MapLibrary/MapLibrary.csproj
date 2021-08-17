@@ -97,7 +97,7 @@
     </Reference>
     <Reference Include="ScintillaNet, Version=2.2.4148.33544, Culture=neutral, PublicKeyToken=948d6c9751444115, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\ExternalFiles\ScintillaNet.dll</HintPath>
+      <HintPath>..\ExternalFiles\$(Platform)\ScintillaNet.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
