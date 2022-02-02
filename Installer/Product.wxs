@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" xmlns:netfx="http://schemas.microsoft.com/wix/NetFxExtension">
-	<Product Id="CEB08A5C-9292-4B51-896E-71EE75531C9A" Name="MapServer MapManager v1.1" Language="1033" Version="1.1.0.0" Manufacturer="Digital Mapping Solutions" UpgradeCode="B17B8E38-2C70-4032-8F95-4BA75FDFFB5E">
+  <?if $(sys.BUILDARCH) = x64?>
+  <?define ProgramFiles = "ProgramFiles64Folder" ?>
+  <?else?>
+  <?define ProgramFiles = "ProgramFilesFolder" ?>
+  <?endif?>
+  
+  <Product Id="CEB08A5C-9292-4B51-896E-71EE75531C9A" Name="MapServer MapManager v1.1 ($(var.Platform))" Language="1033" Version="1.1.0.0" Manufacturer="Digital Mapping Solutions" UpgradeCode="B17B8E38-2C70-4032-8F95-4BA75FDFFB5E">
 		<Package InstallerVersion="300" Compressed="yes" Description="MapServer MapManager Installer" InstallScope="perMachine"/>
 
         <Media Id="1" Cabinet="MapManager.cab" EmbedCab="yes" />
@@ -12,7 +18,7 @@
 
         <Directory Id="TARGETDIR" Name="SourceDir">
             <Directory Id="DesktopFolder" Name="Desktop"/>
-			<Directory Id="ProgramFilesFolder" Name="PFiles">
+			<Directory Id="$(var.ProgramFiles)" Name="PFiles">
 				<Directory Id="INSTALLDIR" Name="MapManager">
                     <Directory Id="projlibDir" Name="projlib">
                         <Component Id="epsg" Guid="*">
@@ -200,7 +206,7 @@
                         <File Id="SciLexer.dll" Name="SciLexer.dll" Source="$(var.MapManager.TargetDir)SciLexer.dll" Vital="yes"/>
                     </Component>
                     <Component Id="gdal.dll" Guid="*">
-                        <File Id="gdal.dll" Name="gdal303.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\gdal303.dll" Vital="yes"/>
+                        <File Id="gdal.dll" Name="gdal304.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\gdal304.dll" Vital="yes"/>
                     </Component>
                     <Component Id="Microsoft.VisualBasic.PowerPacks.Vs.dll" Guid="*">
                         <File Id="Microsoft.VisualBasic.PowerPacks.Vs.dll" Name="Microsoft.VisualBasic.PowerPacks.Vs.dll" Source="$(var.MapManager.TargetDir)Microsoft.VisualBasic.PowerPacks.Vs.dll" Vital="yes"/>
@@ -448,15 +454,17 @@
                     <Component Id="ogrtindex.exe" Guid="*">
                         <File Id="ogrtindex.exe" Name="ogrtindex.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\ogrtindex.exe" />
                     </Component>
-                    <Component Id="testepsg.exe" Guid="*">
-                        <File Id="testepsg.exe" Name="testepsg.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\testepsg.exe" />
-                    </Component>
                     <Component Id="mmshell.bat" Guid="*">
                         <File Id="mmshell.bat" Name="mmshell.bat" Source="$(var.SolutionDir)\Installer\mmshell.bat" />
                     </Component>
                     <Component Id="vcruntime140.dll" Guid="*">
                         <File Id="vcruntime140.dll" Name="vcruntime140.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\vcruntime140.dll" />
                     </Component>
+                    <?if $(sys.BUILDARCH) = x64?>
+                    <Component Id="vcruntime140_1.dll" Guid="*">
+                      <File Id="vcruntime140_1.dll" Name="vcruntime140_1.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\vcruntime140_1.dll" />
+                    </Component>
+                    <?endif?>
                     <Component Id="msvcp140.dll" Guid="*">
                         <File Id="msvcp140.dll" Name="msvcp140.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\msvcp140.dll" />
                     </Component>
@@ -714,8 +722,10 @@
                 <ComponentRef Id="ogrinfo.exe" />
                 <ComponentRef Id="ogrlineref.exe" />
                 <ComponentRef Id="ogrtindex.exe" />
-                <ComponentRef Id="testepsg.exe" />
                 <ComponentRef Id="vcruntime140.dll" />
+                <?if $(sys.BUILDARCH) = x64?>
+                <ComponentRef Id="vcruntime140_1.dll" />
+                <?endif?>
                 <ComponentRef Id="msvcp140.dll" />
             </Feature>
         </Feature>
