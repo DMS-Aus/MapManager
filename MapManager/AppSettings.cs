@@ -30,6 +30,10 @@ namespace DMS.MapManager
         /// </summary>
         public bool AutoLoadRecent;
         /// <summary>
+        /// Enable/Disable to convent mapfile on loading.
+        /// </summary>
+        public bool EnableConversion;
+        /// <summary>
         /// Path to the text editor to edit map file.
         /// </summary>
         public string TextEditor;
@@ -123,6 +127,7 @@ namespace DMS.MapManager
             MRUSize = 10;
             MRU = new ArrayList();
             AutoLoadRecent = false;
+            EnableConversion = true;
             TextEditor = null;
             LayerControlBackColor = Color.FromArgb(255,255,255);
             LayerControlShowCheckBoxes = true;

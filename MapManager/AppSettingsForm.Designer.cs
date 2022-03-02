@@ -38,6 +38,7 @@ namespace DMS.MapManager
             this.label2 = new System.Windows.Forms.Label();
             this.checkBoxAutoLoadRecent = new System.Windows.Forms.CheckBox();
             this.tabPageLayerPanel = new System.Windows.Forms.TabPage();
+            this.checkBoxLabels = new System.Windows.Forms.CheckBox();
             this.colorPickerLayerBackgroundColor = new DMS.MapLibrary.ColorPicker();
             this.checkBoxStyles = new System.Windows.Forms.CheckBox();
             this.checkBoxClasses = new System.Windows.Forms.CheckBox();
@@ -50,7 +51,7 @@ namespace DMS.MapManager
             this.buttonEditColorRamp = new System.Windows.Forms.Button();
             this.buttonNewColorRamp = new System.Windows.Forms.Button();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
-            this.checkBoxLabels = new System.Windows.Forms.CheckBox();
+            this.checkBoxEnableConversion = new System.Windows.Forms.CheckBox();
             this.tabControl.SuspendLayout();
             this.tabPageGeneral.SuspendLayout();
             this.tabPageLayerPanel.SuspendLayout();
@@ -60,9 +61,10 @@ namespace DMS.MapManager
             // buttonOK
             // 
             this.buttonOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.buttonOK.Location = new System.Drawing.Point(40, 203);
+            this.buttonOK.Location = new System.Drawing.Point(53, 250);
+            this.buttonOK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonOK.Name = "buttonOK";
-            this.buttonOK.Size = new System.Drawing.Size(75, 23);
+            this.buttonOK.Size = new System.Drawing.Size(100, 28);
             this.buttonOK.TabIndex = 1;
             this.buttonOK.Text = "OK";
             this.buttonOK.UseVisualStyleBackColor = true;
@@ -71,9 +73,10 @@ namespace DMS.MapManager
             // buttonCancel
             // 
             this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonCancel.Location = new System.Drawing.Point(162, 203);
+            this.buttonCancel.Location = new System.Drawing.Point(216, 250);
+            this.buttonCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(75, 23);
+            this.buttonCancel.Size = new System.Drawing.Size(100, 28);
             this.buttonCancel.TabIndex = 2;
             this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = true;
@@ -86,21 +89,24 @@ namespace DMS.MapManager
             this.tabControl.Controls.Add(this.tabPageColorRamp);
             this.tabControl.Dock = System.Windows.Forms.DockStyle.Top;
             this.tabControl.Location = new System.Drawing.Point(0, 0);
+            this.tabControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(286, 197);
+            this.tabControl.Size = new System.Drawing.Size(381, 242);
             this.tabControl.TabIndex = 0;
             // 
             // tabPageGeneral
             // 
+            this.tabPageGeneral.Controls.Add(this.checkBoxEnableConversion);
             this.tabPageGeneral.Controls.Add(this.buttonEditor);
             this.tabPageGeneral.Controls.Add(this.textBoxEditor);
             this.tabPageGeneral.Controls.Add(this.label2);
             this.tabPageGeneral.Controls.Add(this.checkBoxAutoLoadRecent);
-            this.tabPageGeneral.Location = new System.Drawing.Point(4, 22);
+            this.tabPageGeneral.Location = new System.Drawing.Point(4, 25);
+            this.tabPageGeneral.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPageGeneral.Name = "tabPageGeneral";
-            this.tabPageGeneral.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageGeneral.Size = new System.Drawing.Size(278, 171);
+            this.tabPageGeneral.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPageGeneral.Size = new System.Drawing.Size(373, 213);
             this.tabPageGeneral.TabIndex = 0;
             this.tabPageGeneral.Text = "General";
             this.tabPageGeneral.UseVisualStyleBackColor = true;
@@ -108,9 +114,10 @@ namespace DMS.MapManager
             // buttonEditor
             // 
             this.buttonEditor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonEditor.Location = new System.Drawing.Point(251, 74);
+            this.buttonEditor.Location = new System.Drawing.Point(335, 113);
+            this.buttonEditor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonEditor.Name = "buttonEditor";
-            this.buttonEditor.Size = new System.Drawing.Size(24, 23);
+            this.buttonEditor.Size = new System.Drawing.Size(32, 28);
             this.buttonEditor.TabIndex = 3;
             this.buttonEditor.Text = "...";
             this.buttonEditor.UseVisualStyleBackColor = true;
@@ -118,29 +125,32 @@ namespace DMS.MapManager
             // 
             // textBoxEditor
             // 
-            this.textBoxEditor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxEditor.Location = new System.Drawing.Point(11, 76);
+            this.textBoxEditor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxEditor.Location = new System.Drawing.Point(15, 116);
+            this.textBoxEditor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxEditor.Name = "textBoxEditor";
-            this.textBoxEditor.Size = new System.Drawing.Size(233, 20);
+            this.textBoxEditor.Size = new System.Drawing.Size(309, 22);
             this.textBoxEditor.TabIndex = 2;
             this.textBoxEditor.Validating += new System.ComponentModel.CancelEventHandler(this.textBoxEditor_Validating);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 56);
+            this.label2.Location = new System.Drawing.Point(12, 91);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(175, 13);
+            this.label2.Size = new System.Drawing.Size(237, 17);
             this.label2.TabIndex = 1;
             this.label2.Text = "Preferred text editor to edit map files";
             // 
             // checkBoxAutoLoadRecent
             // 
             this.checkBoxAutoLoadRecent.AutoSize = true;
-            this.checkBoxAutoLoadRecent.Location = new System.Drawing.Point(34, 29);
+            this.checkBoxAutoLoadRecent.Location = new System.Drawing.Point(45, 36);
+            this.checkBoxAutoLoadRecent.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBoxAutoLoadRecent.Name = "checkBoxAutoLoadRecent";
-            this.checkBoxAutoLoadRecent.Size = new System.Drawing.Size(185, 17);
+            this.checkBoxAutoLoadRecent.Size = new System.Drawing.Size(243, 21);
             this.checkBoxAutoLoadRecent.TabIndex = 0;
             this.checkBoxAutoLoadRecent.Text = "Automatically load the recent map";
             this.checkBoxAutoLoadRecent.UseVisualStyleBackColor = true;
@@ -154,23 +164,36 @@ namespace DMS.MapManager
             this.tabPageLayerPanel.Controls.Add(this.checkBoxCheck);
             this.tabPageLayerPanel.Controls.Add(this.checkBoxRoot);
             this.tabPageLayerPanel.Controls.Add(this.label1);
-            this.tabPageLayerPanel.Location = new System.Drawing.Point(4, 22);
+            this.tabPageLayerPanel.Location = new System.Drawing.Point(4, 25);
+            this.tabPageLayerPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPageLayerPanel.Name = "tabPageLayerPanel";
-            this.tabPageLayerPanel.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageLayerPanel.Size = new System.Drawing.Size(278, 171);
+            this.tabPageLayerPanel.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPageLayerPanel.Size = new System.Drawing.Size(373, 213);
             this.tabPageLayerPanel.TabIndex = 1;
             this.tabPageLayerPanel.Text = "Layer Panel";
             this.tabPageLayerPanel.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxLabels
+            // 
+            this.checkBoxLabels.AutoSize = true;
+            this.checkBoxLabels.Location = new System.Drawing.Point(41, 181);
+            this.checkBoxLabels.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxLabels.Name = "checkBoxLabels";
+            this.checkBoxLabels.Size = new System.Drawing.Size(110, 21);
+            this.checkBoxLabels.TabIndex = 6;
+            this.checkBoxLabels.Text = "Show Labels";
+            this.checkBoxLabels.UseVisualStyleBackColor = true;
             // 
             // colorPickerLayerBackgroundColor
             // 
             this.colorPickerLayerBackgroundColor.BackColor = System.Drawing.SystemColors.Window;
             this.colorPickerLayerBackgroundColor.Context = null;
             this.colorPickerLayerBackgroundColor.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.colorPickerLayerBackgroundColor.Location = new System.Drawing.Point(128, 23);
+            this.colorPickerLayerBackgroundColor.Location = new System.Drawing.Point(171, 28);
+            this.colorPickerLayerBackgroundColor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.colorPickerLayerBackgroundColor.Name = "colorPickerLayerBackgroundColor";
             this.colorPickerLayerBackgroundColor.ReadOnly = false;
-            this.colorPickerLayerBackgroundColor.Size = new System.Drawing.Size(140, 20);
+            this.colorPickerLayerBackgroundColor.Size = new System.Drawing.Size(187, 22);
             this.colorPickerLayerBackgroundColor.TabIndex = 1;
             this.colorPickerLayerBackgroundColor.Text = "White";
             this.colorPickerLayerBackgroundColor.Value = System.Drawing.Color.White;
@@ -178,9 +201,10 @@ namespace DMS.MapManager
             // checkBoxStyles
             // 
             this.checkBoxStyles.AutoSize = true;
-            this.checkBoxStyles.Location = new System.Drawing.Point(31, 124);
+            this.checkBoxStyles.Location = new System.Drawing.Point(41, 153);
+            this.checkBoxStyles.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBoxStyles.Name = "checkBoxStyles";
-            this.checkBoxStyles.Size = new System.Drawing.Size(84, 17);
+            this.checkBoxStyles.Size = new System.Drawing.Size(106, 21);
             this.checkBoxStyles.TabIndex = 5;
             this.checkBoxStyles.Text = "Show Styles";
             this.checkBoxStyles.UseVisualStyleBackColor = true;
@@ -188,9 +212,10 @@ namespace DMS.MapManager
             // checkBoxClasses
             // 
             this.checkBoxClasses.AutoSize = true;
-            this.checkBoxClasses.Location = new System.Drawing.Point(31, 100);
+            this.checkBoxClasses.Location = new System.Drawing.Point(41, 123);
+            this.checkBoxClasses.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBoxClasses.Name = "checkBoxClasses";
-            this.checkBoxClasses.Size = new System.Drawing.Size(92, 17);
+            this.checkBoxClasses.Size = new System.Drawing.Size(117, 21);
             this.checkBoxClasses.TabIndex = 4;
             this.checkBoxClasses.Text = "Show Classes";
             this.checkBoxClasses.UseVisualStyleBackColor = true;
@@ -198,9 +223,10 @@ namespace DMS.MapManager
             // checkBoxCheck
             // 
             this.checkBoxCheck.AutoSize = true;
-            this.checkBoxCheck.Location = new System.Drawing.Point(31, 76);
+            this.checkBoxCheck.Location = new System.Drawing.Point(41, 94);
+            this.checkBoxCheck.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBoxCheck.Name = "checkBoxCheck";
-            this.checkBoxCheck.Size = new System.Drawing.Size(115, 17);
+            this.checkBoxCheck.Size = new System.Drawing.Size(144, 21);
             this.checkBoxCheck.TabIndex = 3;
             this.checkBoxCheck.Text = "Show Checkboxes";
             this.checkBoxCheck.UseVisualStyleBackColor = true;
@@ -208,9 +234,10 @@ namespace DMS.MapManager
             // checkBoxRoot
             // 
             this.checkBoxRoot.AutoSize = true;
-            this.checkBoxRoot.Location = new System.Drawing.Point(31, 52);
+            this.checkBoxRoot.Location = new System.Drawing.Point(41, 64);
+            this.checkBoxRoot.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBoxRoot.Name = "checkBoxRoot";
-            this.checkBoxRoot.Size = new System.Drawing.Size(108, 17);
+            this.checkBoxRoot.Size = new System.Drawing.Size(136, 21);
             this.checkBoxRoot.TabIndex = 2;
             this.checkBoxRoot.Text = "Show Root Node";
             this.checkBoxRoot.UseVisualStyleBackColor = true;
@@ -218,9 +245,10 @@ namespace DMS.MapManager
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(25, 26);
+            this.label1.Location = new System.Drawing.Point(33, 32);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 13);
+            this.label1.Size = new System.Drawing.Size(133, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Background Colour:";
             // 
@@ -230,9 +258,10 @@ namespace DMS.MapManager
             this.tabPageColorRamp.Controls.Add(this.buttonDeleteColorRamp);
             this.tabPageColorRamp.Controls.Add(this.buttonEditColorRamp);
             this.tabPageColorRamp.Controls.Add(this.buttonNewColorRamp);
-            this.tabPageColorRamp.Location = new System.Drawing.Point(4, 22);
+            this.tabPageColorRamp.Location = new System.Drawing.Point(4, 25);
+            this.tabPageColorRamp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPageColorRamp.Name = "tabPageColorRamp";
-            this.tabPageColorRamp.Size = new System.Drawing.Size(278, 171);
+            this.tabPageColorRamp.Size = new System.Drawing.Size(373, 213);
             this.tabPageColorRamp.TabIndex = 2;
             this.tabPageColorRamp.Text = "Color Ramps";
             this.tabPageColorRamp.UseVisualStyleBackColor = true;
@@ -240,17 +269,19 @@ namespace DMS.MapManager
             // panelColorRamp
             // 
             this.panelColorRamp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelColorRamp.Location = new System.Drawing.Point(4, 5);
+            this.panelColorRamp.Location = new System.Drawing.Point(5, 6);
+            this.panelColorRamp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelColorRamp.Name = "panelColorRamp";
-            this.panelColorRamp.Padding = new System.Windows.Forms.Padding(3);
-            this.panelColorRamp.Size = new System.Drawing.Size(203, 163);
+            this.panelColorRamp.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelColorRamp.Size = new System.Drawing.Size(270, 200);
             this.panelColorRamp.TabIndex = 4;
             // 
             // buttonDeleteColorRamp
             // 
-            this.buttonDeleteColorRamp.Location = new System.Drawing.Point(213, 63);
+            this.buttonDeleteColorRamp.Location = new System.Drawing.Point(284, 78);
+            this.buttonDeleteColorRamp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonDeleteColorRamp.Name = "buttonDeleteColorRamp";
-            this.buttonDeleteColorRamp.Size = new System.Drawing.Size(57, 23);
+            this.buttonDeleteColorRamp.Size = new System.Drawing.Size(76, 28);
             this.buttonDeleteColorRamp.TabIndex = 3;
             this.buttonDeleteColorRamp.Text = "Delete";
             this.buttonDeleteColorRamp.UseVisualStyleBackColor = true;
@@ -258,9 +289,10 @@ namespace DMS.MapManager
             // 
             // buttonEditColorRamp
             // 
-            this.buttonEditColorRamp.Location = new System.Drawing.Point(213, 34);
+            this.buttonEditColorRamp.Location = new System.Drawing.Point(284, 42);
+            this.buttonEditColorRamp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonEditColorRamp.Name = "buttonEditColorRamp";
-            this.buttonEditColorRamp.Size = new System.Drawing.Size(57, 23);
+            this.buttonEditColorRamp.Size = new System.Drawing.Size(76, 28);
             this.buttonEditColorRamp.TabIndex = 2;
             this.buttonEditColorRamp.Text = "Edit";
             this.buttonEditColorRamp.UseVisualStyleBackColor = true;
@@ -268,34 +300,37 @@ namespace DMS.MapManager
             // 
             // buttonNewColorRamp
             // 
-            this.buttonNewColorRamp.Location = new System.Drawing.Point(213, 5);
+            this.buttonNewColorRamp.Location = new System.Drawing.Point(284, 6);
+            this.buttonNewColorRamp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonNewColorRamp.Name = "buttonNewColorRamp";
-            this.buttonNewColorRamp.Size = new System.Drawing.Size(58, 23);
+            this.buttonNewColorRamp.Size = new System.Drawing.Size(77, 28);
             this.buttonNewColorRamp.TabIndex = 1;
             this.buttonNewColorRamp.Text = "New";
             this.buttonNewColorRamp.UseVisualStyleBackColor = true;
             this.buttonNewColorRamp.Click += new System.EventHandler(this.buttonNewColorRamp_Click);
             // 
-            // checkBoxLabels
+            // checkBoxEnableConversion
             // 
-            this.checkBoxLabels.AutoSize = true;
-            this.checkBoxLabels.Location = new System.Drawing.Point(31, 147);
-            this.checkBoxLabels.Name = "checkBoxLabels";
-            this.checkBoxLabels.Size = new System.Drawing.Size(87, 17);
-            this.checkBoxLabels.TabIndex = 6;
-            this.checkBoxLabels.Text = "Show Labels";
-            this.checkBoxLabels.UseVisualStyleBackColor = true;
+            this.checkBoxEnableConversion.AutoSize = true;
+            this.checkBoxEnableConversion.Location = new System.Drawing.Point(45, 62);
+            this.checkBoxEnableConversion.Margin = new System.Windows.Forms.Padding(4);
+            this.checkBoxEnableConversion.Name = "checkBoxEnableConversion";
+            this.checkBoxEnableConversion.Size = new System.Drawing.Size(200, 21);
+            this.checkBoxEnableConversion.TabIndex = 4;
+            this.checkBoxEnableConversion.Text = "Enable map file conversion";
+            this.checkBoxEnableConversion.UseVisualStyleBackColor = true;
             // 
             // AppSettingsForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(286, 239);
+            this.ClientSize = new System.Drawing.Size(381, 294);
             this.Controls.Add(this.tabControl);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.buttonOK);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.KeyPreview = true;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "AppSettingsForm";
@@ -339,5 +374,6 @@ namespace DMS.MapManager
         private System.Windows.Forms.Button buttonEditColorRamp;
         private System.Windows.Forms.Panel panelColorRamp;
         private System.Windows.Forms.CheckBox checkBoxLabels;
+        private System.Windows.Forms.CheckBox checkBoxEnableConversion;
     }
 }
