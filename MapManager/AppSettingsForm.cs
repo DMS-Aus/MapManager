@@ -95,6 +95,7 @@ namespace DMS.MapManager
         private void LoadState()
         {
             checkBoxAutoLoadRecent.Checked = settings.AutoLoadRecent;
+            checkBoxEnableConversion.Checked = settings.EnableConversion;
             colorPickerLayerBackgroundColor.Value = settings.LayerControlBackColor;
             checkBoxCheck.Checked = settings.LayerControlShowCheckBoxes;
             checkBoxClasses.Checked = settings.LayerControlShowClasses;

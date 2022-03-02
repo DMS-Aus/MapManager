@@ -506,16 +506,18 @@ namespace DMS.MapManager
             MapfileConverter c = new MapfileConverter();
             try
             {
-                c.Parse(File.ReadAllText(file, Encoding.UTF8), false);
+                if (settings.EnableConversion)
+                    c.Parse(File.ReadAllText(file, Encoding.UTF8), false);
+
                 MapObjectHolder mapH;
                 mapObj map;
-                if (c.HasToConvert())
+                if (settings.EnableConversion && c.HasToConvert())
                 {
                     MapFileConvertForm form = new MapFileConvertForm(c.GetChangeLog());
                     
                     if (form.ShowDialog(this) == DialogResult.Yes)
                     {
-                        map = mapscript.msLoadMapFromString(c.GetMapFile(), null);
+                        map = mapscript.msLoadMapFromString(c.GetMapFile(), Path.GetDirectoryName(file));
                         mapH = new MapObjectHolder(map, null);
                     }
                     else
@@ -544,16 +546,17 @@ namespace DMS.MapManager
                 LoadTextContents();
                 SetDirty(false);
 
-                if (c.HasToConvert())
+                if (settings.EnableConversion && c.HasToConvert())
                     SetDirty(true); // conversion happened
 
-                if (map.symbolset.filename != null && !File.Exists(map.symbolset.filename))
+                if (map.symbolset.filename != null && !File.Exists(Path.IsPathRooted(map.symbolset.filename) ? map.symbolset.filename : Path.Combine(Path.GetDirectoryName(file), map.symbolset.filename)))
                 {
                     // override the symbolset if that points to incorrect location
                     map.setSymbolSet(Application.StartupPath + "\\templates\\symbols.sym");
                 }
 
-                if (map.fontset.filename != null && !File.Exists(map.fontset.filename))
+                
+                if (map.fontset.filename != null && !File.Exists(Path.IsPathRooted(map.fontset.filename) ? map.fontset.filename : Path.Combine(Path.GetDirectoryName(file), map.fontset.filename)))
                 {
                     // override the fontset if that points to incorrect location
                     map.setFontSet(Application.StartupPath + "\\templates\\font.list");
@@ -1587,7 +1590,7 @@ namespace DMS.MapManager
                 // need to reload the in memory mapfile with the new symbolset
                 mapObj map = mapControl.Target;
                 string txt = ((mapObj)mapControl.Target).convertToString();
-                map = mapscript.msLoadMapFromString(txt, null);
+                map = mapscript.msLoadMapFromString(txt, map.mappath);
             }
         }
 
@@ -1783,7 +1786,7 @@ namespace DMS.MapManager
         /// </summary>
         private void ApplyTextContents()
         {
-            mapObj map = mapscript.msLoadMapFromString(scintillaControl.Text, null);
+            mapObj map = mapscript.msLoadMapFromString(scintillaControl.Text, fileName != null? Path.GetDirectoryName(fileName) : null);
             MapObjectHolder mapH = new MapObjectHolder(map, null);
 
             if (MapUtils.RenameDuplicatedNames(map))

@@ -412,6 +412,8 @@ namespace DMS.MapLibrary
                         comboBoxGeomCol.Items.Add(SqlDR.GetString(1) + "(geography)");
                     else if (dataType == "int")
                         comboBoxFIDCol.Items.Add(SqlDR.GetString(1));
+                    else if (dataType == "bigint")
+                        comboBoxFIDCol.Items.Add(SqlDR.GetString(1));
                 }
             }
 

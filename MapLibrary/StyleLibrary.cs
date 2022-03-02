@@ -188,7 +188,7 @@ namespace DMS.MapLibrary
         /// </summary>
         public static void ApplyTextContents(string text)
         {
-            map = mapscript.msLoadMapFromString(text, null);
+            map = mapscript.msLoadMapFromString(text, map != null? map.mappath : null);
             styles = new MapObjectHolder(map, null);
         }
     }

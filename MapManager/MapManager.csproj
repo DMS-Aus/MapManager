@@ -111,7 +111,7 @@
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs">
       <HintPath>..\ExternalFiles\Microsoft.VisualBasic.PowerPacks.Vs.dll</HintPath>
-    <Private>True</Private>
+      <Private>True</Private>
     </Reference>
     <Reference Include="ogr_csharp, Version=1.0.4035.39384, Culture=neutral, PublicKeyToken=db5a52b08dc5b321, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
