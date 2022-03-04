@@ -101,34 +101,27 @@ namespace DMS.MapLibrary
                     map.shapepath = this.textBoxShapePath.Text;
                 if (map.web.imagepath != this.textBoxImagepath.Text)
                     map.web.imagepath = this.textBoxImagepath.Text;
-                if (map.fontset.filename != this.textBoxFontset.Text)
+
+                try
                 {
-                    if (this.textBoxFontset.Text != ""
-                    && File.Exists(this.textBoxFontset.Text))
-                        map.setFontSet(this.textBoxFontset.Text);
-                    else
-                        map.setFontSet(null);
+                    map.setFontSet2(this.textBoxFontset.Text.Trim());
                 }
-                if (map.symbolset.filename != this.textBoxSymbolset.Text)
+                catch (Exception ex)
                 {
-                    if (this.textBoxSymbolset.Text != ""
-                    && File.Exists(this.textBoxSymbolset.Text))
-                    {
-                        try
-                        {
-                            map.setSymbolSet(this.textBoxSymbolset.Text);
-                        }
-                        catch (Exception ex)
-                        {
-                            MessageBox.Show("Invalid symbol file, " + ex.Message,
-                            "MapManager", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            map.setSymbolSet(null);
-                        }
-                    }
-                    else
-                        map.setSymbolSet(null);
+                    MessageBox.Show(ex.Message,
+                    "MapManager", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                
+
+                try
+                {
+                    map.setSymbolSet2(this.textBoxSymbolset.Text);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message,
+                    "MapManager", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
                 // image details tab
                 this.colorPickerBackColor.ApplyTo(map.imagecolor);
                 if (map.imagetype != comboBoxImageType.Text)

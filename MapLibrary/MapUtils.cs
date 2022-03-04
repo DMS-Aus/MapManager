@@ -921,6 +921,12 @@ namespace DMS.MapLibrary
                             if (style.width > 0)
                                 style.width *= scalefactor;
 
+                            if (style.gap > 0)
+                                style.gap *= scalefactor;
+
+                            if (style.initialgap > 0)
+                                style.initialgap *= scalefactor;
+
                             if (style.patternlength > 0)
                             {
                                 double[] pattern = style.pattern;
@@ -940,6 +946,64 @@ namespace DMS.MapLibrary
             }
             else
                 return classObj.drawLegendIcon(map, layer, width, height, dstImage, dstX, dstY);
+        }
+
+        /// <summary>
+        /// Override setSymbolSet to handle setting of empty values
+        /// </summary>
+        /// <param name="symbolset"></param>
+        /// <param name="szFileName"></param>
+        /// <returns></returns>
+        public static int setSymbolSet2(this mapObj map, string szFileName)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(szFileName))
+                {
+                    if (!string.IsNullOrEmpty(map.symbolset.filename))
+                        return map.setSymbolSet(null);
+                    else
+                        return 0; // already identical
+                }
+
+                if (!Path.IsPathRooted(szFileName) && !string.IsNullOrEmpty(map.mappath))
+                    return map.setSymbolSet(Path.Combine(map.mappath, szFileName)); 
+                else
+                    return map.setSymbolSet(szFileName);
+            }
+            catch (Exception ex)
+            {
+                // theres no chance to avoid exceptions for empty symbolsets
+                if (!string.IsNullOrEmpty(szFileName))
+                    throw new ApplicationException(ex.Message);
+            }
+            return 0;
+        }
+
+        public static int setFontSet2(this mapObj map, string filename)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(filename))
+                {
+                    if (!string.IsNullOrEmpty(map.fontset.filename))
+                        return map.setFontSet(null);
+                    else
+                        return 0; // already identical
+                }
+
+                if (!Path.IsPathRooted(filename) && !string.IsNullOrEmpty(map.mappath))
+                    return map.setFontSet(Path.Combine(map.mappath, filename));
+                else
+                    return map.setFontSet(filename);
+            }
+            catch (Exception ex)
+            {
+                // theres no chance to avoid exceptions for empty symbolsets
+                if (!string.IsNullOrEmpty(filename))
+                    throw new ApplicationException(ex.Message);
+            }
+            return 0;
         }
     }
 }
