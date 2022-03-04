@@ -17,13 +17,13 @@ namespace DMS.MapManager
     /// </summary>
     partial class AboutBox : Form
     {
-        [DllImport("proj", EntryPoint = "pj_get_release")]
+        [DllImport("proj_7_2", EntryPoint = "pj_get_release")]
         private static extern IntPtr pj_get_release();
 
         [DllImport("geos_c", EntryPoint = "GEOSversion")]
         private static extern IntPtr GEOSversion();
 
-        [DllImport("zlib1", EntryPoint = "zlibVersion")]
+        [DllImport("zlib", EntryPoint = "zlibVersion")]
         private static extern IntPtr zlibVersion();
 
         [DllImport("libcurl", EntryPoint = "curl_version")]

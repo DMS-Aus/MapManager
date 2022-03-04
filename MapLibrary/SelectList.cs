@@ -122,7 +122,7 @@ namespace DMS.MapLibrary
                                                         {
                                                             // drawing the class icons
                                                             if (layer.numclasses > classIndex)
-                                                                layer.getClass(classIndex).drawLegendIcon(map, layer, 20, 10, image, 5, 5);
+                                                                layer.getClass(classIndex).drawLegendIcon2(map, layer, 20, 10, image, 5, 5);
                                                             byte[] img = image.getBytes();
                                                             using (MemoryStream ms = new MemoryStream(img))
                                                             {

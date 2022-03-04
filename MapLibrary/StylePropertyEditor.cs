@@ -308,7 +308,7 @@ namespace DMS.MapLibrary
                             else if (comboBoxGeomTransform.Text.ToLower().Contains("labelpnt") || comboBoxGeomTransform.Text.ToLower().Contains("centroid"))
                                 layer.type = MS_LAYER_TYPE.MS_LAYER_POINT;
 
-                            styleclass.drawLegendIcon(stylemap, layer,
+                            styleclass.drawLegendIcon2(stylemap, layer,
                             pictureBoxSample.Width - 10, pictureBoxSample.Height - 10, image2, 4, 4);
                         }
                         finally
@@ -401,6 +401,10 @@ namespace DMS.MapLibrary
                         if (symbol.inmapfile == mapscript.MS_TRUE && 
                             !StyleLibrary.HasSymbol(symbol.name))
                         {
+                            // hatch symbol is only rendered for polygon type
+                            if (symbol.type == (int)MS_SYMBOL_TYPE.MS_SYMBOL_HATCH && layer.type != MS_LAYER_TYPE.MS_LAYER_POLYGON)
+                                continue;
+
                             styleObj libstyle = new styleObj(null);
                             //if (symbol.type == (int)MS_SYMBOL_TYPE.MS_SYMBOL_PATTERNMAP)
                             //    MapUtils.SetDefaultColor(MS_LAYER_TYPE.MS_LAYER_LINE, libstyle);
@@ -413,7 +417,8 @@ namespace DMS.MapLibrary
                             {
                                 //STEPH: change layer passed to the list view to be consistent with the other symbol categories
                                 //so that it uses a point layer to display the style in the list
-                                layer.type = MS_LAYER_TYPE.MS_LAYER_POINT;
+                                if (symbol.type != (int)MS_SYMBOL_TYPE.MS_SYMBOL_HATCH)
+                                    layer.type = MS_LAYER_TYPE.MS_LAYER_POINT;
                                 ListViewItem item = AddListItem(libstyle, layer, symbol.name);
                                 if (selectedName == item.Text)
                                     selected = item;
