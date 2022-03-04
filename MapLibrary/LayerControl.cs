@@ -125,9 +125,10 @@ namespace DMS.MapLibrary
                 using (imageObj image2 = def_class.createLegendIcon(
                                 map, layer, legendIconSize.Width, legendIconSize.Height))
                 {
+                 
                     MS_LAYER_TYPE layertype = layer.type;
                     layer.type = MS_LAYER_TYPE.MS_LAYER_ANNOTATION;
-                    labelclass.drawLegendIcon(map, layer, 
+                    labelclass.drawLegendIcon2(map, layer, 
                         legendDrawingSize.Width, legendDrawingSize.Height, image2, 
                         LegendIconPadding.Left, LegendIconPadding.Top);
                     layer.type = layertype;
@@ -167,7 +168,7 @@ namespace DMS.MapLibrary
                 using (imageObj image2 = def_class.createLegendIcon(
                                  map, layer, legendIconSize.Width, legendIconSize.Height))
                 {
-                    styleclass.drawLegendIcon(map, layer, 
+                    styleclass.drawLegendIcon2(map, layer, 
                         legendDrawingSize.Width, legendDrawingSize.Height, image2, 
                         LegendIconPadding.Left, LegendIconPadding.Top);
                     byte[] img = image2.getBytes();
@@ -203,7 +204,7 @@ namespace DMS.MapLibrary
                                 map, layer, legendIconSize.Width, legendIconSize.Height))
                 {
                     // drawing the class icons
-                    layerclass.drawLegendIcon(map, layer,
+                    layerclass.drawLegendIcon2(map, layer,
                         legendDrawingSize.Width, legendDrawingSize.Height, image, 
                         LegendIconPadding.Left, LegendIconPadding.Top);
                     byte[] img = image.getBytes();

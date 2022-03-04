@@ -894,5 +894,52 @@ namespace DMS.MapLibrary
                 samplelayer.close();
             }
         }
+
+        /// <summary>
+        /// Wrapper for createlegendicon to apply scale dependent magnification this behavior may change in the future
+        /// since mapserver is not consistent in this regard
+        /// </summary>
+        public static int drawLegendIcon2(this classObj classObj, mapObj map, layerObj layer, int width, int height, imageObj dstImage, int dstX, int dstY)
+        {
+            if (layer.sizeunits != (int)MS_UNITS.MS_PIXELS && layer.symbolscaledenom != 0)
+            {
+                int sizeunits = layer.sizeunits;
+                try
+                {
+                    layer.sizeunits = (int)MS_UNITS.MS_PIXELS;
+                    // we need to override the style sizes to pixel sizes
+                    double cellsize = (map.extent.maxx - map.extent.minx) / map.width;
+                    double scalefactor = map.scaledenom / layer.symbolscaledenom / cellsize;
+                    using (classObj class2 = classObj.clone())
+                    {
+                        for (int i = 0; i < class2.numstyles; i++)
+                        {
+                            styleObj style = class2.getStyle(i);
+                            if (style.size > 0)
+                                style.size *= scalefactor;
+
+                            if (style.width > 0)
+                                style.width *= scalefactor;
+
+                            if (style.patternlength > 0)
+                            {
+                                double[] pattern = style.pattern;
+                                for (int p = 0; p < pattern.Length; p++)
+                                    pattern[p] *= scalefactor;
+                                style.pattern = pattern;
+                            }
+                        }
+
+                        return class2.drawLegendIcon(map, layer, width, height, dstImage, dstX, dstY);
+                    }
+                }
+                finally
+                {
+                    layer.sizeunits = sizeunits;
+                }
+            }
+            else
+                return classObj.drawLegendIcon(map, layer, width, height, dstImage, dstX, dstY);
+        }
     }
 }
