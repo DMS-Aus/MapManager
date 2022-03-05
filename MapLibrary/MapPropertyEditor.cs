@@ -586,7 +586,7 @@ namespace DMS.MapLibrary
         private void ValidateDouble(object sender, CancelEventArgs e)
         {
             double result;
-            if (!double.TryParse(((TextBoxBase)sender).Text, out result))
+            if (!string.IsNullOrEmpty(((TextBoxBase)sender).Text) && !double.TryParse(((TextBoxBase)sender).Text, out result))
             {
                 MessageBox.Show("Invalid number", "MapManager", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 e.Cancel = true;
