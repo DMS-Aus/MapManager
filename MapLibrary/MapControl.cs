@@ -256,44 +256,6 @@ namespace DMS.MapLibrary
         }
 
         /// <summary>
-        /// Update the pixel-map transformation coefficients.
-        /// </summary>
-        private void UpdateTansformations()
-        {
-            // update the map to pixel transformation
-            if (this.Width > 2)
-                a11 = (map.extent.maxx - map.extent.minx) / this.Width;
-            else a11 = 0;
-            a13 = map.extent.minx;
-            if (this.Height > 2)
-                a21 = -a11;
-            else a21 = 0;
-            a23 = map.extent.maxy;
-            
-            // update the pixel to map transformation  
-        }
-
-        /// <summary>
-        /// Converts the X coordinate from pixel space to map coordinate space.
-        /// </summary>
-        /// <param name="x">Pixel coordinate.</param>
-        /// <returns>Map coordinate.</returns>
-        private double Pixel2MapX(double x)
-        {
-            return a11 * x + a13;
-        }
-
-        /// <summary>
-        /// Converts the Y coordinate from pixel space to map coordinate space.
-        /// </summary>
-        /// <param name="y">Pixel coordinate.</param>
-        /// <returns>Map coordinate.</returns>
-        private double Pixel2MapY(double y)
-        {
-            return a21 * y + a23;
-        }
-
-        /// <summary>
         /// Converts the MapScript shape object to the GDI+ GraphicsPath.
         /// </summary>
         /// <param name="feature">The shapeObj to conver.</param>
@@ -335,30 +297,38 @@ namespace DMS.MapLibrary
             {
                 using (GraphicsPathIterator myPathIterator = new GraphicsPathIterator(path))
                 {
-                    int myStartIndex;
-                    int myEndIndex;
-                    bool myIsClosed;
-                    // get the number of Subpaths.
-                    int numSubpaths = myPathIterator.SubpathCount;
-                    while (myPathIterator.NextSubpath(out myStartIndex, out myEndIndex, out myIsClosed) > 0)
+                    using (pointObj pt = new pointObj(0, 0, 0, 0))
                     {
-                        lineObj line = new lineObj();
-                        for (int i = myStartIndex; i <= myEndIndex; i++)
+                        int myStartIndex;
+                        int myEndIndex;
+                        bool myIsClosed;
+                        // get the number of Subpaths.
+                        int numSubpaths = myPathIterator.SubpathCount;
+                        while (myPathIterator.NextSubpath(out myStartIndex, out myEndIndex, out myIsClosed) > 0)
                         {
-                            if (i == myStartIndex || 
-                                (path.PathPoints[i].X != path.PathPoints[i - 1].X && 
-                                 path.PathPoints[i].Y != path.PathPoints[i - 1].Y))
-                                line.add(new pointObj(Pixel2MapX(path.PathPoints[i].X), Pixel2MapY(path.PathPoints[i].Y), 0, 0));
+                            using (lineObj line = new lineObj())
+                            {
+                                for (int i = myStartIndex; i <= myEndIndex; i++)
+                                {
+                                    if (i == myStartIndex ||
+                                        (path.PathPoints[i].X != path.PathPoints[i - 1].X &&
+                                         path.PathPoints[i].Y != path.PathPoints[i - 1].Y))
+                                    {
+                                        map.pixelToGeoref(path.PathPoints[i].X, path.PathPoints[i].Y, pt);
+                                        line.add(pt);
+                                    }
+                                }
+                                if (feature == null)
+                                {
+                                    if (myIsClosed && line.numpoints > 2)
+                                        feature = new shapeObj((int)MS_SHAPE_TYPE.MS_SHAPE_POLYGON);
+                                    else
+                                        feature = new shapeObj((int)MS_SHAPE_TYPE.MS_SHAPE_LINE);
+                                }
+                                if (line.numpoints >= 2)
+                                    feature.add(line);
+                            }
                         }
-                        if (feature == null)
-                        {
-                            if (myIsClosed && line.numpoints > 2)
-                                feature = new shapeObj((int)MS_SHAPE_TYPE.MS_SHAPE_POLYGON);
-                            else
-                                feature = new shapeObj((int)MS_SHAPE_TYPE.MS_SHAPE_LINE);
-                        }
-                        if (line.numpoints >= 2)
-                            feature.add(line);
                     }
                 }
             }
@@ -948,8 +918,6 @@ namespace DMS.MapLibrary
                         RaiseZoomChanged();
                     }
 
-                    UpdateTansformations();
-
                     using (outputFormatObj format = map.outputformat)
                     {
                         string imageType = null;
@@ -1226,9 +1194,14 @@ namespace DMS.MapLibrary
             }
 
             if (CursorMove != null)
-                CursorMove(this, Math.Round(Pixel2MapX(e.X), unitPrecision),
-                                Math.Round(Pixel2MapY(e.Y), unitPrecision));
-                //CursorMove(this, e.X, e.Y);
+            {
+                using (pointObj pt = new pointObj(0, 0, 0, 0))
+                {
+                    map.pixelToGeoref(e.X, e.Y, pt);
+                    CursorMove(this, Math.Round(pt.x, unitPrecision),
+                                    Math.Round(pt.y, unitPrecision));
+                }                  
+            }
         }
 
         private bool TestResult(pointObj pt)
@@ -1288,13 +1261,9 @@ namespace DMS.MapLibrary
 
             if (inputMode == InputModes.Select)
             {
-                //pointObj pt = new pointObj(Pixel2MapX(e.X), Pixel2MapY(e.Y), 0, 0);
-                //TestResult(pt);
-                //return;
-                
-                
-                using (pointObj imgpoint = new pointObj(Pixel2MapX(e.X), Pixel2MapY(e.Y), 0, 0))
+                using (pointObj imgpoint = new pointObj(0, 0, 0, 0))
                 {
+                    map.pixelToGeoref(e.X, e.Y, imgpoint);
                     ClearResults(); // clear the previous results
                     map.queryByPoint(imgpoint, mapscript.MS_MULTIPLE, 4);
                     SetSelectionMode(true);
@@ -1375,19 +1344,56 @@ namespace DMS.MapLibrary
 
                 if (inputMode == InputModes.TrackRectangle)
                 {
-                    double x = Pixel2MapX(dragRect.X);
-                    double y = Pixel2MapY(dragRect.Y);
-                    double x2 = Pixel2MapX(dragRect.X + dragRect.Width);
-                    double y2 = Pixel2MapY(dragRect.Y + dragRect.Height);
-
-                    using (rectObj rect = new rectObj(Math.Min(x, x2), Math.Min(y, y2), Math.Max(x, x2), Math.Max(y, y2), 0))
+                    if (map.getRotation() == 0)
                     {
-                        map.queryByRect(rect);
-                        SetSelectionMode(true);
-                        this.target.RaiseSelectionChanged(this);
-                        this.RefreshView();
-                        return;
+                        using (pointObj pt = new pointObj(0, 0, 0, 0))
+                        {
+                            map.pixelToGeoref(dragRect.X, dragRect.Y, pt);
+                            double x = pt.x;
+                            double y = pt.y;
+                            map.pixelToGeoref(dragRect.X + dragRect.Width, dragRect.Y + dragRect.Height, pt);
+                            double x2 = pt.x;
+                            double y2 = pt.y;
+
+                            using (rectObj rect = new rectObj(Math.Min(x, x2), Math.Min(y, y2), Math.Max(x, x2), Math.Max(y, y2), 0))
+                            {
+                                map.queryByRect(rect);
+                                SetSelectionMode(true);
+                                this.target.RaiseSelectionChanged(this);
+                                this.RefreshView();
+                                return;
+                            }
+                        }
                     }
+                    else
+                    {
+                        // need to rotate rect
+                        using (shapeObj shape = new shapeObj((int)MS_SHAPE_TYPE.MS_SHAPE_POLYGON))
+                        {
+                            using (lineObj line = new lineObj())
+                            {
+                                using (pointObj pt = new pointObj(0, 0, 0, 0))
+                                {
+                                    map.pixelToGeoref(dragRect.X, dragRect.Y, pt);
+                                    line.add(pt);
+                                    map.pixelToGeoref(dragRect.X + dragRect.Width, dragRect.Y, pt);
+                                    line.add(pt);
+                                    map.pixelToGeoref(dragRect.X + dragRect.Width, dragRect.Y + dragRect.Height, pt);
+                                    line.add(pt);
+                                    map.pixelToGeoref(dragRect.X, dragRect.Y + dragRect.Height, pt);
+                                    line.add(pt);
+                                    map.pixelToGeoref(dragRect.X, dragRect.Y, pt);
+                                    line.add(pt);
+                                }
+                                shape.add(line);
+                                map.queryByShape(shape);
+                                SetSelectionMode(true);
+                                this.target.RaiseSelectionChanged(this);
+                                this.RefreshView();
+                                return;
+                            }
+                        }
+                    }          
                 }
 
                 this.Refresh();
