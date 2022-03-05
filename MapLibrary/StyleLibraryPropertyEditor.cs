@@ -23,7 +23,6 @@ namespace DMS.MapLibrary
         private bool enablePreview;
         private mapObj map;
         private layerObj layer;
-        private bool isLabelStyle;
 
         private NumberFormatInfo ni;
        
@@ -35,7 +34,6 @@ namespace DMS.MapLibrary
             InitializeComponent();
             ni = new NumberFormatInfo();
             ni.NumberDecimalSeparator = ".";
-            isLabelStyle = false;
         }
 
         /// <summary>
@@ -290,12 +288,10 @@ namespace DMS.MapLibrary
                     if (target.GetParent().GetType() == typeof(labelObj))
                     {
                         classHolder = target.GetParent().GetParent();
-                        isLabelStyle = true;
                     }
                     else
                     {
                         classHolder = target.GetParent();
-                        isLabelStyle = false;
                     }
 
                     if (classHolder != null)
@@ -332,7 +328,7 @@ namespace DMS.MapLibrary
         /// <summary>
         /// The EditProperties event handler. Called when a child object should be edited
         /// </summary>
-        public event EditPropertiesEventHandler EditProperties;
+        public event EditPropertiesEventHandler EditProperties = delegate { };
 
         #endregion
 

@@ -95,7 +95,7 @@ namespace DMS.MapLibrary
         /// <summary>
         /// The EditProperties event handler. Called when a child object should be edited
         /// </summary>
-        public event EditPropertiesEventHandler EditProperties;
+        public event EditPropertiesEventHandler EditProperties = delegate { };
 
         #endregion
 
