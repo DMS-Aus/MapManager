@@ -1371,6 +1371,22 @@ namespace DMS.MapLibrary
         }
 
         /// <summary>
+        /// Clear the result cache of the layers in the current map
+        /// </summary>
+        private void ClearResults()
+        {
+            if (map != null)
+            {
+                map.freeQuery(-1);
+                // close all layers to free expression tokens
+                for (int i = 0; i < map.numlayers; i++)
+                    map.getLayer(i).close();
+
+                this.target.RaiseSelectionChanged(this);
+            }
+        }
+
+        /// <summary>
         /// Update the map object to reflect the layer order and groups in the treeview
         /// </summary>
         /// <returns>The last layer index used in the in the map object</returns>
@@ -1411,6 +1427,7 @@ namespace DMS.MapLibrary
             bool above, bool indent)
         {
             bool layerorderChanged = false;
+            bool classorderChanged = false;
             // allows to reposition only within the same parent
             bool isSameParent = false;
 
@@ -1452,6 +1469,7 @@ namespace DMS.MapLibrary
                         classObj destClass = destination;
                         if (DestinationNode.Index > SourceNode.Index)
                         {
+                            classorderChanged = true;
                             if (above && DestinationNode.Index > 0)
                                 layer.insertClass(layer.removeClass(SourceNode.Index), DestinationNode.Index - 1);
                             else if (!above && DestinationNode.Index < nodes.Count - 1)
@@ -1463,6 +1481,7 @@ namespace DMS.MapLibrary
                         }
                         else if (DestinationNode.Index < SourceNode.Index)
                         {
+                            classorderChanged = true;
                             if (above)
                                 layer.insertClass(layer.removeClass(SourceNode.Index), DestinationNode.Index);
                             else if (!above && DestinationNode.Index < nodes.Count - 1)
@@ -1567,6 +1586,12 @@ namespace DMS.MapLibrary
                     }
 
                     UpdateToolbar();
+
+                    if (layerorderChanged || classorderChanged)
+                    {
+                        // this change invalidated the layerindex and classindex in the result set
+                        ClearResults();
+                    }
                 }
             }
             
