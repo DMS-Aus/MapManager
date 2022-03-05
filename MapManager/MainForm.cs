@@ -1991,8 +1991,6 @@ namespace DMS.MapManager
             try
             {
                 c.Parse(scintillaControl.Text, true);
-                MapObjectHolder mapH;
-                mapObj map;
                 if (c.HasToConvert())
                 {
                     MapFileConvertForm form = new MapFileConvertForm(c.GetChangeLog());
