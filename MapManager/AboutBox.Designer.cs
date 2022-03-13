@@ -60,18 +60,20 @@ namespace DMS.MapManager
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Location = new System.Drawing.Point(175, 128);
+            this.tabControl1.Location = new System.Drawing.Point(234, 157);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(345, 153);
+            this.tabControl1.Size = new System.Drawing.Size(459, 188);
             this.tabControl1.TabIndex = 4;
             // 
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.textBoxVersions);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Location = new System.Drawing.Point(4, 25);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(337, 127);
+            this.tabPage4.Size = new System.Drawing.Size(451, 159);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Versions";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -81,12 +83,12 @@ namespace DMS.MapManager
             this.textBoxVersions.BackColor = System.Drawing.Color.White;
             this.textBoxVersions.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBoxVersions.Location = new System.Drawing.Point(0, 0);
-            this.textBoxVersions.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
+            this.textBoxVersions.Margin = new System.Windows.Forms.Padding(8, 4, 4, 4);
             this.textBoxVersions.Multiline = true;
             this.textBoxVersions.Name = "textBoxVersions";
             this.textBoxVersions.ReadOnly = true;
             this.textBoxVersions.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBoxVersions.Size = new System.Drawing.Size(337, 127);
+            this.textBoxVersions.Size = new System.Drawing.Size(451, 159);
             this.textBoxVersions.TabIndex = 0;
             this.textBoxVersions.TabStop = false;
             this.textBoxVersions.Text = "Description";
@@ -94,10 +96,11 @@ namespace DMS.MapManager
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.textBoxDescription);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(337, 127);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Size = new System.Drawing.Size(452, 159);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "MapServer Formats";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -106,13 +109,13 @@ namespace DMS.MapManager
             // 
             this.textBoxDescription.BackColor = System.Drawing.Color.White;
             this.textBoxDescription.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBoxDescription.Location = new System.Drawing.Point(3, 3);
-            this.textBoxDescription.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
+            this.textBoxDescription.Location = new System.Drawing.Point(4, 4);
+            this.textBoxDescription.Margin = new System.Windows.Forms.Padding(8, 4, 4, 4);
             this.textBoxDescription.Multiline = true;
             this.textBoxDescription.Name = "textBoxDescription";
             this.textBoxDescription.ReadOnly = true;
             this.textBoxDescription.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBoxDescription.Size = new System.Drawing.Size(331, 121);
+            this.textBoxDescription.Size = new System.Drawing.Size(444, 151);
             this.textBoxDescription.TabIndex = 24;
             this.textBoxDescription.TabStop = false;
             this.textBoxDescription.Text = "Description";
@@ -120,10 +123,11 @@ namespace DMS.MapManager
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.textBoxDescription1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(337, 127);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Size = new System.Drawing.Size(452, 159);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "GDAL Formats";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -132,13 +136,13 @@ namespace DMS.MapManager
             // 
             this.textBoxDescription1.BackColor = System.Drawing.Color.White;
             this.textBoxDescription1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBoxDescription1.Location = new System.Drawing.Point(3, 3);
-            this.textBoxDescription1.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
+            this.textBoxDescription1.Location = new System.Drawing.Point(4, 4);
+            this.textBoxDescription1.Margin = new System.Windows.Forms.Padding(8, 4, 4, 4);
             this.textBoxDescription1.Multiline = true;
             this.textBoxDescription1.Name = "textBoxDescription1";
             this.textBoxDescription1.ReadOnly = true;
             this.textBoxDescription1.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBoxDescription1.Size = new System.Drawing.Size(331, 121);
+            this.textBoxDescription1.Size = new System.Drawing.Size(444, 151);
             this.textBoxDescription1.TabIndex = 25;
             this.textBoxDescription1.TabStop = false;
             this.textBoxDescription1.Text = "Description";
@@ -146,9 +150,10 @@ namespace DMS.MapManager
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.textBoxDescription2);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Location = new System.Drawing.Point(4, 25);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(337, 127);
+            this.tabPage3.Size = new System.Drawing.Size(452, 159);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "OGR Formats";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -158,12 +163,12 @@ namespace DMS.MapManager
             this.textBoxDescription2.BackColor = System.Drawing.Color.White;
             this.textBoxDescription2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBoxDescription2.Location = new System.Drawing.Point(0, 0);
-            this.textBoxDescription2.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
+            this.textBoxDescription2.Margin = new System.Windows.Forms.Padding(8, 4, 4, 4);
             this.textBoxDescription2.Multiline = true;
             this.textBoxDescription2.Name = "textBoxDescription2";
             this.textBoxDescription2.ReadOnly = true;
             this.textBoxDescription2.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBoxDescription2.Size = new System.Drawing.Size(337, 127);
+            this.textBoxDescription2.Size = new System.Drawing.Size(452, 159);
             this.textBoxDescription2.TabIndex = 25;
             this.textBoxDescription2.TabStop = false;
             this.textBoxDescription2.Text = "Description";
@@ -173,9 +178,10 @@ namespace DMS.MapManager
             this.okButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.okButton.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.okButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.okButton.Location = new System.Drawing.Point(445, 290);
+            this.okButton.Location = new System.Drawing.Point(593, 357);
+            this.okButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.okButton.Name = "okButton";
-            this.okButton.Size = new System.Drawing.Size(75, 26);
+            this.okButton.Size = new System.Drawing.Size(100, 32);
             this.okButton.TabIndex = 5;
             this.okButton.Text = "&OK";
             this.okButton.UseVisualStyleBackColor = false;
@@ -194,7 +200,8 @@ namespace DMS.MapManager
             this.tableLayoutPanel.Controls.Add(this.okButton, 1, 8);
             this.tableLayoutPanel.Controls.Add(this.tabControl1, 1, 7);
             this.tableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel.Location = new System.Drawing.Point(9, 9);
+            this.tableLayoutPanel.Location = new System.Drawing.Point(12, 11);
+            this.tableLayoutPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel.Name = "tableLayoutPanel";
             this.tableLayoutPanel.RowCount = 9;
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
@@ -206,17 +213,17 @@ namespace DMS.MapManager
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel.Size = new System.Drawing.Size(523, 319);
+            this.tableLayoutPanel.Size = new System.Drawing.Size(697, 393);
             this.tableLayoutPanel.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Location = new System.Drawing.Point(178, 91);
-            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 3, 0);
-            this.label1.MaximumSize = new System.Drawing.Size(0, 17);
+            this.label1.Location = new System.Drawing.Point(238, 111);
+            this.label1.Margin = new System.Windows.Forms.Padding(8, 0, 4, 0);
+            this.label1.MaximumSize = new System.Drawing.Size(0, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(342, 17);
+            this.label1.Size = new System.Drawing.Size(455, 21);
             this.label1.TabIndex = 13;
             this.label1.Text = "support@mapsolutions.com.au";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -225,10 +232,11 @@ namespace DMS.MapManager
             // 
             this.logoPictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.logoPictureBox.Image = global::MapManager.Properties.Resources.Splash;
-            this.logoPictureBox.Location = new System.Drawing.Point(3, 3);
+            this.logoPictureBox.Location = new System.Drawing.Point(4, 4);
+            this.logoPictureBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.logoPictureBox.Name = "logoPictureBox";
             this.tableLayoutPanel.SetRowSpan(this.logoPictureBox, 9);
-            this.logoPictureBox.Size = new System.Drawing.Size(166, 313);
+            this.logoPictureBox.Size = new System.Drawing.Size(222, 385);
             this.logoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.logoPictureBox.TabIndex = 12;
             this.logoPictureBox.TabStop = false;
@@ -236,11 +244,11 @@ namespace DMS.MapManager
             // labelProductName
             // 
             this.labelProductName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelProductName.Location = new System.Drawing.Point(178, 15);
-            this.labelProductName.Margin = new System.Windows.Forms.Padding(6, 0, 3, 0);
-            this.labelProductName.MaximumSize = new System.Drawing.Size(0, 17);
+            this.labelProductName.Location = new System.Drawing.Point(238, 19);
+            this.labelProductName.Margin = new System.Windows.Forms.Padding(8, 0, 4, 0);
+            this.labelProductName.MaximumSize = new System.Drawing.Size(0, 21);
             this.labelProductName.Name = "labelProductName";
-            this.labelProductName.Size = new System.Drawing.Size(342, 17);
+            this.labelProductName.Size = new System.Drawing.Size(455, 21);
             this.labelProductName.TabIndex = 0;
             this.labelProductName.Text = "Product Name";
             this.labelProductName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -248,11 +256,11 @@ namespace DMS.MapManager
             // labelVersion
             // 
             this.labelVersion.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelVersion.Location = new System.Drawing.Point(178, 34);
-            this.labelVersion.Margin = new System.Windows.Forms.Padding(6, 0, 3, 0);
-            this.labelVersion.MaximumSize = new System.Drawing.Size(0, 17);
+            this.labelVersion.Location = new System.Drawing.Point(238, 42);
+            this.labelVersion.Margin = new System.Windows.Forms.Padding(8, 0, 4, 0);
+            this.labelVersion.MaximumSize = new System.Drawing.Size(0, 21);
             this.labelVersion.Name = "labelVersion";
-            this.labelVersion.Size = new System.Drawing.Size(342, 17);
+            this.labelVersion.Size = new System.Drawing.Size(455, 21);
             this.labelVersion.TabIndex = 1;
             this.labelVersion.Text = "Version";
             this.labelVersion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -260,11 +268,11 @@ namespace DMS.MapManager
             // labelCopyright
             // 
             this.labelCopyright.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelCopyright.Location = new System.Drawing.Point(178, 53);
-            this.labelCopyright.Margin = new System.Windows.Forms.Padding(6, 0, 3, 0);
-            this.labelCopyright.MaximumSize = new System.Drawing.Size(0, 17);
+            this.labelCopyright.Location = new System.Drawing.Point(238, 65);
+            this.labelCopyright.Margin = new System.Windows.Forms.Padding(8, 0, 4, 0);
+            this.labelCopyright.MaximumSize = new System.Drawing.Size(0, 21);
             this.labelCopyright.Name = "labelCopyright";
-            this.labelCopyright.Size = new System.Drawing.Size(342, 17);
+            this.labelCopyright.Size = new System.Drawing.Size(455, 21);
             this.labelCopyright.TabIndex = 2;
             this.labelCopyright.Text = "Copyright";
             this.labelCopyright.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -272,11 +280,11 @@ namespace DMS.MapManager
             // labelCompanyName
             // 
             this.labelCompanyName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelCompanyName.Location = new System.Drawing.Point(178, 72);
-            this.labelCompanyName.Margin = new System.Windows.Forms.Padding(6, 0, 3, 0);
-            this.labelCompanyName.MaximumSize = new System.Drawing.Size(0, 17);
+            this.labelCompanyName.Location = new System.Drawing.Point(238, 88);
+            this.labelCompanyName.Margin = new System.Windows.Forms.Padding(8, 0, 4, 0);
+            this.labelCompanyName.MaximumSize = new System.Drawing.Size(0, 21);
             this.labelCompanyName.Name = "labelCompanyName";
-            this.labelCompanyName.Size = new System.Drawing.Size(342, 17);
+            this.labelCompanyName.Size = new System.Drawing.Size(455, 21);
             this.labelCompanyName.TabIndex = 3;
             this.labelCompanyName.Text = "http://www.mapsolutions.com.au";
             this.labelCompanyName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -284,16 +292,17 @@ namespace DMS.MapManager
             // AboutBox
             // 
             this.AcceptButton = this.okButton;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(541, 337);
+            this.ClientSize = new System.Drawing.Size(721, 415);
             this.Controls.Add(this.tableLayoutPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.KeyPreview = true;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "AboutBox";
-            this.Padding = new System.Windows.Forms.Padding(9);
+            this.Padding = new System.Windows.Forms.Padding(12, 11, 12, 11);
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;

@@ -38,6 +38,14 @@ namespace DMS.MapManager
         /// </summary>
         public string TextEditor;
         /// <summary>
+        /// Enable/Disable text wrapping.
+        /// </summary>
+        public bool TextEditorLineWrapping;
+        /// <summary>
+        /// Enable/Disable showing glyphs.
+        /// </summary>
+        public bool TextEditorShowGlyphs;
+        /// <summary>
         /// The propertybag of the form settings.
         /// </summary>
         public FormSettings MainFormSettings;
@@ -81,6 +89,160 @@ namespace DMS.MapManager
             set
             {
                 LayerControlBackColor = Color.FromArgb(value);
+            }
+        }
+
+        /// <summary>
+        /// The text editor object name color
+        /// </summary>
+        [XmlIgnore()]
+        public Color TextEditorObjectNameColor;
+
+        /// <summary>
+        /// The text editor object name color
+        /// </summary>
+        [XmlElement("TextEditorObjectNameColor")]
+        public int _TextEditorObjectNameColor
+        {
+            get
+            {
+                return TextEditorObjectNameColor.ToArgb();
+            }
+            set
+            {
+                TextEditorObjectNameColor = Color.FromArgb(value);
+            }
+        }
+
+        /// <summary>
+        /// The text editor property name color
+        /// </summary>
+        [XmlIgnore()]
+        public Color TextEditorPropertyNameColor;
+
+        /// <summary>
+        /// The text editor object name color
+        /// </summary>
+        [XmlElement("TextEditorPropertyNameColor")]
+        public int _TextEditorPropertyNameColor
+        {
+            get
+            {
+                return TextEditorPropertyNameColor.ToArgb();
+            }
+            set
+            {
+                TextEditorPropertyNameColor = Color.FromArgb(value);
+            }
+        }
+
+        /// <summary>
+        /// The text editor comment color
+        /// </summary>
+        [XmlIgnore()]
+        public Color TextEditorCommentColor;
+
+        /// <summary>
+        /// The text editor comment color
+        /// </summary>
+        [XmlElement("TextEditorCommentColor")]
+        public int _TextEditorCommentColor
+        {
+            get
+            {
+                return TextEditorCommentColor.ToArgb();
+            }
+            set
+            {
+                TextEditorCommentColor = Color.FromArgb(value);
+            }
+        }
+
+        /// <summary>
+        /// The text editor number color
+        /// </summary>
+        [XmlIgnore()]
+        public Color TextEditorNumberColor;
+
+        /// <summary>
+        /// The text editor number color
+        /// </summary>
+        [XmlElement("TextEditorNumberColor")]
+        public int _TextEditorNumberColor
+        {
+            get
+            {
+                return TextEditorNumberColor.ToArgb();
+            }
+            set
+            {
+                TextEditorNumberColor = Color.FromArgb(value);
+            }
+        }
+
+        /// <summary>
+        /// The text editor string color
+        /// </summary>
+        [XmlIgnore()]
+        public Color TextEditorStringColor;
+
+        /// <summary>
+        /// The text editor string color
+        /// </summary>
+        [XmlElement("TextEditorStringColor")]
+        public int _TextEditorStringColor
+        {
+            get
+            {
+                return TextEditorStringColor.ToArgb();
+            }
+            set
+            {
+                TextEditorStringColor = Color.FromArgb(value);
+            }
+        }
+
+        /// <summary>
+        /// The text editor keyword color
+        /// </summary>
+        [XmlIgnore()]
+        public Color TextEditorKeywordColor;
+
+        /// <summary>
+        /// The text editor keyword color
+        /// </summary>
+        [XmlElement("TextEditorKeywordColor")]
+        public int _TextEditorKeywordColor
+        {
+            get
+            {
+                return TextEditorKeywordColor.ToArgb();
+            }
+            set
+            {
+                TextEditorKeywordColor = Color.FromArgb(value);
+            }
+        }
+
+        /// <summary>
+        /// The text editor binding color
+        /// </summary>
+        [XmlIgnore()]
+        public Color TextEditorBindingColor;
+
+        /// <summary>
+        /// The text editor binding color
+        /// </summary>
+        [XmlElement("TextEditorBindingColor")]
+        public int _TextEditorBindingColor
+        {
+            get
+            {
+                return TextEditorBindingColor.ToArgb();
+            }
+            set
+            {
+                TextEditorBindingColor = Color.FromArgb(value);
             }
         }
 
@@ -136,6 +298,13 @@ namespace DMS.MapManager
             LayerControlShowStyles = true;
             LayerControlShowLabels = true;
             tileSettingsArray = new ArrayList();
+            TextEditorObjectNameColor = Color.Blue;
+            TextEditorPropertyNameColor = Color.Green;
+            TextEditorCommentColor = Color.Gray;
+            TextEditorNumberColor = Color.Olive;
+            TextEditorStringColor = Color.Red;
+            TextEditorKeywordColor = Color.Purple;
+            TextEditorBindingColor = Color.Magenta;
         }
 
         /// <summary>

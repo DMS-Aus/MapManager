@@ -14,10 +14,6 @@ namespace DMS.MapManager
     /// </summary>
     public partial class MapFileConvertForm : Form
     {
-        AppSettings settings;
-        DMS.MapLibrary.ColorRampPicker colorRampPicker;
-        ListBox listBoxColorRamp;
-
         /// <summary>
         /// Constructs a new MapFileConvertForm object.
         /// </summary>

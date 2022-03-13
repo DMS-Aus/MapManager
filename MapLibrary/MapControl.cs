@@ -40,8 +40,6 @@ namespace DMS.MapLibrary
         private SolidBrush selectionBrush;
         private Pen selectionPen;
 
-        private double a11, a13, a21, a23;
-
         private int unitPrecision;
         private string unitName;
         private MS_UNITS mapunits;
@@ -106,8 +104,6 @@ namespace DMS.MapLibrary
             unitPrecision = 4;
             unitName = "";
             mapunits = MS_UNITS.MS_METERS;
-
-            a11 = a13 = a21 = a23 = 0;
 
             this.SetStyle(ControlStyles.AllPaintingInWmPaint |
                 ControlStyles.UserPaint | ControlStyles.DoubleBuffer, true);
@@ -1089,7 +1085,7 @@ namespace DMS.MapLibrary
         /// <summary>
         /// The EditProperties event handler. Called when a child object should be edited
         /// </summary>
-        public event EditPropertiesEventHandler EditProperties;
+        public event EditPropertiesEventHandler EditProperties = delegate {};
 
         #endregion
 

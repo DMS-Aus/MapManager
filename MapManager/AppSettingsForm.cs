@@ -17,16 +17,19 @@ namespace DMS.MapManager
         AppSettings settings;
         DMS.MapLibrary.ColorRampPicker colorRampPicker;
         ListBox listBoxColorRamp;
+        Action updateSettings;
 
         /// <summary>
         /// Constructs a new AppSettingsForm object.
         /// </summary>
         /// <param name="settings">The property bag for holding the settings.</param>
-        public AppSettingsForm(AppSettings settings)
+        public AppSettingsForm(AppSettings settings, Action updateSettings = null)
         {
             InitializeComponent();
             this.settings = settings;
             LoadState();
+
+            this.updateSettings = updateSettings;
 
             colorRampPicker = new DMS.MapLibrary.ColorRampPicker();
             listBoxColorRamp = colorRampPicker.GetListBox();
@@ -103,6 +106,15 @@ namespace DMS.MapManager
             checkBoxStyles.Checked = settings.LayerControlShowStyles;
             checkBoxLabels.Checked = settings.LayerControlShowLabels;
             textBoxEditor.Text = settings.TextEditor;
+            checkBoxTextWrapping.Checked = settings.TextEditorLineWrapping;
+            checkBoxShowGlyphs.Checked = settings.TextEditorShowGlyphs;
+            colorPickerTextEditorObjectName.Value = settings.TextEditorObjectNameColor;
+            colorPickerTextEditorPropertyName.Value = settings.TextEditorPropertyNameColor;
+            colorPickerTextEditorComment.Value = settings.TextEditorCommentColor;
+            colorPickerTextEditorNumber.Value = settings.TextEditorNumberColor;
+            colorPickerTextEditorString.Value = settings.TextEditorStringColor;
+            colorPickerTextEditorKeyword.Value = settings.TextEditorKeywordColor;
+            colorPickerTextEditorBinding.Value = settings.TextEditorBindingColor;
         }
 
         /// <summary>
@@ -118,7 +130,16 @@ namespace DMS.MapManager
             settings.LayerControlShowRootNode = checkBoxRoot.Checked;
             settings.LayerControlShowStyles = checkBoxStyles.Checked;
             settings.LayerControlShowLabels = checkBoxLabels.Checked;
-            settings.TextEditor = textBoxEditor.Text.Trim();
+            settings.TextEditor = textBoxEditor.Text.Trim(); 
+            settings.TextEditorLineWrapping = checkBoxTextWrapping.Checked;
+            settings.TextEditorShowGlyphs = checkBoxShowGlyphs.Checked;
+            settings.TextEditorObjectNameColor = colorPickerTextEditorObjectName.Value;
+            settings.TextEditorPropertyNameColor = colorPickerTextEditorPropertyName.Value;
+            settings.TextEditorCommentColor = colorPickerTextEditorComment.Value;
+            settings.TextEditorNumberColor = colorPickerTextEditorNumber.Value;
+            settings.TextEditorStringColor = colorPickerTextEditorString.Value;
+            settings.TextEditorKeywordColor = colorPickerTextEditorKeyword.Value;
+            settings.TextEditorBindingColor = colorPickerTextEditorBinding.Value;
         }
 
         /// <summary>
@@ -177,13 +198,34 @@ namespace DMS.MapManager
         /// <summary>
         /// KeyDown event handler for the AppSettingsForm object.
         /// </summary>
-        /// <param name="sender">The source object of thi
+        /// <param name="sender">The source object of this</param>
         private void AppSettingsForm_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Escape)
             {
                 this.Close();
             }
+        }
+
+        /// <summary>
+        /// Click event handler for the buttonApply object.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void buttonApply_Click(object sender, EventArgs e)
+        {
+            SaveState();
+            updateSettings?.Invoke();
+        }
+
+        /// <summary>
+        /// CheckedChanged event handler for the checkBoxTextWrapping object.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void checkBoxTextWrapping_CheckedChanged(object sender, EventArgs e)
+        {
+            checkBoxShowGlyphs.Enabled = checkBoxTextWrapping.Checked;
         }
     }
 }

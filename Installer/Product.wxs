@@ -6,7 +6,7 @@
   <?define ProgramFiles = "ProgramFilesFolder" ?>
   <?endif?>
   
-  <Product Id="CEB08A5C-9292-4B51-896E-71EE75531C9A" Name="MapServer MapManager v1.2 ($(var.Platform))" Language="1033" Version="1.2.0.0" Manufacturer="Digital Mapping Solutions" UpgradeCode="B17B8E38-2C70-4032-8F95-4BA75FDFFB5E">
+  <Product Id="CEB08A5C-9292-4B51-896E-71EE75531C9A" Name="MapServer MapManager v1.2 ($(var.Platform))" Language="1033" Version="1.2.0.1" Manufacturer="Digital Mapping Solutions" UpgradeCode="B17B8E38-2C70-4032-8F95-4BA75FDFFB5E">
 		<Package InstallerVersion="300" Compressed="yes" Description="MapServer MapManager Installer" InstallScope="perMachine"/>
 
         <Media Id="1" Cabinet="MapManager.cab" EmbedCab="yes" />

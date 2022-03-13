@@ -50,6 +50,13 @@ namespace DMS.MapLibrary
             // In certain cases we require to reload the modified symbolset on the base mapfile too.
             this.target = target;
             this.map = target;
+            // load scintilla config from file
+            scintillaControl.ConfigurationManager.Language = "user";
+            ScintillaNet.Configuration.Configuration config = new ScintillaNet.Configuration.Configuration(Environment.CurrentDirectory + "\\MapfileConfig.xml", "user", true);
+            scintillaControl.ConfigurationManager.Configure(config);
+
+            scintillaControlSymbolset.ConfigurationManager.Language = "user";
+            scintillaControlSymbolset.ConfigurationManager.Configure(config);
         }
 
         /// <summary>
@@ -163,6 +170,28 @@ namespace DMS.MapLibrary
         }
 
         /// <summary>
+        /// Returns the style list editor control
+        /// </summary>
+        public ScintillaNet.Scintilla StyleListEditor
+        {
+            get
+            {
+                return this.scintillaControl;
+            }
+        }
+
+        /// <summary>
+        /// Returns the symbolset editor control
+        /// </summary>
+        public ScintillaNet.Scintilla SymbolsetEditor
+        {
+            get
+            {
+                return this.scintillaControlSymbolset;
+            }
+        }
+
+        /// <summary>
         /// Load event handler of the StyleLibraryForm control.
         /// </summary>
         /// <param name="sender">The source object of this event.</param>
@@ -175,13 +204,6 @@ namespace DMS.MapLibrary
             fontsetChanged = false;
             fontsetSaved = false;
             styleLibraryChanged = false;
-            // load scintilla config from file
-            scintillaControl.ConfigurationManager.Language = "user";
-            ScintillaNet.Configuration.Configuration config = new ScintillaNet.Configuration.Configuration(Environment.CurrentDirectory + "\\MapfileConfig.xml", "user", true);
-            scintillaControl.ConfigurationManager.Configure(config);
-
-            scintillaControlSymbolset.ConfigurationManager.Language = "user";
-            scintillaControlSymbolset.ConfigurationManager.Configure(config);
 
             LoadSymbolset();
 
