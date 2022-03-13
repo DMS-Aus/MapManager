@@ -251,6 +251,20 @@ namespace DMS.MapManager
             splitContainer.SplitterDistance = splitContainer.Panel1MinSize;
         }
 
+        private void ApplyTextEditorSettings(ScintillaNet.Scintilla scintilla)
+        {
+            scintilla.LineWrap.Mode = settings.TextEditorLineWrapping ? ScintillaNet.WrapMode.Char : ScintillaNet.WrapMode.None;
+            scintilla.LineWrap.VisualFlags = settings.TextEditorShowGlyphs ? ScintillaNet.WrapVisualFlag.End : ScintillaNet.WrapVisualFlag.None;
+            scintilla.Styles["BLOCK_OPERATOR_OPEN"].ForeColor = scintilla.Styles["BLOCK_OPERATOR_CLOSE"].ForeColor = settings.TextEditorObjectNameColor;
+            scintilla.Styles["WORD1"].ForeColor = scintilla.Styles["WORD2"].ForeColor = settings.TextEditorPropertyNameColor;
+            scintilla.Styles["WORD3"].ForeColor = settings.TextEditorKeywordColor;
+            //scintilla.Styles["OPERATOR"].ForeColor = scintilla.Styles["IDENTIFIER"].ForeColor = settings.TextEditorKeywordColor;
+            scintilla.Styles["COMMENT"].ForeColor = scintilla.Styles["COMMENTLINE"].ForeColor = settings.TextEditorCommentColor;
+            scintilla.Styles["NUMBER"].ForeColor = settings.TextEditorNumberColor;
+            scintilla.Styles["DELIMITER1"].ForeColor = settings.TextEditorStringColor;
+            scintilla.Styles["DELIMITER3"].ForeColor = settings.TextEditorBindingColor;
+        }
+
         /// <summary>
         /// Updating the state of the form according to the property bag.
         /// </summary>
@@ -263,6 +277,7 @@ namespace DMS.MapManager
             layerControl.ShowStyles = settings.LayerControlShowStyles;
             layerControl.ShowLabels = settings.LayerControlShowLabels;
             layerControl.RefreshView();
+            ApplyTextEditorSettings(scintillaControl);
         }
 
         /// <summary>
@@ -1265,7 +1280,7 @@ namespace DMS.MapManager
         /// <param name="e">The event parameters.</param>
         private void optionsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AppSettingsForm settingsForm = new AppSettingsForm(settings);
+            AppSettingsForm settingsForm = new AppSettingsForm(settings, () => { UpdateAppSettings(); });
             settingsForm.HelpRequested += new HelpEventHandler(editor_HelpRequested);
             if (settingsForm.ShowDialog(this) == DialogResult.OK)
             {
@@ -1584,6 +1599,8 @@ namespace DMS.MapManager
         private void styleLibraryToolStripMenuItem_Click(object sender, EventArgs e)
         {
             StyleLibraryForm styleLibraryForm = new StyleLibraryForm(mapControl.Target);
+            ApplyTextEditorSettings(styleLibraryForm.StyleListEditor);
+            ApplyTextEditorSettings(styleLibraryForm.SymbolsetEditor);
             styleLibraryForm.ShowDialog(this);
             if (styleLibraryForm.SymbolsetSaved && mapControl.Target != null)
             {
