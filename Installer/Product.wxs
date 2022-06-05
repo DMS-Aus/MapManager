@@ -150,9 +150,6 @@
                         <Component Id="gdal_FITS.dll" Guid="*">
                             <File Id="gdal_FITS.dll" Name="gdal_FITS.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\gdalplugins\gdal_FITS.dll" />
                         </Component>
-                        <Component Id="gdal_GMT.dll" Guid="*">
-                            <File Id="gdal_GMT.dll" Name="gdal_GMT.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\gdalplugins\gdal_GMT.dll" />
-                        </Component>
                         <Component Id="gdal_HDF4.dll" Guid="*">
                             <File Id="gdal_HDF4.dll" Name="gdal_HDF4.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\gdalplugins\gdal_HDF4.dll" />
                         </Component>
@@ -647,7 +644,6 @@
             <Feature Id="GDALPlugins" Level="1" Title="GDAL Plugins" Display="expand" Description="GDAL plugin library files">
                 <Feature Id="NetCDF" Level="1" Title="NetCDF" Description="Network Common Data Form (NetCDF) rasters (for the custom licensing terms please review NetCDFLicense.rtf and SZIPLicense.rtf installed in the /license folder)">
                   <ComponentRef Id="gdal_netCDF.dll" />
-                  <ComponentRef Id="gdal_GMT.dll" />
                   <ComponentRef Id="netcdf.dll" />
                   <ComponentRef Id="NetCDFLicense.rtf" />
                   <ComponentRef Id="hdf5.dll" />
