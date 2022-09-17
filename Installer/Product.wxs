@@ -6,7 +6,7 @@
   <?define ProgramFiles = "ProgramFilesFolder" ?>
   <?endif?>
   
-  <Product Id="CEB08A5C-9292-4B51-896E-71EE75531C9A" Name="MapServer MapManager v1.2 ($(var.Platform))" Language="1033" Version="1.2.0.1" Manufacturer="Digital Mapping Solutions" UpgradeCode="B17B8E38-2C70-4032-8F95-4BA75FDFFB5E">
+  <Product Id="CEB08A5C-9292-4B51-896E-71EE75531C9A" Name="MapServer MapManager v1.3 ($(var.Platform))" Language="1033" Version="1.3.0.0" Manufacturer="Digital Mapping Solutions" UpgradeCode="B17B8E38-2C70-4032-8F95-4BA75FDFFB5E">
 		<Package InstallerVersion="300" Compressed="yes" Description="MapServer MapManager Installer" InstallScope="perMachine"/>
 
         <Media Id="1" Cabinet="MapManager.cab" EmbedCab="yes" />
@@ -370,8 +370,8 @@
                     <Component Id="scalebar.exe" Guid="*">
                         <File Id="scalebar.exe" Name="scalebar.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\scalebar.exe" />
                     </Component>
-                    <Component Id="shp2img.exe" Guid="*">
-                        <File Id="shp2img.exe" Name="shp2img.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\shp2img.exe" />
+                    <Component Id="map2img.exe" Guid="*">
+                        <File Id="map2img.exe" Name="map2img.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\map2img.exe" />
                     </Component>
                     <Component Id="shptree.exe" Guid="*">
                         <File Id="shptree.exe" Name="shptree.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\shptree.exe" />
@@ -683,13 +683,13 @@
         </Feature>
         <Feature Id="Tools" Title="Command Tools" Display="expand" Level="1" Description="Command Tools" ConfigurableDirectory="INSTALLDIR">
             <ComponentRef Id="mmshell.bat" />
-            <Feature Id="MapServerTools" Level="1" Title="MapServer Tools" Description="MapServer Command Tools (legend, mapserv, msencrypt, scalebar, shp2img, shptree, shptreevis, sortshp, tile4ms)">
+            <Feature Id="MapServerTools" Level="1" Title="MapServer Tools" Description="MapServer Command Tools (legend, mapserv, msencrypt, scalebar, map2img, shptree, shptreevis, sortshp, tile4ms)">
 
                 <ComponentRef Id="legend.exe" />
                 <ComponentRef Id="mapserv.exe" />
                 <ComponentRef Id="msencrypt.exe" />
                 <ComponentRef Id="scalebar.exe" />
-                <ComponentRef Id="shp2img.exe" />
+                <ComponentRef Id="map2img.exe" />
                 <ComponentRef Id="shptree.exe" />
                 <ComponentRef Id="shptreevis.exe" />
                 <ComponentRef Id="sortshp.exe" />

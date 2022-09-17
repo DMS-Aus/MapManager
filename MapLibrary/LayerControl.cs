@@ -1862,7 +1862,7 @@ namespace DMS.MapLibrary
                     if (proj != proj4.Trim())
                         layer.setProjection(proj4);
 
-                    layer.setMetaData("coordsys_name", proj_name);
+                    layer.metadata.set("coordsys_name", proj_name);
                 }
 
                 // if this is the first layer or the map projection hasn't been set zoom to this extent
@@ -1876,7 +1876,7 @@ namespace DMS.MapLibrary
                     if (map.getProjection().Trim().Length == 0 && proj.Length > 0 && proj != "+AUTO")
                     {
                         map.setProjection(layer.getProjection());
-                        map.setMetaData("coordsys_name", proj_name);
+                        map.web.metadata.set("coordsys_name", proj_name);
                         // setting up the default unit
                         if (proj.Contains("+proj=longlat"))
                             map.units = MS_UNITS.MS_DD;
@@ -2070,7 +2070,7 @@ namespace DMS.MapLibrary
                     if (proj != proj4.Trim())
                         layer.setProjection(proj4);
 
-                    layer.setMetaData("coordsys_name", proj_name);
+                    layer.metadata.set("coordsys_name", proj_name);
                 }
 
                 // if this is the first layer or the map projection hasn't been set zoom to this extent
@@ -2084,7 +2084,7 @@ namespace DMS.MapLibrary
                     if (map.getProjection().Trim().Length == 0 && proj.Length > 0 && proj != "+AUTO")
                     {
                         map.setProjection(layer.getProjection());
-                        map.setMetaData("coordsys_name", proj_name);
+                        map.web.metadata.set("coordsys_name", proj_name);
                         // setting up the default unit
                         if (proj.Contains("+proj=longlat"))
                             map.units = MS_UNITS.MS_DD;
@@ -2168,7 +2168,7 @@ namespace DMS.MapLibrary
                         if (proj4_out.StartsWith("+"))
                         {
                             layer.setProjection(proj4_out);
-                            layer.setMetaData("coordsys_name", projName);
+                            layer.metadata.set("coordsys_name", projName);
                         }
                     }
                 }
@@ -2312,7 +2312,7 @@ namespace DMS.MapLibrary
                         classobj = new classObj(layer);
                         classobj.name = form.CategoryName;
                         style = new styleObj(classobj);
-                        layer.setMetaData("character-count", form.CharCount.ToString());
+                        layer.metadata.set("character-count", form.CharCount.ToString());
                         
                         MapUtils.SetDefaultColor(layer.type, style);
                         style.width = 1;
@@ -2894,7 +2894,7 @@ namespace DMS.MapLibrary
                     {
                         projName = MapUtils.FindProjection(form.GetProj4Text(), out proj4text, out epsg);
                         layer.setProjection(form.GetProj4Text());
-                        layer.setMetaData("coordsys_name", projName);
+                        layer.metadata.set("coordsys_name", projName);
                     }
                     else if (form.GetSRText() != null && form.GetSRText() != "")
                     {
@@ -2906,7 +2906,7 @@ namespace DMS.MapLibrary
                             projName = MapUtils.FindProjection(proj4, out proj4text, out epsg);
                             //Steph: looks like there was a copy and paste error, I have replaced form.GetProj4Text() with proj4text
                             layer.setProjection(proj4text);
-                            layer.setMetaData("coordsys_name", projName);
+                            layer.metadata.set("coordsys_name", projName);
                         }  
                     }
                     else

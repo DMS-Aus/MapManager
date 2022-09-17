@@ -87,7 +87,7 @@ namespace DMS.MapManager
         {
             InitializeComponent();
 
-            MapUtils.SetPROJ_LIB(Environment.CurrentDirectory + "\\ProjLib");
+            MapUtils.SetPROJ_DATA(Environment.CurrentDirectory + "\\ProjLib");
             Osr.SetPROJSearchPath(Environment.CurrentDirectory + "\\ProjLib");
 
             Gdal.SetConfigOption("GDAL_DATA", Environment.CurrentDirectory);
@@ -788,7 +788,7 @@ namespace DMS.MapManager
         {
             string currentVersion = Assembly.GetExecutingAssembly().GetName().Version.ToString();
             // update the version information.
-            map.setMetaData("mapmanager_version", currentVersion);
+            map.web.metadata.set("mapmanager_version", currentVersion);
         }
 
         /// <summary>

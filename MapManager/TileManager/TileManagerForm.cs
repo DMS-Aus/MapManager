@@ -157,7 +157,7 @@ namespace DMS.MapManager
                 cmbPreConfig.SelectedIndex = 0;
 
                 // load from metadata if available
-                string key = map.getFirstMetaDataKey();
+                string key = map.web.metadata.nextKey(null);
                 while (key != null)
                 {
                     switch (key)
@@ -167,11 +167,11 @@ namespace DMS.MapManager
                             foreach (TileSettings tileSettings in mainForm.settings.tileSettingsArray)
                             {
                                 i++;
-                                if (tileSettings.settingsName == map.getMetaData("TileManager_Config")) cmbPreConfig.SelectedIndex = i;
+                                if (tileSettings.settingsName == map.web.metadata.get("TileManager_Config", null)) cmbPreConfig.SelectedIndex = i;
                             }
                             break;
                     }
-                    key = map.getNextMetaDataKey(key);
+                    key = map.web.metadata.nextKey(key);
                 }
 
                 // set up datagrid view
@@ -525,10 +525,10 @@ namespace DMS.MapManager
             // Steph if you know a better way then let me know, just calling set does not seem to overwrite values
             try
             {
-                map.removeMetaData("TileManager_Config");
+                map.web.metadata.remove("TileManager_Config");
             }
             catch (Exception) { }
-            map.setMetaData("TileManager_Config", cmbPreConfig.Text);
+            map.web.metadata.set("TileManager_Config", cmbPreConfig.Text);
         }
 
         // saves the currently loaded tile settings and updates loadedSettings

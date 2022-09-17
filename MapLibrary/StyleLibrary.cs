@@ -45,7 +45,7 @@ namespace DMS.MapLibrary
                 layerObj layer = map.getLayer(i);
                 if (MapUtils.HasMetadata(layer, "character-count"))
                 {
-                    string charcount = layer.getMetaData("character-count");
+                    string charcount = layer.metadata.get("character-count", null);
                     int num;
                     if (layer.numclasses == 1 && charcount != null && int.TryParse(charcount, out num))
                     {
@@ -86,7 +86,7 @@ namespace DMS.MapLibrary
                         if (!classobj.name.EndsWith("-33"))
                             classobj.name += "-33";
                     }
-                    layer.removeMetaData("character-count");
+                    layer.metadata.remove("character-count");
                 }
             }
             if (newSymbols.Length > 0)
