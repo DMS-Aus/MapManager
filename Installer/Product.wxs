@@ -153,17 +153,8 @@
                         <Component Id="gdal_HDF4.dll" Guid="*">
                             <File Id="gdal_HDF4.dll" Name="gdal_HDF4.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\gdalplugins\gdal_HDF4.dll" />
                         </Component>
-                        <Component Id="gdal_HDF4Image.dll" Guid="*">
-                            <File Id="gdal_HDF4Image.dll" Name="gdal_HDF4Image.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\gdalplugins\gdal_HDF4Image.dll" />
-                        </Component>
                         <Component Id="gdal_HDF5.dll" Guid="*">
                             <File Id="gdal_HDF5.dll" Name="gdal_HDF5.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\gdalplugins\gdal_HDF5.dll" />
-                        </Component>
-                        <Component Id="gdal_HDF5Image.dll" Guid="*">
-                            <File Id="gdal_HDF5Image.dll" Name="gdal_HDF5Image.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\gdalplugins\gdal_HDF5Image.dll" />
-                        </Component>
-                        <Component Id="gdal_BAG.dll" Guid="*">
-                            <File Id="gdal_BAG.dll" Name="gdal_BAG.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\gdalplugins\gdal_BAG.dll" />
                         </Component>
                         <Component Id="gdal_netCDF.dll" Guid="*">
                             <File Id="gdal_netCDF.dll" Name="gdal_netCDF.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\gdalplugins\gdal_netCDF.dll" />
@@ -655,7 +646,6 @@
               </Feature>
               <Feature Id="HDF4" Level="1" Title="HDF4" Description="Hierarchical Data Format Release 4 (HDF4) rasters (for the custom licensing terms please review HDF4License.rtf and SZIPLicense.rtf installed in the /license folder)">
                   <ComponentRef Id="gdal_HDF4.dll" />
-                  <ComponentRef Id="gdal_HDF4Image.dll" />
                   <ComponentRef Id="hdf.dll" />
                   <ComponentRef Id="mfhdf.dll" />
                   <ComponentRef Id="xdr.dll" />
@@ -665,8 +655,6 @@
               </Feature>
               <Feature Id="HDF5" Level="1" Title="HDF5" Description="Hierarchical Data Format Release 5 (HDF5) rasters (for the custom licensing terms please review HDF5License.rtf and SZIPLicense.rtf installed in the /license folder)">
                   <ComponentRef Id="gdal_HDF5.dll" />
-                  <ComponentRef Id="gdal_BAG.dll" />
-                  <ComponentRef Id="gdal_HDF5Image.dll" />
                   <ComponentRef Id="hdf5.dll" />
                   <ComponentRef Id="hdf5_cpp.dll" />
                   <ComponentRef Id="hdf5_hl.dll" />
