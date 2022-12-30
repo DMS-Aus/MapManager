@@ -159,6 +159,9 @@
                         <Component Id="gdal_netCDF.dll" Guid="*">
                             <File Id="gdal_netCDF.dll" Name="gdal_netCDF.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\gdalplugins\gdal_netCDF.dll" />
                         </Component>
+						<Component Id="gdal_PDF.dll" Guid="*">
+                            <File Id="gdal_PDF.dll" Name="gdal_PDF.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\gdalplugins\gdal_PDF.dll" />
+                        </Component>
                     </Directory>
 					<Component Id="MapManager.exe" Guid="*">
                         <File Id="MapManager.exe" Name="$(var.MapManager.TargetFileName)" Source="$(var.MapManager.TargetPath)" />
@@ -633,6 +636,9 @@
                 </Feature>
             </Feature>
             <Feature Id="GDALPlugins" Level="1" Title="GDAL Plugins" Display="expand" Description="GDAL plugin library files">
+			    <Feature Id="PDF" Level="1" Title="PDF" Description="GDAL PDF plugin to support read access to the Geospatial PDF.">
+					<ComponentRef Id="gdal_PDF.dll" />
+				</Feature>
                 <Feature Id="NetCDF" Level="1" Title="NetCDF" Description="Network Common Data Form (NetCDF) rasters (for the custom licensing terms please review NetCDFLicense.rtf and SZIPLicense.rtf installed in the /license folder)">
                   <ComponentRef Id="gdal_netCDF.dll" />
                   <ComponentRef Id="netcdf.dll" />
