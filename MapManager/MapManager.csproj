@@ -360,7 +360,7 @@ copy $(SdkDir)\bin\ms\plugins\oci\msplugin_oracle.dll $(TargetDir)
 
 if not exist $(TargetDir)ProjLib mkdir $(TargetDir)ProjLib
 copy $(SdkDir)\bin\proj\SHARE\*.* $(TargetDir)\ProjLib
-copy $(SdkDir)\bin\proj7\SHARE\*.* $(TargetDir)\ProjLib
+copy $(SdkDir)\bin\proj9\SHARE\*.* $(TargetDir)\ProjLib
 if not exist $(TargetDir)templates mkdir $(TargetDir)templates
 copy $(SolutionDir)Templates $(TargetDir)templates
 

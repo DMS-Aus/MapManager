@@ -30,6 +30,18 @@
                         <Component Id="proj.db" Guid="*">
                             <File Id="proj.db" Name="proj.db" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\ProjLib\proj.db" Vital="yes"/>
                         </Component>
+						<Component Id="proj.ini" Guid="*">
+                            <File Id="proj.ini" Name="proj.ini" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\ProjLib\proj.ini" Vital="yes"/>
+                        </Component>
+						<Component Id="deformation_model.schema.json" Guid="*">
+                            <File Id="deformation_model.schema.json" Name="deformation_model.schema.json" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\ProjLib\deformation_model.schema.json" Vital="yes"/>
+                        </Component>
+						<Component Id="projjson.schema.json" Guid="*">
+                            <File Id="projjson.schema.json" Name="projjson.schema.json" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\ProjLib\projjson.schema.json" Vital="yes"/>
+                        </Component>
+						<Component Id="triangulation.schema.json" Guid="*">
+                            <File Id="triangulation.schema.json" Name="triangulation.schema.json" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\ProjLib\triangulation.schema.json" Vital="yes"/>
+                        </Component>
                         <Component Id="proj_def.dat" Guid="*">
                             <File Id="proj_def.dat" Name="proj_def.dat" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\ProjLib\proj_def.dat" Vital="yes"/>
                         </Component>
