@@ -333,6 +333,9 @@
                     <Component Id="proj_7_2.dll" Guid="*">
                         <File Id="proj_7_2.dll" Name="proj_7_2.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\proj_7_2.dll" Vital="yes"/>
                     </Component>
+					<Component Id="proj_9_1.dll" Guid="*">
+                        <File Id="proj_9_1.dll" Name="proj_9_1.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\proj_9_1.dll" Vital="yes"/>
+                    </Component>
                     <Component Id="sqlite3.dll" Guid="*">
                         <File Id="sqlite3.dll" Name="sqlite3.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\sqlite3.dll" Vital="yes"/>
                     </Component>
@@ -586,6 +589,7 @@
                 <ComponentRef Id="openjp2.dll" />
                 <ComponentRef Id="proj_4_9.dll" />
                 <ComponentRef Id="proj_7_2.dll" />
+				<ComponentRef Id="proj_9_1.dll" />
                 <ComponentRef Id="fribidi_0.dll" />
                 <ComponentRef Id="sqlite3.dll" />
 			    <ComponentRef Id="freexl.dll" />
