@@ -171,11 +171,11 @@
                         <Component Id="gdal_netCDF.dll" Guid="*">
                             <File Id="gdal_netCDF.dll" Name="gdal_netCDF.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\gdalplugins\gdal_netCDF.dll" />
                         </Component>
-						<Component Id="gdal_PDF.dll" Guid="*">
+                        <Component Id="gdal_PDF.dll" Guid="*">
                             <File Id="gdal_PDF.dll" Name="gdal_PDF.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\gdalplugins\gdal_PDF.dll" />
                         </Component>
                     </Directory>
-					<Component Id="MapManager.exe" Guid="*">
+                    <Component Id="MapManager.exe" Guid="*">
                         <File Id="MapManager.exe" Name="$(var.MapManager.TargetFileName)" Source="$(var.MapManager.TargetPath)" />
                         <!-- Extend to the "open with" list + Win7 jump menu pinning  -->
                         <RegistryValue Root="HKCR" Key="Applications\MapManager.exe\SupportedTypes" Name=".map" Value="" Type="string" />
@@ -209,7 +209,7 @@
                         <File Id="SciLexer.dll" Name="SciLexer.dll" Source="$(var.MapManager.TargetDir)SciLexer.dll" Vital="yes"/>
                     </Component>
                     <Component Id="gdal.dll" Guid="*">
-                        <File Id="gdal.dll" Name="gdal305.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\gdal305.dll" Vital="yes"/>
+                        <File Id="gdal.dll" Name="gdal.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\gdal.dll" Vital="yes"/>
                     </Component>
                     <Component Id="Microsoft.VisualBasic.PowerPacks.Vs.dll" Guid="*">
                         <File Id="Microsoft.VisualBasic.PowerPacks.Vs.dll" Name="Microsoft.VisualBasic.PowerPacks.Vs.dll" Source="$(var.MapManager.TargetDir)Microsoft.VisualBasic.PowerPacks.Vs.dll" Vital="yes"/>
@@ -285,6 +285,9 @@
                     <Component Id="mapserver.dll" Guid="*">
                         <File Id="mapserver.dll" Name="mapserver.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\mapserver.dll" Vital="yes"/>
                     </Component>
+                    <Component Id="libpng16.dll" Guid="*">
+                        <File Id="libpng16.dll" Name="libpng16.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\libpng16.dll" Vital="yes"/>
+                    </Component>
                     <Component Id="libpq.dll" Guid="*">
                         <File Id="libpq.dll" Name="libpq.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\libpq.dll" Vital="yes"/>
                     </Component>
@@ -327,19 +330,22 @@
                     <Component Id="gdal_wrap.dll" Guid="*">
                         <File Id="gdal_wrap.dll" Name="gdal_wrap.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\gdal_wrap.dll" Vital="yes"/>
                     </Component>
+                    <Component Id="pcre.dll" Guid="*">
+                        <File Id="pcre.dll" Name="pcre.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\pcre.dll" Vital="yes"/>
+                    </Component>
                     <Component Id="proj_4_9.dll" Guid="*">
                         <File Id="proj_4_9.dll" Name="proj_4_9.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\proj_4_9.dll" Vital="yes"/>
                     </Component>
                     <Component Id="proj_7_2.dll" Guid="*">
                         <File Id="proj_7_2.dll" Name="proj_7_2.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\proj_7_2.dll" Vital="yes"/>
                     </Component>
-					<Component Id="proj_9_1.dll" Guid="*">
+                    <Component Id="proj_9_1.dll" Guid="*">
                         <File Id="proj_9_1.dll" Name="proj_9_1.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\proj_9_1.dll" Vital="yes"/>
                     </Component>
                     <Component Id="sqlite3.dll" Guid="*">
                         <File Id="sqlite3.dll" Name="sqlite3.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\sqlite3.dll" Vital="yes"/>
                     </Component>
-					<Component Id="freexl.dll" Guid="*">
+                    <Component Id="freexl.dll" Guid="*">
                         <File Id="freexl.dll" Name="freexl.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\freexl.dll" Vital="yes"/>
                     </Component>
                     <Component Id="spatialite.dll" Guid="*">
@@ -350,6 +356,9 @@
                     </Component>
                     <Component Id="zlib.dll" Guid="*">
                         <File Id="zlib.dll" Name="zlib.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\zlib.dll" Vital="yes"/>
+                    </Component>
+                    <Component Id="zstd.dll" Guid="*">
+                        <File Id="zstd.dll" Name="zstd.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\zstd.dll" Vital="yes"/>
                     </Component>
                     <Component Id="ogdi.dll" Guid="*">
                         <File Id="ogdi.dll" Name="ogdi.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\ogdi.dll" Vital="yes"/>
@@ -574,6 +583,7 @@
                 <ComponentRef Id="libexpat.dll" />
                 <ComponentRef Id="libfcgi.dll" />
                 <ComponentRef Id="mapserver.dll" />
+				<ComponentRef Id="libpng16.dll" />
                 <ComponentRef Id="libpq.dll" />
                 <ComponentRef Id="libmysql.dll" />
                 <ComponentRef Id="libxml2.dll" />
@@ -587,14 +597,16 @@
                 <ComponentRef Id="gdal_csharp.dll" />
                 <ComponentRef Id="gdal_wrap.dll" />
                 <ComponentRef Id="openjp2.dll" />
+                <ComponentRef Id="pcre.dll" />
                 <ComponentRef Id="proj_4_9.dll" />
                 <ComponentRef Id="proj_7_2.dll" />
-				<ComponentRef Id="proj_9_1.dll" />
+                <ComponentRef Id="proj_9_1.dll" />
                 <ComponentRef Id="fribidi_0.dll" />
                 <ComponentRef Id="sqlite3.dll" />
-			    <ComponentRef Id="freexl.dll" />
+                <ComponentRef Id="freexl.dll" />
                 <ComponentRef Id="spatialite.dll" />
                 <ComponentRef Id="xerces_c_3_2.dll" />
+                <ComponentRef Id="zstd.dll" />
                 <ComponentRef Id="zlib.dll" />
                 <ComponentRef Id="ogdi.dll" />
                 <ComponentRef Id="tiff.dll" />
@@ -652,10 +664,10 @@
                 </Feature>
             </Feature>
             <Feature Id="GDALPlugins" Level="1" Title="GDAL Plugins" Display="expand" Description="GDAL plugin library files">
-			    <Feature Id="PDF" Level="1" Title="PDF" Description="GDAL PDF plugin to support read access to the Geospatial PDF.">
-					<ComponentRef Id="gdal_PDF.dll" />
-				</Feature>
-                <Feature Id="NetCDF" Level="1" Title="NetCDF" Description="Network Common Data Form (NetCDF) rasters (for the custom licensing terms please review NetCDFLicense.rtf and SZIPLicense.rtf installed in the /license folder)">
+            <Feature Id="PDF" Level="1" Title="PDF" Description="GDAL PDF plugin to support read access to the Geospatial PDF.">
+               <ComponentRef Id="gdal_PDF.dll" />
+            </Feature>
+            <Feature Id="NetCDF" Level="1" Title="NetCDF" Description="Network Common Data Form (NetCDF) rasters (for the custom licensing terms please review NetCDFLicense.rtf and SZIPLicense.rtf installed in the /license folder)">
                   <ComponentRef Id="gdal_netCDF.dll" />
                   <ComponentRef Id="netcdf.dll" />
                   <ComponentRef Id="NetCDFLicense.rtf" />
