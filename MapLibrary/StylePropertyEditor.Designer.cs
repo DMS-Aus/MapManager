@@ -48,7 +48,6 @@ namespace DMS.MapLibrary
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxAngle = new System.Windows.Forms.TextBox();
@@ -81,7 +80,6 @@ namespace DMS.MapLibrary
             this.colorPickerColor = new DMS.MapLibrary.ColorPicker();
             this.styleBindingControllerWidth = new DMS.MapLibrary.StyleBindingController();
             this.styleBindingControllerSize = new DMS.MapLibrary.StyleBindingController();
-            this.colorPickerBackColor = new DMS.MapLibrary.ColorPicker();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarOpacity)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSample)).BeginInit();
             this.SuspendLayout();
@@ -89,9 +87,10 @@ namespace DMS.MapLibrary
             // checkBoxAntialias
             // 
             this.checkBoxAntialias.AutoSize = true;
-            this.checkBoxAntialias.Location = new System.Drawing.Point(327, 242);
+            this.checkBoxAntialias.Location = new System.Drawing.Point(436, 298);
+            this.checkBoxAntialias.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBoxAntialias.Name = "checkBoxAntialias";
-            this.checkBoxAntialias.Size = new System.Drawing.Size(65, 17);
+            this.checkBoxAntialias.Size = new System.Drawing.Size(80, 20);
             this.checkBoxAntialias.TabIndex = 29;
             this.checkBoxAntialias.Text = "Antialias";
             this.checkBoxAntialias.UseVisualStyleBackColor = true;
@@ -100,28 +99,31 @@ namespace DMS.MapLibrary
             // labelOpacityPercent
             // 
             this.labelOpacityPercent.AutoSize = true;
-            this.labelOpacityPercent.Location = new System.Drawing.Point(274, 243);
+            this.labelOpacityPercent.Location = new System.Drawing.Point(365, 299);
+            this.labelOpacityPercent.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelOpacityPercent.Name = "labelOpacityPercent";
-            this.labelOpacityPercent.Size = new System.Drawing.Size(33, 13);
+            this.labelOpacityPercent.Size = new System.Drawing.Size(40, 16);
             this.labelOpacityPercent.TabIndex = 28;
             this.labelOpacityPercent.Text = "100%";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(51, 243);
+            this.label13.Location = new System.Drawing.Point(68, 299);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(46, 13);
+            this.label13.Size = new System.Drawing.Size(56, 16);
             this.label13.TabIndex = 24;
             this.label13.Text = "Opacity:";
             // 
             // trackBarOpacity
             // 
             this.trackBarOpacity.AutoSize = false;
-            this.trackBarOpacity.Location = new System.Drawing.Point(90, 240);
+            this.trackBarOpacity.Location = new System.Drawing.Point(120, 295);
+            this.trackBarOpacity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.trackBarOpacity.Maximum = 100;
             this.trackBarOpacity.Name = "trackBarOpacity";
-            this.trackBarOpacity.Size = new System.Drawing.Size(182, 27);
+            this.trackBarOpacity.Size = new System.Drawing.Size(243, 33);
             this.trackBarOpacity.TabIndex = 25;
             this.trackBarOpacity.TickFrequency = 10;
             this.trackBarOpacity.Value = 100;
@@ -131,9 +133,10 @@ namespace DMS.MapLibrary
             // 
             // textBoxOffsetY
             // 
-            this.textBoxOffsetY.Location = new System.Drawing.Point(524, 141);
+            this.textBoxOffsetY.Location = new System.Drawing.Point(699, 174);
+            this.textBoxOffsetY.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxOffsetY.Name = "textBoxOffsetY";
-            this.textBoxOffsetY.Size = new System.Drawing.Size(33, 20);
+            this.textBoxOffsetY.Size = new System.Drawing.Size(43, 22);
             this.textBoxOffsetY.TabIndex = 23;
             this.textBoxOffsetY.TextChanged += new System.EventHandler(this.ValueChanging);
             this.textBoxOffsetY.Validating += new System.ComponentModel.CancelEventHandler(this.ValidateInteger);
@@ -141,9 +144,10 @@ namespace DMS.MapLibrary
             // 
             // textBoxOffsetX
             // 
-            this.textBoxOffsetX.Location = new System.Drawing.Point(524, 118);
+            this.textBoxOffsetX.Location = new System.Drawing.Point(699, 145);
+            this.textBoxOffsetX.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxOffsetX.Name = "textBoxOffsetX";
-            this.textBoxOffsetX.Size = new System.Drawing.Size(33, 20);
+            this.textBoxOffsetX.Size = new System.Drawing.Size(43, 22);
             this.textBoxOffsetX.TabIndex = 21;
             this.textBoxOffsetX.TextChanged += new System.EventHandler(this.ValueChanging);
             this.textBoxOffsetX.Validating += new System.ComponentModel.CancelEventHandler(this.ValidateInteger);
@@ -152,26 +156,29 @@ namespace DMS.MapLibrary
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(479, 146);
+            this.label12.Location = new System.Drawing.Point(639, 180);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(48, 13);
+            this.label12.Size = new System.Drawing.Size(56, 16);
             this.label12.TabIndex = 22;
             this.label12.Text = "Y Offset:";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(478, 121);
+            this.label11.Location = new System.Drawing.Point(637, 149);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(48, 13);
+            this.label11.Size = new System.Drawing.Size(55, 16);
             this.label11.TabIndex = 20;
             this.label11.Text = "X Offset:";
             // 
             // textBoxMaxWidth
             // 
-            this.textBoxMaxWidth.Location = new System.Drawing.Point(225, 74);
+            this.textBoxMaxWidth.Location = new System.Drawing.Point(300, 124);
+            this.textBoxMaxWidth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxMaxWidth.Name = "textBoxMaxWidth";
-            this.textBoxMaxWidth.Size = new System.Drawing.Size(35, 20);
+            this.textBoxMaxWidth.Size = new System.Drawing.Size(45, 22);
             this.textBoxMaxWidth.TabIndex = 11;
             this.textBoxMaxWidth.TextChanged += new System.EventHandler(this.ValueChanging);
             this.textBoxMaxWidth.Validating += new System.ComponentModel.CancelEventHandler(this.ValidateDouble);
@@ -179,9 +186,10 @@ namespace DMS.MapLibrary
             // 
             // textBoxMinWidth
             // 
-            this.textBoxMinWidth.Location = new System.Drawing.Point(98, 74);
+            this.textBoxMinWidth.Location = new System.Drawing.Point(131, 124);
+            this.textBoxMinWidth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxMinWidth.Name = "textBoxMinWidth";
-            this.textBoxMinWidth.Size = new System.Drawing.Size(35, 20);
+            this.textBoxMinWidth.Size = new System.Drawing.Size(45, 22);
             this.textBoxMinWidth.TabIndex = 9;
             this.textBoxMinWidth.TextChanged += new System.EventHandler(this.ValueChanging);
             this.textBoxMinWidth.Validating += new System.ComponentModel.CancelEventHandler(this.ValidateDouble);
@@ -189,9 +197,10 @@ namespace DMS.MapLibrary
             // 
             // textBoxWidth
             // 
-            this.textBoxWidth.Location = new System.Drawing.Point(98, 51);
+            this.textBoxWidth.Location = new System.Drawing.Point(131, 96);
+            this.textBoxWidth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxWidth.Name = "textBoxWidth";
-            this.textBoxWidth.Size = new System.Drawing.Size(162, 20);
+            this.textBoxWidth.Size = new System.Drawing.Size(215, 22);
             this.textBoxWidth.TabIndex = 7;
             this.textBoxWidth.TextChanged += new System.EventHandler(this.ValueChanging);
             this.textBoxWidth.Validating += new System.ComponentModel.CancelEventHandler(this.ValidateDouble);
@@ -199,9 +208,10 @@ namespace DMS.MapLibrary
             // 
             // textBoxMaxSize
             // 
-            this.textBoxMaxSize.Location = new System.Drawing.Point(225, 97);
+            this.textBoxMaxSize.Location = new System.Drawing.Point(300, 152);
+            this.textBoxMaxSize.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxMaxSize.Name = "textBoxMaxSize";
-            this.textBoxMaxSize.Size = new System.Drawing.Size(35, 20);
+            this.textBoxMaxSize.Size = new System.Drawing.Size(45, 22);
             this.textBoxMaxSize.TabIndex = 5;
             this.textBoxMaxSize.TextChanged += new System.EventHandler(this.ValueChanging);
             this.textBoxMaxSize.Validating += new System.ComponentModel.CancelEventHandler(this.ValidateDouble);
@@ -209,9 +219,10 @@ namespace DMS.MapLibrary
             // 
             // textBoxMinSize
             // 
-            this.textBoxMinSize.Location = new System.Drawing.Point(97, 97);
+            this.textBoxMinSize.Location = new System.Drawing.Point(131, 152);
+            this.textBoxMinSize.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxMinSize.Name = "textBoxMinSize";
-            this.textBoxMinSize.Size = new System.Drawing.Size(36, 20);
+            this.textBoxMinSize.Size = new System.Drawing.Size(45, 22);
             this.textBoxMinSize.TabIndex = 3;
             this.textBoxMinSize.TextChanged += new System.EventHandler(this.ValueChanging);
             this.textBoxMinSize.Validating += new System.ComponentModel.CancelEventHandler(this.ValidateDouble);
@@ -219,9 +230,10 @@ namespace DMS.MapLibrary
             // 
             // textBoxSize
             // 
-            this.textBoxSize.Location = new System.Drawing.Point(98, 5);
+            this.textBoxSize.Location = new System.Drawing.Point(131, 39);
+            this.textBoxSize.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxSize.Name = "textBoxSize";
-            this.textBoxSize.Size = new System.Drawing.Size(162, 20);
+            this.textBoxSize.Size = new System.Drawing.Size(215, 22);
             this.textBoxSize.TabIndex = 1;
             this.textBoxSize.TextChanged += new System.EventHandler(this.ValueChanging);
             this.textBoxSize.Validating += new System.ComponentModel.CancelEventHandler(this.ValidateDouble);
@@ -230,71 +242,69 @@ namespace DMS.MapLibrary
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(162, 77);
+            this.label5.Location = new System.Drawing.Point(216, 128);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 13);
+            this.label5.Size = new System.Drawing.Size(75, 16);
             this.label5.TabIndex = 10;
             this.label5.Text = "Max. Width:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(37, 77);
+            this.label6.Location = new System.Drawing.Point(49, 128);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(61, 13);
+            this.label6.Size = new System.Drawing.Size(71, 16);
             this.label6.TabIndex = 8;
             this.label6.Text = "Min. Width:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(139, 100);
+            this.label4.Location = new System.Drawing.Point(185, 156);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(86, 13);
+            this.label4.Size = new System.Drawing.Size(105, 16);
             this.label4.TabIndex = 4;
             this.label4.Text = "Max. Scale Size:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(14, 100);
+            this.label3.Location = new System.Drawing.Point(19, 156);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 13);
+            this.label3.Size = new System.Drawing.Size(101, 16);
             this.label3.TabIndex = 2;
             this.label3.Text = "Min. Scale Size:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(-2, 149);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(101, 13);
-            this.label9.TabIndex = 16;
-            this.label9.Text = "Background Colour:";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(481, 8);
+            this.label14.Location = new System.Drawing.Point(641, 10);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(48, 13);
+            this.label14.Size = new System.Drawing.Size(58, 16);
             this.label14.TabIndex = 0;
             this.label14.Text = "Preview:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(274, 8);
+            this.label1.Location = new System.Drawing.Point(365, 10);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 13);
+            this.label1.Size = new System.Drawing.Size(65, 16);
             this.label1.TabIndex = 26;
             this.label1.Text = "Category:";
             // 
             // textBoxAngle
             // 
-            this.textBoxAngle.Location = new System.Drawing.Point(97, 28);
+            this.textBoxAngle.Location = new System.Drawing.Point(131, 67);
+            this.textBoxAngle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxAngle.Name = "textBoxAngle";
-            this.textBoxAngle.Size = new System.Drawing.Size(163, 20);
+            this.textBoxAngle.Size = new System.Drawing.Size(214, 22);
             this.textBoxAngle.TabIndex = 13;
             this.textBoxAngle.TextChanged += new System.EventHandler(this.ValueChanging);
             this.textBoxAngle.Validating += new System.ComponentModel.CancelEventHandler(this.ValidateDouble);
@@ -303,9 +313,10 @@ namespace DMS.MapLibrary
             // checkBoxAutoAngle
             // 
             this.checkBoxAutoAngle.AutoSize = true;
-            this.checkBoxAutoAngle.Location = new System.Drawing.Point(404, 242);
+            this.checkBoxAutoAngle.Location = new System.Drawing.Point(539, 298);
+            this.checkBoxAutoAngle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBoxAutoAngle.Name = "checkBoxAutoAngle";
-            this.checkBoxAutoAngle.Size = new System.Drawing.Size(78, 17);
+            this.checkBoxAutoAngle.Size = new System.Drawing.Size(94, 20);
             this.checkBoxAutoAngle.TabIndex = 30;
             this.checkBoxAutoAngle.Text = "Auto Angle";
             this.checkBoxAutoAngle.UseVisualStyleBackColor = true;
@@ -314,17 +325,19 @@ namespace DMS.MapLibrary
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 199);
+            this.label2.Location = new System.Drawing.Point(4, 245);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(94, 13);
+            this.label2.Size = new System.Drawing.Size(117, 16);
             this.label2.TabIndex = 32;
             this.label2.Text = "Geom. Transform.:";
             // 
             // textBoxGap
             // 
-            this.textBoxGap.Location = new System.Drawing.Point(524, 165);
+            this.textBoxGap.Location = new System.Drawing.Point(699, 203);
+            this.textBoxGap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxGap.Name = "textBoxGap";
-            this.textBoxGap.Size = new System.Drawing.Size(33, 20);
+            this.textBoxGap.Size = new System.Drawing.Size(43, 22);
             this.textBoxGap.TabIndex = 35;
             this.textBoxGap.TextChanged += new System.EventHandler(this.ValueChanging);
             this.textBoxGap.Validating += new System.ComponentModel.CancelEventHandler(this.ValidateDouble);
@@ -333,9 +346,10 @@ namespace DMS.MapLibrary
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(496, 169);
+            this.label7.Location = new System.Drawing.Point(661, 208);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(30, 13);
+            this.label7.Size = new System.Drawing.Size(36, 16);
             this.label7.TabIndex = 34;
             this.label7.Text = "Gap:";
             // 
@@ -349,12 +363,13 @@ namespace DMS.MapLibrary
             this.listView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
             this.listView.HideSelection = false;
             this.listView.LargeImageList = this.imageList;
-            this.listView.Location = new System.Drawing.Point(277, 28);
+            this.listView.Location = new System.Drawing.Point(369, 34);
+            this.listView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listView.MultiSelect = false;
             this.listView.Name = "listView";
             this.listView.ShowGroups = false;
             this.listView.ShowItemToolTips = true;
-            this.listView.Size = new System.Drawing.Size(199, 163);
+            this.listView.Size = new System.Drawing.Size(264, 200);
             this.listView.TabIndex = 36;
             this.listView.TileSize = new System.Drawing.Size(36, 36);
             this.listView.UseCompatibleStateImageBehavior = false;
@@ -369,18 +384,20 @@ namespace DMS.MapLibrary
             // comboBoxCategory
             // 
             this.comboBoxCategory.FormattingEnabled = true;
-            this.comboBoxCategory.Location = new System.Drawing.Point(327, 3);
+            this.comboBoxCategory.Location = new System.Drawing.Point(436, 4);
+            this.comboBoxCategory.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxCategory.Name = "comboBoxCategory";
-            this.comboBoxCategory.Size = new System.Drawing.Size(149, 21);
+            this.comboBoxCategory.Size = new System.Drawing.Size(197, 24);
             this.comboBoxCategory.TabIndex = 38;
             this.comboBoxCategory.SelectedIndexChanged += new System.EventHandler(this.comboBoxCategory_SelectedIndexChanged);
             // 
             // textBoxPattern
             // 
             this.textBoxPattern.AcceptsTab = true;
-            this.textBoxPattern.Location = new System.Drawing.Point(98, 218);
+            this.textBoxPattern.Location = new System.Drawing.Point(131, 268);
+            this.textBoxPattern.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxPattern.Name = "textBoxPattern";
-            this.textBoxPattern.Size = new System.Drawing.Size(162, 20);
+            this.textBoxPattern.Size = new System.Drawing.Size(215, 22);
             this.textBoxPattern.TabIndex = 40;
             this.textBoxPattern.TextChanged += new System.EventHandler(this.ValueChanging);
             this.textBoxPattern.Validating += new System.ComponentModel.CancelEventHandler(this.textBoxPattern_Validating);
@@ -389,9 +406,10 @@ namespace DMS.MapLibrary
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(30, 221);
+            this.label8.Location = new System.Drawing.Point(40, 272);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(67, 13);
+            this.label8.Size = new System.Drawing.Size(80, 16);
             this.label8.TabIndex = 39;
             this.label8.Text = "Line Pattern:";
             // 
@@ -431,18 +449,20 @@ namespace DMS.MapLibrary
             // 
             // textBoxMaxZoom
             // 
-            this.textBoxMaxZoom.Location = new System.Drawing.Point(360, 219);
+            this.textBoxMaxZoom.Location = new System.Drawing.Point(480, 270);
+            this.textBoxMaxZoom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxMaxZoom.Name = "textBoxMaxZoom";
-            this.textBoxMaxZoom.Size = new System.Drawing.Size(116, 20);
+            this.textBoxMaxZoom.Size = new System.Drawing.Size(153, 22);
             this.textBoxMaxZoom.TabIndex = 44;
             this.textBoxMaxZoom.TextChanged += new System.EventHandler(this.ValueChanging);
             this.textBoxMaxZoom.Validating += new System.ComponentModel.CancelEventHandler(this.ValidateDouble2);
             // 
             // textBoxMinZoom
             // 
-            this.textBoxMinZoom.Location = new System.Drawing.Point(360, 195);
+            this.textBoxMinZoom.Location = new System.Drawing.Point(480, 240);
+            this.textBoxMinZoom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxMinZoom.Name = "textBoxMinZoom";
-            this.textBoxMinZoom.Size = new System.Drawing.Size(115, 20);
+            this.textBoxMinZoom.Size = new System.Drawing.Size(152, 22);
             this.textBoxMinZoom.TabIndex = 42;
             this.textBoxMinZoom.TextChanged += new System.EventHandler(this.ValueChanging);
             this.textBoxMinZoom.Validating += new System.ComponentModel.CancelEventHandler(this.ValidateDouble2);
@@ -460,18 +480,20 @@ namespace DMS.MapLibrary
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(278, 198);
+            this.label10.Location = new System.Drawing.Point(371, 244);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(81, 13);
+            this.label10.Size = new System.Drawing.Size(101, 16);
             this.label10.TabIndex = 45;
             this.label10.Text = "Closest scale 1:";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(275, 222);
+            this.label15.Location = new System.Drawing.Point(367, 273);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(85, 13);
+            this.label15.Size = new System.Drawing.Size(104, 16);
             this.label15.TabIndex = 46;
             this.label15.Text = "Farthest scale 1:";
             // 
@@ -479,18 +501,20 @@ namespace DMS.MapLibrary
             // 
             this.pictureBoxSample.BackColor = System.Drawing.Color.White;
             this.pictureBoxSample.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBoxSample.Location = new System.Drawing.Point(481, 28);
+            this.pictureBoxSample.Location = new System.Drawing.Point(641, 34);
+            this.pictureBoxSample.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBoxSample.Name = "pictureBoxSample";
-            this.pictureBoxSample.Size = new System.Drawing.Size(76, 66);
+            this.pictureBoxSample.Size = new System.Drawing.Size(101, 81);
             this.pictureBoxSample.TabIndex = 47;
             this.pictureBoxSample.TabStop = false;
             // 
             // buttonMaxScale
             // 
             this.buttonMaxScale.Image = global::MapLibrary.Properties.Resources.Map;
-            this.buttonMaxScale.Location = new System.Drawing.Point(481, 217);
+            this.buttonMaxScale.Location = new System.Drawing.Point(641, 267);
+            this.buttonMaxScale.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonMaxScale.Name = "buttonMaxScale";
-            this.buttonMaxScale.Size = new System.Drawing.Size(24, 24);
+            this.buttonMaxScale.Size = new System.Drawing.Size(32, 30);
             this.buttonMaxScale.TabIndex = 49;
             this.buttonMaxScale.UseVisualStyleBackColor = true;
             this.buttonMaxScale.Click += new System.EventHandler(this.buttonMaxScale_Click);
@@ -498,9 +522,10 @@ namespace DMS.MapLibrary
             // buttonMinScale
             // 
             this.buttonMinScale.Image = global::MapLibrary.Properties.Resources.Map;
-            this.buttonMinScale.Location = new System.Drawing.Point(481, 192);
+            this.buttonMinScale.Location = new System.Drawing.Point(641, 236);
+            this.buttonMinScale.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonMinScale.Name = "buttonMinScale";
-            this.buttonMinScale.Size = new System.Drawing.Size(24, 24);
+            this.buttonMinScale.Size = new System.Drawing.Size(32, 30);
             this.buttonMinScale.TabIndex = 48;
             this.buttonMinScale.UseVisualStyleBackColor = true;
             this.buttonMinScale.Click += new System.EventHandler(this.buttonMinScale_Click);
@@ -508,9 +533,10 @@ namespace DMS.MapLibrary
             // comboBoxGeomTransform
             // 
             this.comboBoxGeomTransform.FormattingEnabled = true;
-            this.comboBoxGeomTransform.Location = new System.Drawing.Point(98, 194);
+            this.comboBoxGeomTransform.Location = new System.Drawing.Point(131, 239);
+            this.comboBoxGeomTransform.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxGeomTransform.Name = "comboBoxGeomTransform";
-            this.comboBoxGeomTransform.Size = new System.Drawing.Size(162, 21);
+            this.comboBoxGeomTransform.Size = new System.Drawing.Size(215, 24);
             this.comboBoxGeomTransform.TabIndex = 50;
             this.comboBoxGeomTransform.TextChanged += new System.EventHandler(this.ValueChangingWithPreview);
             // 
@@ -520,9 +546,10 @@ namespace DMS.MapLibrary
             this.styleBindingControllerAngle.AutoSize = true;
             this.styleBindingControllerAngle.BindingState = false;
             this.styleBindingControllerAngle.LinkColor = System.Drawing.Color.Blue;
-            this.styleBindingControllerAngle.Location = new System.Drawing.Point(60, 31);
+            this.styleBindingControllerAngle.Location = new System.Drawing.Point(80, 71);
+            this.styleBindingControllerAngle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.styleBindingControllerAngle.Name = "styleBindingControllerAngle";
-            this.styleBindingControllerAngle.Size = new System.Drawing.Size(37, 13);
+            this.styleBindingControllerAngle.Size = new System.Drawing.Size(45, 16);
             this.styleBindingControllerAngle.StyleBinding = OSGeo.MapServer.MS_STYLE_BINDING_ENUM.MS_STYLE_BINDING_ANGLE;
             this.styleBindingControllerAngle.TabIndex = 12;
             this.styleBindingControllerAngle.TabStop = true;
@@ -534,9 +561,10 @@ namespace DMS.MapLibrary
             // 
             this.styleBindingControllerOutlineColor.AutoSize = true;
             this.styleBindingControllerOutlineColor.BindingState = false;
-            this.styleBindingControllerOutlineColor.Location = new System.Drawing.Point(22, 173);
+            this.styleBindingControllerOutlineColor.Location = new System.Drawing.Point(29, 213);
+            this.styleBindingControllerOutlineColor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.styleBindingControllerOutlineColor.Name = "styleBindingControllerOutlineColor";
-            this.styleBindingControllerOutlineColor.Size = new System.Drawing.Size(76, 13);
+            this.styleBindingControllerOutlineColor.Size = new System.Drawing.Size(93, 16);
             this.styleBindingControllerOutlineColor.StyleBinding = OSGeo.MapServer.MS_STYLE_BINDING_ENUM.MS_STYLE_BINDING_OUTLINECOLOR;
             this.styleBindingControllerOutlineColor.TabIndex = 18;
             this.styleBindingControllerOutlineColor.TabStop = true;
@@ -549,10 +577,11 @@ namespace DMS.MapLibrary
             this.colorPickerOutlineColor.BackColor = System.Drawing.SystemColors.Window;
             this.colorPickerOutlineColor.Context = null;
             this.colorPickerOutlineColor.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.colorPickerOutlineColor.Location = new System.Drawing.Point(98, 171);
+            this.colorPickerOutlineColor.Location = new System.Drawing.Point(131, 211);
+            this.colorPickerOutlineColor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.colorPickerOutlineColor.Name = "colorPickerOutlineColor";
             this.colorPickerOutlineColor.ReadOnly = false;
-            this.colorPickerOutlineColor.Size = new System.Drawing.Size(162, 20);
+            this.colorPickerOutlineColor.Size = new System.Drawing.Size(216, 22);
             this.colorPickerOutlineColor.TabIndex = 19;
             this.colorPickerOutlineColor.Text = "White";
             this.colorPickerOutlineColor.Value = System.Drawing.Color.White;
@@ -562,9 +591,10 @@ namespace DMS.MapLibrary
             // 
             this.styleBindingControllerColor.AutoSize = true;
             this.styleBindingControllerColor.BindingState = false;
-            this.styleBindingControllerColor.Location = new System.Drawing.Point(57, 124);
+            this.styleBindingControllerColor.Location = new System.Drawing.Point(76, 186);
+            this.styleBindingControllerColor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.styleBindingControllerColor.Name = "styleBindingControllerColor";
-            this.styleBindingControllerColor.Size = new System.Drawing.Size(40, 13);
+            this.styleBindingControllerColor.Size = new System.Drawing.Size(49, 16);
             this.styleBindingControllerColor.StyleBinding = OSGeo.MapServer.MS_STYLE_BINDING_ENUM.MS_STYLE_BINDING_COLOR;
             this.styleBindingControllerColor.TabIndex = 14;
             this.styleBindingControllerColor.TabStop = true;
@@ -577,10 +607,11 @@ namespace DMS.MapLibrary
             this.colorPickerColor.BackColor = System.Drawing.SystemColors.Window;
             this.colorPickerColor.Context = null;
             this.colorPickerColor.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.colorPickerColor.Location = new System.Drawing.Point(98, 121);
+            this.colorPickerColor.Location = new System.Drawing.Point(131, 182);
+            this.colorPickerColor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.colorPickerColor.Name = "colorPickerColor";
             this.colorPickerColor.ReadOnly = false;
-            this.colorPickerColor.Size = new System.Drawing.Size(162, 20);
+            this.colorPickerColor.Size = new System.Drawing.Size(216, 22);
             this.colorPickerColor.TabIndex = 15;
             this.colorPickerColor.Text = "White";
             this.colorPickerColor.Value = System.Drawing.Color.White;
@@ -591,9 +622,10 @@ namespace DMS.MapLibrary
             this.styleBindingControllerWidth.ActiveLinkColor = System.Drawing.Color.RosyBrown;
             this.styleBindingControllerWidth.AutoSize = true;
             this.styleBindingControllerWidth.BindingState = false;
-            this.styleBindingControllerWidth.Location = new System.Drawing.Point(37, 54);
+            this.styleBindingControllerWidth.Location = new System.Drawing.Point(49, 99);
+            this.styleBindingControllerWidth.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.styleBindingControllerWidth.Name = "styleBindingControllerWidth";
-            this.styleBindingControllerWidth.Size = new System.Drawing.Size(61, 13);
+            this.styleBindingControllerWidth.Size = new System.Drawing.Size(72, 16);
             this.styleBindingControllerWidth.StyleBinding = OSGeo.MapServer.MS_STYLE_BINDING_ENUM.MS_STYLE_BINDING_WIDTH;
             this.styleBindingControllerWidth.TabIndex = 6;
             this.styleBindingControllerWidth.TabStop = true;
@@ -606,9 +638,10 @@ namespace DMS.MapLibrary
             this.styleBindingControllerSize.ActiveLinkColor = System.Drawing.Color.RosyBrown;
             this.styleBindingControllerSize.AutoSize = true;
             this.styleBindingControllerSize.BindingState = false;
-            this.styleBindingControllerSize.Location = new System.Drawing.Point(30, 8);
+            this.styleBindingControllerSize.Location = new System.Drawing.Point(40, 43);
+            this.styleBindingControllerSize.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.styleBindingControllerSize.Name = "styleBindingControllerSize";
-            this.styleBindingControllerSize.Size = new System.Drawing.Size(67, 13);
+            this.styleBindingControllerSize.Size = new System.Drawing.Size(85, 16);
             this.styleBindingControllerSize.StyleBinding = OSGeo.MapServer.MS_STYLE_BINDING_ENUM.MS_STYLE_BINDING_SIZE;
             this.styleBindingControllerSize.TabIndex = 0;
             this.styleBindingControllerSize.TabStop = true;
@@ -616,23 +649,9 @@ namespace DMS.MapLibrary
             this.styleBindingControllerSize.Text = "Symbol Size:";
             this.styleBindingControllerSize.ValueChanged += new System.EventHandler(this.ValueChanging);
             // 
-            // colorPickerBackColor
-            // 
-            this.colorPickerBackColor.BackColor = System.Drawing.SystemColors.Window;
-            this.colorPickerBackColor.Context = null;
-            this.colorPickerBackColor.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.colorPickerBackColor.Location = new System.Drawing.Point(98, 146);
-            this.colorPickerBackColor.Name = "colorPickerBackColor";
-            this.colorPickerBackColor.ReadOnly = false;
-            this.colorPickerBackColor.Size = new System.Drawing.Size(162, 20);
-            this.colorPickerBackColor.TabIndex = 17;
-            this.colorPickerBackColor.Text = "White";
-            this.colorPickerBackColor.Value = System.Drawing.Color.White;
-            this.colorPickerBackColor.ValueChanged += new System.EventHandler(this.ValueChangingWithPreview);
-            // 
             // StylePropertyEditor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.comboBoxGeomTransform);
             this.Controls.Add(this.buttonMaxScale);
@@ -663,12 +682,10 @@ namespace DMS.MapLibrary
             this.Controls.Add(this.colorPickerOutlineColor);
             this.Controls.Add(this.trackBarOpacity);
             this.Controls.Add(this.textBoxOffsetY);
-            this.Controls.Add(this.colorPickerBackColor);
             this.Controls.Add(this.textBoxOffsetX);
             this.Controls.Add(this.colorPickerColor);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.textBoxMaxWidth);
             this.Controls.Add(this.textBoxMinWidth);
             this.Controls.Add(this.textBoxWidth);
@@ -680,8 +697,9 @@ namespace DMS.MapLibrary
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "StylePropertyEditor";
-            this.Size = new System.Drawing.Size(560, 270);
+            this.Size = new System.Drawing.Size(747, 332);
             ((System.ComponentModel.ISupportInitialize)(this.trackBarOpacity)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSample)).EndInit();
             this.ResumeLayout(false);
@@ -711,9 +729,7 @@ namespace DMS.MapLibrary
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private ColorPicker colorPickerOutlineColor;
-        private ColorPicker colorPickerBackColor;
         private ColorPicker colorPickerColor;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label14;
         private StyleBindingController styleBindingControllerSize;
         private StyleBindingController styleBindingControllerWidth;

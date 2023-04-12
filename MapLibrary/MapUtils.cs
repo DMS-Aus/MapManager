@@ -21,10 +21,10 @@ namespace DMS.MapLibrary
     /// </summary>
     public static class MapUtils
     {
-        [DllImport("mapserver.dll", EntryPoint = "msSetPROJ_LIB", CallingConvention = CallingConvention.Cdecl)]
-        private static extern void msSetPROJ_LIB(string proj_lib, string pszRelToPath);
+        [DllImport("mapserver.dll", EntryPoint = "msSetPROJ_DATA", CallingConvention = CallingConvention.Cdecl)]
+        private static extern void msSetPROJ_DATA(string proj_data, string pszRelToPath);
 
-        private static string projLib = null;
+        private static string projData = null;
 
         static Random rand;
 
@@ -233,16 +233,16 @@ namespace DMS.MapLibrary
         /// <summary>
         /// Setting up the location of the proj4 epsg file
         /// </summary>
-        /// <param name="proj_lib">The location of the proj4 files</param>
-        public static void SetPROJ_LIB(string proj_lib)
+        /// <param name="proj_data">The location of the proj4 files</param>
+        public static void SetPROJ_DATA(string proj_data)
         {
             // preloading the required dll-s
             string version = mapscript.msGetVersion();
             if (version.Contains("SUPPORTS=PROJ"))
             {
-                msSetPROJ_LIB(proj_lib, null);
+                msSetPROJ_DATA(proj_data, null);
             }
-            projLib = proj_lib;
+            projData = proj_data;
         }
 
         //[DllImport("kernel32.dll", CharSet = CharSet.Auto)]
@@ -312,15 +312,18 @@ namespace DMS.MapLibrary
         /// Getting the location of the proj4 files.
         /// </summary>
         /// <returns>The location of the proj4 files.</returns>
-        public static string GetPROJ_LIB()
+        public static string GetPROJ_DATA()
         {
-            if (projLib == null)
-                projLib = Environment.GetEnvironmentVariable("PROJ_LIB");
-                
-            if (projLib == null)
+            if (projData == null)
+                projData = Environment.GetEnvironmentVariable("PROJ_LIB");
+
+            if (projData == null)
+                projData = Environment.GetEnvironmentVariable("PROJ_DATA");
+
+            if (projData == null)
                 return "";
             
-            return projLib;
+            return projData;
         }
         
         /// <summary>
@@ -506,7 +509,7 @@ namespace DMS.MapLibrary
             string projName = "";
             proj4 = "";
             epsg = 0;
-            using (Stream s = File.OpenRead(MapUtils.GetPROJ_LIB() + "\\epsg"))
+            using (Stream s = File.OpenRead(MapUtils.GetPROJ_DATA() + "\\epsg"))
             {
                 using (StreamReader reader = new StreamReader(s))
                 {
@@ -616,14 +619,14 @@ namespace DMS.MapLibrary
         /// <returns></returns>
         public static bool HasMetadata(layerObj layer, string key_to_find)
         {
-            string key = layer.getFirstMetaDataKey();
+            string key = layer.metadata.nextKey(null);
             while (key != null)
             {
                 if (key == key_to_find)
                 {
                     return true;
                 }
-                key = layer.getNextMetaDataKey(key);
+                key = layer.metadata.nextKey(key);
             }
             return false;
         }
@@ -636,14 +639,14 @@ namespace DMS.MapLibrary
         /// <returns></returns>
         public static string FindMetadata(layerObj layer, string key_to_find)
         {
-            string key = layer.getFirstMetaDataKey();
+            string key = layer.metadata.nextKey(null);
             while (key != null)
             {
                 if (key.StartsWith(key_to_find))
                 {
                     return key;
                 }
-                key = layer.getNextMetaDataKey(key);
+                key = layer.metadata.nextKey(key);
             }
             return null;
         }
@@ -657,17 +660,17 @@ namespace DMS.MapLibrary
         /// <param name="value">The separator to be used when appending</param>
         public static void AppendMetadata(layerObj layer, string key_to_find, string value, string separator)
         {
-            string key = layer.getFirstMetaDataKey();
+            string key = layer.metadata.nextKey(null);
             while (key != null)
             {
                 if (key == key_to_find)
                 {
-                    layer.setMetaData(key_to_find, layer.getMetaData(key_to_find) + separator + value);
+                    layer.metadata.set(key_to_find, layer.metadata.get(key_to_find, "") + separator + value);
                     return;
                 }
-                key = layer.getNextMetaDataKey(key);
+                key = layer.metadata.nextKey(key);
             }
-            layer.setMetaData(key_to_find, value);
+            layer.metadata.set(key_to_find, value);
         }
 
         /// <summary>

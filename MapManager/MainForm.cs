@@ -87,7 +87,7 @@ namespace DMS.MapManager
         {
             InitializeComponent();
 
-            MapUtils.SetPROJ_LIB(Environment.CurrentDirectory + "\\ProjLib");
+            MapUtils.SetPROJ_DATA(Environment.CurrentDirectory + "\\ProjLib");
             Osr.SetPROJSearchPath(Environment.CurrentDirectory + "\\ProjLib");
 
             Gdal.SetConfigOption("GDAL_DATA", Environment.CurrentDirectory);
@@ -532,7 +532,7 @@ namespace DMS.MapManager
                     
                     if (form.ShowDialog(this) == DialogResult.Yes)
                     {
-                        map = mapscript.msLoadMapFromString(c.GetMapFile(), Path.GetDirectoryName(file));
+                        map = mapscript.msLoadMapFromString(c.GetMapFile(), Path.GetDirectoryName(file), null);
                         mapH = new MapObjectHolder(map, null);
                     }
                     else
@@ -788,7 +788,7 @@ namespace DMS.MapManager
         {
             string currentVersion = Assembly.GetExecutingAssembly().GetName().Version.ToString();
             // update the version information.
-            map.setMetaData("mapmanager_version", currentVersion);
+            map.web.metadata.set("mapmanager_version", currentVersion);
         }
 
         /// <summary>
@@ -1607,7 +1607,7 @@ namespace DMS.MapManager
                 // need to reload the in memory mapfile with the new symbolset
                 mapObj map = mapControl.Target;
                 string txt = ((mapObj)mapControl.Target).convertToString();
-                map = mapscript.msLoadMapFromString(txt, map.mappath);
+                map = mapscript.msLoadMapFromString(txt, map.mappath, null);
             }
         }
 
@@ -1803,7 +1803,7 @@ namespace DMS.MapManager
         /// </summary>
         private void ApplyTextContents()
         {
-            mapObj map = mapscript.msLoadMapFromString(scintillaControl.Text, fileName != null? Path.GetDirectoryName(fileName) : null);
+            mapObj map = mapscript.msLoadMapFromString(scintillaControl.Text, fileName != null? Path.GetDirectoryName(fileName) : null, null);
             MapObjectHolder mapH = new MapObjectHolder(map, null);
 
             if (MapUtils.RenameDuplicatedNames(map))

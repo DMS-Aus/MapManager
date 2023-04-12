@@ -6,7 +6,7 @@
   <?define ProgramFiles = "ProgramFilesFolder" ?>
   <?endif?>
   
-  <Product Id="CEB08A5C-9292-4B51-896E-71EE75531C9A" Name="MapServer MapManager v1.2 ($(var.Platform))" Language="1033" Version="1.2.0.1" Manufacturer="Digital Mapping Solutions" UpgradeCode="B17B8E38-2C70-4032-8F95-4BA75FDFFB5E">
+  <Product Id="CEB08A5C-9292-4B51-896E-71EE75531C9A" Name="MapServer MapManager v1.3 ($(var.Platform))" Language="1033" Version="1.3.0.0" Manufacturer="Digital Mapping Solutions" UpgradeCode="B17B8E38-2C70-4032-8F95-4BA75FDFFB5E">
 		<Package InstallerVersion="300" Compressed="yes" Description="MapServer MapManager Installer" InstallScope="perMachine"/>
 
         <Media Id="1" Cabinet="MapManager.cab" EmbedCab="yes" />
@@ -29,6 +29,18 @@
                         </Component>
                         <Component Id="proj.db" Guid="*">
                             <File Id="proj.db" Name="proj.db" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\ProjLib\proj.db" Vital="yes"/>
+                        </Component>
+						<Component Id="proj.ini" Guid="*">
+                            <File Id="proj.ini" Name="proj.ini" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\ProjLib\proj.ini" Vital="yes"/>
+                        </Component>
+						<Component Id="deformation_model.schema.json" Guid="*">
+                            <File Id="deformation_model.schema.json" Name="deformation_model.schema.json" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\ProjLib\deformation_model.schema.json" Vital="yes"/>
+                        </Component>
+						<Component Id="projjson.schema.json" Guid="*">
+                            <File Id="projjson.schema.json" Name="projjson.schema.json" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\ProjLib\projjson.schema.json" Vital="yes"/>
+                        </Component>
+						<Component Id="triangulation.schema.json" Guid="*">
+                            <File Id="triangulation.schema.json" Name="triangulation.schema.json" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\ProjLib\triangulation.schema.json" Vital="yes"/>
                         </Component>
                         <Component Id="proj_def.dat" Guid="*">
                             <File Id="proj_def.dat" Name="proj_def.dat" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\ProjLib\proj_def.dat" Vital="yes"/>
@@ -150,29 +162,20 @@
                         <Component Id="gdal_FITS.dll" Guid="*">
                             <File Id="gdal_FITS.dll" Name="gdal_FITS.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\gdalplugins\gdal_FITS.dll" />
                         </Component>
-                        <Component Id="gdal_GMT.dll" Guid="*">
-                            <File Id="gdal_GMT.dll" Name="gdal_GMT.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\gdalplugins\gdal_GMT.dll" />
-                        </Component>
                         <Component Id="gdal_HDF4.dll" Guid="*">
                             <File Id="gdal_HDF4.dll" Name="gdal_HDF4.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\gdalplugins\gdal_HDF4.dll" />
-                        </Component>
-                        <Component Id="gdal_HDF4Image.dll" Guid="*">
-                            <File Id="gdal_HDF4Image.dll" Name="gdal_HDF4Image.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\gdalplugins\gdal_HDF4Image.dll" />
                         </Component>
                         <Component Id="gdal_HDF5.dll" Guid="*">
                             <File Id="gdal_HDF5.dll" Name="gdal_HDF5.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\gdalplugins\gdal_HDF5.dll" />
                         </Component>
-                        <Component Id="gdal_HDF5Image.dll" Guid="*">
-                            <File Id="gdal_HDF5Image.dll" Name="gdal_HDF5Image.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\gdalplugins\gdal_HDF5Image.dll" />
-                        </Component>
-                        <Component Id="gdal_BAG.dll" Guid="*">
-                            <File Id="gdal_BAG.dll" Name="gdal_BAG.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\gdalplugins\gdal_BAG.dll" />
-                        </Component>
                         <Component Id="gdal_netCDF.dll" Guid="*">
                             <File Id="gdal_netCDF.dll" Name="gdal_netCDF.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\gdalplugins\gdal_netCDF.dll" />
                         </Component>
+                        <Component Id="gdal_PDF.dll" Guid="*">
+                            <File Id="gdal_PDF.dll" Name="gdal_PDF.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\gdalplugins\gdal_PDF.dll" />
+                        </Component>
                     </Directory>
-					<Component Id="MapManager.exe" Guid="*">
+                    <Component Id="MapManager.exe" Guid="*">
                         <File Id="MapManager.exe" Name="$(var.MapManager.TargetFileName)" Source="$(var.MapManager.TargetPath)" />
                         <!-- Extend to the "open with" list + Win7 jump menu pinning  -->
                         <RegistryValue Root="HKCR" Key="Applications\MapManager.exe\SupportedTypes" Name=".map" Value="" Type="string" />
@@ -206,7 +209,7 @@
                         <File Id="SciLexer.dll" Name="SciLexer.dll" Source="$(var.MapManager.TargetDir)SciLexer.dll" Vital="yes"/>
                     </Component>
                     <Component Id="gdal.dll" Guid="*">
-                        <File Id="gdal.dll" Name="gdal304.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\gdal304.dll" Vital="yes"/>
+                        <File Id="gdal.dll" Name="gdal.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\gdal.dll" Vital="yes"/>
                     </Component>
                     <Component Id="Microsoft.VisualBasic.PowerPacks.Vs.dll" Guid="*">
                         <File Id="Microsoft.VisualBasic.PowerPacks.Vs.dll" Name="Microsoft.VisualBasic.PowerPacks.Vs.dll" Source="$(var.MapManager.TargetDir)Microsoft.VisualBasic.PowerPacks.Vs.dll" Vital="yes"/>
@@ -282,6 +285,9 @@
                     <Component Id="mapserver.dll" Guid="*">
                         <File Id="mapserver.dll" Name="mapserver.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\mapserver.dll" Vital="yes"/>
                     </Component>
+                    <Component Id="libpng16.dll" Guid="*">
+                        <File Id="libpng16.dll" Name="libpng16.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\libpng16.dll" Vital="yes"/>
+                    </Component>
                     <Component Id="libpq.dll" Guid="*">
                         <File Id="libpq.dll" Name="libpq.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\libpq.dll" Vital="yes"/>
                     </Component>
@@ -324,16 +330,22 @@
                     <Component Id="gdal_wrap.dll" Guid="*">
                         <File Id="gdal_wrap.dll" Name="gdal_wrap.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\gdal_wrap.dll" Vital="yes"/>
                     </Component>
+                    <Component Id="pcre.dll" Guid="*">
+                        <File Id="pcre.dll" Name="pcre.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\pcre.dll" Vital="yes"/>
+                    </Component>
                     <Component Id="proj_4_9.dll" Guid="*">
                         <File Id="proj_4_9.dll" Name="proj_4_9.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\proj_4_9.dll" Vital="yes"/>
                     </Component>
                     <Component Id="proj_7_2.dll" Guid="*">
                         <File Id="proj_7_2.dll" Name="proj_7_2.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\proj_7_2.dll" Vital="yes"/>
                     </Component>
+                    <Component Id="proj_9_1.dll" Guid="*">
+                        <File Id="proj_9_1.dll" Name="proj_9_1.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\proj_9_1.dll" Vital="yes"/>
+                    </Component>
                     <Component Id="sqlite3.dll" Guid="*">
                         <File Id="sqlite3.dll" Name="sqlite3.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\sqlite3.dll" Vital="yes"/>
                     </Component>
-					<Component Id="freexl.dll" Guid="*">
+                    <Component Id="freexl.dll" Guid="*">
                         <File Id="freexl.dll" Name="freexl.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\freexl.dll" Vital="yes"/>
                     </Component>
                     <Component Id="spatialite.dll" Guid="*">
@@ -344,6 +356,9 @@
                     </Component>
                     <Component Id="zlib.dll" Guid="*">
                         <File Id="zlib.dll" Name="zlib.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\zlib.dll" Vital="yes"/>
+                    </Component>
+                    <Component Id="zstd.dll" Guid="*">
+                        <File Id="zstd.dll" Name="zstd.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\zstd.dll" Vital="yes"/>
                     </Component>
                     <Component Id="ogdi.dll" Guid="*">
                         <File Id="ogdi.dll" Name="ogdi.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\ogdi.dll" Vital="yes"/>
@@ -373,8 +388,8 @@
                     <Component Id="scalebar.exe" Guid="*">
                         <File Id="scalebar.exe" Name="scalebar.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\scalebar.exe" />
                     </Component>
-                    <Component Id="shp2img.exe" Guid="*">
-                        <File Id="shp2img.exe" Name="shp2img.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\shp2img.exe" />
+                    <Component Id="map2img.exe" Guid="*">
+                        <File Id="map2img.exe" Name="map2img.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\map2img.exe" />
                     </Component>
                     <Component Id="shptree.exe" Guid="*">
                         <File Id="shptree.exe" Name="shptree.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\shptree.exe" />
@@ -568,6 +583,7 @@
                 <ComponentRef Id="libexpat.dll" />
                 <ComponentRef Id="libfcgi.dll" />
                 <ComponentRef Id="mapserver.dll" />
+				<ComponentRef Id="libpng16.dll" />
                 <ComponentRef Id="libpq.dll" />
                 <ComponentRef Id="libmysql.dll" />
                 <ComponentRef Id="libxml2.dll" />
@@ -581,13 +597,16 @@
                 <ComponentRef Id="gdal_csharp.dll" />
                 <ComponentRef Id="gdal_wrap.dll" />
                 <ComponentRef Id="openjp2.dll" />
+                <ComponentRef Id="pcre.dll" />
                 <ComponentRef Id="proj_4_9.dll" />
                 <ComponentRef Id="proj_7_2.dll" />
+                <ComponentRef Id="proj_9_1.dll" />
                 <ComponentRef Id="fribidi_0.dll" />
                 <ComponentRef Id="sqlite3.dll" />
-			    <ComponentRef Id="freexl.dll" />
+                <ComponentRef Id="freexl.dll" />
                 <ComponentRef Id="spatialite.dll" />
                 <ComponentRef Id="xerces_c_3_2.dll" />
+                <ComponentRef Id="zstd.dll" />
                 <ComponentRef Id="zlib.dll" />
                 <ComponentRef Id="ogdi.dll" />
                 <ComponentRef Id="tiff.dll" />
@@ -645,9 +664,11 @@
                 </Feature>
             </Feature>
             <Feature Id="GDALPlugins" Level="1" Title="GDAL Plugins" Display="expand" Description="GDAL plugin library files">
-                <Feature Id="NetCDF" Level="1" Title="NetCDF" Description="Network Common Data Form (NetCDF) rasters (for the custom licensing terms please review NetCDFLicense.rtf and SZIPLicense.rtf installed in the /license folder)">
+            <Feature Id="PDF" Level="1" Title="PDF" Description="GDAL PDF plugin to support read access to the Geospatial PDF.">
+               <ComponentRef Id="gdal_PDF.dll" />
+            </Feature>
+            <Feature Id="NetCDF" Level="1" Title="NetCDF" Description="Network Common Data Form (NetCDF) rasters (for the custom licensing terms please review NetCDFLicense.rtf and SZIPLicense.rtf installed in the /license folder)">
                   <ComponentRef Id="gdal_netCDF.dll" />
-                  <ComponentRef Id="gdal_GMT.dll" />
                   <ComponentRef Id="netcdf.dll" />
                   <ComponentRef Id="NetCDFLicense.rtf" />
                   <ComponentRef Id="hdf5.dll" />
@@ -659,7 +680,6 @@
               </Feature>
               <Feature Id="HDF4" Level="1" Title="HDF4" Description="Hierarchical Data Format Release 4 (HDF4) rasters (for the custom licensing terms please review HDF4License.rtf and SZIPLicense.rtf installed in the /license folder)">
                   <ComponentRef Id="gdal_HDF4.dll" />
-                  <ComponentRef Id="gdal_HDF4Image.dll" />
                   <ComponentRef Id="hdf.dll" />
                   <ComponentRef Id="mfhdf.dll" />
                   <ComponentRef Id="xdr.dll" />
@@ -669,8 +689,6 @@
               </Feature>
               <Feature Id="HDF5" Level="1" Title="HDF5" Description="Hierarchical Data Format Release 5 (HDF5) rasters (for the custom licensing terms please review HDF5License.rtf and SZIPLicense.rtf installed in the /license folder)">
                   <ComponentRef Id="gdal_HDF5.dll" />
-                  <ComponentRef Id="gdal_BAG.dll" />
-                  <ComponentRef Id="gdal_HDF5Image.dll" />
                   <ComponentRef Id="hdf5.dll" />
                   <ComponentRef Id="hdf5_cpp.dll" />
                   <ComponentRef Id="hdf5_hl.dll" />
@@ -687,13 +705,13 @@
         </Feature>
         <Feature Id="Tools" Title="Command Tools" Display="expand" Level="1" Description="Command Tools" ConfigurableDirectory="INSTALLDIR">
             <ComponentRef Id="mmshell.bat" />
-            <Feature Id="MapServerTools" Level="1" Title="MapServer Tools" Description="MapServer Command Tools (legend, mapserv, msencrypt, scalebar, shp2img, shptree, shptreevis, sortshp, tile4ms)">
+            <Feature Id="MapServerTools" Level="1" Title="MapServer Tools" Description="MapServer Command Tools (legend, mapserv, msencrypt, scalebar, map2img, shptree, shptreevis, sortshp, tile4ms)">
 
                 <ComponentRef Id="legend.exe" />
                 <ComponentRef Id="mapserv.exe" />
                 <ComponentRef Id="msencrypt.exe" />
                 <ComponentRef Id="scalebar.exe" />
-                <ComponentRef Id="shp2img.exe" />
+                <ComponentRef Id="map2img.exe" />
                 <ComponentRef Id="shptree.exe" />
                 <ComponentRef Id="shptreevis.exe" />
                 <ComponentRef Id="sortshp.exe" />

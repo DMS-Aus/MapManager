@@ -160,7 +160,7 @@ namespace DMS.MapLibrary
                         if (this.textBoxProjection.Tag.ToString().Trim().StartsWith("+"))
                         {
                             map.setProjection(this.textBoxProjection.Tag.ToString());
-                            map.setMetaData("coordsys_name", this.textBoxProjection.Text);
+                            map.web.metadata.set("coordsys_name", this.textBoxProjection.Text);
                         }
                         else
                             map.setProjection("+AUTO");
@@ -246,15 +246,15 @@ namespace DMS.MapLibrary
             // setting up the projection information
             this.textBoxProjection.Tag = map.getProjection();
             this.textBoxProjection.Text = "";
-            string key = map.getFirstMetaDataKey();
+            string key = map.web.metadata.nextKey(null);
             while (key != null)
             {
                 if (key == "coordsys_name")
                 {
-                    this.textBoxProjection.Text = map.getMetaData("coordsys_name");
+                    this.textBoxProjection.Text = map.web.metadata.get("coordsys_name", "");
                     break;
                 }
-                key = map.getNextMetaDataKey(key);
+                key = map.web.metadata.nextKey(key);
             }
             if (this.textBoxProjection.Text == "")
             {

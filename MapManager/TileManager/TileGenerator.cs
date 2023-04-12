@@ -41,7 +41,7 @@ namespace DMS.MapManager
                 Ogr.RegisterAll();
                 mapscript.SetEnvironmentVariable("CURL_CA_BUNDLE=" + Environment.CurrentDirectory + "\\curl-ca-bundle.crt");
 
-                MapUtils.SetPROJ_LIB(Environment.CurrentDirectory + "\\ProjLib");
+                MapUtils.SetPROJ_DATA(Environment.CurrentDirectory + "\\ProjLib");
 
                 Gdal.SetConfigOption("GDAL_DATA", Environment.CurrentDirectory);
 

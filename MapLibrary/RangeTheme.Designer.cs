@@ -28,6 +28,7 @@ namespace DMS.MapLibrary
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RangeTheme));
             this.WizardPage1 = new System.Windows.Forms.Panel();
             this.comboBoxMode = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -37,10 +38,8 @@ namespace DMS.MapLibrary
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.WizardPage2 = new System.Windows.Forms.Panel();
-            this.colorRampPickerBackgroundColor = new DMS.MapLibrary.ColorRampPicker();
             this.colorRampPickerOutlineColor = new DMS.MapLibrary.ColorRampPicker();
             this.colorRampPickerColor = new DMS.MapLibrary.ColorRampPicker();
-            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.checkBoxFirstOnly = new System.Windows.Forms.CheckBox();
@@ -62,8 +61,9 @@ namespace DMS.MapLibrary
             this.WizardPage1.Controls.Add(this.label1);
             this.WizardPage1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.WizardPage1.Location = new System.Drawing.Point(0, 0);
+            this.WizardPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.WizardPage1.Name = "WizardPage1";
-            this.WizardPage1.Size = new System.Drawing.Size(413, 305);
+            this.WizardPage1.Size = new System.Drawing.Size(551, 375);
             this.WizardPage1.TabIndex = 4;
             // 
             // comboBoxMode
@@ -72,30 +72,33 @@ namespace DMS.MapLibrary
             this.comboBoxMode.FormattingEnabled = true;
             this.comboBoxMode.Items.AddRange(new object[] {
             "Equal Interval"});
-            this.comboBoxMode.Location = new System.Drawing.Point(102, 169);
+            this.comboBoxMode.Location = new System.Drawing.Point(136, 208);
+            this.comboBoxMode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxMode.Name = "comboBoxMode";
-            this.comboBoxMode.Size = new System.Drawing.Size(250, 21);
+            this.comboBoxMode.Size = new System.Drawing.Size(332, 24);
             this.comboBoxMode.TabIndex = 6;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(37, 172);
+            this.label7.Location = new System.Drawing.Point(49, 212);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(37, 13);
+            this.label7.Size = new System.Drawing.Size(45, 16);
             this.label7.TabIndex = 5;
             this.label7.Text = "Mode:";
             // 
             // numericUpDownClasses
             // 
-            this.numericUpDownClasses.Location = new System.Drawing.Point(102, 132);
+            this.numericUpDownClasses.Location = new System.Drawing.Point(136, 162);
+            this.numericUpDownClasses.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numericUpDownClasses.Minimum = new decimal(new int[] {
             2,
             0,
             0,
             0});
             this.numericUpDownClasses.Name = "numericUpDownClasses";
-            this.numericUpDownClasses.Size = new System.Drawing.Size(92, 20);
+            this.numericUpDownClasses.Size = new System.Drawing.Size(123, 22);
             this.numericUpDownClasses.TabIndex = 4;
             this.numericUpDownClasses.Value = new decimal(new int[] {
             5,
@@ -106,9 +109,10 @@ namespace DMS.MapLibrary
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(37, 134);
+            this.label6.Location = new System.Drawing.Point(49, 165);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(46, 13);
+            this.label6.Size = new System.Drawing.Size(59, 16);
             this.label6.TabIndex = 3;
             this.label6.Text = "Classes:";
             // 
@@ -116,35 +120,36 @@ namespace DMS.MapLibrary
             // 
             this.comboBoxColumns.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxColumns.FormattingEnabled = true;
-            this.comboBoxColumns.Location = new System.Drawing.Point(102, 94);
+            this.comboBoxColumns.Location = new System.Drawing.Point(136, 116);
+            this.comboBoxColumns.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxColumns.Name = "comboBoxColumns";
-            this.comboBoxColumns.Size = new System.Drawing.Size(250, 21);
+            this.comboBoxColumns.Size = new System.Drawing.Size(332, 24);
             this.comboBoxColumns.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(37, 98);
+            this.label2.Location = new System.Drawing.Point(49, 121);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 13);
+            this.label2.Size = new System.Drawing.Size(55, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Column:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(37, 54);
+            this.label1.Location = new System.Drawing.Point(49, 66);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(187, 13);
+            this.label1.Size = new System.Drawing.Size(231, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Select a Column to Create the Theme:";
             // 
             // WizardPage2
             // 
-            this.WizardPage2.Controls.Add(this.colorRampPickerBackgroundColor);
             this.WizardPage2.Controls.Add(this.colorRampPickerOutlineColor);
             this.WizardPage2.Controls.Add(this.colorRampPickerColor);
-            this.WizardPage2.Controls.Add(this.label5);
             this.WizardPage2.Controls.Add(this.label4);
             this.WizardPage2.Controls.Add(this.label3);
             this.WizardPage2.Controls.Add(this.checkBoxFirstOnly);
@@ -152,34 +157,24 @@ namespace DMS.MapLibrary
             this.WizardPage2.Controls.Add(this.layerControl);
             this.WizardPage2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.WizardPage2.Location = new System.Drawing.Point(0, 0);
+            this.WizardPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.WizardPage2.Name = "WizardPage2";
-            this.WizardPage2.Size = new System.Drawing.Size(413, 305);
+            this.WizardPage2.Size = new System.Drawing.Size(551, 375);
             this.WizardPage2.TabIndex = 4;
-            // 
-            // colorRampPickerBackgroundColor
-            // 
-            this.colorRampPickerBackgroundColor.BackColor = System.Drawing.SystemColors.Window;
-            this.colorRampPickerBackgroundColor.Context = null;
-            this.colorRampPickerBackgroundColor.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.colorRampPickerBackgroundColor.Location = new System.Drawing.Point(144, 279);
-            this.colorRampPickerBackgroundColor.Name = "colorRampPickerBackgroundColor";
-            this.colorRampPickerBackgroundColor.ReadOnly = false;
-            this.colorRampPickerBackgroundColor.Size = new System.Drawing.Size(238, 20);
-            this.colorRampPickerBackgroundColor.TabIndex = 11;
-            this.colorRampPickerBackgroundColor.Value = ColorRampValueList.Empty;
-            this.colorRampPickerBackgroundColor.ValueChanged += new System.EventHandler(this.colorRampPickerBackgroundColor_ValueChanged);
             // 
             // colorRampPickerOutlineColor
             // 
             this.colorRampPickerOutlineColor.BackColor = System.Drawing.SystemColors.Window;
             this.colorRampPickerOutlineColor.Context = null;
             this.colorRampPickerOutlineColor.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.colorRampPickerOutlineColor.Location = new System.Drawing.Point(144, 253);
+            this.colorRampPickerOutlineColor.Location = new System.Drawing.Point(192, 340);
+            this.colorRampPickerOutlineColor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.colorRampPickerOutlineColor.Name = "colorRampPickerOutlineColor";
             this.colorRampPickerOutlineColor.ReadOnly = false;
-            this.colorRampPickerOutlineColor.Size = new System.Drawing.Size(238, 20);
+            this.colorRampPickerOutlineColor.Size = new System.Drawing.Size(317, 22);
             this.colorRampPickerOutlineColor.TabIndex = 11;
-            this.colorRampPickerOutlineColor.Value = ColorRampValueList.Empty;
+            this.colorRampPickerOutlineColor.Text = "Empty";
+            this.colorRampPickerOutlineColor.Value = ((DMS.MapLibrary.ColorRampValueList)(resources.GetObject("colorRampPickerOutlineColor.Value")));
             this.colorRampPickerOutlineColor.ValueChanged += new System.EventHandler(this.colorRampPickerOutlineColor_ValueChanged);
             // 
             // colorRampPickerColor
@@ -187,47 +182,43 @@ namespace DMS.MapLibrary
             this.colorRampPickerColor.BackColor = System.Drawing.SystemColors.Window;
             this.colorRampPickerColor.Context = null;
             this.colorRampPickerColor.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.colorRampPickerColor.Location = new System.Drawing.Point(144, 226);
+            this.colorRampPickerColor.Location = new System.Drawing.Point(192, 307);
+            this.colorRampPickerColor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.colorRampPickerColor.Name = "colorRampPickerColor";
             this.colorRampPickerColor.ReadOnly = false;
-            this.colorRampPickerColor.Size = new System.Drawing.Size(238, 20);
+            this.colorRampPickerColor.Size = new System.Drawing.Size(317, 22);
             this.colorRampPickerColor.TabIndex = 10;
-            this.colorRampPickerColor.Value = ColorRampValueList.Random;
+            this.colorRampPickerColor.Text = "Random values";
+            this.colorRampPickerColor.Value = ((DMS.MapLibrary.ColorRampValueList)(resources.GetObject("colorRampPickerColor.Value")));
             this.colorRampPickerColor.ValueChanged += new System.EventHandler(this.colorRampPickerColor_ValueChanged);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(9, 279);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(129, 13);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Background Colour Ramp";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(10, 256);
+            this.label4.Location = new System.Drawing.Point(13, 344);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(104, 13);
+            this.label4.Size = new System.Drawing.Size(130, 16);
             this.label4.TabIndex = 8;
             this.label4.Text = "Outline Colour Ramp";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(11, 231);
+            this.label3.Location = new System.Drawing.Point(15, 313);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 13);
+            this.label3.Size = new System.Drawing.Size(86, 16);
             this.label3.TabIndex = 7;
             this.label3.Text = "Colour Ramp";
             // 
             // checkBoxFirstOnly
             // 
             this.checkBoxFirstOnly.AutoSize = true;
-            this.checkBoxFirstOnly.Location = new System.Drawing.Point(237, 206);
+            this.checkBoxFirstOnly.Location = new System.Drawing.Point(316, 283);
+            this.checkBoxFirstOnly.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBoxFirstOnly.Name = "checkBoxFirstOnly";
-            this.checkBoxFirstOnly.Size = new System.Drawing.Size(156, 17);
+            this.checkBoxFirstOnly.Size = new System.Drawing.Size(193, 20);
             this.checkBoxFirstOnly.TabIndex = 2;
             this.checkBoxFirstOnly.Text = "Override Only the First Style";
             this.checkBoxFirstOnly.UseVisualStyleBackColor = true;
@@ -236,9 +227,10 @@ namespace DMS.MapLibrary
             // checkBoxKeepStyles
             // 
             this.checkBoxKeepStyles.AutoSize = true;
-            this.checkBoxKeepStyles.Location = new System.Drawing.Point(13, 206);
+            this.checkBoxKeepStyles.Location = new System.Drawing.Point(17, 283);
+            this.checkBoxKeepStyles.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBoxKeepStyles.Name = "checkBoxKeepStyles";
-            this.checkBoxKeepStyles.Size = new System.Drawing.Size(218, 17);
+            this.checkBoxKeepStyles.Size = new System.Drawing.Size(272, 20);
             this.checkBoxKeepStyles.TabIndex = 1;
             this.checkBoxKeepStyles.Text = "Derive the Styles from The Original Layer";
             this.checkBoxKeepStyles.UseVisualStyleBackColor = true;
@@ -246,25 +238,31 @@ namespace DMS.MapLibrary
             // 
             // layerControl
             // 
+            this.layerControl.IsStyleLibraryControl = false;
+            this.layerControl.LegendIconPadding = new System.Windows.Forms.Padding(5);
+            this.layerControl.LegendIconSize = new System.Drawing.Size(30, 20);
             this.layerControl.Location = new System.Drawing.Point(0, 0);
+            this.layerControl.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.layerControl.Name = "layerControl";
             this.layerControl.ShowCheckBoxes = true;
             this.layerControl.ShowClasses = true;
+            this.layerControl.ShowLabels = false;
             this.layerControl.ShowRootObject = true;
             this.layerControl.ShowStyles = false;
-            this.layerControl.ShowLabels = false;
-            this.layerControl.Size = new System.Drawing.Size(410, 200);
+            this.layerControl.ShowToolbar = true;
+            this.layerControl.Size = new System.Drawing.Size(547, 274);
             this.layerControl.TabIndex = 0;
             this.layerControl.Target = null;
             // 
             // RangeTheme
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.WizardPage2);
             this.Controls.Add(this.WizardPage1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "RangeTheme";
-            this.Size = new System.Drawing.Size(413, 305);
+            this.Size = new System.Drawing.Size(551, 375);
             this.WizardPage1.ResumeLayout(false);
             this.WizardPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownClasses)).EndInit();
@@ -286,12 +284,10 @@ namespace DMS.MapLibrary
         private System.Windows.Forms.CheckBox checkBoxFirstOnly;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox comboBoxMode;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.NumericUpDown numericUpDownClasses;
         private System.Windows.Forms.Label label6;
-        private ColorRampPicker colorRampPickerBackgroundColor;
         private ColorRampPicker colorRampPickerOutlineColor;
         private ColorRampPicker colorRampPickerColor;
     }

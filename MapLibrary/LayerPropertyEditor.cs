@@ -273,23 +273,23 @@ namespace DMS.MapLibrary
 
                 // setting up the projection if it have been changed 
                 //steph - it wasn't updating the coordsys-name if changing projection with same proj4 text but different display name
-                string key = layer.getFirstMetaDataKey();
+                string key = layer.metadata.nextKey(null);
                 string coordsys = "";
                 while (key != null)
                 {
                     if (key == "coordsys_name")
                     {
-                        coordsys = layer.getMetaData("coordsys_name");
+                        coordsys = layer.metadata.get("coordsys_name", "");
                         break;
                     }
-                    key = layer.getNextMetaDataKey(key);
+                    key = layer.metadata.nextKey(key);
                 }
                 if (layer.getProjection() != this.textBoxProjection.Tag.ToString() || this.textBoxProjection.Text != coordsys)
                 {
                     if (this.textBoxProjection.Tag.ToString().Trim().StartsWith("+"))
                     {
                         layer.setProjection(this.textBoxProjection.Tag.ToString());
-                        layer.setMetaData("coordsys_name", this.textBoxProjection.Text);
+                        layer.metadata.set("coordsys_name", this.textBoxProjection.Text);
                     }
                     else
                         layer.setProjection("+AUTO");
@@ -431,13 +431,13 @@ namespace DMS.MapLibrary
                     layer.name = this.textBoxName.Text;
 
                 if (textBoxLink.Text.Length > 0)
-                    layer.setMetaData("link", textBoxLink.Text);
+                    layer.metadata.set("link", textBoxLink.Text);
                 else
                 {
                     // remove previous setting
                     string key2;
                     while ((key2 = MapUtils.FindMetadata(layer, "link")) != null)
-                        layer.removeMetaData(key2);
+                        layer.metadata.remove(key2);
                 }
            
                 if (target != null)
@@ -477,15 +477,15 @@ namespace DMS.MapLibrary
             // setting up the projection information
             this.textBoxProjection.Tag = layer.getProjection();
             this.textBoxProjection.Text = "";
-            string key = layer.getFirstMetaDataKey();
+            string key = layer.metadata.nextKey(null);
             while (key != null)
             {
                 if (key == "coordsys_name")
                 {
-                    this.textBoxProjection.Text = layer.getMetaData("coordsys_name");
+                    this.textBoxProjection.Text = layer.metadata.get("coordsys_name", "");
                     break;
                 }
-                key = layer.getNextMetaDataKey(key);
+                key = layer.metadata.nextKey(key);
             }
             if (this.textBoxProjection.Text == "")
             {
@@ -663,7 +663,7 @@ namespace DMS.MapLibrary
             textBoxProcessing.Text = processing.ToString();
 
             if (MapUtils.HasMetadata(layer, "link"))
-                textBoxLink.Text = layer.getMetaData("link");
+                textBoxLink.Text = layer.metadata.get("link", "");
             else
                 textBoxLink.Text = "";
             

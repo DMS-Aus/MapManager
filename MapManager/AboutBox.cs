@@ -17,7 +17,7 @@ namespace DMS.MapManager
     /// </summary>
     partial class AboutBox : Form
     {
-        [DllImport("proj_7_2", EntryPoint = "pj_get_release")]
+        [DllImport("proj_9_1", EntryPoint = "?pj_get_release@@YAPEBDXZ")]
         private static extern IntPtr pj_get_release();
 
         [DllImport("geos_c", EntryPoint = "GEOSversion")]

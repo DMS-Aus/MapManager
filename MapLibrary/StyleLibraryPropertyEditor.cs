@@ -92,7 +92,6 @@ namespace DMS.MapLibrary
             style.angle = double.Parse(textBoxAngle.Text);
             // display tab
             this.colorPickerColor.ApplyTo(style.color);
-            this.colorPickerBackColor.ApplyTo(style.backgroundcolor);
             this.colorPickerOutlineColor.ApplyTo(style.outlinecolor);
             
             style.gap = double.Parse(textBoxGap.Text);
@@ -233,7 +232,6 @@ namespace DMS.MapLibrary
             textBoxAngle.Text = style.angle.ToString();
             
             this.colorPickerColor.SetColor(style.color);
-            this.colorPickerBackColor.SetColor(style.backgroundcolor);
             this.colorPickerOutlineColor.SetColor(style.outlinecolor);
             
             textBoxGap.Text = style.gap.ToString();

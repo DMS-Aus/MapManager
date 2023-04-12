@@ -141,7 +141,6 @@ namespace DMS.MapLibrary
             // display tab
             this.colorPickerColor.ApplyTo(style.color);
             styleBindingControllerColor.ApplyBinding();
-            this.colorPickerBackColor.ApplyTo(style.backgroundcolor);
             this.colorPickerOutlineColor.ApplyTo(style.outlinecolor);
             styleBindingControllerOutlineColor.ApplyBinding();
             style.offsetx = int.Parse(textBoxOffsetX.Text);
@@ -151,7 +150,6 @@ namespace DMS.MapLibrary
             int alpha = Convert.ToInt32(style.opacity * 2.55);
             style.color.alpha = alpha;
             style.outlinecolor.alpha = alpha;
-            style.backgroundcolor.alpha = alpha;
             style.mincolor.alpha = alpha;
             style.maxcolor.alpha = alpha;
 
@@ -274,7 +272,6 @@ namespace DMS.MapLibrary
 
                 // apply current settings (opacity) to colors
                 colorPickerColor.SetColor(pstyle.color);
-                colorPickerBackColor.SetColor(pstyle.backgroundcolor);
                 colorPickerOutlineColor.SetColor(pstyle.outlinecolor);               
                 
                 // select the proper map containing symbols
@@ -587,7 +584,6 @@ namespace DMS.MapLibrary
 
             this.colorPickerColor.SetColor(style.color);
             styleBindingControllerColor.InitializeBinding(target);
-            this.colorPickerBackColor.SetColor(style.backgroundcolor);
             this.colorPickerOutlineColor.SetColor(style.outlinecolor);
             styleBindingControllerOutlineColor.InitializeBinding(target);
             trackBarOpacity.Value = style.opacity;

@@ -202,7 +202,6 @@ namespace DMS.MapLibrary
                     styleObj style = classobj.getStyle(j);
                     style.color = colorRampPickerColor.GetMapColorAtValue(percent);
                     style.outlinecolor = colorRampPickerOutlineColor.GetMapColorAtValue(percent);
-                    style.backgroundcolor = colorRampPickerBackgroundColor.GetMapColorAtValue(percent);
 
                     if (checkBoxFirstOnly.Checked)
                         break;
@@ -461,11 +460,6 @@ namespace DMS.MapLibrary
         }
 
         private void colorRampPickerOutlineColor_ValueChanged(object sender, EventArgs e)
-        {
-            UpdateThemeView();
-        }
-
-        private void colorRampPickerBackgroundColor_ValueChanged(object sender, EventArgs e)
         {
             UpdateThemeView();
         }

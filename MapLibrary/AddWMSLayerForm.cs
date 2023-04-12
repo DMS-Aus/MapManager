@@ -204,7 +204,7 @@ namespace DMS.MapLibrary
 
             // load epsg values
             Hashtable epsg = new Hashtable();
-            using (Stream s = File.OpenRead(MapUtils.GetPROJ_LIB() + "\\epsg"))
+            using (Stream s = File.OpenRead(MapUtils.GetPROJ_DATA() + "\\epsg"))
             {
                 using (StreamReader reader = new StreamReader(s))
                 {
