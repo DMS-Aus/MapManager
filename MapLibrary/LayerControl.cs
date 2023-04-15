@@ -1802,11 +1802,7 @@ namespace DMS.MapLibrary
                                 string proj4;
                                 if (sr.ExportToProj4(out proj4) == Ogr.OGRERR_NONE)
                                     layer.setProjection(proj4);
-                                else
-                                    layer.setProjection(null);
                             }
-                            else
-                                layer.setProjection(null);
                         }
 
                         //ds.ReleaseResultSet(ogrLayer);
