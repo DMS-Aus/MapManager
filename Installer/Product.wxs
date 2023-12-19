@@ -342,6 +342,9 @@
                     <Component Id="proj_9_1.dll" Guid="*">
                         <File Id="proj_9_1.dll" Name="proj_9_1.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\proj_9_1.dll" Vital="yes"/>
                     </Component>
+                    <Component Id="proj_9_3.dll" Guid="*">
+                        <File Id="proj_9_3.dll" Name="proj_9_3.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\proj_9_3.dll" Vital="yes"/>
+                    </Component>
                     <Component Id="sqlite3.dll" Guid="*">
                         <File Id="sqlite3.dll" Name="sqlite3.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\sqlite3.dll" Vital="yes"/>
                     </Component>
@@ -376,8 +379,14 @@
                     <Component Id="msplugin_oracle.dll" Guid="*">
                         <File Id="msplugin_oracle.dll" Name="msplugin_oracle.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\msplugin_oracle.dll" />
                     </Component>
+                    <Component Id="coshp.exe" Guid="*">
+                        <File Id="coshp.exe" Name="coshp.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\coshp.exe" />
+                    </Component>
                     <Component Id="legend.exe" Guid="*">
                         <File Id="legend.exe" Name="legend.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\legend.exe" />
+                    </Component>
+                    <Component Id="map2img.exe" Guid="*">
+                        <File Id="map2img.exe" Name="map2img.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\map2img.exe" />
                     </Component>
                     <Component Id="mapserv.exe" Guid="*">
                         <File Id="mapserv.exe" Name="mapserv.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\mapserv.exe" />
@@ -388,11 +397,11 @@
                     <Component Id="scalebar.exe" Guid="*">
                         <File Id="scalebar.exe" Name="scalebar.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\scalebar.exe" />
                     </Component>
-                    <Component Id="map2img.exe" Guid="*">
-                        <File Id="map2img.exe" Name="map2img.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\map2img.exe" />
-                    </Component>
                     <Component Id="shptree.exe" Guid="*">
                         <File Id="shptree.exe" Name="shptree.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\shptree.exe" />
+                    </Component>
+                    <Component Id="shptreetst.exe" Guid="*">
+                        <File Id="shptreetst.exe" Name="shptreetst.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\shptreetst.exe" />
                     </Component>
                     <Component Id="shptreevis.exe" Guid="*">
                         <File Id="shptreevis.exe" Name="shptreevis.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\shptreevis.exe" />
@@ -405,6 +414,12 @@
                     </Component>
                     <Component Id="gdal_contour.exe" Guid="*">
                         <File Id="gdal_contour.exe" Name="gdal_contour.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\gdal_contour.exe" />
+                    </Component>
+                    <Component Id="gdal_create.exe" Guid="*">
+                        <File Id="gdal_create.exe" Name="gdal_create.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\gdal_create.exe" />
+                    </Component>
+                    <Component Id="gdal_footprint.exe" Guid="*">
+                        <File Id="gdal_footprint.exe" Name="gdal_footprint.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\gdal_footprint.exe" />
                     </Component>
                     <Component Id="gdal_grid.exe" Guid="*">
                         <File Id="gdal_grid.exe" Name="gdal_grid.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\gdal_grid.exe" />
@@ -435,6 +450,12 @@
                     </Component>
                     <Component Id="gdalmanage.exe" Guid="*">
                         <File Id="gdalmanage.exe" Name="gdalmanage.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\gdalmanage.exe" />
+                    </Component>
+                    <Component Id="gdalmdiminfo.exe" Guid="*">
+                        <File Id="gdalmdiminfo.exe" Name="gdalmdiminfo.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\gdalmdiminfo.exe" />
+                    </Component>
+                    <Component Id="gdalmdimtranslate.exe" Guid="*">
+                        <File Id="gdalmdimtranslate.exe" Name="gdalmdimtranslate.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\gdalmdimtranslate.exe" />
                     </Component>
                     <Component Id="gdalsrsinfo.exe" Guid="*">
                         <File Id="gdalsrsinfo.exe" Name="gdalsrsinfo.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\gdalsrsinfo.exe" />
@@ -468,6 +489,9 @@
                     </Component>
                     <Component Id="ogrtindex.exe" Guid="*">
                         <File Id="ogrtindex.exe" Name="ogrtindex.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\ogrtindex.exe" />
+                    </Component>
+                    <Component Id="sozip.exe" Guid="*">
+                        <File Id="sozip.exe" Name="sozip.exe" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\sozip.exe" />
                     </Component>
                     <Component Id="mmshell.bat" Guid="*">
                         <File Id="mmshell.bat" Name="mmshell.bat" Source="$(var.SolutionDir)\Installer\mmshell.bat" />
@@ -601,6 +625,7 @@
                 <ComponentRef Id="proj_4_9.dll" />
                 <ComponentRef Id="proj_7_2.dll" />
                 <ComponentRef Id="proj_9_1.dll" />
+                <ComponentRef Id="proj_9_3.dll" />
                 <ComponentRef Id="fribidi_0.dll" />
                 <ComponentRef Id="sqlite3.dll" />
                 <ComponentRef Id="freexl.dll" />
@@ -707,18 +732,22 @@
             <ComponentRef Id="mmshell.bat" />
             <Feature Id="MapServerTools" Level="1" Title="MapServer Tools" Description="MapServer Command Tools (legend, mapserv, msencrypt, scalebar, map2img, shptree, shptreevis, sortshp, tile4ms)">
 
+                <ComponentRef Id="coshp.exe" />  
                 <ComponentRef Id="legend.exe" />
+                <ComponentRef Id="map2img.exe" />
                 <ComponentRef Id="mapserv.exe" />
                 <ComponentRef Id="msencrypt.exe" />
                 <ComponentRef Id="scalebar.exe" />
-                <ComponentRef Id="map2img.exe" />
                 <ComponentRef Id="shptree.exe" />
+                <ComponentRef Id="shptreetst.exe" />
                 <ComponentRef Id="shptreevis.exe" />
                 <ComponentRef Id="sortshp.exe" />
                 <ComponentRef Id="tile4ms.exe" />
             </Feature>
             <Feature Id="GDALTools" Level="1" Title="GDAL Tools" Description="GDAL Command Tools (gdal_contour, gdal_grid,gdal_rasterize, gdal_translate, gdaladdo, gdalbuildvrt, gdaldem, gdalenhance, gdalinfo, gdallocationinfo, gdalmanage, gdalsrsinfo, gdaltindex, gdaltransform, gdalwarp, nearblack, ogr2ogr, ogrinfo, ogrtindex, testepsg)">
                 <ComponentRef Id="gdal_contour.exe" />
+                <ComponentRef Id="gdal_create.exe" />
+                <ComponentRef Id="gdal_footprint.exe" />
                 <ComponentRef Id="gdal_grid.exe" />
                 <ComponentRef Id="gdal_rasterize.exe" />
                 <ComponentRef Id="gdal_translate.exe" />
@@ -729,6 +758,8 @@
                 <ComponentRef Id="gdalinfo.exe" />
                 <ComponentRef Id="gdallocationinfo.exe" />
                 <ComponentRef Id="gdalmanage.exe" />
+                <ComponentRef Id="gdalmdiminfo.exe" />
+                <ComponentRef Id="gdalmdimtranslate.exe" />
                 <ComponentRef Id="gdalsrsinfo.exe" />
                 <ComponentRef Id="gdaltindex.exe" />
                 <ComponentRef Id="gdaltransform.exe" />
@@ -740,6 +771,7 @@
                 <ComponentRef Id="ogrinfo.exe" />
                 <ComponentRef Id="ogrlineref.exe" />
                 <ComponentRef Id="ogrtindex.exe" />
+                <ComponentRef Id="sozip.exe" />
                 <ComponentRef Id="vcruntime140.dll" />
                 <?if $(sys.BUILDARCH) = x64?>
                 <ComponentRef Id="vcruntime140_1.dll" />
