@@ -258,16 +258,16 @@
                     </Component>
                     <Component Id="libcrypto.dll" Guid="*">
                       <?if $(sys.BUILDARCH) = x64?>
-                      <File Id="libcrypto.dll" Name="libcrypto-1_1-x64.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\libcrypto-1_1-x64.dll" Vital="yes"/>
+                      <File Id="libcrypto.dll" Name="libcrypto-3-x64.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\libcrypto-3-x64.dll" Vital="yes"/>
                       <?else?>
-                      <File Id="libcrypto.dll" Name="libcrypto-1_1.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\libcrypto-1_1.dll" Vital="yes"/>
+                      <File Id="libcrypto.dll" Name="libcrypto-3.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\libcrypto-3.dll" Vital="yes"/>
                       <?endif?>
                     </Component>
                     <Component Id="libssl.dll" Guid="*">
                       <?if $(sys.BUILDARCH) = x64?>
-                      <File Id="libssl.dll" Name="libssl-1_1-x64.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\libssl-1_1-x64.dll" Vital="yes"/>
+                      <File Id="libssl.dll" Name="libssl-3-x64.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\libssl-3-x64.dll" Vital="yes"/>
                       <?else?>
-                      <File Id="libssl.dll" Name="libssl-1_1.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\libssl-1_1.dll" Vital="yes"/>
+                      <File Id="libssl.dll" Name="libssl-3.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\libssl-3.dll" Vital="yes"/>
                       <?endif?>
                     </Component>
                     <Component Id="TileGenerator.exe" Guid="*">
