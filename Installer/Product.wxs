@@ -333,17 +333,8 @@
                     <Component Id="pcre.dll" Guid="*">
                         <File Id="pcre.dll" Name="pcre.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\pcre.dll" Vital="yes"/>
                     </Component>
-                    <Component Id="proj_4_9.dll" Guid="*">
-                        <File Id="proj_4_9.dll" Name="proj_4_9.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\proj_4_9.dll" Vital="yes"/>
-                    </Component>
-                    <Component Id="proj_7_2.dll" Guid="*">
-                        <File Id="proj_7_2.dll" Name="proj_7_2.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\proj_7_2.dll" Vital="yes"/>
-                    </Component>
-                    <Component Id="proj_9_1.dll" Guid="*">
-                        <File Id="proj_9_1.dll" Name="proj_9_1.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\proj_9_1.dll" Vital="yes"/>
-                    </Component>
-                    <Component Id="proj_9_3.dll" Guid="*">
-                        <File Id="proj_9_3.dll" Name="proj_9_3.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\proj_9_3.dll" Vital="yes"/>
+                    <Component Id="proj_9.dll" Guid="*">
+                        <File Id="proj_9.dll" Name="proj_9.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\proj_9.dll" Vital="yes"/>
                     </Component>
                     <Component Id="sqlite3.dll" Guid="*">
                         <File Id="sqlite3.dll" Name="sqlite3.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\sqlite3.dll" Vital="yes"/>
@@ -607,7 +598,7 @@
                 <ComponentRef Id="libexpat.dll" />
                 <ComponentRef Id="libfcgi.dll" />
                 <ComponentRef Id="mapserver.dll" />
-				<ComponentRef Id="libpng16.dll" />
+                <ComponentRef Id="libpng16.dll" />
                 <ComponentRef Id="libpq.dll" />
                 <ComponentRef Id="libmysql.dll" />
                 <ComponentRef Id="libxml2.dll" />
@@ -622,10 +613,7 @@
                 <ComponentRef Id="gdal_wrap.dll" />
                 <ComponentRef Id="openjp2.dll" />
                 <ComponentRef Id="pcre.dll" />
-                <ComponentRef Id="proj_4_9.dll" />
-                <ComponentRef Id="proj_7_2.dll" />
-                <ComponentRef Id="proj_9_1.dll" />
-                <ComponentRef Id="proj_9_3.dll" />
+                <ComponentRef Id="proj_9.dll" />
                 <ComponentRef Id="fribidi_0.dll" />
                 <ComponentRef Id="sqlite3.dll" />
                 <ComponentRef Id="freexl.dll" />
