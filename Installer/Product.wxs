@@ -21,9 +21,6 @@
 			<Directory Id="$(var.ProgramFiles)" Name="PFiles">
 				<Directory Id="INSTALLDIR" Name="MapManager">
                     <Directory Id="projlibDir" Name="projlib">
-                        <Component Id="epsg" Guid="*">
-                            <File Id="epsg" Name="epsg" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\ProjLib\epsg" />
-                        </Component>
                         <Component Id="world" Guid="*">
                             <File Id="world" Name="world" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\ProjLib\world" Vital="yes"/>
                         </Component>
@@ -42,23 +39,8 @@
 						<Component Id="triangulation.schema.json" Guid="*">
                             <File Id="triangulation.schema.json" Name="triangulation.schema.json" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\ProjLib\triangulation.schema.json" Vital="yes"/>
                         </Component>
-                        <Component Id="proj_def.dat" Guid="*">
-                            <File Id="proj_def.dat" Name="proj_def.dat" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\ProjLib\proj_def.dat" Vital="yes"/>
-                        </Component>
                         <Component Id="other.extra" Guid="*">
                             <File Id="other.extra" Name="other.extra" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\ProjLib\other.extra" Vital="yes"/>
-                        </Component>
-                        <Component Id="nzgd2kgrid0005.gsb" Guid="*">
-                            <File Id="nzgd2kgrid0005.gsb" Name="nzgd2kgrid0005.gsb" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\ProjLib\nzgd2kgrid0005.gsb" Vital="yes"/>
-                        </Component>
-                        <Component Id="null" Guid="*">
-                            <File Id="null" Name="null" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\ProjLib\null" Vital="yes"/>
-                        </Component>
-                        <Component Id="ntv1_can.dat" Guid="*">
-                            <File Id="ntv1_can.dat" Name="ntv1_can.dat" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\ProjLib\ntv1_can.dat" Vital="yes"/>
-                        </Component>
-                        <Component Id="ntf_r93.gsb" Guid="*">
-                            <File Id="ntf_r93.gsb" Name="ntf_r93.gsb" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\ProjLib\ntf_r93.gsb" Vital="yes"/>
                         </Component>
                         <Component Id="nad83" Guid="*">
                             <File Id="nad83" Name="nad83" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\ProjLib\nad83" Vital="yes"/>
@@ -69,9 +51,6 @@
                         <Component Id="nad.lst" Guid="*">
                             <File Id="nad.lst" Name="nad.lst" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\ProjLib\nad.lst" Vital="yes"/>
                         </Component>
-                        <Component Id="IGNF" Guid="*">
-                            <File Id="IGNF" Name="IGNF" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\ProjLib\IGNF" Vital="yes"/>
-                        </Component>
                         <Component Id="ITRF2014" Guid="*">
                             <File Id="ITRF2014" Name="ITRF2014" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\ProjLib\ITRF2014" Vital="yes"/>
                         </Component>
@@ -81,14 +60,11 @@
                         <Component Id="ITRF2000" Guid="*">
                             <File Id="ITRF2000" Name="ITRF2000" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\ProjLib\ITRF2000" Vital="yes"/>
                         </Component>
+                      <Component Id="ITRF2020" Guid="*">
+                        <File Id="ITRF2020" Name="ITRF2020" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\ProjLib\ITRF2020" Vital="yes"/>
+                      </Component>
                         <Component Id="GL27" Guid="*">
                             <File Id="GL27" Name="GL27" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\ProjLib\GL27" Vital="yes"/>
-                        </Component>
-                        <Component Id="esri.extra" Guid="*">
-                            <File Id="esri.extra" Name="esri.extra" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\ProjLib\esri.extra" Vital="yes"/>
-                        </Component>
-                        <Component Id="esri" Guid="*">
-                            <File Id="esri" Name="esri" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\ProjLib\esri" Vital="yes"/>
                         </Component>
                         <Component Id="CH" Guid="*">
                             <File Id="CH" Name="CH" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\ProjLib\CH" Vital="yes"/>
@@ -624,26 +600,22 @@
                 <ComponentRef Id="ogdi.dll" />
                 <ComponentRef Id="tiff.dll" />
                 <ComponentRef Id="ApplicationShortcut" />
-                <ComponentRef Id="epsg" />
                 <ComponentRef Id="world" />
                 <ComponentRef Id="proj.db" />
-                <ComponentRef Id="proj_def.dat" />                
+                <ComponentRef Id="proj.ini" />
                 <ComponentRef Id="other.extra" />
-                <ComponentRef Id="nzgd2kgrid0005.gsb" />
-                <ComponentRef Id="null" />
-                <ComponentRef Id="ntv1_can.dat" />
-                <ComponentRef Id="ntf_r93.gsb" />
                 <ComponentRef Id="nad83" />
                 <ComponentRef Id="nad27" />
                 <ComponentRef Id="nad.lst" />
-                <ComponentRef Id="IGNF" />
                 <ComponentRef Id="ITRF2014" />
                 <ComponentRef Id="ITRF2008" />
                 <ComponentRef Id="ITRF2000" />
+                <ComponentRef Id="ITRF2020" />
                 <ComponentRef Id="GL27" />
-                <ComponentRef Id="esri.extra" />
-                <ComponentRef Id="esri" />
                 <ComponentRef Id="CH" />
+                <ComponentRef Id="deformation_model.schema.json" />
+                <ComponentRef Id="projjson.schema.json" />
+                <ComponentRef Id="triangulation.schema.json" />
                 <ComponentRef Id="new.map" />
                 <ComponentRef Id="mmstyles.map" />
                 <ComponentRef Id="annotation.map" />
