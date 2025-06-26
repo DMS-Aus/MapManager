@@ -13,6 +13,8 @@ using System.Text.RegularExpressions;
 using System.Diagnostics;
 using System.Collections;
 using System.Reflection;
+using System.Linq;
+using OSGeo.GDAL;
 
 namespace DMS.MapLibrary
 {
@@ -491,104 +493,115 @@ namespace DMS.MapLibrary
         }
 
         /// <summary>
-        /// This function tries to find out the projection from the EPSG file based on the name or the proj4 parameters
+        /// Retrieve the MapScript unit value from an AUTH:CODE definition.
         /// </summary>
-        /// <param name="projection">input projection in proj.4 fromat</param>
-        /// <param name="proj4">the matching projection in the epsg file</param>
-        /// <param name="proj4">epsg</param>
-        /// <returns>Projection Name</returns>
-        public static string FindProjection(string projection, out string proj4, out int epsg)
+        /// <param name="projString">The proj string.</param>
+        /// <returns>The MapScript unit value</returns>
+        public static MS_UNITS GetMapUnitFromProjString(string projString)
         {
-            string[] def = null;
-            if (projection.Contains("+proj"))
+            try
             {
-                def = projection.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-            }
-
-            // todo: epsg based search
-            string projName = "";
-            proj4 = "";
-            epsg = 0;
-            using (Stream s = File.OpenRead(MapUtils.GetPROJ_DATA() + "\\epsg"))
-            {
-                using (StreamReader reader = new StreamReader(s))
+                using (var proj = GetProjection(projString))
                 {
-                    string line;
-                    int i;
-                    int minrank = 100;
-                    string line2 = "";
-                    while ((line = reader.ReadLine()) != null)
+                    var units = proj.getUnits();
+                    if (units >= 0)
                     {
-                        int rank = 0;
-                        if (def != null)
-                        {
-                            // proj4 based search
-                            for (i = 0; i < def.Length; i++)
-                            {
-                                if (!line.Contains(def[i]))
-                                {
-                                    if (def[i].StartsWith("+proj"))
-                                        break;
-                                    if (def[i].StartsWith("+ellps"))
-                                        break;
-                                    if (def[i].StartsWith("+zone"))
-                                        break;
-                                    if (def[i].StartsWith("+datum"))
-                                        break;
-                                    if (def[i].StartsWith("+units"))
-                                        break;
-                                    if (def[i].StartsWith("+south"))
-                                        break;
-                                    if (def[i].StartsWith("+north"))
-                                        break;
-                                    else ++rank;
-                                }
-                            }
-                            if (i == def.Length)
-                            {
-                                if (rank < minrank)
-                                {
-                                    minrank = rank;
-                                    projName = line2.Substring(2);
-                                    proj4 = line;
-                                    if (rank == 0)
-                                    {
-                                        // found
-                                        break;
-                                    }
-                                }
-                            }
-                        }
-                        else
-                        {
-                            // name based search
-                            if (line.Contains(projection))
-                                break;
-                        }
-                        if (line.StartsWith("#"))
-                            line2 = line;
+                        return (MS_UNITS)units;
                     }
                 }
             }
-            
-            string[] proj_defs = proj4.Split(new char[] { '<', '>' });
-            if (proj_defs.Length >= 3)
+            catch (Exception) { }
+
+            return MS_UNITS.MS_DD;
+        }
+
+        /// <summary>
+        /// Update a SpatialReference based on an AUTH:CODE definition.
+        /// </summary>
+        /// <param name="proj4">The proj4 definition.</param>
+        /// <returns>The MapScript unit value</returns>
+        public static void UpdateSpatialReferenceFromAuthCode(SpatialReference srs, string authCode)
+        {
+            var param = authCode.Split(':');
+            if (param.Length == 2)
             {
-                proj4 = proj_defs[2].Trim();
-                int.TryParse(proj_defs[1].Trim(), out epsg);
-            }
-            
-            if (projName != "")
-            {
-                if (projName.Contains(" / "))
-                    return projName;
-                if (proj4.Contains("longlat"))
-                    return "Longitude-Latitude / " + projName;
+                if (param[0] == "EPSG")
+                {
+                    var code = Convert.ToInt32(param[1]);
+                    srs.ImportFromEPSG(code);
+                }
                 else
-                    return "Other Non Geographic / " + projName;
+                {
+                    srs.SetFromUserInput(authCode);
+                }
             }
             else
-                return projection;
+            {
+                throw new FormatException("Invalid auth code");
+            }
+        }
+
+        /// <summary>
+        /// Get MapServer projection from a string representation
+        /// </summary>
+        /// <param name="input">proj string</param>
+        /// <returns>MapServer projection object</returns>
+        public static projectionObj GetProjection(string input)
+        {
+            if (input.StartsWith("+") || input.IndexOf("init=epsg", StringComparison.OrdinalIgnoreCase) >= 0)
+            {
+                // assuming proj4
+                return new projectionObj(input);
+            }
+
+            if (input.Contains(":"))
+            {
+                // assuming AUTH:CODE (non EPSG)
+                return new projectionObj($"+{input}");
+            }
+            // generic case, set by wkt
+            using (SpatialReference srs = new SpatialReference(null))
+            {
+                srs.SetFromUserInput(input);
+                string wkt;
+                srs.ExportToWkt(out wkt, null);
+                return new projectionObj(wkt);
+            }
+        }
+
+        /// <summary>
+        /// This function tries to find out the projection from the EPSG file based on the name or the proj4 parameters
+        /// </summary>
+        /// <param name="projection">input projection string</param>
+        /// <param name="outProjection">The MapServer compatible string</param>
+        /// <returns>Projection Name</returns>
+        public static string FindProjection(string projection, out string outProjection)
+        {
+            outProjection = "";
+
+            if (string.IsNullOrEmpty(projection))
+            {
+                return "";
+            }
+
+            SpatialReference input = new SpatialReference(null);
+            input.SetFromUserInput(projection);
+
+            var options = new string[] { "CRITERION=STRICT", null };
+            int nvalues;
+            int[] confidence_values;
+            var result = input.FindMatches(options, out nvalues, out confidence_values);
+
+            if (result != null && nvalues > 0) 
+            {
+                // the fist value seems to be the most appropriate
+                var name = result[0].GetAuthorityName(null);
+                var code = result[0].GetAuthorityCode(null);
+                outProjection = $"+{name}:{code}";
+                return result[0].GetName();
+            }
+
+            return "";
         }
 
         /// <summary>

@@ -1851,8 +1851,7 @@ namespace DMS.MapLibrary
                 // trying to find out the projname
                 string proj = layer.getProjection().Trim();
                 string proj4;
-                int epsg;
-                string proj_name = MapUtils.FindProjection(proj, out proj4, out epsg);
+                string proj_name = MapUtils.FindProjection(proj, out proj4);
                 if (proj4.Trim().StartsWith("+"))
                 {
                     if (proj != proj4.Trim())
@@ -2059,8 +2058,7 @@ namespace DMS.MapLibrary
                 // trying to find out the projname
                 string proj = layer.getProjection().Trim();
                 string proj4;
-                int epsg;
-                string proj_name = MapUtils.FindProjection(proj, out proj4, out epsg);
+                string proj_name = MapUtils.FindProjection(proj, out proj4);
                 if (proj4.Trim().StartsWith("+"))
                 {
                     if (proj != proj4.Trim())
@@ -2159,8 +2157,7 @@ namespace DMS.MapLibrary
                     if (proj4 != null || proj4 != "")
                     {
                         string proj4_out;
-                        int epsg;
-                        string projName = MapUtils.FindProjection(proj4, out proj4_out, out epsg);
+                        string projName = MapUtils.FindProjection(proj4, out proj4_out);
                         if (proj4_out.StartsWith("+"))
                         {
                             layer.setProjection(proj4_out);
@@ -2884,11 +2881,10 @@ namespace DMS.MapLibrary
                     layer.name = MapUtils.GetUniqueLayerName(map, form.TableName, 0);
                     string projName;
                     string proj4text;
-                    int epsg;
 
                     if (form.GetProj4Text() != null)
                     {
-                        projName = MapUtils.FindProjection(form.GetProj4Text(), out proj4text, out epsg);
+                        projName = MapUtils.FindProjection(form.GetProj4Text(), out proj4text);
                         layer.setProjection(form.GetProj4Text());
                         layer.metadata.set("coordsys_name", projName);
                     }
@@ -2899,7 +2895,7 @@ namespace DMS.MapLibrary
                         srs.ExportToProj4(out proj4);
                         if (proj4 != null || proj4 != "")
                         {
-                            projName = MapUtils.FindProjection(proj4, out proj4text, out epsg);
+                            projName = MapUtils.FindProjection(proj4, out proj4text);
                             //Steph: looks like there was a copy and paste error, I have replaced form.GetProj4Text() with proj4text
                             layer.setProjection(proj4text);
                             layer.metadata.set("coordsys_name", projName);

@@ -490,8 +490,7 @@ namespace DMS.MapLibrary
             if (this.textBoxProjection.Text == "")
             {
                 string proj4;
-                int epsg;
-                this.textBoxProjection.Text = MapUtils.FindProjection(this.textBoxProjection.Tag.ToString(), out proj4, out epsg);
+                this.textBoxProjection.Text = MapUtils.FindProjection(this.textBoxProjection.Tag.ToString(), out proj4);
             }
             
             // data tab

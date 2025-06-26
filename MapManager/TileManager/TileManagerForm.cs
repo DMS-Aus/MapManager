@@ -795,9 +795,8 @@ namespace DMS.MapManager
         {
             try
             {
-                string proj4;
-                int epsg;
-                MapUtils.FindProjection(map.getProjection(), out proj4, out epsg);
+                string projString;
+                MapUtils.FindProjection(map.getProjection(), out projString);
 
                 if (snapWorld)
                 {
@@ -811,7 +810,7 @@ namespace DMS.MapManager
                         "                \"y1\": " + loadedSettings.startY + "," + Environment.NewLine +
                         "                \"x2\": " + (loadedSettings.startX + loadedSettings.initTileGap) + "," + Environment.NewLine +
                         "                \"y2\": " + (loadedSettings.startY + loadedSettings.initTileGap) + "," + Environment.NewLine +
-                        "                \"projection\": \"EPSG:" + epsg + "\"" + Environment.NewLine +
+                        "                \"projection\": \"" + projString.Substring(1) + "\"" + Environment.NewLine +
                         "            }," + Environment.NewLine +
                         "            \"numZoomLevels\": " + depth + "," + Environment.NewLine +
                         "            \"zoomOffset\": " + z0 + "," + Environment.NewLine +
@@ -836,7 +835,7 @@ namespace DMS.MapManager
                         "                \"y1\": " + loadedSettings.startY + "," + Environment.NewLine +
                         "                \"x2\": " + (loadedSettings.startX + loadedSettings.initTileGap) + "," + Environment.NewLine +
                         "                \"y2\": " + (loadedSettings.startY + loadedSettings.initTileGap) + "," + Environment.NewLine +
-                        "                \"projection\": \"EPSG:" + epsg + "\"" + Environment.NewLine +
+                        "                \"projection\": \"" + projString.Substring(1) + "\"" + Environment.NewLine +
                         "            }," + Environment.NewLine +
                         "            \"numZoomLevels\": " + depth + "," + Environment.NewLine +
                         "            \"imageFormat\": \"" + imageFormat + "\"," + Environment.NewLine +
@@ -1237,11 +1236,10 @@ namespace DMS.MapManager
         {
             if (loaded)
             {
-                string proj4;
-                int epsg;
-                MapUtils.FindProjection(map.getProjection(), out proj4, out epsg);
+                string projString;
+                MapUtils.FindProjection(map.getProjection(), out projString);
 
-                if (cmbSnapWorld.SelectedIndex == 0 && epsg != 3785)
+                if (cmbSnapWorld.SelectedIndex == 0 && projString != "+EPSG:3785")
                 {
                     cmbSnapWorld.SelectedIndex = 1;
                     MessageBox.Show("Your map must be set to google projection EPSG:3785 to use this function", "Invalid Map Projection", MessageBoxButtons.OK, MessageBoxIcon.Information);

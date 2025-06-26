@@ -8,6 +8,10 @@ using System.Windows.Forms;
 using System.IO;
 using System.Runtime.InteropServices;
 using OSGeo.OGR;
+using OSGeo.OSR;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar;
+using OSGeo.MapServer;
+using System.Net.Security;
 
 namespace DMS.MapLibrary
 {
@@ -24,18 +28,8 @@ namespace DMS.MapLibrary
         public ProjectionBrowserDialog()
         {
             InitializeComponent();
-            PopulateList();
-        }
-
-        /// <summary>
-        /// Get the proj4 definition of the selected projection
-        /// </summary>
-        /// <returns></returns>
-        private string GetProj4()
-        {
-            if (treeView.SelectedNode != null)
-                return treeView.SelectedNode.Tag.ToString();
-            else return "";
+            comboBoxAuthority.Items.AddRange(Osr.GetAuthorityListFromDatabase());
+            comboBoxAuthority.SelectedIndex = 0;
         }
 
         /// <summary>
@@ -48,7 +42,12 @@ namespace DMS.MapLibrary
                 string name = "";
                 if (treeView.SelectedNode != null)
                 {
-                    name = treeView.SelectedNode.Name;
+                    CRSInfo crs = treeView.SelectedNode.Tag as CRSInfo;
+
+                    if (crs != null)
+                    {
+                        return crs.name;
+                    }
                 }
 
                 return name;
@@ -65,15 +64,22 @@ namespace DMS.MapLibrary
         }
 
         /// <summary>
-        /// Gets the selected projection (proj4).
+        /// Gets the selected projection.
         /// </summary>
         public string ProjectionNative
         {
             get
             {
                 if (treeView.SelectedNode != null)
-                    return treeView.SelectedNode.Tag.ToString();
-                return "+AUTO";
+                {
+                    CRSInfo crs = treeView.SelectedNode.Tag as CRSInfo;
+
+                    if (crs != null)
+                    {
+                        return $"+{crs.auth_name}:{crs.code}";
+                    }
+                }
+                return null;
             }
         }
 
@@ -84,7 +90,7 @@ namespace DMS.MapLibrary
         /// <param name="coord_ref_name">The name of the coordinate reference.</param>
         /// <param name="epsg">The EPSG code of the projection.</param>
         /// <param name="proj4">The corresponding proj4 definition.</param>
-        private void AddListItem(string datum_name, string coord_ref_name, string epsg, string proj4)
+        private void AddListItem(string datum_name, CRSInfo crs)
         {
             TreeNode[] nodes = treeView.Nodes.Find(datum_name, false);
             TreeNode parent = null;
@@ -95,72 +101,70 @@ namespace DMS.MapLibrary
                 parent = treeView.Nodes.Add(datum_name, datum_name);
             }
 
-            TreeNode node = parent.Nodes.Add(datum_name + " / " + coord_ref_name, coord_ref_name + " - EPSG:" + epsg);
-            node.Tag = proj4;
+            TreeNode node = parent.Nodes.Add($"{datum_name} / {crs.name}", $"{crs.name} - {crs.auth_name}:{crs.code}");
+            node.Tag = crs;
         }
 
- /// <summary>
+        /// <summary>
         /// Polulate the projection tree based on the EPSG file.
         /// </summary>
         private void PopulateList()
         {
-            treeView.Nodes.Clear();
-            using (Stream s = File.OpenRead(MapUtils.GetPROJ_DATA() + "\\epsg"))
+            try
             {
-                using (StreamReader reader = new StreamReader(s))
+                this.Cursor = Cursors.WaitCursor;
+                treeView.Nodes.Clear();
+                int count;
+                string auth_name = comboBoxAuthority.SelectedItem.ToString();
+                var crsInfoList = Osr.GetCRSInfoListFromDatabase(auth_name, out count);
+                using (SpatialReference srs = new SpatialReference(null))
                 {
-                    string line;
-                    string name = "";
-                    string proj4 = "";
-                    int row = 0;
-                    while ((line = reader.ReadLine()) != null)
+                    for (int i = 0; i < count; i++)
                     {
-                        ++row;
-                        if (line.StartsWith("#"))
+                        var crs = crsInfoList[i];
+
+                        var authCode = $"{crs.auth_name}:{crs.code}";
+
+                        MapUtils.UpdateSpatialReferenceFromAuthCode(srs, authCode);
+
+                        string datum;
+                        if (srs.IsVertical() == 1)
                         {
-                            if (proj4 != "")
-                            {
-                                ProcessLine(name, proj4); 
-                            }
-                            proj4 = "";
-                            name = line.Substring(1).Trim();
+                            datum = srs.GetAttrValue("VERT_DATUM", 0);
+                        }
+                        else if (srs.IsLocal() == 1)
+                        {
+                            datum = srs.GetAttrValue("LOCAL_DATUM", 0);
+                        }
+                        else if (srs.IsGeographic() == 1)
+                        {
+                            datum = "Longitude-Latitude";
                         }
                         else
-                            proj4 += line;
-                    }
-
-                    //process last line
-                    if (proj4 != "" && name!="")
-                    {
-                        ProcessLine(name, proj4);
+                        {
+                            datum = srs.GetAttrValue("DATUM", 0);
+                        }
+                        string wkt;
+                        srs.ExportToWkt(out wkt, null);
+                        if (string.IsNullOrEmpty(datum))
+                        {
+                            datum = "Other Non Geographic";
+                        }
+                        var unit = srs.GetAttrValue("UNIT", 0);
+                        AddListItem(datum, crs);
                     }
                 }
+                treeView.Sort();
             }
-            treeView.Sort();
-        }
-        /// <summary>
-        /// use to create the entry in the treview after after reading name for line1 and proj4 from line2
-        /// </summary>
-        /// <param name="name"></param>
-        /// <param name="proj4"></param>
-        private void ProcessLine(string name, string proj4)
-        {
-            // adding the previous section
-            string[] names = name.Split(new string[] { " / " }, StringSplitOptions.None);
-            string[] proj_defs = proj4.Split(new char[] { '<', '>' });
-            if (proj_defs.Length > 3)
+            catch (Exception ex)
             {
-                if (names.Length > 1)
-                {
-                    AddListItem(names[0].Trim(), names[1].Trim(), proj_defs[1].Trim(), proj_defs[2].Trim());
-                }
-                else
-                {
-                    if (proj_defs[2].Contains("longlat"))
-                        AddListItem("Longitude-Latitude", names[0].Trim(), proj_defs[1].Trim(), proj_defs[2].Trim());
-                    else
-                        AddListItem("Other Non Geographic", names[0].Trim(), proj_defs[1].Trim(), proj_defs[2].Trim());
-                }
+                MessageBox.Show(ex.Message,
+                    "MapManager", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                this.Cursor = Cursors.Default;
+                panelRefresh.Visible = false;
             }
         }
         
@@ -261,6 +265,23 @@ namespace DMS.MapLibrary
                 buttonSearch.PerformClick();
                 e.Handled = true;
             }
+        }
+
+        /// <summary>
+        /// SelectedIndexChanged event handler of the comboBoxAuthority object.
+        /// </summary>
+        /// <param name="sender">The source object of this event.</param>
+        /// <param name="e">The event parameters.</param>
+        private void comboBoxAuthority_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            panelRefresh.Visible = true;
+            timerRefresh.Enabled = true;
+        }
+
+        private void timerRefresh_Tick(object sender, EventArgs e)
+        {
+            timerRefresh.Enabled = false;
+            PopulateList();
         }
     }
 }

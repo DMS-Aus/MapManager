@@ -259,8 +259,7 @@ namespace DMS.MapLibrary
             if (this.textBoxProjection.Text == "")
             {
                 string proj4;
-                int epsg;
-                this.textBoxProjection.Text = MapUtils.FindProjection(this.textBoxProjection.Tag.ToString(), out proj4, out epsg);
+                this.textBoxProjection.Text = MapUtils.FindProjection(this.textBoxProjection.Tag.ToString(), out proj4);
             }
 
             comboBoxUnits.DataSource = Enum.GetValues(typeof(MS_UNITS));
@@ -554,7 +553,7 @@ namespace DMS.MapLibrary
             {
                 textBoxProjection.Text = projDialog.Projection;
                 textBoxProjection.Tag = projDialog.ProjectionNative;
-                comboBoxUnits.SelectedItem = MapUtils.GetMapUnitFromProj4(textBoxProjection.Tag.ToString());
+                comboBoxUnits.SelectedItem = MapUtils.GetMapUnitFromProjString(textBoxProjection.Tag.ToString());
             }
         }
 
