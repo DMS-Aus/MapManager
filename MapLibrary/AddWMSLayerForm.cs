@@ -202,29 +202,6 @@ namespace DMS.MapLibrary
                     comboBoxImageFormat.SelectedIndex = index;
             }
 
-            // load epsg values
-            Hashtable epsg = new Hashtable();
-            using (Stream s = File.OpenRead(MapUtils.GetPROJ_DATA() + "\\epsg"))
-            {
-                using (StreamReader reader = new StreamReader(s))
-                {
-                    string line;
-                    string projName = "";
-                    while ((line = reader.ReadLine()) != null)
-                    {
-                        if (line.StartsWith("#") && line.Length > 2)
-                            projName = line.Substring(2);
-                        else if (line.StartsWith("<"))
-                        {
-                            string[] items = line.Split(new char[] { '<', '>' }, 
-                                               StringSplitOptions.RemoveEmptyEntries);
-                            if (items.Length > 0)
-                                epsg.Add("EPSG:" + items[0], projName);
-                        }
-                    }
-                }
-            }
-
             // load projections
             Dictionary<string, string> projections = new Dictionary<string, string>();
             string selectedProj = null;
@@ -235,13 +212,18 @@ namespace DMS.MapLibrary
                 {
                     if (!projections.ContainsKey(s))
                     {
-                        if (epsg.ContainsKey(s))
-                            projections.Add(s, epsg[s].ToString());
+                        string projName = MapUtils.FindProjection(s, out string projString);
+                        if (projString.StartsWith("+"))
+                        {
+                            projections.Add(s, projName);
+                        }
                         else
+                        {
                             projections.Add(s, s);
+                        }
 
                         if (s.Contains("EPSG:4326"))
-                            selectedProj = epsg[s].ToString();
+                            selectedProj = projName;
                     }
                 }
             }
@@ -528,13 +510,6 @@ namespace DMS.MapLibrary
             if (wms_minscaledenom > 0)
                 layer.maxscaledenom = wms_minscaledenom;
 
-            // get bbox parameters
-            if (wms_bbox != null && map.numlayers == 1)
-            {
-                // this is the first layer, set the extent of the map
-                map.setExtent(wms_bbox.minx, wms_bbox.miny, wms_bbox.maxx, wms_bbox.maxy);
-            }
-
             // setting up the selected projection
             KeyValuePair<string, string> current = (KeyValuePair<string, string>)bs.Current;
             string wms_srs = current.Key;
@@ -550,6 +525,41 @@ namespace DMS.MapLibrary
             if (wms_srs.StartsWith("EPSG", StringComparison.InvariantCultureIgnoreCase))
                 layer.metadata.set("wms_srs", wms_srs);
             layer.setProjection(wms_srs);
+            if (wms_bbox != null && map.numlayers == 1)
+            {
+                // this is the first layer, set the extent of the map
+                map.setProjection(wms_srs);
+                // reproject the BBOX to the target SRS
+                using (projectionObj oldProj = new projectionObj("+proj=longlat +datum=WGS84 +no_defs"))
+                {
+                    using (projectionObj newProj = new projectionObj(map.getProjection()))
+                    {
+                        using (rectObj rect = new rectObj(wms_bbox.minx, wms_bbox.miny, wms_bbox.maxx, wms_bbox.maxy, 0))
+                        {
+                            if (wms_srs == "EPSG:3857")
+                            {
+                                // apply limitations for web mercator projection
+                                if (rect.minx < -180.0)
+                                    rect.minx = -180.0;
+                                if (rect.maxx > 180.0)
+                                    rect.maxx = 180.0;
+                                if (rect.miny < -85.05112878)
+                                    rect.miny = -85.05112878;
+                                if (rect.maxy > 85.05112878)
+                                    rect.maxy = 85.05112878;
+                            }
+
+                            rect.project(oldProj, newProj);
+                            if (rect.minx < rect.maxx && rect.miny < rect.maxy)
+                                map.setExtent(rect.minx, rect.miny, rect.maxx, rect.maxy);
+                            if (target != null)
+                            {
+                                target.RaisePropertyChanged(this);
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         /// <summary>
