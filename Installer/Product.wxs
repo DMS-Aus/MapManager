@@ -190,8 +190,8 @@
                     <Component Id="Microsoft.VisualBasic.PowerPacks.Vs.dll" Guid="*">
                         <File Id="Microsoft.VisualBasic.PowerPacks.Vs.dll" Name="Microsoft.VisualBasic.PowerPacks.Vs.dll" Source="$(var.MapManager.TargetDir)Microsoft.VisualBasic.PowerPacks.Vs.dll" Vital="yes"/>
                     </Component>
-                    <Component Id="cairo.dll" Guid="*">
-                        <File Id="cairo.dll" Name="cairo.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\cairo.dll" Vital="yes"/>
+                    <Component Id="cairo_2.dll" Guid="*">
+                        <File Id="cairo_2.dll" Name="cairo-2.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\cairo-2.dll" Vital="yes"/>
                     </Component>
                     <Component Id="geos_c.dll" Guid="*">
                         <File Id="geos_c.dll" Name="geos_c.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\geos_c.dll" Vital="yes"/>
@@ -321,8 +321,8 @@
                     <Component Id="spatialite.dll" Guid="*">
                         <File Id="spatialite.dll" Name="spatialite.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\spatialite.dll" Vital="yes"/>
                     </Component>
-                    <Component Id="xerces_c_3_2.dll" Guid="*">
-                        <File Id="xerces_c_3_2.dll" Name="xerces-c_3_2.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\xerces-c_3_2.dll" Vital="yes"/>
+                    <Component Id="xerces_c_3_3.dll" Guid="*">
+                        <File Id="xerces_c_3_3.dll" Name="xerces-c_3_3.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\xerces-c_3_3.dll" Vital="yes"/>
                     </Component>
                     <Component Id="zlib.dll" Guid="*">
                         <File Id="zlib.dll" Name="zlib.dll" Source="$(var.SolutionDir)MapManager\bin\$(var.Platform)\$(var.Configuration)\zlib.dll" Vital="yes"/>
@@ -561,7 +561,7 @@
                 <ComponentRef Id="MapManagerLicense.rtf" />
                 <ComponentRef Id="ScintillaNet.dll" />
                 <ComponentRef Id="SciLexer.dll" />
-                <ComponentRef Id="cairo.dll" />
+                <ComponentRef Id="cairo_2.dll" />
                 <ComponentRef Id="gdal.dll" />
                 <ComponentRef Id="geos_c.dll" />
                 <ComponentRef Id="geos.dll" />
@@ -594,7 +594,7 @@
                 <ComponentRef Id="sqlite3.dll" />
                 <ComponentRef Id="freexl.dll" />
                 <ComponentRef Id="spatialite.dll" />
-                <ComponentRef Id="xerces_c_3_2.dll" />
+                <ComponentRef Id="xerces_c_3_3.dll" />
                 <ComponentRef Id="zstd.dll" />
                 <ComponentRef Id="zlib.dll" />
                 <ComponentRef Id="ogdi.dll" />
